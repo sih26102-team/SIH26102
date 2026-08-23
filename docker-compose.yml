@@ -1,0 +1,5 @@
+version: "3.9"
+
+# Services added in Module 2 (Docker Fundamentals build step)
+services:
+
