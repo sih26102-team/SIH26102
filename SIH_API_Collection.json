@@ -1,0 +1,113 @@
+{
+  "info": {
+    "name": "SIH API Collection",
+    "description": "Shared API endpoints for the SIH project including Authentication and ML Engine operations.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/register",
+              "host": ["{{base_url}}"],
+              "path": ["register"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"johndoe\",\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"SecureP@ssw0rd123\",\n  \"role\": \"analyst\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Login User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/login",
+              "host": ["{{base_url}}"],
+              "path": ["login"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"john.doe@example.com\",\n  \"password\": \"SecureP@ssw0rd123\"\n}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ML Engine",
+      "item": [
+        {
+          "name": "Run Prediction",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/predict",
+              "host": ["{{base_url}}"],
+              "path": ["predict"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"case_id\": \"CASE-9921\",\n  \"features\": {\n    \"transaction_amount\": 4500.50,\n    \"location_risk_score\": 0.85,\n    \"velocity_last_24h\": 12\n  },\n  \"model_type\": \"anomaly_pyod\",\n  \"explainability\": true\n}"
+            }
+          }
+        },
+        {
+          "name": "Fetch Cases",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/cases?status=flagged&limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["cases"],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "flagged",
+                  "description": "Filter cases by status (e.g., flagged, resolved, open)"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Pagination limit"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    }
+  ]
+}
