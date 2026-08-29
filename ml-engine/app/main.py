@@ -13,7 +13,7 @@ async def root():
     return {"message": "ML Engine server is running..."}
 
 @app.get("/health", tags=["Health"])
-asyn def health_check():
+async def health_check():
     return {"status":"healthy", "service":"ml-engine"}
     
     
