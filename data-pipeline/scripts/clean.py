@@ -26,7 +26,7 @@ def standardize_status(df: pd.DataFrame) ->pd.DataFrame:
 
 #here we convert different time format into single format ad day-month-year 
 def parse_dates(df: pd.DataFrame) -> pd.DataFrame:
-    date_cols = ["project_status", "expected_completion_date", "actual_completion_date"]
+    date_cols = ["project_start_date", "expected_completion_date", "actual_completion_date"]
     for cols in date_cols:
         parsed_iso = pd.to_datetime(df[cols], format="%Y-%m-%d" , errors="coerce")
         parsed_dmy = pd.to_datetime(df[cols], format="%d-%m-%Y" , errors="coerce")
@@ -58,10 +58,10 @@ def resolve_duplicates(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     exact_dupe = df.duplicated(subset=["project_id", "expenditure"], keep="first")
     df =df[~exact_dupe].copy()
 
-    conflicts= df.duplicated(subset=["project_id"], keep=False)
-    conflict_mask = df[conflicts].copy()
-    conflict_mask["flag_reason"] = "same project id , conflicting expenditure values"
-    df = df[~conflicts].copy()
+    conflict_mask= df.duplicated(subset=["project_id"], keep=False)
+    conflicts = df[conflict_mask].copy()
+    conflicts["flag_reason"] = "same project id , conflicting expenditure values"
+    df = df[~conflict_mask].copy()
     return df , conflicts
 
 def clean() -> None:
@@ -91,5 +91,4 @@ def clean() -> None:
     print(f"  -> {len(flagged)} rows written to {FLAGGED_PATH} for review")
 
 if __name__ == "__main__":
-    print("     clean started       ")
     clean()
