@@ -1,0 +1,561 @@
+project_id,constituency,district,state,sanctioned_amount,released_amount,expenditure,project_status,sanctioned_duration_days,project_start_date,expected_completion_date,actual_completion_date,implementing_agency,project_category,progress_percent
+TA2312,Madurai Constituency,Madurai,Tamil Nadu,1500000,1500000.0,1085380.58,recommended,180,2023-12-06,2024-06-03,,Jal Nigam,irrigation,
+TA2228,Chennai Constituency,Chennai,Tamil Nadu,1000000,1000000.0,476918.84,ongoing,270,2023-03-04,2023-11-24,,PWD,irrigation,43.0
+TA2268,Madurai Constituency,Madurai,Tamil Nadu,300000,300000.0,192495.67,sanctioned,365,2023-03-21,2024-03-20,,Jal Nigam,electricity,
+KA2201,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,1000000,1000000.0,548698.87,completed,270,15-01-2023,2023-10-13,2024-03-19,,road,100.0
+RA2397,Jodhpur Constituency,Jodhpur,Rajasthan,200000,200000.0,241247.52,stalled,90,2023-01-30,2023-04-28,,PWD,irrigation,19.5
+WE2210,Kolkata Constituency,Kolkata,West Bengal,1000000,1000000.0,879745.7,ongoing,12,24-10-2023,27-10-2024,,,electricity,75.6
+AN1937,Krishna Constituency,Krishna,Andhra Pradesh,300000,300000.0,286303.99,ongoing,730,2024-04-09,2026-04-05,,PWD,road,80.9
+TA2078,Chennai Constituency,Chennai,Tamil Nadu,200000,200000.0,81116.55,COMPLETED,730,2023-06-06,2025-06-03,2025-10-28,Rural Dev Dept,road,100.0
+TA2063,Madurai Constituency,Madurai,Tamil Nadu,200000,200000.0,189296.54, sanctioned ,730,2023-06-01,2025-06-04,,,community hall,
+AN2081,Guntur Constituency,Guntur,Andhra Pradesh,2000000,1000000.0,560985.64,sanctioned,270,2024-01-02,2024-09-30,,Jal Nigam,electricity,
+WE1950,Kolkata Constituency,Kolkata,West Bengal,500000,500000.0,301614.58,SANCTIONED,270,2024-05-08,2025-02-01,,,school,
+KA2237,Belagavi Constituency,Belagavi,Karnataka,2000000,1000000.0,3560166.19,ongoing,365,2024-01-12,2025-01-10,,Rural Dev Dept,electricity,64.5
+WE2314,Howrah Constituency,Howrah,West Bengal,750000,,187747.36,ongoing,365,2023-03-23,2024-03-22,,Rural Dev Dept,community hall,49.7
+WE2127,Howrah Constituency,Howrah,West Bengal,1000000,1000000.0,797213.53, completed ,180,2023-07-08,30-12-2023,2024-01-01,PWD,road,100.0
+MA2197,Nagpur Constituency,Nagpur,Maharashtra,200000,200000.0,159119.26,STALLED,545,13-08-2023,2025-02-10,,PWD,road,34.9
+KA2243,Belagavi Constituency,Belagavi,Karnataka,500000,500000.0,447226.67,COMPLETED,6,17-03-2024,2024-09-11,12-01-2025,,irrigation,100.0
+KE2089,Kozhikode Constituency,Kozhikode,Kerala,2000000,1000000.0,480023.1,ongoing,365,2023-12-18,2024-12-16,,Zilla Parishad,drinking water,47.1
+AN1909,Guntur Constituency,Guntur,Andhra Pradesh,200000,0,268560.56,sanctioned,90,2023-02-02,2023-05-03,,Zilla Parishad,road,
+RA1976,Jodhpur Constituency,Jodhpur,Rajasthan,750000,750000.0,455161.12,ongoing,24,2023-01-17,16-01-2025,,Jal Nigam,irrigation,76.0
+KE2036,Kozhikode Constituency,Kozhikode,Kerala,500000,0,0, completed ,730,2023-05-16,2025-05-17,2025-05-05,PWD,community hall,100.0
+TA1986,Chennai Constituency,Chennai,Tamil Nadu,500000,500000.0,345275.34,recommended,730,2023-03-03,27-02-2025,,Rural Dev Dept,community hall,
+AN2235,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,500000,500000.0,227091.89,recommended,365,2024-01-08,2025-01-12,,,school,
+UT2157,Varanasi Constituency,Varanasi,Uttar Pradesh,750000,0,0,stalled,90,2024-04-07,08-07-2024,,Rural Dev Dept,sanitation,13.8
+BI1977,Gaya Constituency,Gaya,Bihar,200000,,186294.85,recommended,270,2023-07-26,16-04-2024,,PWD,electricity,
+MA2269,Pune Constituency,Pune,Maharashtra,1500000,1500000.0,1991378.29,sanctioned,730,2024-06-09,12-06-2026,,,school,
+BI2360,Patna Constituency,Patna,Bihar,750000,,359480.57,recommended,90,2023-01-14,2023-04-19,,Rural Dev Dept,electricity,
+WE2183,Howrah Constituency, Howrah,West Bengal,1500000,750000.0,518213.33,completed,270,2023-06-29,2024-03-24,2024-09-10,Zilla Parishad,irrigation,100.0
+WE1912,Kolkata Constituency, Kolkata,West Bengal,1500000,1500000.0,1121262.26,sanctioned,180,31-10-2023,2024-04-26,,PWD,electricity,
+BI1974,Gaya Constituency,Gaya,Bihar,2000000,,1801955.72,completed,545,2023-01-06,2024-06-30,2024-06-04,PWD,electricity,100.0
+KA2238,Mysuru Constituency,Mysuru,Karnataka,2000000,2000000.0,3387249.27,completed,90,2024-02-07,06-05-2024,2024-06-22,Jal Nigam,sanitation,100.0
+BI1965,Gaya Constituency,Gaya,Bihar,300000,0,0,sanctioned,270,2023-07-22,2024-04-14,,,irrigation,
+KE2056,Kozhikode Constituency,Kozhikode,Kerala,500000,250000.0,249142.47, sanctioned ,730,2023-01-02,2025-01-05,,Zilla Parishad,school,
+BAD2672,,,,200000,,0,ongoing,,,,,,road,
+UT1994,Lucknow Constituency,Lucknow,Uttar Pradesh,2000000,2000000.0,1472585.11,sanctioned,730,2024-05-15,2026-05-15,,Zilla Parishad,school,
+RA2182,Jodhpur Constituency,Jodhpur,Rajasthan,750000,375000.0,290471.33,STALLED,90,03-11-2024,2025-01-31,,PWD,irrigation,35.8
+RA1926,Jaipur Constituency,Jaipur,Rajasthan,300000,300000.0,420503.32,sanctioned,270,22-03-2024,2024-12-19,,,irrigation,
+TA2075,Chennai Constituency, Chennai,Tamil Nadu,750000,750000.0,727530.88,completed,,08-02-2023,2023-05-12,2023-06-02,PWD,sanitation,100.0
+KA2195,Belagavi Constituency,Belagavi,Karnataka,300000,300000.0,163856.03, sanctioned ,730,2024-01-14,16-01-2026,,PWD,drinking water,
+AN2204,Krishna Constituency,Krishna,Andhra Pradesh,1000000,1000000.0,424524.6,recommended,90,2024-01-28,2024-04-27,,Jal Nigam,irrigation,
+WE2141,Kolkata Constituency,Kolkata,West Bengal,750000,0,0,STALLED,270,2024-11-21,2025-08-20,,Rural Dev Dept,school,48.4
+MA2062,Nagpur Constituency,Nagpur,Maharashtra,750000,750000.0,1306249.74,stalled,180,2024-05-02,28-10-2024,,Zilla Parishad,drinking water,74.3
+UT2057,Varanasi Constituency,Varanasi,Uttar Pradesh,300000,0,0,ongoing,,2023-01-12,11-01-2024,,Jal Nigam,sanitation,72.4
+UT2007,Varanasi Constituency,Varanasi,Uttar Pradesh,1500000,1500000.0,1026166.94,completed,180,2023-11-04,03-05-2024,20-05-2024,Zilla Parishad,school,100.0
+TA1990,Chennai Constituency,Chennai,Tamil Nadu,1000000,0,0, recommended ,90,2023-05-21,2023-08-19,,Rural Dev Dept,community hall,
+KA2234,Bengaluru Urban Constituency, Bengaluru Urban,Karnataka,200000,100000.0,65321.15,ongoing,365,2024-05-12,15-05-2025,,Jal Nigam,electricity,91.5
+BI1911,Patna Constituency, Patna,Bihar,200000,0,0,recommended,180,2023-06-20,2023-12-18,,Jal Nigam,irrigation,
+WE2002,Howrah Constituency,Howrah,West Bengal,750000,0,1086941.06,stalled,,26-02-2023,28-02-2024,,PWD,road,60.8
+KE2012,Kozhikode Constituency,Kozhikode,Kerala,300000,0,617228.49,sanctioned,,2024-04-11,08-10-2025,,Rural Dev Dept,community hall,
+RA2311,Jaipur Constituency,Jaipur,Rajasthan,200000,0,0,sanctioned,270,2024-05-25,18-02-2025,,Rural Dev Dept,irrigation,
+KA2025,Mysuru Constituency,Mysuru,Karnataka,1000000,500000.0,338616.25, stalled ,180,2023-12-05,2024-06-05,,PWD,irrigation,81.8
+KE2248,Ernakulam Constituency,Ernakulam,Kerala,1000000,500000.0,618961.15, stalled ,90,2024-06-22,2024-09-24,,PWD,electricity,32.2
+AN2119,Guntur Constituency,Guntur,Andhra Pradesh,750000,0,0,ongoing,90,27-01-2024,01-05-2024,,Jal Nigam,irrigation,29.8
+AN2126,Visakhapatnam Constituency, Visakhapatnam,Andhra Pradesh,750000,750000.0,451824.74,completed,730,29-05-2023,25-05-2025,2025-10-05,Rural Dev Dept,sanitation,100.0
+AN2121,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,1500000.0,934076.88,stalled,90,2024-07-08,2024-10-01,,,drinking water,38.4
+BI2106,Gaya Constituency,Gaya,Bihar,1500000,1500000.0,837921.4,ongoing,90,13-08-2023,2023-11-13,,PWD,irrigation,31.1
+KE2205,Kozhikode Constituency,Kozhikode,Kerala,300000,150000.0,84943.08,ongoing,270,2023-10-01,30-06-2024,,,school,15.7
+TA2051,Madurai Constituency,Madurai,Tamil Nadu,1000000,1000000.0,1319674.68,recommended,90,2023-10-14,2024-01-13,,,electricity,
+KE1939,Ernakulam Constituency,Ernakulam,Kerala,2000000,2000000.0,1330675.29,stalled,90,2023-06-29,29-09-2023,,Zilla Parishad,school,35.0
+AN2053,Krishna Constituency, Krishna,Andhra Pradesh,2000000,1000000.0,755511.71,stalled,365,2023-12-30,26-12-2024,,Jal Nigam,community hall,82.6
+AN2386,Krishna Constituency,Krishna,Andhra Pradesh,2000000,2000000.0,1181749.94,SANCTIONED,730,2024-02-04,2026-01-31,,Rural Dev Dept,electricity,
+AN2398,Krishna Constituency,Krishna,Andhra Pradesh,200000,0,0,ongoing,90,28-09-2023,2023-12-27,,Jal Nigam,irrigation,81.2
+MA1943,Pune Constituency,Pune,Maharashtra,2000000,1000000.0,726058.04, completed ,545,10-05-2024,2025-11-06,2025-12-31,Jal Nigam,sanitation,100.0
+TA2253,Madurai Constituency,Madurai,Tamil Nadu,200000,200000.0,172237.61,stalled,9,2023-12-30,2024-09-24,,Jal Nigam,electricity,11.5
+WE2264,Howrah Constituency,Howrah,West Bengal,200000,200000.0,169123.7,COMPLETED,365,2024-11-28,01-12-2025,2026-06-12,,irrigation,100.0
+MA2001,Pune Constituency,Pune,Maharashtra,2000000,1000000.0,716903.87,sanctioned,730,2024-09-02,29-08-2026,,,sanitation,
+TA2249,Coimbatore Constituency,Coimbatore,Tamil Nadu,2000000,2000000.0,3563724.62,completed,730,03-10-2023,06-10-2025,2026-02-21,Rural Dev Dept,electricity,100.0
+KE2348,Kozhikode Constituency,Kozhikode,Kerala,300000,300000.0,262688.33, completed ,545,2024-02-03,29-07-2025,2025-07-27,Rural Dev Dept,sanitation,100.0
+UT2340,Lucknow Constituency,Lucknow,Uttar Pradesh,1000000,1000000.0,851123.75,stalled,90,2023-02-19,17-05-2023,,,irrigation,26.3
+WE2352,Kolkata Constituency,Kolkata,West Bengal,2000000,1000000.0,622955.37,ongoing,270,2024-01-06,2024-10-06,,Zilla Parishad,drinking water,68.5
+BI2175,Muzaffarpur Constituency,Muzaffarpur,Bihar,1500000,0,0,STALLED,365,2023-04-28,2024-05-01,,Jal Nigam,school,39.3
+AN2206,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,300000,300000.0,292192.85,RECOMMENDED,90,2024-02-05,2024-05-02,,Rural Dev Dept,sanitation,
+AN2151,Visakhapatnam Constituency, Visakhapatnam,Andhra Pradesh,300000,150000.0,526008.62,stalled,365,2024-07-28,2025-07-23,,Rural Dev Dept,electricity,37.4
+WE2230,Howrah Constituency,Howrah,West Bengal,200000,200000.0,140332.22,recommended,730,2024-11-22,2026-11-20,,,drinking water,
+AN2379,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,500000,500000.0,449164.73,completed,545,2023-08-08,2025-02-08,25-08-2025,Jal Nigam,school,100.0
+WE2074,Howrah Constituency,Howrah,West Bengal,750000,375000.0,291982.37, ongoing ,730,2023-07-04,2025-06-29,,PWD,drinking water,25.9
+BI2288,Gaya Constituency,Gaya,Bihar,750000,,532956.27,STALLED,270,2023-10-26,2024-07-22,,Zilla Parishad,electricity,69.2
+WE2095,Kolkata Constituency,Kolkata,West Bengal,1000000,1000000.0,598639.92,recommended,270,2023-08-15,09-05-2024,,Rural Dev Dept,sanitation,
+TA2272,Coimbatore Constituency,Coimbatore,Tamil Nadu,1500000,1500000.0,1294435.63,recommended,180,2023-01-26,2023-07-29,,,drinking water,
+UT2168,Lucknow Constituency,Lucknow,Uttar Pradesh,300000,300000.0,284403.69, sanctioned ,90,2024-01-19,2024-04-13,,Rural Dev Dept,drinking water,
+UT2008,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,200000,100000.0,42372.85,RECOMMENDED,270,22-01-2024,2024-10-23,,Rural Dev Dept,road,
+AN2156,Guntur Constituency,Guntur,Andhra Pradesh,500000,500000.0,219840.9,sanctioned,730,18-11-2024,2026-11-16,,PWD,community hall,
+TA2172,Coimbatore Constituency, Coimbatore,Tamil Nadu,1000000,1000000.0,447127.36,ongoing,270,2023-07-22,2024-04-22,,Jal Nigam,sanitation,93.1
+MA2283,Pune Constituency,Pune,Maharashtra,500000,0,0,sanctioned,90,12-10-2023,2024-01-11,,PWD,drinking water,
+TA2150,Coimbatore Constituency,Coimbatore,Tamil Nadu,1500000,0,0,recommended,365,2024-11-07,2025-11-06,,PWD,school,
+KE2012,Kozhikode Constituency,Kozhikode,Kerala,300000,0,474791.15,sanctioned,,2024-04-11,08-10-2025,,Rural Dev Dept,community hall,
+AN2164,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,750000,750000.0,580459.87,completed,545,21-11-2023,18-05-2025,30-08-2025,PWD,road,100.0
+BI2251,Patna Constituency,Patna,Bihar,2000000,2000000.0,1371727.62,stalled,180,16-05-2024,2024-11-14,,Jal Nigam,irrigation,60.7
+BI1917,Patna Constituency,Patna,Bihar,500000,500000.0,492861.81, stalled ,730,2023-06-08,2025-06-05,,Rural Dev Dept,drinking water,83.0
+BI2041,Patna Constituency,Patna,Bihar,750000,0,1218555.27,ONGOING,730,04-11-2024,01-11-2026,,Rural Dev Dept,irrigation,73.1
+TA2312,Madurai Constituency,Madurai,Tamil Nadu,1500000,1500000.0,1085380.58,recommended,180,2023-12-06,2024-06-03,,Jal Nigam,irrigation,
+TA2396,Chennai Constituency,Chennai,Tamil Nadu,200000,0,0,ongoing,730,2023-01-17,12-01-2025,,Rural Dev Dept,irrigation,84.7
+KE1962,Ernakulam Constituency,Ernakulam,Kerala,1500000,1500000.0,1486001.09,stalled,730,2023-11-12,2025-11-06,,Zilla Parishad,sanitation,14.9
+KA2159,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,750000,0,0,ONGOING,270,2024-10-26,2025-07-20,,Zilla Parishad,sanitation,21.1
+WE2369,Howrah Constituency,Howrah,West Bengal,1000000,1000000.0,712900.63, sanctioned ,365,2023-06-10,2024-06-08,,PWD,electricity,
+AN2318,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1000000,500000.0,490305.03,completed,180,2024-03-13,2024-09-08,2025-02-02,Zilla Parishad,school,100.0
+KA2184,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,1000000,1000000.0,1478408.96,recommended,730,2023-09-28,23-09-2025,,,electricity,
+AN2276,Guntur Constituency,Guntur,Andhra Pradesh,500000,0,0, sanctioned ,545,2024-10-29,2026-04-24,,,sanitation,
+UT2033,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,750000.0,506302.17, ongoing ,545,03-01-2023,2024-06-27,,Rural Dev Dept,community hall,69.8
+BI1961,Muzaffarpur Constituency, Muzaffarpur,Bihar,500000,500000.0,246673.97,ONGOING,545,2024-09-02,25-02-2026,,,road,77.9
+KE2000,Ernakulam Constituency,Ernakulam,Kerala,200000,200000.0,187414.2, ongoing ,180,20-02-2024,23-08-2024,,,school,73.3
+KE2202,Kozhikode Constituency,Kozhikode,Kerala,2000000,,0,completed,365,2023-09-04,30-08-2024,2024-12-20,,irrigation,100.0
+TA2108,Coimbatore Constituency,Coimbatore,Tamil Nadu,300000,150000.0,76821.51,recommended,545,2024-10-20,2026-04-17,,Zilla Parishad,community hall,
+WE2132,Kolkata Constituency,Kolkata,West Bengal,200000,100000.0,83626.42, recommended ,270,2023-10-03,2024-06-26,,PWD,school,
+UT2351,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,1500000.0,1846917.57,sanctioned,270,2023-02-18,2023-11-12,,Rural Dev Dept,road,
+TA1987,Coimbatore Constituency,Coimbatore,Tamil Nadu,200000,200000.0,126097.98,completed,180,2023-05-25,2023-11-17,2023-10-30,Jal Nigam,school,100.0
+TA1956,Coimbatore Constituency,Coimbatore,Tamil Nadu,1000000,500000.0,393002.21,stalled,90,2024-11-05,2025-02-06,,Zilla Parishad,road,12.8
+AN2226,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,1500000.0,1086148.37,completed,,2023-10-28,2024-04-30,2024-08-05,Jal Nigam,sanitation,100.0
+KE2248,Ernakulam Constituency,Ernakulam,Kerala,1000000,500000.0,476123.96, stalled ,90,2024-06-22,2024-09-24,,PWD,electricity,32.2
+BI2207,Gaya Constituency,Gaya,Bihar,750000,750000.0,309916.48,completed,365,2024-10-22,2025-10-17,2025-11-30,,sanitation,100.0
+RA2236,Jaipur Constituency,Jaipur,Rajasthan,200000,200000.0,106161.01,ongoing,545,2024-02-04,31-07-2025,,,sanitation,19.6
+MA2256,Pune Constituency,Pune,Maharashtra,750000,0,0,recommended,180,06-06-2023,05-12-2023,,Jal Nigam,sanitation,
+MA2110,Pune Constituency,Pune,Maharashtra,2000000,2000000.0,3099175.37,sanctioned,180,2024-02-25,27-08-2024,,Jal Nigam,sanitation,
+MA2258,Pune Constituency,Pune,Maharashtra,1000000,1000000.0,515320.78,completed,730,2024-03-22,17-03-2026,28-03-2026,Jal Nigam,sanitation,100.0
+UT1978,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,750000.0,465306.12, completed ,365,14-12-2023,10-12-2024,2025-03-17,Rural Dev Dept,school,100.0
+WE2218,Kolkata Constituency,Kolkata,West Bengal,1000000,0,1210427.64, completed ,365,20-03-2023,2024-03-15,2024-09-10,PWD,drinking water,100.0
+UT1935,Varanasi Constituency,Varanasi,Uttar Pradesh,300000,0,0, ongoing ,365,27-04-2023,2024-04-22,,,community hall,16.7
+BI2027,Muzaffarpur Constituency,Muzaffarpur,Bihar,2000000,2000000.0,2541433.98,STALLED,545,2023-03-28,28-09-2024,,,irrigation,37.5
+UT2142,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,,468778.38,ongoing,18,04-09-2023,06-03-2025,,Zilla Parishad,school,59.5
+BAD2805,,,,200000,,0,ongoing,,,,,,road,
+KA2388,Mysuru Constituency, Mysuru,Karnataka,1500000,750000.0,663193.83, ongoing ,6,2024-07-02,27-12-2024,,,road,44.0
+TA2091,Chennai Constituency, Chennai,Tamil Nadu,300000,0,0, recommended ,180,2023-10-01,2024-03-26,,,electricity,
+BI1955,Gaya Constituency, Gaya,Bihar,1000000,1000000.0,1414945.37,sanctioned,90,07-11-2024,31-01-2025,,Jal Nigam,electricity,
+BI2359,Muzaffarpur Constituency,Muzaffarpur,Bihar,1500000,1500000.0,1218630.14,RECOMMENDED,270,2023-06-16,2024-03-09,,Zilla Parishad,irrigation,
+RA1903,Jodhpur Constituency,Jodhpur,Rajasthan,1000000,1000000.0,863841.0,stalled,180,2023-03-13,2023-09-04,,PWD,community hall,98.7
+RA1916,Jodhpur Constituency, Jodhpur,Rajasthan,500000,250000.0,883515.28,COMPLETED,545,13-03-2024,2025-09-12,2025-08-15,PWD,school,100.0
+KA2373,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,2000000,1000000.0,958136.32,sanctioned,545,2024-06-12,2025-12-13,,Jal Nigam,drinking water,
+AN2353,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1000000,1000000.0,492203.41,ongoing,730,2024-04-30,2026-04-28,,PWD,sanitation,21.5
+TA1999,Chennai Constituency,Chennai,Tamil Nadu,1500000,0,0,SANCTIONED,180,2024-05-03,2024-10-30,,Rural Dev Dept,irrigation,
+MA2110,Pune Constituency,Pune,Maharashtra,2000000,2000000.0,4028927.97,sanctioned,180,2024-02-25,27-08-2024,,Jal Nigam,sanitation,
+KE2217,Ernakulam Constituency,Ernakulam,Kerala,2000000,2000000.0,1221955.24,ONGOING,730,07-01-2024,02-01-2026,,,drinking water,22.9
+RA1992,Jaipur Constituency,Jaipur,Rajasthan,2000000,2000000.0,1640625.09,SANCTIONED,730,2023-09-06,2025-08-31,,Jal Nigam,electricity,
+TA2333,Chennai Constituency,Chennai,Tamil Nadu,500000,500000.0,746765.53, ongoing ,90,2023-05-03,28-07-2023,,Jal Nigam,irrigation,70.2
+TA2148,Coimbatore Constituency, Coimbatore,Tamil Nadu,1000000,500000.0,427320.13,COMPLETED,90,2023-08-28,24-11-2023,2024-04-17,PWD,school,100.0
+AN2345,Guntur Constituency,Guntur,Andhra Pradesh,1500000,1500000.0,631886.21,sanctioned,270,2024-10-20,20-07-2025,,Zilla Parishad,sanitation,
+BI2077,Gaya Constituency,Gaya,Bihar,300000,,0,STALLED,545,2023-06-23,2024-12-15,,PWD,road,68.5
+TA2191,Coimbatore Constituency,Coimbatore,Tamil Nadu,2000000,2000000.0,1592880.91,sanctioned,180,2024-07-21,12-01-2025,,PWD,drinking water,
+AN2380,Guntur Constituency,Guntur,Andhra Pradesh,1000000,500000.0,297119.77,recommended,730,2024-11-14,18-11-2026,,Rural Dev Dept,road,
+BI2097,Muzaffarpur Constituency,Muzaffarpur,Bihar,2000000,0,0,recommended,180,2024-11-17,2025-05-21,,PWD,irrigation,
+BI2335,Patna Constituency,Patna,Bihar,300000,150000.0,383186.88, recommended ,18,2024-04-02,2025-09-29,,,drinking water,
+AN2161,Guntur Constituency,Guntur,Andhra Pradesh,1000000,1000000.0,646090.82,SANCTIONED,180,2024-08-25,2025-02-26,,PWD,drinking water,
+KA2221,Mysuru Constituency,Mysuru,Karnataka,1000000,0,0,RECOMMENDED,545,15-01-2023,16-07-2024,,,electricity,
+AN2042,Guntur Constituency,Guntur,Andhra Pradesh,500000,500000.0,484894.15,ongoing,545,07-03-2023,2024-09-01,,PWD,drinking water,16.9
+KA2234,Bengaluru Urban Constituency, Bengaluru Urban,Karnataka,200000,100000.0,65321.15,ongoing,365,2024-05-12,15-05-2025,,Jal Nigam,electricity,91.5
+RA2153,Jaipur Constituency,Jaipur,Rajasthan,500000,500000.0,762406.15,stalled,180,2023-07-31,01-02-2024,,,drinking water,82.0
+TA1958,Madurai Constituency,Madurai,Tamil Nadu,500000,500000.0,625609.31,ongoing,180,2024-04-30,2024-10-23,,Jal Nigam,electricity,48.9
+UT2117,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,1500000.0,661755.45,completed,545,2023-07-25,23-01-2025,2024-12-27,,road,100.0
+UT2208,Lucknow Constituency,Lucknow,Uttar Pradesh,300000,300000.0,167072.63,sanctioned,365,2024-01-16,2025-01-14,,Zilla Parishad,drinking water,
+KA1905,Mysuru Constituency,Mysuru,Karnataka,1500000,1500000.0,1497593.2,stalled,365,2024-08-20,2025-08-21,,,sanitation,22.4
+BI1934,Patna Constituency, Patna,Bihar,2000000,1000000.0,824811.09,ONGOING,180,2024-01-05,30-06-2024,,PWD,community hall,21.4
+WE2003,Kolkata Constituency,Kolkata,West Bengal,200000,0,0,completed,90,2023-10-21,2024-01-20,2024-02-05,,drinking water,100.0
+TA2083,Madurai Constituency,Madurai,Tamil Nadu,750000,0,1290749.52,recommended,270,2024-11-01,2025-07-29,,,road,
+AN2273,Guntur Constituency,Guntur,Andhra Pradesh,200000,100000.0,90335.05, recommended ,270,2023-07-30,2024-04-23,,Zilla Parishad,sanitation,
+WE1963,Kolkata Constituency,Kolkata,West Bengal,2000000,2000000.0,3505394.92,recommended,365,13-02-2023,2024-02-14,,,sanitation,
+TA2303,Madurai Constituency,Madurai,Tamil Nadu,300000,150000.0,119317.2,STALLED,,18-03-2024,2026-03-20,,,school,72.9
+WE1957,Howrah Constituency,Howrah,West Bengal,1000000,1000000.0,658119.6,COMPLETED,545,2024-06-27,2025-12-23,2026-03-19,Jal Nigam,sanitation,100.0
+RA1944,Jodhpur Constituency,Jodhpur,Rajasthan,300000,300000.0,138065.63, recommended ,,2024-05-29,2024-11-29,,PWD,sanitation,
+KA2094,Belagavi Constituency,Belagavi,Karnataka,200000,,151625.64,completed,730,2023-06-08,2025-06-02,2025-06-11,,road,100.0
+AN2284,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,0,0,recommended,365,18-03-2024,2025-03-13,,Zilla Parishad,road,
+BI2214,Gaya Constituency,Gaya,Bihar,300000,150000.0,87179.36,completed,270,2024-07-21,2025-04-19,30-03-2025,Rural Dev Dept,sanitation,100.0
+MA2169,Nagpur Constituency,Nagpur,Maharashtra,1500000,750000.0,689164.59,SANCTIONED,,2023-02-07,2025-02-08,,PWD,road,
+AN2321,Guntur Constituency,Guntur,Andhra Pradesh,200000,200000.0,302680.15,RECOMMENDED,730,2024-08-19,2026-08-14,,Jal Nigam,school,
+MA2326,Pune Constituency,Pune,Maharashtra,200000,200000.0,125241.24,sanctioned,545,2024-09-07,02-03-2026,,PWD,school,
+AN2376,Krishna Constituency,Krishna,Andhra Pradesh,1000000,0,0,SANCTIONED,730,2024-07-28,2026-07-23,,Rural Dev Dept,sanitation,
+AN2277,Krishna Constituency,Krishna,Andhra Pradesh,200000,200000.0,352020.82,stalled,270,2024-10-30,24-07-2025,,,community hall,53.4
+RA2383,Jodhpur Constituency,Jodhpur,Rajasthan,500000,0,879749.03,RECOMMENDED,90,2023-04-02,2023-07-06,,Rural Dev Dept,electricity,
+BAD8552,,,,200000,,0,ongoing,,,,,,road,
+WE1924,Kolkata Constituency, Kolkata,West Bengal,750000,375000.0,322308.08,completed,365,2023-09-23,20-09-2024,24-03-2025,Zilla Parishad,irrigation,100.0
+KE2294,Kozhikode Constituency,Kozhikode,Kerala,750000,750000.0,562792.18,completed,270,2024-08-18,2025-05-16,2025-09-26,,road,100.0
+BI2199,Patna Constituency,Patna,Bihar,300000,300000.0,207193.39, sanctioned ,365,2023-08-14,2024-08-09,,Rural Dev Dept,drinking water,
+BI2400,Patna Constituency,Patna,Bihar,500000,250000.0,146773.81,STALLED,545,2024-06-10,2025-12-07,,,drinking water,50.9
+UT2167,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,200000,100000.0,90544.35,ongoing,90,14-12-2023,2024-03-14,,Jal Nigam,drinking water,61.4
+BI1927,Gaya Constituency,Gaya,Bihar,2000000,2000000.0,1345639.19,sanctioned,90,2023-09-24,2023-12-24,,PWD,school,
+BI2300,Patna Constituency,Patna,Bihar,500000,500000.0,329278.08, ongoing ,90,25-06-2023,2023-09-19,,Jal Nigam,road,84.4
+KE2072,Ernakulam Constituency,Ernakulam,Kerala,500000,500000.0,341234.26,sanctioned,730,2024-07-25,22-07-2026,,Zilla Parishad,irrigation,
+TA2341,Chennai Constituency,Chennai,Tamil Nadu,1000000,1000000.0,549466.98,recommended,730,16-10-2024,2026-10-16,,Zilla Parishad,school,
+KE1915,Ernakulam Constituency,Ernakulam,Kerala,200000,100000.0,56905.38,ongoing,90,20-04-2023,2023-07-22,,Rural Dev Dept,road,29.0
+RA1926,Jaipur Constituency,Jaipur,Rajasthan,300000,300000.0,420503.32,sanctioned,270,22-03-2024,2024-12-19,,,irrigation,
+BI2288,Gaya Constituency,Gaya,Bihar,750000,,532956.27,STALLED,270,2023-10-26,2024-07-22,,Zilla Parishad,electricity,69.2
+KE2093,Kozhikode Constituency,Kozhikode,Kerala,1500000,1500000.0,1467860.84,STALLED,545,2024-09-09,2026-03-06,,,school,36.5
+WE2222,Howrah Constituency,Howrah,West Bengal,300000,300000.0,212565.18,recommended,180,2023-12-30,28-06-2024,,PWD,road,
+WE2016,Howrah Constituency, Howrah,West Bengal,2000000,2000000.0,1627172.65,stalled,270,2024-01-29,2024-10-22,,Rural Dev Dept,road,17.1
+MA2111,Nagpur Constituency,Nagpur,Maharashtra,2000000,2000000.0,1537697.8,SANCTIONED,545,09-04-2023,2024-10-02,,PWD,electricity,
+TA2185,Coimbatore Constituency,Coimbatore,Tamil Nadu,750000,750000.0,586840.87,stalled,730,2023-02-12,2025-02-07,,Zilla Parishad,irrigation,96.1
+KA2323,Mysuru Constituency,Mysuru,Karnataka,500000,500000.0,398068.52,stalled,730,2024-11-05,2026-11-07,,Zilla Parishad,community hall,10.3
+UT2208,Lucknow Constituency,Lucknow,Uttar Pradesh,300000,300000.0,128517.41,sanctioned,365,2024-01-16,2025-01-14,,Zilla Parishad,drinking water,
+BI2315,Muzaffarpur Constituency,Muzaffarpur,Bihar,500000,500000.0,344253.3, completed ,,2024-04-09,2025-01-03,2025-03-10,Jal Nigam,sanitation,100.0
+MA2052,Nagpur Constituency,Nagpur,Maharashtra,500000,500000.0,208791.04,ongoing,180,27-01-2023,26-07-2023,,Zilla Parishad,school,83.0
+KE2129,Kozhikode Constituency,Kozhikode,Kerala,1000000,500000.0,463188.11,stalled,545,2024-04-12,2025-10-14,,Zilla Parishad,school,49.1
+MA2354,Nagpur Constituency,Nagpur,Maharashtra,2000000,0,0, sanctioned ,545,2023-10-08,2025-04-02,,PWD,drinking water,
+MA1931,Pune Constituency,Pune,Maharashtra,750000,750000.0,338998.3,stalled,9,27-11-2023,21-08-2024,,Rural Dev Dept,school,89.3
+KA2304,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,750000,,526977.68, stalled ,,2024-01-13,2024-04-08,,Jal Nigam,sanitation,80.2
+TA2086,Coimbatore Constituency,Coimbatore,Tamil Nadu,500000,500000.0,385927.39,recommended,180,2024-04-10,2024-10-07,,Rural Dev Dept,community hall,
+MA2034,Pune Constituency,Pune,Maharashtra,2000000,2000000.0,1351498.12,RECOMMENDED,3,12-04-2023,2023-07-16,,Zilla Parishad,irrigation,
+BI2372,Gaya Constituency,Gaya,Bihar,1500000,,0,ONGOING,365,30-05-2024,2025-05-26,,PWD,irrigation,79.8
+AN2140,Krishna Constituency,Krishna,Andhra Pradesh,500000,500000.0,212195.95,ongoing,730,01-03-2023,2025-03-04,,Zilla Parishad,community hall,16.3
+UT1949,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,300000,150000.0,72310.13, stalled ,,25-11-2024,2025-08-27,,Rural Dev Dept,irrigation,18.7
+TA2189,Madurai Constituency,Madurai,Tamil Nadu,300000,0,462842.02,completed,730,23-09-2023,2025-09-18,2025-08-27,,road,100.0
+MA2269,Pune Constituency,Pune,Maharashtra,1500000,1500000.0,1991378.29,sanctioned,730,2024-06-09,12-06-2026,,,school,
+RA2265,Jodhpur Constituency,Jodhpur,Rajasthan,750000,375000.0,313147.2,ONGOING,90,2023-02-07,2023-05-11,,Zilla Parishad,road,76.6
+UT2090,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,750000.0,351932.36,sanctioned,545,2024-07-09,10-01-2026,,Jal Nigam,electricity,
+BI2021,Patna Constituency,Patna,Bihar,1000000,500000.0,208074.83,stalled,545,2023-07-04,2025-01-04,,Zilla Parishad,irrigation,75.4
+UT2061,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,750000.0,418530.36,sanctioned,365,2023-02-15,2024-02-14,,,drinking water,
+UT2039,Kanpur Nagar Constituency, Kanpur Nagar,Uttar Pradesh,500000,,214408.89, completed ,18,2024-03-06,2025-09-02,2025-12-20,,electricity,100.0
+AN2076,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,2000000,0,0,ongoing,270,2024-04-11,2025-01-09,,Jal Nigam,road,40.4
+RA1928,Jodhpur Constituency,Jodhpur,Rajasthan,200000,0,0,SANCTIONED,180,2023-01-21,24-07-2023,,,irrigation,
+KA2254,Belagavi Constituency,Belagavi,Karnataka,500000,250000.0,201011.31, sanctioned ,,2023-03-22,2023-09-22,,,irrigation,
+BI1979,Muzaffarpur Constituency,Muzaffarpur,Bihar,1500000,1500000.0,1288880.39, ongoing ,365,13-02-2023,13-02-2024,,,irrigation,67.6
+KE2065,Kozhikode Constituency,Kozhikode,Kerala,750000,0,0,completed,270,2023-09-01,2024-05-23,30-10-2024,Rural Dev Dept,irrigation,100.0
+KE2015,Kozhikode Constituency,Kozhikode,Kerala,1000000,1000000.0,939586.99,ONGOING,90,2023-03-18,2023-06-21,,Jal Nigam,road,60.7
+UT2142,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,,468778.38,ongoing,18,04-09-2023,06-03-2025,,Zilla Parishad,school,59.5
+KA1970,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,500000,,853328.52,SANCTIONED,180,2023-05-21,2023-11-14,,Zilla Parishad,community hall,
+AN2139,Krishna Constituency,Krishna,Andhra Pradesh,300000,0,0,completed,,2023-04-12,04-10-2023,2024-01-28,Jal Nigam,electricity,100.0
+KA1922,Mysuru Constituency,Mysuru,Karnataka,1500000,1500000.0,2685542.42,sanctioned,180,2023-05-31,2023-11-22,,Zilla Parishad,irrigation,
+TA2152,Chennai Constituency,Chennai,Tamil Nadu,2000000,0,0,STALLED,270,2023-08-19,2024-05-12,,,drinking water,45.4
+BI2292,Muzaffarpur Constituency,Muzaffarpur,Bihar,1000000,,515008.78,recommended,90,2023-05-28,23-08-2023,,,school,
+TA2198,Madurai Constituency,Madurai,Tamil Nadu,500000,500000.0,477458.4,stalled,365,2023-02-14,10-02-2024,,Rural Dev Dept,drinking water,25.8
+UT2055,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,200000,200000.0,197103.28,completed,545,2023-04-14,2024-10-10,2024-11-26,,electricity,100.0
+BI2097,Muzaffarpur Constituency,Muzaffarpur,Bihar,2000000,0,0.0,recommended,180,2024-11-17,2025-05-21,,PWD,irrigation,
+BI2367,Gaya Constituency,Gaya,Bihar,200000,100000.0,252721.18,completed,730,27-01-2023,2025-01-27,2025-04-02,Zilla Parishad,sanitation,100.0
+RA2250,Jaipur Constituency,Jaipur,Rajasthan,750000,0,0, completed ,270,02-07-2023,2024-03-26,2024-09-09,Rural Dev Dept,irrigation,100.0
+UT2342,Lucknow Constituency, Lucknow,Uttar Pradesh,750000,750000.0,725190.13,RECOMMENDED,730,2023-03-23,2025-03-18,,Jal Nigam,irrigation,
+RA2138,Jaipur Constituency,Jaipur,Rajasthan,2000000,2000000.0,1446747.83,stalled,180,25-11-2023,2024-05-19,,PWD,road,44.9
+KE2098,Kozhikode Constituency,Kozhikode,Kerala,500000,0,0,recommended,90,2023-02-25,23-05-2023,,PWD,community hall,
+AN2374,Visakhapatnam Constituency, Visakhapatnam,Andhra Pradesh,300000,300000.0,294410.48, recommended ,90,27-05-2023,2023-08-24,,PWD,road,
+RA2023,Jaipur Constituency,Jaipur,Rajasthan,200000,200000.0,266640.13,ongoing,365,2023-04-19,13-04-2024,,PWD,sanitation,77.2
+RA2395,Jodhpur Constituency,Jodhpur,Rajasthan,750000,750000.0,1122270.42, ongoing ,270,22-07-2023,15-04-2024,,,road,14.2
+BI2082,Muzaffarpur Constituency,Muzaffarpur,Bihar,200000,100000.0,68960.49,recommended,180,2023-04-17,2023-10-15,,Zilla Parishad,sanitation,
+KA2092,Mysuru Constituency,Mysuru,Karnataka,1500000,1500000.0,2143424.37,sanctioned,545,22-10-2023,2025-04-24,,Jal Nigam,electricity,
+RA2011,Jodhpur Constituency, Jodhpur,Rajasthan,1500000,1500000.0,1039484.69,completed,,2023-12-27,2024-06-21,2024-06-26,Jal Nigam,drinking water,100.0
+UT2347,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,1500000.0,636230.68,recommended,270,2023-07-23,14-04-2024,,Jal Nigam,sanitation,
+BI2285,Patna Constituency, Patna,Bihar,1500000,1500000.0,939655.62,stalled,90,2023-03-29,22-06-2023,,PWD,community hall,90.1
+TA2362,Madurai Constituency,Madurai,Tamil Nadu,750000,375000.0,303993.93,ongoing,730,21-10-2023,18-10-2025,,Rural Dev Dept,road,71.8
+BI2124,Gaya Constituency,Gaya,Bihar,2000000,,3471924.49,completed,90,30-06-2023,29-09-2023,04-01-2024,Rural Dev Dept,sanitation,100.0
+UT2181,Lucknow Constituency,Lucknow,Uttar Pradesh,1000000,0,0,ongoing,545,2023-01-12,2024-07-12,,Rural Dev Dept,irrigation,91.5
+KA2387,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,200000,0,0,RECOMMENDED,365,12-01-2023,2024-01-17,,Jal Nigam,irrigation,
+WE2357,Kolkata Constituency,Kolkata,West Bengal,500000,250000.0,101561.23,completed,,2023-10-29,2025-04-26,2025-04-10,Jal Nigam,irrigation,100.0
+BI2136,Patna Constituency,Patna,Bihar,300000,300000.0,264994.57, sanctioned ,270,2024-07-25,2025-04-26,,Rural Dev Dept,community hall,
+AN2216,Krishna Constituency,Krishna,Andhra Pradesh,300000,300000.0,425009.42, completed ,730,2023-05-19,2025-05-18,2025-05-29,Zilla Parishad,community hall,100.0
+KA2375,Belagavi Constituency,Belagavi,Karnataka,750000,750000.0,463562.45,completed,730,2023-05-24,19-05-2025,2025-09-11,Jal Nigam,school,100.0
+UT2246,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,750000.0,701702.31,ongoing,545,28-09-2023,29-03-2025,,Zilla Parishad,drinking water,38.4
+UT2240,Varanasi Constituency,Varanasi,Uttar Pradesh,1000000,0,0,recommended,180,2023-09-13,2024-03-14,,Zilla Parishad,school,
+TA2030,Madurai Constituency,Madurai,Tamil Nadu,200000,100000.0,89003.72,ongoing,90,2024-04-05,2024-07-03,,Zilla Parishad,community hall,49.5
+BAD1271,,,,400000,,0,ongoing,,,,,,road,
+BI1929,Muzaffarpur Constituency, Muzaffarpur,Bihar,500000,0,0,stalled,90,2023-11-16,2024-02-18,,,electricity,96.2
+KA2329,Belagavi Constituency,Belagavi,Karnataka,2000000,2000000.0,3372252.21,SANCTIONED,365,2023-10-26,2024-10-26,,Zilla Parishad,electricity,
+TA2280,Chennai Constituency,Chennai,Tamil Nadu,2000000,2000000.0,1031589.03,completed,180,2023-01-09,2023-07-04,30-09-2023,Jal Nigam,school,100.0
+AN2177,Visakhapatnam Constituency, Visakhapatnam,Andhra Pradesh,1000000,0,0,stalled,545,18-02-2024,13-08-2025,,Jal Nigam,irrigation,15.6
+TA2225,Chennai Constituency, Chennai,Tamil Nadu,750000,750000.0,523773.2, sanctioned ,365,2023-04-21,2024-04-16,,Rural Dev Dept,drinking water,
+TA2088,Coimbatore Constituency,Coimbatore,Tamil Nadu,750000,375000.0,338733.62,completed,90,2024-06-27,2024-09-20,2025-01-09,,sanitation,100.0
+KA1973,Mysuru Constituency,Mysuru,Karnataka,2000000,2000000.0,1248753.79,ONGOING,90,2024-02-29,24-05-2024,,PWD,school,44.8
+TA2203,Coimbatore Constituency,Coimbatore,Tamil Nadu,2000000,1000000.0,400818.19,completed,180,2024-01-15,2024-07-18,14-10-2024,PWD,community hall,100.0
+BI2046,Gaya Constituency,Gaya,Bihar,1500000,1500000.0,1406020.15,recommended,90,2023-08-26,27-11-2023,,Zilla Parishad,drinking water,
+AN2331,Krishna Constituency,Krishna,Andhra Pradesh,2000000,2000000.0,1378930.06,completed,730,17-06-2023,2025-06-20,2025-06-25,Jal Nigam,sanitation,100.0
+RA2339,Jodhpur Constituency,Jodhpur,Rajasthan,200000,200000.0,91753.62,ongoing,270,2023-05-30,2024-02-22,,PWD,community hall,98.2
+KE1920,Ernakulam Constituency,Ernakulam,Kerala,300000,300000.0,272642.75,completed,90,2024-11-11,2025-02-09,2025-06-18,Zilla Parishad,community hall,100.0
+AN2139,Krishna Constituency,Krishna,Andhra Pradesh,300000,0,0,completed,,2023-04-12,04-10-2023,2024-01-28,Jal Nigam,electricity,100.0
+KE1913,Ernakulam Constituency,Ernakulam,Kerala,2000000,1000000.0,771628.91,completed,90,2024-08-06,2024-11-02,28-02-2025,Rural Dev Dept,electricity,100.0
+KE1913,Ernakulam Constituency,Ernakulam,Kerala,2000000,1000000.0,1003117.58,completed,90,2024-08-06,2024-11-02,28-02-2025,Rural Dev Dept,electricity,100.0
+AN2151,Visakhapatnam Constituency, Visakhapatnam,Andhra Pradesh,300000,150000.0,526008.62,stalled,365,2024-07-28,2025-07-23,,Rural Dev Dept,electricity,37.4
+KA2260,Belagavi Constituency,Belagavi,Karnataka,500000,250000.0,117095.39,sanctioned,545,2023-02-02,2024-07-27,,Zilla Parishad,electricity,
+AN2099,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,2000000,0,0,recommended,270,29-05-2024,19-02-2025,,Zilla Parishad,drinking water,
+RA2215,Jodhpur Constituency,Jodhpur,Rajasthan,300000,0,0,recommended,270,2024-05-19,2025-02-09,,,road,
+MA2102,Pune Constituency,Pune,Maharashtra,500000,500000.0,785854.73,sanctioned,730,2024-11-02,2026-10-31,,Rural Dev Dept,sanitation,
+BI2359,Muzaffarpur Constituency,Muzaffarpur,Bihar,1500000,1500000.0,1584219.19,RECOMMENDED,270,2023-06-16,2024-03-09,,Zilla Parishad,irrigation,
+AN2121,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,1500000.0,934076.88,stalled,90,2024-07-08,2024-10-01,,,drinking water,38.4
+KE2070,Ernakulam Constituency,Ernakulam,Kerala,2000000,2000000.0,1621295.76,stalled,730,2024-08-31,04-09-2026,,,electricity,53.4
+RA2187,Jaipur Constituency,Jaipur,Rajasthan,1500000,0,0,recommended,90,11-09-2024,2024-12-07,,PWD,irrigation,
+BI2049,Gaya Constituency,Gaya,Bihar,200000,0,0,recommended,180,14-05-2023,08-11-2023,,Jal Nigam,electricity,
+AN2109,Guntur Constituency,Guntur,Andhra Pradesh,300000,0,452275.71, sanctioned ,545,2024-08-29,2026-02-22,,Rural Dev Dept,road,
+UT2239,Varanasi Constituency,Varanasi,Uttar Pradesh,1500000,1500000.0,2178783.48,recommended,180,25-09-2023,2024-03-26,,Zilla Parishad,road,
+MA2190,Pune Constituency,Pune,Maharashtra,750000,750000.0,1329369.91,completed,730,2023-03-13,2025-03-15,11-04-2025,,electricity,100.0
+RA1946,Jodhpur Constituency,Jodhpur,Rajasthan,1500000,0,0,completed,180,03-11-2023,2024-04-26,2024-04-07,Zilla Parishad,sanitation,100.0
+MA2186,Nagpur Constituency,Nagpur,Maharashtra,500000,,620385.59,ongoing,545,2023-01-11,14-07-2024,,,irrigation,47.0
+RA2079,Jaipur Constituency,Jaipur,Rajasthan,300000,300000.0,127093.03,stalled,,2024-01-02,2024-07-01,,Jal Nigam,drinking water,54.7
+TA1988,Chennai Constituency,Chennai,Tamil Nadu,1000000,1000000.0,1368813.8,sanctioned,6,20-08-2024,16-02-2025,,Rural Dev Dept,electricity,
+BI2118,Patna Constituency,Patna,Bihar,1000000,0,0,stalled,270,2023-12-15,2024-09-06,,Jal Nigam,irrigation,96.1
+AN2042,Guntur Constituency,Guntur,Andhra Pradesh,500000,500000.0,372995.5,ongoing,545,07-03-2023,2024-09-01,,PWD,drinking water,16.9
+KE1940,Ernakulam Constituency,Ernakulam,Kerala,750000,0,1247646.57, completed ,90,2023-11-19,2024-02-16,2024-04-08,PWD,drinking water,100.0
+WE2196,Howrah Constituency, Howrah,West Bengal,500000,500000.0,356926.06,completed,730,2023-05-10,2025-05-07,2025-05-13,PWD,community hall,100.0
+KA2166,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,500000,500000.0,388160.15,completed,365,06-02-2023,2024-02-11,2024-02-15,,road,100.0
+KA2159,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,750000,0,0.0,ONGOING,270,2024-10-26,2025-07-20,,Zilla Parishad,sanitation,21.1
+BAD3690,,,,400000,,0,ongoing,,,,,,road,
+RA1966,Jodhpur Constituency,Jodhpur,Rajasthan,500000,,141201.05,completed,90,2024-04-25,2024-07-26,2024-12-04,,sanitation,100.0
+TA2191,Coimbatore Constituency,Coimbatore,Tamil Nadu,2000000,2000000.0,1592880.91,sanctioned,180,2024-07-21,12-01-2025,,PWD,drinking water,
+AN1995,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,500000,500000.0,361573.38, ongoing ,730,2024-05-05,2026-05-03,,PWD,road,94.0
+UT1968,Lucknow Constituency,Lucknow,Uttar Pradesh,750000,750000.0,591287.41,ONGOING,730,2024-09-04,2026-08-30,,Rural Dev Dept,road,15.9
+AN2054,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,200000,,59904.04,stalled,180,21-01-2023,2023-07-23,,Zilla Parishad,electricity,65.3
+KA2107,Belagavi Constituency,Belagavi,Karnataka,2000000,2000000.0,1254222.22, stalled ,545,2024-08-06,2026-01-30,,Jal Nigam,community hall,62.9
+AN2163,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,2000000,2000000.0,1811971.56, ongoing ,270,24-01-2024,16-10-2024,,,irrigation,15.8
+TA1983,Madurai Constituency,Madurai,Tamil Nadu,2000000,0,0,sanctioned,270,2024-10-19,2025-07-12,,PWD,electricity,
+BI2048,Muzaffarpur Constituency,Muzaffarpur,Bihar,2000000,2000000.0,3253388.88, stalled ,90,2023-08-09,2023-11-07,,,drinking water,97.2
+AN2273,Guntur Constituency,Guntur,Andhra Pradesh,200000,100000.0,90335.05, recommended ,270,2023-07-30,2024-04-23,,Zilla Parishad,sanitation,
+AN2024,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,200000,,71266.89,ONGOING,270,2023-12-18,15-09-2024,,Rural Dev Dept,irrigation,41.3
+BI2389,Muzaffarpur Constituency,Muzaffarpur,Bihar,200000,0,0,COMPLETED,270,2023-08-01,2024-04-28,2024-04-23,Zilla Parishad,school,100.0
+UT2090,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,750000.0,351932.36,sanctioned,545,2024-07-09,10-01-2026,,Jal Nigam,electricity,
+WE2100,Kolkata Constituency, Kolkata,West Bengal,500000,250000.0,101672.53,ONGOING,730,25-10-2024,25-10-2026,,Rural Dev Dept,drinking water,88.7
+MA2084,Pune Constituency,Pune,Maharashtra,500000,500000.0,880311.43,sanctioned,545,2024-09-19,13-03-2026,,,drinking water,
+KA2019,Mysuru Constituency,Mysuru,Karnataka,1000000,500000.0,243780.45,completed,180,2023-05-23,2023-11-18,2024-01-04,Zilla Parishad,school,100.0
+RA2069,Jaipur Constituency,Jaipur,Rajasthan,2000000,0,0,sanctioned,270,2024-09-14,2025-06-10,,,sanitation,
+WE2327,Howrah Constituency, Howrah,West Bengal,300000,0,0,STALLED,270,2023-05-11,2024-02-05,,Zilla Parishad,community hall,61.9
+KE1915,Ernakulam Constituency,Ernakulam,Kerala,200000,100000.0,56905.38,ongoing,90,20-04-2023,2023-07-22,,Rural Dev Dept,road,29.0
+UT2259,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,2000000,2000000.0,903430.28, sanctioned ,545,2023-08-01,26-01-2025,,,road,
+UT2212,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,750000.0,500509.22,recommended,270,20-12-2023,2024-09-15,,Jal Nigam,irrigation,
+WE1938,Howrah Constituency, Howrah,West Bengal,500000,500000.0,350141.65, recommended ,365,08-11-2023,2024-11-08,,,community hall,
+WE2174,Kolkata Constituency,Kolkata,West Bengal,1500000,0,0, ongoing ,545,2024-04-17,2025-10-15,,,electricity,31.5
+AN2336,Guntur Constituency,Guntur,Andhra Pradesh,300000,300000.0,145173.91,recommended,545,2023-10-28,2025-04-30,,PWD,drinking water,
+BI2389,Muzaffarpur Constituency,Muzaffarpur,Bihar,200000,0,0,COMPLETED,270,2023-08-01,2024-04-28,2024-04-23,Zilla Parishad,school,100.0
+UT1969,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,500000,500000.0,393047.98, sanctioned ,545,28-03-2023,2024-09-22,,,school,
+AN2364,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,2000000,0,2936034.47,sanctioned,730,31-05-2023,2025-05-30,,Zilla Parishad,drinking water,
+UT1941,Lucknow Constituency,Lucknow,Uttar Pradesh,750000,750000.0,619402.27, recommended ,90,2024-10-07,2025-01-09,,Zilla Parishad,sanitation,
+AN1975,Guntur Constituency, Guntur,Andhra Pradesh,1500000,750000.0,408253.91,sanctioned,270,2024-03-15,2024-12-05,,,road,
+AN2162,Krishna Constituency,Krishna,Andhra Pradesh,300000,0,0, stalled ,545,2023-11-02,30-04-2025,,Jal Nigam,irrigation,14.4
+AN2293,Krishna Constituency, Krishna,Andhra Pradesh,1500000,1500000.0,673266.93,sanctioned,545,2024-08-21,2026-02-19,,Jal Nigam,drinking water,
+KA2035,Belagavi Constituency,Belagavi,Karnataka,200000,,129821.91,ongoing,90,2024-01-16,20-04-2024,,Zilla Parishad,community hall,45.7
+KE2281,Kozhikode Constituency,Kozhikode,Kerala,1500000,750000.0,2049612.8, recommended ,180,15-10-2024,2025-04-14,,PWD,drinking water,
+AN1967,Krishna Constituency,Krishna,Andhra Pradesh,750000,375000.0,163921.58,ongoing,545,2024-05-02,2025-11-01,,,community hall,19.3
+KA2019,Mysuru Constituency,Mysuru,Karnataka,1000000,500000.0,243780.45,completed,180,2023-05-23,2023-11-18,2024-01-04,Zilla Parishad,school,100.0
+BI1923,Patna Constituency,Patna,Bihar,2000000,2000000.0,2699037.94,sanctioned,180,2024-06-14,2024-12-13,,,electricity,
+BI2307,Patna Constituency, Patna,Bihar,750000,750000.0,645201.41,completed,90,04-09-2024,2024-11-28,10-11-2024,PWD,electricity,100.0
+TA2286,Chennai Constituency,Chennai,Tamil Nadu,200000,200000.0,286070.4,sanctioned,545,2024-11-06,2026-05-09,,Zilla Parishad,road,
+TA2249,Coimbatore Constituency,Coimbatore,Tamil Nadu,2000000,2000000.0,3563724.62,completed,730,03-10-2023,06-10-2025,2026-02-21,Rural Dev Dept,electricity,100.0
+KA1902,Mysuru Constituency,Mysuru,Karnataka,750000,750000.0,396891.19, recommended ,180,08-03-2024,2024-09-04,,PWD,sanitation,
+RA2338,Jodhpur Constituency,Jodhpur,Rajasthan,1500000,750000.0,572225.11,ONGOING,18,04-11-2024,08-05-2026,,PWD,irrigation,47.8
+BI2306,Muzaffarpur Constituency,Muzaffarpur,Bihar,500000,0,829076.71,STALLED,24,05-02-2024,2026-02-01,,,irrigation,71.0
+UT1925,Varanasi Constituency,Varanasi,Uttar Pradesh,1000000,1000000.0,750447.65,completed,,2023-07-31,2023-10-30,2024-01-07,Jal Nigam,community hall,100.0
+RA1960,Jaipur Constituency,Jaipur,Rajasthan,1500000,1500000.0,915921.08,RECOMMENDED,180,2023-10-07,03-04-2024,,,drinking water,
+KE2178,Kozhikode Constituency,Kozhikode,Kerala,750000,750000.0,362580.99,completed,365,12-07-2024,2025-07-10,26-11-2025,Jal Nigam,irrigation,100.0
+KA2035,Belagavi Constituency,Belagavi,Karnataka,200000,,99863.01,ongoing,90,2024-01-16,20-04-2024,,Zilla Parishad,community hall,45.7
+MA2378,Pune Constituency,Pune,Maharashtra,300000,150000.0,65616.02,ongoing,18,2023-02-02,04-08-2024,,Zilla Parishad,road,82.8
+AN1918,Krishna Constituency,Krishna,Andhra Pradesh,2000000,2000000.0,1754414.6, sanctioned ,180,16-04-2024,2024-10-13,,Jal Nigam,irrigation,
+RA2265,Jodhpur Constituency,Jodhpur,Rajasthan,750000,375000.0,313147.2,ONGOING,90,2023-02-07,2023-05-11,,Zilla Parishad,road,76.6
+BI1907,Muzaffarpur Constituency,Muzaffarpur,Bihar,1000000,0,1417788.46,stalled,270,2024-05-15,2025-02-04,,,electricity,98.7
+AN2040,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,,391438.87,ongoing,90,2023-11-14,2024-02-08,,Zilla Parishad,road,82.7
+AN1930,Krishna Constituency,Krishna,Andhra Pradesh,500000,500000.0,454872.69,ONGOING,90,2024-06-02,2024-09-05,,Rural Dev Dept,community hall,84.0
+TA2298,Coimbatore Constituency,Coimbatore,Tamil Nadu,500000,,0,ongoing,180,2024-03-15,2024-09-12,,Rural Dev Dept,drinking water,50.5
+KE2278,Kozhikode Constituency,Kozhikode,Kerala,200000,100000.0,97445.03,stalled,270,2024-03-18,2024-12-11,,Jal Nigam,community hall,38.6
+MA2296,Nagpur Constituency,Nagpur,Maharashtra,1000000,0,1222968.83,ONGOING,180,11-04-2023,2023-10-04,,Zilla Parishad,electricity,28.0
+BI1979,Muzaffarpur Constituency,Muzaffarpur,Bihar,1500000,1500000.0,991446.45, ongoing ,365,13-02-2023,13-02-2024,,,irrigation,67.6
+BI2160,Muzaffarpur Constituency,Muzaffarpur,Bihar,500000,250000.0,146427.75,sanctioned,180,2023-07-03,25-12-2023,,Jal Nigam,sanitation,
+WE2193,Kolkata Constituency,Kolkata,West Bengal,300000,,102409.77, recommended ,90,2023-05-25,2023-08-25,,Jal Nigam,community hall,
+KA2297,Belagavi Constituency,Belagavi,Karnataka,200000,200000.0,170936.73,ongoing,270,18-02-2024,15-11-2024,,,electricity,11.1
+BI2145,Patna Constituency,Patna,Bihar,2000000,1000000.0,582870.04, stalled ,90,2024-10-11,2025-01-14,,,community hall,13.7
+TA1972,Chennai Constituency,Chennai,Tamil Nadu,1000000,1000000.0,431307.88,sanctioned,180,11-09-2024,07-03-2025,,Jal Nigam,community hall,
+WE2120,Kolkata Constituency,Kolkata,West Bengal,300000,300000.0,290481.26,ongoing,270,12-08-2023,12-05-2024,,,school,71.5
+KE2261,Ernakulam Constituency, Ernakulam,Kerala,200000,0,0,completed,365,2023-04-24,19-04-2024,06-10-2024,Jal Nigam,electricity,100.0
+TA2135,Chennai Constituency,Chennai,Tamil Nadu,2000000,1000000.0,492995.17,recommended,90,2024-08-18,18-11-2024,,Rural Dev Dept,irrigation,
+RA2311,Jaipur Constituency,Jaipur,Rajasthan,200000,0,0.0,sanctioned,270,2024-05-25,18-02-2025,,Rural Dev Dept,irrigation,
+KA2302,Bengaluru Urban Constituency, Bengaluru Urban,Karnataka,200000,100000.0,59733.49,completed,90,2024-02-13,2024-05-17,2024-11-09,Jal Nigam,community hall,100.0
+RA2349,Jaipur Constituency,Jaipur,Rajasthan,300000,150000.0,82261.89, sanctioned ,270,28-04-2023,2024-01-22,,,irrigation,
+AN2353,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1000000,1000000.0,492203.41,ongoing,730,2024-04-30,2026-04-28,,PWD,sanitation,21.5
+TA2299,Chennai Constituency,Chennai,Tamil Nadu,2000000,2000000.0,1906573.03,ongoing,545,2023-01-24,26-07-2024,,Jal Nigam,road,23.8
+KE2114,Ernakulam Constituency,Ernakulam,Kerala,750000,375000.0,274855.06,completed,545,2024-07-24,2026-01-22,2026-02-06,Zilla Parishad,road,100.0
+WE2105,Howrah Constituency,Howrah,West Bengal,1500000,1500000.0,2127479.0,SANCTIONED,365,2024-05-28,31-05-2025,,Zilla Parishad,drinking water,
+UT1959,Lucknow Constituency,Lucknow,Uttar Pradesh,1000000,1000000.0,794041.78,ONGOING,90,2024-08-14,2024-11-15,,,community hall,30.2
+TA2188,Madurai Constituency,Madurai,Tamil Nadu,1500000,1500000.0,944519.1,ONGOING,180,2023-03-17,2023-09-12,,Zilla Parishad,irrigation,39.9
+TA2064,Madurai Constituency,Madurai,Tamil Nadu,300000,150000.0,110641.54,stalled,545,2024-08-19,11-02-2026,,Rural Dev Dept,sanitation,19.1
+KA2144,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,1500000,0,0,ongoing,365,27-06-2023,28-06-2024,,Rural Dev Dept,school,72.1
+KE2171,Kozhikode Constituency, Kozhikode,Kerala,2000000,2000000.0,1870691.73,STALLED,180,25-06-2023,2023-12-18,,,community hall,58.7
+AN1919,Guntur Constituency,Guntur,Andhra Pradesh,200000,200000.0,292147.65,sanctioned,545,29-09-2023,2025-03-22,,PWD,community hall,
+WE1991,Kolkata Constituency,Kolkata,West Bengal,750000,750000.0,1087443.12,completed,90,2024-01-13,2024-04-12,01-09-2024,PWD,community hall,100.0
+TA2047,Chennai Constituency,Chennai,Tamil Nadu,1500000,1500000.0,1982441.36, ongoing ,365,2023-10-06,03-10-2024,,Rural Dev Dept,sanitation,80.2
+BI2032,Gaya Constituency,Gaya,Bihar,1500000,750000.0,604305.55,sanctioned,180,2023-11-26,22-05-2024,,,irrigation,
+KE2098,Kozhikode Constituency,Kozhikode,Kerala,500000,0,0,recommended,90,2023-02-25,23-05-2023,,PWD,community hall,
+TA2385,Madurai Constituency,Madurai,Tamil Nadu,1500000,750000.0,2511459.12,recommended,365,2023-02-03,2024-01-29,,Jal Nigam,drinking water,
+AN2087,Krishna Constituency,Krishna,Andhra Pradesh,300000,300000.0,155265.86,SANCTIONED,730,2024-02-24,2026-02-19,,PWD,irrigation,
+TA2058,Chennai Constituency,Chennai,Tamil Nadu,200000,200000.0,175903.35,STALLED,730,19-08-2023,15-08-2025,,PWD,school,13.0
+KA2066,Belagavi Constituency,Belagavi,Karnataka,1500000,,1422089.52,stalled,730,2023-04-02,2025-03-30,,,community hall,46.6
+AN2242,Krishna Constituency,Krishna,Andhra Pradesh,750000,750000.0,376555.3,STALLED,270,2023-06-02,23-02-2024,,Zilla Parishad,drinking water,61.1
+UT2317,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,0,0,SANCTIONED,270,11-09-2024,10-06-2025,,Jal Nigam,sanitation,
+BI1984,Muzaffarpur Constituency,Muzaffarpur,Bihar,300000,300000.0,165108.96,sanctioned,270,15-06-2024,2025-03-11,,Zilla Parishad,drinking water,
+MA2147,Nagpur Constituency,Nagpur,Maharashtra,300000,150000.0,111841.64,RECOMMENDED,270,2024-03-16,2024-12-11,,Zilla Parishad,school,
+TA2112,Madurai Constituency,Madurai,Tamil Nadu,500000,0,0,stalled,365,2023-08-23,24-08-2024,,PWD,school,44.3
+BI2154,Patna Constituency,Patna,Bihar,300000,300000.0,194527.23,sanctioned,730,2023-01-31,30-01-2025,,Zilla Parishad,road,
+AN2313,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,300000,0,0,sanctioned,180,09-05-2023,01-11-2023,,Jal Nigam,drinking water,
+BI2194,Patna Constituency,Patna,Bihar,200000,200000.0,131145.38,stalled,545,2023-08-14,2025-02-05,,PWD,community hall,83.0
+KA2031,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,2000000,0,0,stalled,270,2024-06-29,25-03-2025,,Jal Nigam,road,25.2
+UT1952,Lucknow Constituency,Lucknow,Uttar Pradesh,1500000,1500000.0,1043362.16,RECOMMENDED,180,2023-02-16,2023-08-10,,Jal Nigam,community hall,
+KA2263,Mysuru Constituency,Mysuru,Karnataka,300000,300000.0,289873.25,completed,365,2024-04-14,2025-04-17,2025-10-07,PWD,irrigation,100.0
+TA2384,Coimbatore Constituency,Coimbatore,Tamil Nadu,1000000,1000000.0,876250.73,recommended,180,2024-04-25,2024-10-18,,Rural Dev Dept,irrigation,
+KE1993,Kozhikode Constituency,Kozhikode,Kerala,300000,150000.0,88237.73,stalled,270,2024-11-09,2025-08-08,,Zilla Parishad,drinking water,25.6
+KE1942,Kozhikode Constituency, Kozhikode,Kerala,500000,500000.0,657183.11, completed ,365,2023-09-07,08-09-2024,28-12-2024,Rural Dev Dept,electricity,100.0
+WE2356,Kolkata Constituency,Kolkata,West Bengal,300000,,168678.27,recommended,730,2023-06-01,2025-05-30,,Rural Dev Dept,school,
+RA2071,Jaipur Constituency,Jaipur,Rajasthan,750000,750000.0,433022.08,sanctioned,730,2023-01-27,2025-01-31,,,irrigation,
+AN2104,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,0,0,recommended,,2024-10-08,2026-04-01,,Zilla Parishad,school,
+WE2227,Kolkata Constituency,Kolkata,West Bengal,1500000,1500000.0,950172.44,sanctioned,365,2024-03-17,14-03-2025,,PWD,sanitation,
+KE2247,Kozhikode Constituency,Kozhikode,Kerala,750000,750000.0,619063.11,recommended,365,2023-02-11,13-02-2024,,Zilla Parishad,irrigation,
+UT2170,Lucknow Constituency,Lucknow,Uttar Pradesh,200000,200000.0,143873.1,sanctioned,270,2023-07-25,18-04-2024,,,school,
+TA2017,Coimbatore Constituency,Coimbatore,Tamil Nadu,750000,375000.0,281821.9,ongoing,545,2024-01-20,19-07-2025,,Jal Nigam,school,44.2
+RA1914,Jaipur Constituency,Jaipur,Rajasthan,1000000,0,0,recommended,545,2023-08-07,2025-02-05,,,road,
+TA2377,Coimbatore Constituency,Coimbatore,Tamil Nadu,200000,0,0,SANCTIONED,730,2023-04-21,2025-04-21,,Rural Dev Dept,sanitation,
+RA2069,Jaipur Constituency,Jaipur,Rajasthan,2000000,0,0.0,sanctioned,270,2024-09-14,2025-06-10,,,sanitation,
+MA2325,Pune Constituency,Pune,Maharashtra,1500000,750000.0,347461.35, sanctioned ,180,2023-06-24,2023-12-26,,PWD,irrigation,
+UT2209,Varanasi Constituency,Varanasi,Uttar Pradesh,1000000,500000.0,210406.73,completed,270,2024-01-14,2024-10-07,29-10-2024,Jal Nigam,school,100.0
+MA2361,Pune Constituency,Pune,Maharashtra,2000000,2000000.0,1127165.79,sanctioned,270,2023-12-06,2024-09-03,,Zilla Parishad,road,
+RA2096,Jaipur Constituency,Jaipur,Rajasthan,300000,0,0,ONGOING,365,2023-04-27,27-04-2024,,Zilla Parishad,school,75.2
+UT2290,Varanasi Constituency,Varanasi,Uttar Pradesh,2000000,2000000.0,888477.39,SANCTIONED,365,2023-07-08,02-07-2024,,PWD,drinking water,
+BAD4064,,,,400000,,0,ongoing,,,,,,road,
+WE2200,Howrah Constituency,Howrah,West Bengal,200000,200000.0,171240.75,sanctioned,90,2024-04-21,2024-07-22,,Zilla Parishad,road,
+UT2241,Varanasi Constituency,Varanasi,Uttar Pradesh,2000000,2000000.0,1851668.02,sanctioned,90,2024-02-29,2024-05-29,,Jal Nigam,drinking water,
+WE2271,Howrah Constituency,Howrah,West Bengal,500000,500000.0,641556.69,ongoing,365,2024-05-01,2025-05-05,,Jal Nigam,school,67.3
+UT2223,Lucknow Constituency,Lucknow,Uttar Pradesh,750000,750000.0,492582.75,completed,6,2024-07-21,2025-01-18,2025-03-03,PWD,road,100.0
+KA2029,Mysuru Constituency,Mysuru,Karnataka,500000,0,0,ongoing,180,2024-07-04,2024-12-30,,PWD,electricity,51.2
+KA1954,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,1500000,0,0,recommended,270,2023-09-07,2024-05-31,,,road,
+RA2128,Jodhpur Constituency,Jodhpur,Rajasthan,750000,750000.0,359074.7, sanctioned ,180,2023-10-18,2024-04-17,,Rural Dev Dept,community hall,
+BI2350,Gaya Constituency,Gaya,Bihar,750000,0,989839.57,ongoing,180,30-05-2023,2023-11-27,,PWD,school,87.8
+BI2279,Gaya Constituency,Gaya,Bihar,1500000,0,0,stalled,365,05-01-2023,31-12-2023,,Jal Nigam,irrigation,47.2
+MA2289,Pune Constituency,Pune,Maharashtra,1500000,1500000.0,902094.44, stalled ,730,2023-12-06,2025-12-09,,Jal Nigam,community hall,37.0
+KA2143,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,2000000,2000000.0,1484801.85, recommended ,730,10-10-2023,12-10-2025,,Rural Dev Dept,road,
+BI2328,Patna Constituency,Patna,Bihar,750000,0,0,stalled,365,2023-11-20,16-11-2024,,Rural Dev Dept,school,36.7
+KA2233,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,500000,500000.0,453236.6,sanctioned,180,04-06-2023,06-12-2023,,,drinking water,
+MA2399,Nagpur Constituency,Nagpur,Maharashtra,300000,300000.0,497916.36,completed,270,26-11-2023,2024-08-24,20-09-2024,Zilla Parishad,sanitation,100.0
+BI2310,Gaya Constituency,Gaya,Bihar,500000,250000.0,191280.0,ongoing,730,2024-05-08,2026-05-04,,Rural Dev Dept,drinking water,62.7
+AN2324,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,500000,500000.0,413582.59,completed,,13-04-2023,2025-04-13,2025-05-28,Jal Nigam,drinking water,100.0
+RA2116,Jaipur Constituency,Jaipur,Rajasthan,200000,100000.0,88234.59,COMPLETED,365,11-01-2023,09-01-2024,14-07-2024,Zilla Parishad,road,100.0
+UT2073,Varanasi Constituency,Varanasi,Uttar Pradesh,500000,500000.0,459918.01, stalled ,270,19-04-2024,10-01-2025,,Zilla Parishad,drinking water,62.5
+RA2020,Jaipur Constituency,Jaipur,Rajasthan,750000,750000.0,1044299.32,completed,270,2024-03-16,2024-12-16,17-04-2025,Jal Nigam,school,100.0
+KE2129,Kozhikode Constituency,Kozhikode,Kerala,1000000,500000.0,463188.11,stalled,545,2024-04-12,2025-10-14,,Zilla Parishad,school,49.1
+UT2211,Varanasi Constituency,Varanasi,Uttar Pradesh,200000,100000.0,45015.37,stalled,545,2023-08-16,10-02-2025,,Rural Dev Dept,sanitation,86.5
+BI2022,Gaya Constituency, Gaya,Bihar,1500000,1500000.0,1080930.66,completed,90,2024-04-04,2024-07-07,07-10-2024,Zilla Parishad,irrigation,100.0
+KA2391,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,200000,200000.0,137788.98,sanctioned,180,2023-03-27,2023-09-20,,Zilla Parishad,school,
+KA2067,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,2000000,0,0,sanctioned,90,12-04-2024,2024-07-06,,,sanitation,
+BI2285,Patna Constituency, Patna,Bihar,1500000,1500000.0,939655.62,stalled,90,2023-03-29,22-06-2023,,PWD,community hall,90.1
+TA2131,Madurai Constituency, Madurai,Tamil Nadu,1500000,750000.0,539374.92,STALLED,545,2023-10-06,2025-04-02,,Jal Nigam,drinking water,34.2
+KA2366,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,2000000,0,0,ongoing,545,2024-04-30,2025-10-24,,Jal Nigam,drinking water,15.4
+AN2336,Guntur Constituency,Guntur,Andhra Pradesh,300000,300000.0,145173.91,recommended,545,2023-10-28,2025-04-30,,PWD,drinking water,
+UT2245,Lucknow Constituency,Lucknow,Uttar Pradesh,750000,750000.0,376439.92,sanctioned,545,12-02-2023,2024-08-14,,Zilla Parishad,sanitation,
+TA2274,Chennai Constituency,Chennai,Tamil Nadu,500000,0,0,RECOMMENDED,90,08-07-2024,2024-10-03,,Zilla Parishad,road,
+BI2044,Muzaffarpur Constituency,Muzaffarpur,Bihar,300000,0,0, completed ,90,2024-04-21,2024-07-19,2025-01-03,Zilla Parishad,irrigation,100.0
+TA2377,Coimbatore Constituency,Coimbatore,Tamil Nadu,200000,0,0,SANCTIONED,730,2023-04-21,2025-04-21,,Rural Dev Dept,sanitation,
+MA2346,Pune Constituency,Pune,Maharashtra,300000,0,447734.19,stalled,545,2023-06-07,04-12-2024,,Jal Nigam,irrigation,24.0
+BI2262,Patna Constituency,Patna,Bihar,300000,300000.0,194834.97,ongoing,180,2023-05-06,2023-10-31,,Zilla Parishad,drinking water,79.2
+KE1971,Kozhikode Constituency,Kozhikode,Kerala,2000000,1000000.0,981753.16,completed,90,2024-02-25,25-05-2024,2024-10-15,,sanitation,100.0
+BI2252,Gaya Constituency,Gaya,Bihar,750000,0,0,ONGOING,365,23-03-2024,19-03-2025,,PWD,road,53.0
+KE2330,Ernakulam Constituency, Ernakulam,Kerala,2000000,1000000.0,684052.97,recommended,545,2024-02-06,2025-08-04,,PWD,drinking water,
+MA2344,Nagpur Constituency,Nagpur,Maharashtra,300000,150000.0,64581.59, recommended ,270,2023-05-17,2024-02-14,,Rural Dev Dept,school,
+UT2146,Lucknow Constituency,Lucknow,Uttar Pradesh,2000000,2000000.0,1694378.05,sanctioned,180,2023-12-11,04-06-2024,,Jal Nigam,irrigation,
+BI2009,Patna Constituency,Patna,Bihar,1500000,1500000.0,815397.86,sanctioned,730,2024-09-10,2026-09-08,,Jal Nigam,electricity,
+AN2287,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1000000,500000.0,326302.1,stalled,180,2024-10-14,2025-04-15,,Rural Dev Dept,community hall,75.2
+RA2038,Jaipur Constituency, Jaipur,Rajasthan,1000000,1000000.0,705713.54,recommended,730,05-11-2023,2025-11-02,,,road,
+AN2332,Krishna Constituency, Krishna,Andhra Pradesh,200000,200000.0,151207.09,completed,180,2023-02-23,2023-08-18,2023-11-27,PWD,electricity,100.0
+KA2165,Bengaluru Urban Constituency, Bengaluru Urban,Karnataka,2000000,2000000.0,1054805.52,completed,90,08-12-2023,2024-03-07,2024-06-28,,community hall,100.0
+WE1908,Kolkata Constituency,Kolkata,West Bengal,300000,300000.0,255947.74,stalled,545,09-03-2024,03-09-2025,,PWD,community hall,72.1
+TA2280,Chennai Constituency,Chennai,Tamil Nadu,2000000,2000000.0,1031589.03,completed,180,2023-01-09,2023-07-04,30-09-2023,Jal Nigam,school,100.0
+AN1921,Guntur Constituency,Guntur,Andhra Pradesh,500000,500000.0,339496.46,sanctioned,365,16-08-2024,2025-08-20,,,school,
+TA1953,Madurai Constituency,Madurai,Tamil Nadu,1500000,0,0,completed,545,2024-02-22,19-08-2025,28-07-2025,PWD,electricity,100.0
+MA2122,Pune Constituency,Pune,Maharashtra,1000000,0,0,STALLED,9,2024-02-08,09-11-2024,,Rural Dev Dept,community hall,51.1
+UT2018,Lucknow Constituency,Lucknow,Uttar Pradesh,750000,750000.0,501979.65, ongoing ,90,2023-05-16,10-08-2023,,Jal Nigam,electricity,59.9
+KA2305,Bengaluru Urban Constituency, Bengaluru Urban,Karnataka,750000,0,0,recommended,270,28-04-2023,2024-01-20,,Zilla Parishad,drinking water,
+BI2130,Gaya Constituency, Gaya,Bihar,500000,500000.0,202739.78,completed,545,2023-01-09,09-07-2024,2024-12-19,Jal Nigam,electricity,100.0
+RA1901,Jodhpur Constituency,Jodhpur,Rajasthan,200000,0,0, ongoing ,,2023-08-17,10-02-2024,,Zilla Parishad,irrigation,70.9
+RA2173,Jaipur Constituency,Jaipur,Rajasthan,500000,500000.0,297428.33,COMPLETED,180,2024-11-12,2025-05-11,2025-10-29,Jal Nigam,electricity,100.0
+UT2322,Varanasi Constituency,Varanasi,Uttar Pradesh,2000000,1000000.0,985183.04, ongoing ,730,13-02-2024,13-02-2026,,,school,88.6
+UT2382,Lucknow Constituency,Lucknow,Uttar Pradesh,500000,0,0,completed,730,2024-04-11,12-04-2026,2026-06-26,Rural Dev Dept,electricity,100.0
+AN2179,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,300000,300000.0,211694.68,completed,730,10-09-2024,2026-09-11,2027-01-18,,community hall,100.0
+KA1904,Mysuru Constituency,Mysuru,Karnataka,300000,300000.0,271713.35, completed ,270,2024-10-17,2025-07-17,2025-08-12,Jal Nigam,irrigation,100.0
+KA2337,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,300000,150000.0,97981.35,stalled,270,2023-10-12,05-07-2024,,Zilla Parishad,road,59.5
+RA2255,Jaipur Constituency,Jaipur,Rajasthan,500000,500000.0,633573.75,ongoing,90,2023-05-09,2023-08-04,,Zilla Parishad,road,11.4
+KE2219,Kozhikode Constituency, Kozhikode,Kerala,300000,300000.0,257344.26,SANCTIONED,180,14-05-2023,2023-11-06,,,road,
+BI2334,Gaya Constituency,Gaya,Bihar,200000,200000.0,164089.03,recommended,730,2024-07-04,2026-07-01,,PWD,electricity,
+MA1936,Nagpur Constituency,Nagpur,Maharashtra,750000,750000.0,327103.64,COMPLETED,270,25-08-2024,2025-05-23,10-07-2025,Jal Nigam,sanitation,100.0
+BAD1468,,,,400000,,0,ongoing,,,,,,road,
+KE2026,Kozhikode Constituency,Kozhikode,Kerala,2000000,0,0,STALLED,90,2024-07-03,2024-09-28,,PWD,school,27.7
+RA1985,Jaipur Constituency,Jaipur,Rajasthan,500000,0,0,recommended,3,2023-02-16,2023-05-22,,Rural Dev Dept,sanitation,
+TA1910,Madurai Constituency,Madurai,Tamil Nadu,750000,750000.0,1081179.58,recommended,730,31-10-2024,05-11-2026,,PWD,sanitation,
+AN2060,Krishna Constituency,Krishna,Andhra Pradesh,500000,0,0,COMPLETED,90,2023-10-29,2024-02-01,2024-06-10,Rural Dev Dept,road,100.0
+KA2103,Mysuru Constituency,Mysuru,Karnataka,1500000,1500000.0,1390097.25,ongoing,270,2023-05-18,17-02-2024,,,drinking water,51.7
+KA2123,Belagavi Constituency,Belagavi,Karnataka,300000,300000.0,157895.85,completed,545,18-12-2023,15-06-2025,02-07-2025,Zilla Parishad,community hall,100.0
+BI2394,Gaya Constituency,Gaya,Bihar,2000000,2000000.0,1056526.91,recommended,90,23-11-2023,2024-02-16,,,electricity,
+AN1906,Guntur Constituency,Guntur,Andhra Pradesh,1500000,0,2191288.73,stalled,270,2024-10-18,15-07-2025,,,community hall,50.8
+UT1969,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,500000,500000.0,393047.98, sanctioned ,545,28-03-2023,2024-09-22,,,school,
+UT2115,Varanasi Constituency,Varanasi,Uttar Pradesh,2000000,0,0,sanctioned,365,2024-10-13,2025-10-08,,Jal Nigam,community hall,
+MA2316,Pune Constituency,Pune,Maharashtra,500000,0,0,completed,90,2023-05-08,07-08-2023,2023-11-29,Jal Nigam,irrigation,100.0
+MA2059,Pune Constituency,Pune,Maharashtra,1500000,0,0,completed,730,2023-06-18,21-06-2025,04-01-2026,Jal Nigam,community hall,100.0
+AN1989,Krishna Constituency,Krishna,Andhra Pradesh,1000000,500000.0,335106.31,ongoing,545,2023-10-23,2025-04-16,,Rural Dev Dept,electricity,59.5
+AN1980,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,300000,300000.0,242231.17,ongoing,365,03-08-2024,29-07-2025,,Zilla Parishad,sanitation,95.4
+KA1932,Belagavi Constituency,Belagavi,Karnataka,1000000,0,0,stalled,180,29-03-2023,2023-09-23,,Rural Dev Dept,irrigation,54.0
+AN2220,Krishna Constituency,Krishna,Andhra Pradesh,200000,200000.0,188140.98,RECOMMENDED,90,2023-05-07,2023-08-09,,Zilla Parishad,electricity,
+UT2050,Varanasi Constituency,Varanasi,Uttar Pradesh,200000,0,0,COMPLETED,90,22-06-2023,2023-09-24,13-12-2023,,community hall,100.0
+WE2355,Kolkata Constituency,Kolkata,West Bengal,2000000,2000000.0,3086277.57,COMPLETED,545,06-10-2023,2025-04-01,18-04-2025,Rural Dev Dept,community hall,100.0
+RA2014,Jodhpur Constituency, Jodhpur,Rajasthan,2000000,0,0,RECOMMENDED,365,2024-01-24,2025-01-24,,PWD,community hall,
+WE2224,Howrah Constituency,Howrah,West Bengal,200000,100000.0,90641.77,recommended,270,2023-07-23,2024-04-18,,Jal Nigam,school,
+MA2343,Pune Constituency,Pune,Maharashtra,750000,0,0,completed,90,2024-09-23,2024-12-20,2025-06-20,,sanitation,100.0
+TA2295,Coimbatore Constituency,Coimbatore,Tamil Nadu,1000000,,601824.39,sanctioned,545,2023-02-12,12-08-2024,,PWD,school,
+KA2045,Mysuru Constituency,Mysuru,Karnataka,300000,0,0,COMPLETED,90,2023-08-27,28-11-2023,2024-01-25,Jal Nigam,sanitation,100.0
+WE2390,Howrah Constituency,Howrah,West Bengal,1500000,0,0, recommended ,270,2023-12-22,2024-09-19,,Zilla Parishad,drinking water,
+RA2370,Jodhpur Constituency,Jodhpur,Rajasthan,1500000,1500000.0,842927.6,completed,180,25-02-2023,24-08-2023,2024-01-06,Zilla Parishad,community hall,100.0
+KA2192,Mysuru Constituency, Mysuru,Karnataka,750000,750000.0,734229.23,recommended,545,2024-10-20,17-04-2026,,,sanitation,
+UT2229,Lucknow Constituency,Lucknow,Uttar Pradesh,1000000,0,0, recommended ,270,28-04-2023,2024-01-23,,PWD,school,
+BI2320,Muzaffarpur Constituency,Muzaffarpur,Bihar,300000,0,0, sanctioned ,180,23-09-2023,22-03-2024,,Zilla Parishad,sanitation,
+BI2137,Muzaffarpur Constituency,Muzaffarpur,Bihar,1000000,1000000.0,759207.97,ONGOING,730,2024-04-24,2026-04-23,,,sanitation,87.5
+TA1988,Chennai Constituency,Chennai,Tamil Nadu,1000000,1000000.0,1779457.94,sanctioned,6,20-08-2024,16-02-2025,,Rural Dev Dept,electricity,
+RA1945,Jaipur Constituency,Jaipur,Rajasthan,1500000,,884995.04,recommended,,2024-11-21,2025-08-21,,Zilla Parishad,irrigation,
+KA1902,Mysuru Constituency,Mysuru,Karnataka,750000,750000.0,396891.19, recommended ,180,08-03-2024,2024-09-04,,PWD,sanitation,
+MA2361,Pune Constituency,Pune,Maharashtra,2000000,2000000.0,867050.61,sanctioned,270,2023-12-06,2024-09-03,,Zilla Parishad,road,
+UT2351,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,1500000,1500000.0,2400992.85,sanctioned,270,2023-02-18,2023-11-12,,Rural Dev Dept,road,
+WE2180,Howrah Constituency,Howrah,West Bengal,750000,750000.0,1229081.93,recommended,545,08-05-2024,2025-10-31,,PWD,irrigation,
+WE2231,Howrah Constituency,Howrah,West Bengal,750000,375000.0,1051577.13,stalled,730,2023-04-05,2025-04-08,,,school,16.1
+BI2037,Muzaffarpur Constituency,Muzaffarpur,Bihar,750000,750000.0,499072.74,sanctioned,730,2023-06-05,2025-06-05,,Zilla Parishad,school,
+BI2199,Patna Constituency,Patna,Bihar,300000,300000.0,269351.41, sanctioned ,365,2023-08-14,2024-08-09,,Rural Dev Dept,drinking water,
+KA2066,Belagavi Constituency,Belagavi,Karnataka,1500000,,1422089.52,stalled,730,2023-04-02,2025-03-30,,,community hall,46.6
+AN1997,Krishna Constituency, Krishna,Andhra Pradesh,300000,300000.0,254820.58,sanctioned,90,2024-02-11,2024-05-13,,,community hall,
+AN2363,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,200000,100000.0,80766.0,SANCTIONED,365,27-06-2024,2025-06-27,,Rural Dev Dept,school,
+BI1982,Muzaffarpur Constituency,Muzaffarpur,Bihar,1500000,750000.0,656429.55,ongoing,545,2023-08-18,09-02-2025,,Jal Nigam,irrigation,31.3
+MA1998,Nagpur Constituency,Nagpur,Maharashtra,750000,750000.0,591728.4, sanctioned ,90,2023-12-05,2024-03-01,,Jal Nigam,electricity,
+BI2133,Gaya Constituency,Gaya,Bihar,200000,200000.0,180984.71, completed ,90,2024-07-10,10-10-2024,2024-10-26,PWD,community hall,100.0
+BI2028,Muzaffarpur Constituency,Muzaffarpur,Bihar,1000000,500000.0,385822.99,completed,270,2023-05-24,2024-02-15,2024-04-05,Jal Nigam,sanitation,100.0
+AN2226,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,1500000.0,835498.75,completed,,2023-10-28,2024-04-30,2024-08-05,Jal Nigam,sanitation,100.0
+BI2308,Muzaffarpur Constituency,Muzaffarpur,Bihar,200000,200000.0,102745.7,stalled,90,2023-12-01,2024-02-29,,Jal Nigam,drinking water,28.6
+KA2282,Mysuru Constituency,Mysuru,Karnataka,1000000,,551752.64,sanctioned,730,2023-01-24,2025-01-28,,Jal Nigam,school,
+MA2244,Pune Constituency,Pune,Maharashtra,300000,300000.0,227495.27, completed ,730,2023-08-06,2025-08-06,2026-01-04,PWD,road,100.0
+AN2005,Guntur Constituency, Guntur,Andhra Pradesh,300000,150000.0,120482.13,recommended,90,2024-08-31,24-11-2024,,Rural Dev Dept,drinking water,
+KE2368,Kozhikode Constituency,Kozhikode,Kerala,500000,500000.0,203962.83,COMPLETED,730,2023-12-12,2025-12-13,2026-06-01,Jal Nigam,community hall,100.0
+KE2267,Kozhikode Constituency,Kozhikode,Kerala,1500000,750000.0,621684.51,ongoing,270,2023-10-19,20-07-2024,,Jal Nigam,electricity,70.5
+WE2266,Howrah Constituency, Howrah,West Bengal,500000,250000.0,617983.72,ongoing,730,2024-03-08,2026-03-11,,Zilla Parishad,electricity,43.6
+AN2277,Krishna Constituency,Krishna,Andhra Pradesh,200000,200000.0,352020.82,stalled,270,2024-10-30,24-07-2025,,,community hall,53.4
+KA2113,Belagavi Constituency,Belagavi,Karnataka,300000,0,0,recommended,545,2024-06-19,12-12-2025,,,sanitation,
+KA2381,Belagavi Constituency,Belagavi,Karnataka,1000000,0,0,completed,180,2024-10-11,2025-04-11,2025-08-22,,road,100.0
+BI1996,Patna Constituency,Patna,Bihar,1500000,,696291.36,recommended,545,2023-06-11,2024-12-08,,Zilla Parishad,community hall,
+AN1964,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,750000,0,0,sanctioned,365,26-08-2024,2025-08-27,,Rural Dev Dept,school,
+UT2125,Varanasi Constituency,Varanasi,Uttar Pradesh,500000,500000.0,323528.27,ongoing,545,24-07-2024,2026-01-19,,,sanitation,41.6
+KA2149,Bengaluru Urban Constituency,Bengaluru Urban,Karnataka,1500000,750000.0,580368.9,sanctioned,545,19-06-2024,15-12-2025,,Zilla Parishad,electricity,
+MA1933,Nagpur Constituency,Nagpur,Maharashtra,500000,500000.0,275421.1,STALLED,270,27-12-2023,2024-09-24,,,electricity,20.9
+AN2393,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,750000,375000.0,285873.47,recommended,545,2023-09-17,19-03-2025,,Zilla Parishad,road,
+UT2010,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,500000,500000.0,765993.47,recommended,545,15-08-2023,2025-02-07,,Rural Dev Dept,school,
+KA2107,Belagavi Constituency,Belagavi,Karnataka,2000000,2000000.0,1254222.22, stalled ,545,2024-08-06,2026-01-30,,Jal Nigam,community hall,62.9
+UT2006,Varanasi Constituency,Varanasi,Uttar Pradesh,1000000,1000000.0,648136.12,sanctioned,270,2023-05-27,26-02-2024,,Rural Dev Dept,irrigation,
+TA2134,Chennai Constituency,Chennai,Tamil Nadu,1500000,1500000.0,1094621.95,ongoing,180,06-10-2024,2025-03-30,,PWD,drinking water,21.0
+TA1948,Chennai Constituency,Chennai,Tamil Nadu,1000000,1000000.0,794937.89,stalled,,2023-10-30,2024-07-21,,Rural Dev Dept,electricity,34.7
+BI2004,Muzaffarpur Constituency,Muzaffarpur,Bihar,1000000,1000000.0,987094.41,stalled,180,17-08-2023,2024-02-08,,PWD,road,51.7
+UT2301,Varanasi Constituency,Varanasi,Uttar Pradesh,2000000,2000000.0,1691771.31,completed,180,24-04-2023,2023-10-18,2024-02-02,Zilla Parishad,community hall,100.0
+RA2358,Jaipur Constituency,Jaipur,Rajasthan,1000000,500000.0,442319.89,COMPLETED,180,29-11-2023,26-05-2024,17-06-2024,Zilla Parishad,drinking water,100.0
+UT2158,Lucknow Constituency,Lucknow,Uttar Pradesh,750000,375000.0,182003.91,completed,270,19-09-2024,2025-06-11,2025-11-04,Zilla Parishad,sanitation,100.0
+WE2068,Howrah Constituency,Howrah,West Bengal,1000000,1000000.0,631939.4,ongoing,180,2023-09-22,16-03-2024,,PWD,sanitation,24.7
+BI2275,Patna Constituency,Patna,Bihar,500000,250000.0,107781.72,completed,270,2023-09-22,2024-06-19,17-12-2024,PWD,sanitation,100.0
+AN2080,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,1500000,0,0, ongoing ,,2023-08-25,2025-08-26,,PWD,road,36.6
+AN2176,Visakhapatnam Constituency,Visakhapatnam,Andhra Pradesh,300000,150000.0,100767.7,stalled,730,2023-01-01,2024-12-28,,Jal Nigam,irrigation,36.2
+KA2085,Mysuru Constituency,Mysuru,Karnataka,200000,200000.0,117927.38, completed ,,2024-04-03,2025-09-26,2026-04-03,Rural Dev Dept,community hall,100.0
+KA2291,Belagavi Constituency,Belagavi,Karnataka,1500000,750000.0,379234.84,ONGOING,545,2023-09-09,04-03-2025,,Jal Nigam,drinking water,33.6
+RA2257,Jaipur Constituency,Jaipur,Rajasthan,1500000,,1252152.77,recommended,365,2024-02-14,2025-02-15,,Rural Dev Dept,irrigation,
+TA1947,Coimbatore Constituency,Coimbatore,Tamil Nadu,1500000,1500000.0,1411088.48,COMPLETED,270,2024-11-13,05-08-2025,2026-02-21,Zilla Parishad,sanitation,100.0
+UT1994,Lucknow Constituency,Lucknow,Uttar Pradesh,2000000,2000000.0,1472585.11,sanctioned,730,2024-05-15,2026-05-15,,Zilla Parishad,school,
+UT2246,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,750000,750000.0,701702.31,ongoing,545,28-09-2023,29-03-2025,,Zilla Parishad,drinking water,38.4
+KA2155,Belagavi Constituency,Belagavi,Karnataka,1000000,500000.0,1247685.26,STALLED,180,2023-08-25,2024-02-26,,Zilla Parishad,drinking water,80.2
+KA2309,Belagavi Constituency,Belagavi,Karnataka,1500000,1500000.0,1138982.19, recommended ,90,2023-08-12,2023-11-11,,Jal Nigam,irrigation,
+KA1951,Belagavi Constituency,Belagavi,Karnataka,1000000,0,0, completed ,,2024-11-19,2025-08-21,27-09-2025,PWD,irrigation,100.0
+WE2213,Howrah Constituency,Howrah,West Bengal,1000000,,0,sanctioned,180,2023-11-07,07-05-2024,,Zilla Parishad,community hall,
+KA2371,Mysuru Constituency, Mysuru,Karnataka,500000,0,0,STALLED,545,2023-02-15,2024-08-17,,Rural Dev Dept,electricity,53.5
+BAD5552,,,,400000,,0,ongoing,,,,,,road,
+MA2365,Pune Constituency,Pune,Maharashtra,750000,750000.0,594279.4,completed,545,2024-10-13,2026-04-11,2026-04-16,Zilla Parishad,irrigation,100.0
+UT2270,Kanpur Nagar Constituency,Kanpur Nagar,Uttar Pradesh,500000,500000.0,242641.94,ONGOING,270,2024-05-12,01-02-2025,,Rural Dev Dept,road,63.1
+AN2043,Guntur Constituency,Guntur,Andhra Pradesh,300000,0,0,completed,270,2024-01-28,21-10-2024,05-11-2024,Rural Dev Dept,road,100.0
+MA2101,Nagpur Constituency,Nagpur,Maharashtra,300000,150000.0,76322.22,sanctioned,180,2024-09-23,21-03-2025,,PWD,school,
+BI2300,Patna Constituency,Patna,Bihar,500000,500000.0,253290.83, ongoing ,90,25-06-2023,2023-09-19,,Jal Nigam,road,84.4
+RA2232,Jaipur Constituency,Jaipur,Rajasthan,1000000,1000000.0,917625.88,stalled,180,2023-01-20,2023-07-24,,Jal Nigam,community hall,61.9
+BI1981,Patna Constituency,Patna,Bihar,500000,500000.0,347360.06,completed,180,2024-09-18,2025-03-16,2025-08-10,PWD,community hall,100.0
+KE2013,Kozhikode Constituency,Kozhikode,Kerala,1500000,1500000.0,1972738.85,sanctioned,90,2023-04-09,2023-07-11,,Zilla Parishad,school,
+TA2148,Coimbatore Constituency, Coimbatore,Tamil Nadu,1000000,500000.0,555516.18,COMPLETED,90,2023-08-28,24-11-2023,2024-04-17,PWD,school,100.0
+WE2230,Howrah Constituency,Howrah,West Bengal,200000,200000.0,182431.89,recommended,730,2024-11-22,2026-11-20,,,drinking water,
+TA2319,Chennai Constituency,Chennai,Tamil Nadu,1500000,1500000.0,2496369.27,recommended,180,18-05-2024,2024-11-09,,,road,
+KE2392,Kozhikode Constituency,Kozhikode,Kerala,500000,500000.0,261749.54,recommended,545,24-08-2024,2026-02-19,,Zilla Parishad,community hall,

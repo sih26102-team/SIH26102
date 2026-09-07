@@ -1,5 +1,41 @@
 version: "3.9"
 
-# Services added in Module 2 (Docker Fundamentals build step)
 services:
+  ml-engine:
+    build:
+      context: .
+      dockerfile: cloud-devops/docker/ml.Dockerfile
+    ports:
+      - "8080:8000"
+    container_name: sih26102-ml-engine
+    env_file:
+      - .env
+  
+  # Mokshagna
+  # backend-data-api:
+  #   build:
+  #     context: .
+  #     dockerfile: cloud-devops/docker/backend-data.Dockerfile
+  #   ports:
+  #     - "8001:8000"
+  #   container_name: sih26102-backend-data-api
+  #   # Uncomment once Mokshagna's Dockerfile + app code are real
 
+  # Poornesh
+  # backend-case-management:
+  #   build:
+  #     context: .
+  #     dockerfile: cloud-devops/docker/backend-case.Dockerfile
+  #   ports:
+  #     - "8002:8000"
+  #   container_name: sih26102-backend-case-management
+
+  # Chandana
+  # frontend-dashboard:
+  #   build:
+  #     context: .
+  #     dockerfile: cloud-devops/docker/frontend.Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   container_name: sih26102-frontend-dashboard
+  

@@ -13,11 +13,11 @@ async def root():
     return {"message": "ML Engine server is running..."}
 
 @app.get("/health", tags=["Health"])
-asyn def health_check():
+async def health_check():
     return {"status":"healthy", "service":"ml-engine"}
     
     
-if __name__="__main__":
+if __name__=="__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
     
     
