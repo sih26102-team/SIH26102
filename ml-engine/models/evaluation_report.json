@@ -1,0 +1,14 @@
+{
+    "metadata": {
+        "project": "MPLADS Hybrid Engine",
+        "model_type": "4D Isolation Forest + Rule-Based",
+        "contamination_parameter": 0.05
+    },
+    "metrics": {
+        "total_projects_analyzed": 483,
+        "total_anomalies_flagged": 25,
+        "overall_flag_rate_percent": 5.18,
+        "average_ai_risk_score": 0.1094
+    },
+    "verdict": "PASS"
+}
