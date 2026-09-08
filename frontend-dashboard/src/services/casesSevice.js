@@ -1,16 +1,6 @@
 import { api, USE_MOCK, mockDelay } from './api';
 import { MOCK_CASES } from '../utils/mockData';
 
-/**
- * Expected real contract (from backend-case-management/app/routes/cases.py):
- *   GET  /cases                    -> list of investigation cases
- *   GET  /cases/:caseId            -> single case with audit trail
- *   PATCH /cases/:caseId           -> { status } update, appends audit entry
- *
- * This is the "Officer Review" + "Case Management" + "Resolution / Audit
- * Trail" stages from Section 3 of the context briefing (steps 9-11).
- */
-
 let mockCaseStore = null;
 function getStore() {
   if (!mockCaseStore) mockCaseStore = MOCK_CASES.map((c) => ({ ...c }));
