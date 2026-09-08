@@ -1,16 +1,3 @@
-/**
- * SYNTHETIC DEMO DATA - NOT REAL MPLADS RECORDS.
- *
- * Per the team's data strategy (Context Briefing, Section 7), real and
- * synthetic data must stay clearly distinguished. Every record produced by
- * this module carries `isSynthetic: true` so the UI can label it, and
- * nothing here should ever be presented as a real government record.
- *
- * This exists so the frontend has something realistic to render before the
- * data-pipeline (Phaneendra) and ml-engine (Kousic) modules are wired up.
- * Swap `services/worksService.js` from mock mode to live mode once
- * backend-data-api (Mokshagna) exposes the real endpoints.
- */
 
 const AGENCIES = [
   'District Rural Development Agency',
