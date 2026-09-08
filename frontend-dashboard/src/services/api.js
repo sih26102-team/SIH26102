@@ -5,7 +5,6 @@ export const api = axios.create({
   timeout: 10000,
 });
 
-// Attach the JWT (see hooks/useAuth.js) to every outgoing request.
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('mplads_token');
   if (token) {
@@ -14,8 +13,6 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// A 401 from either backend means the token expired or was rejected -
-// clear it and let ProtectedRoute bounce the user back to /login.
 api.interceptors.response.use(
   (response) => response,
   (error) => {
@@ -27,16 +24,9 @@ api.interceptors.response.use(
   }
 );
 
-/**
- * USE_MOCK controls whether services read from the in-browser synthetic
- * dataset (utils/mockData.js) or hit the real FastAPI backends. Default is
- * true so the frontend runs standalone before the other four modules are
- * wired up. Flip VITE_USE_MOCK=false in .env once backend-data-api and
- * backend-case-management are reachable.
- */
 export const USE_MOCK = import.meta.env.VITE_USE_MOCK !== 'false';
 
-// Small helper so mock services can simulate realistic network latency
+
 // instead of resolving instantly, which hides loading-state bugs.
 export function mockDelay(ms = 350) {
   return new Promise((resolve) => setTimeout(resolve, ms));
