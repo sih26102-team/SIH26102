@@ -1,0 +1,751 @@
+project_id,constituency,district,mp_name,state,sanctioned_amount,released_amount,expenditure,project_status,sanctioned_duration_days,project_start_date,expected_completion_date,actual_completion_date,implementing_agency,project_category,progress_percent,released_amount_imputed
+WE03001,Howrah Constituency,Howrah,Meena Singh,West Bengal,750000.0,750000.0,1183494.23,stalled,270.0,2024-04-23,2025-01-18,,Rural Dev Dept,sanitation,26.1,False
+KE03002,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,750000.0,750000.0,271653.37,ongoing,90.0,2023-09-19,2023-12-18,,Rural Dev Dept,drinking water,75.4,False
+MA03003,Pune Constituency,Pune,Sunita Reddy,Maharashtra,1500000.0,1500000.0,2321337.67,ongoing,365.0,2023-08-02,2024-08-01,,Rural Dev Dept,irrigation,28.0,False
+KA03004,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2000000.0,1000000.0,592904.9,completed,365.0,2023-03-20,2024-03-19,2024-05-31,Jal Nigam,drinking water,100.0,False
+WE03005,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,300000.0,150000.0,488924.67,ongoing,270.0,2024-01-04,2024-09-30,,PWD,sanitation,23.0,False
+BI03006,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,1000000.0,0.0,0.0,recommended,180.0,2024-02-19,2024-08-17,,Rural Dev Dept,irrigation,,False
+WE03007,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,1946048.94,sanctioned,270.0,2023-07-05,2024-03-31,,PWD,road,,False
+AN03008,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,200000.0,200000.0,154615.66,completed,730.0,2024-03-28,2026-03-28,2026-09-28,Jal Nigam,electricity,100.0,False
+RA03009,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,500000.0,250000.0,244524.44,completed,730.0,2024-07-14,2026-07-14,2026-10-06,PWD,drinking water,100.0,False
+UT03010,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,750000.0,408946.67,ongoing,545.0,2024-07-17,2026-01-13,,Rural Dev Dept,irrigation,14.9,False
+UT03011,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,150000.0,56780.23,ongoing,270.0,2024-04-22,2025-01-17,,Rural Dev Dept,drinking water,93.4,False
+BI03012,Patna Constituency,Patna,Arjun Verma,Bihar,1000000.0,500000.0,364547.56,completed,90.0,2023-01-15,2023-04-15,2023-08-25,PWD,electricity,100.0,False
+UT03013,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,750000.0,750000.0,390565.37,completed,730.0,2023-07-20,2025-07-19,2025-11-07,PWD,drinking water,100.0,False
+UT03014,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,1500000.0,992171.17,completed,365.0,2024-10-15,2025-10-15,2025-09-28,Zilla Parishad,drinking water,100.0,False
+KE03015,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,300000.0,150000.0,114834.86,sanctioned,270.0,2023-01-25,2023-10-22,,Rural Dev Dept,community hall,,False
+KE03016,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,750000.0,750000.0,383089.32,sanctioned,545.0,2023-11-22,2025-05-20,,Rural Dev Dept,drinking water,,False
+TA03017,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,750000.0,750000.0,1495422.11,ongoing,90.0,2023-09-09,2023-12-08,,Jal Nigam,sanitation,72.9,False
+KE03018,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,200000.0,200000.0,125122.3,ongoing,180.0,2023-02-04,2023-08-03,,PWD,road,93.6,False
+TA03019,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,2500000.0,2500000.0,1862631.78,completed,180.0,2024-05-14,2024-11-10,2025-04-20,PWD,irrigation,100.0,False
+KA03020,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,300000.0,120828.45,completed,365.0,2023-12-14,2024-12-13,2025-03-26,Jal Nigam,road,100.0,False
+KA03021,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,200000.0,100000.0,269497.6,ongoing,730.0,2024-06-28,2026-06-28,,Zilla Parishad,drinking water,26.3,False
+OD03022,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,750000.0,375000.0,321040.52,ongoing,180.0,2024-06-12,2024-12-09,,Zilla Parishad,road,68.1,False
+WE03023,Howrah Constituency,Howrah,Meena Singh,West Bengal,200000.0,200000.0,187065.92,ongoing,180.0,2024-08-13,2025-02-09,,PWD,sanitation,19.3,False
+RA03024,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,519564.49,stalled,180.0,2023-03-03,2023-08-30,,PWD,school,7.2,False
+UT03025,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,750000.0,750000.0,643300.59,sanctioned,730.0,2024-07-25,2026-07-25,,Rural Dev Dept,irrigation,,False
+AN03026,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,750000.0,375000.0,152184.35,ongoing,365.0,2023-09-07,2024-09-06,,Jal Nigam,sanitation,24.0,False
+KA03027,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1000000.0,500000.0,242410.91,completed,270.0,2023-02-09,2023-11-06,2023-12-03,Jal Nigam,drinking water,100.0,False
+KA03028,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1500000.0,1500000.0,925964.11,completed,545.0,2023-09-28,2025-03-26,2025-09-29,Rural Dev Dept,road,100.0,False
+BI03029,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,200000.0,100000.0,46224.74,ongoing,365.0,2023-02-14,2024-02-14,,Jal Nigam,sanitation,42.3,False
+BI03030,Patna Constituency,Patna,Arjun Verma,Bihar,500000.0,500000.0,489801.62,ongoing,730.0,2024-03-24,2026-03-24,,Rural Dev Dept,electricity,71.9,False
+TA03031,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,500000.0,500000.0,297166.89,completed,730.0,2024-05-14,2026-05-14,2026-06-29,PWD,road,100.0,False
+MA03032,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,150000.0,84154.74,completed,730.0,2024-05-16,2026-05-16,2026-06-28,Rural Dev Dept,drinking water,100.0,False
+UT03033,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2500000.0,1250000.0,918705.64,ongoing,365.0,2023-03-07,2024-03-06,,PWD,irrigation,50.9,False
+TA03034,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1000000.0,1000000.0,463581.51,stalled,180.0,2023-03-20,2023-09-16,,Jal Nigam,irrigation,31.4,False
+TA03035,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,500000.0,250000.0,647370.71,stalled,270.0,2024-08-21,2025-05-18,,Zilla Parishad,community hall,33.7,False
+BI03036,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,1000000.0,1000000.0,811896.59,ongoing,730.0,2023-09-10,2025-09-09,,Zilla Parishad,road,17.4,False
+WE03037,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,750000.0,375000.0,367235.04,stalled,545.0,2023-05-31,2024-11-26,,Zilla Parishad,drinking water,11.4,False
+MA03038,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2000000.0,1000000.0,352256.4,ongoing,180.0,2024-01-03,2024-07-01,,PWD,road,31.3,False
+UT03039,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,200000.0,100000.0,90448.14,sanctioned,730.0,2023-06-13,2025-06-12,,Jal Nigam,drinking water,,False
+RA03040,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,750000.0,750000.0,673148.88,ongoing,270.0,2023-12-25,2024-09-20,,Zilla Parishad,community hall,42.7,False
+UT03041,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1000000.0,1000000.0,401919.51,stalled,365.0,2023-06-11,2024-06-10,,Jal Nigam,road,39.2,False
+MA03042,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2000000.0,1000000.0,947701.42,stalled,270.0,2023-08-05,2024-05-01,,PWD,road,12.3,False
+TA03043,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,2000000.0,1000000.0,650972.04,stalled,270.0,2023-06-29,2024-03-25,,PWD,irrigation,31.2,False
+RA03044,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1500000.0,1500000.0,1354210.69,completed,180.0,2023-07-29,2024-01-25,2024-07-14,Rural Dev Dept,electricity,100.0,False
+AN03045,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,500000.0,500000.0,454121.71,stalled,270.0,2024-05-31,2025-02-25,,Jal Nigam,irrigation,35.0,False
+BI03046,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,375000.0,279324.38,completed,90.0,2024-05-22,2024-08-20,2024-11-17,Zilla Parishad,school,100.0,False
+TA03047,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1500000.0,0.0,0.0,recommended,730.0,2024-03-24,2026-03-24,,PWD,irrigation,,False
+RA03048,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1500000.0,750000.0,732989.88,ongoing,270.0,2023-12-22,2024-09-17,,Jal Nigam,sanitation,15.0,False
+UT03049,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,750000.0,375000.0,365077.0,ongoing,180.0,2024-07-03,2024-12-30,,Rural Dev Dept,school,53.9,False
+WE03050,Howrah Constituency,Howrah,Meena Singh,West Bengal,300000.0,150000.0,391809.27,stalled,270.0,2024-09-23,2025-06-20,,Rural Dev Dept,community hall,19.5,False
+UT03051,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,1500000.0,993836.33,ongoing,180.0,2024-03-01,2024-08-28,,Jal Nigam,road,85.8,False
+AN03052,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1000000.0,500000.0,176064.84,ongoing,180.0,2023-12-05,2024-06-02,,Rural Dev Dept,road,67.9,False
+UT03053,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1000000.0,500000.0,161876.91,sanctioned,730.0,2023-08-15,2025-08-14,,PWD,school,,False
+RA03054,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,2000000.0,0.0,0.0,recommended,270.0,2023-04-11,2024-01-06,,Jal Nigam,sanitation,,False
+KE03055,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1500000.0,750000.0,471517.07,completed,545.0,2023-04-21,2024-10-17,2024-11-22,PWD,sanitation,100.0,False
+KA03056,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,500000.0,0.0,796312.97,recommended,365.0,2023-06-13,2024-06-12,,Zilla Parishad,community hall,,False
+WE03057,Howrah Constituency,Howrah,Meena Singh,West Bengal,1000000.0,1000000.0,903267.08,sanctioned,365.0,2023-03-19,2024-03-18,,Rural Dev Dept,electricity,,False
+KE03058,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,500000.0,0.0,0.0,recommended,180.0,2024-10-18,2025-04-16,,Rural Dev Dept,road,,False
+OD03059,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,500000.0,500000.0,588736.2,ongoing,730.0,2024-10-28,2026-10-28,,PWD,community hall,24.4,False
+KA03060,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,500000.0,250000.0,649898.07,sanctioned,730.0,2024-02-04,2026-02-03,,Rural Dev Dept,electricity,,False
+MA03061,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,186591.46,completed,90.0,2024-02-24,2024-05-24,2024-06-01,Zilla Parishad,irrigation,100.0,False
+OD03062,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1000000.0,1000000.0,768839.84,ongoing,365.0,2023-05-06,2024-05-05,,Zilla Parishad,irrigation,25.6,False
+KA03063,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,200000.0,200000.0,78139.48,ongoing,730.0,2024-09-10,2026-09-10,,Zilla Parishad,sanitation,27.3,False
+AN03064,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,0.0,0.0,recommended,180.0,2024-09-18,2025-03-17,,Zilla Parishad,sanitation,,False
+WE03065,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,2500000.0,2500000.0,1264368.78,sanctioned,270.0,2023-03-08,2023-12-03,,PWD,community hall,,False
+TA03066,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,500000.0,500000.0,192254.13,stalled,90.0,2023-01-11,2023-04-11,,Zilla Parishad,irrigation,7.4,False
+KE03067,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2000000.0,2000000.0,1678211.12,stalled,730.0,2023-02-25,2025-02-24,,Zilla Parishad,irrigation,36.3,False
+WE03068,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,300000.0,300000.0,159126.12,ongoing,270.0,2023-04-26,2024-01-21,,Rural Dev Dept,electricity,23.1,False
+TA03069,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,750000.0,375000.0,360751.05,ongoing,180.0,2024-10-03,2025-04-01,,PWD,community hall,31.3,False
+RA03070,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,750000.0,375000.0,258379.53,sanctioned,180.0,2024-04-01,2024-09-28,,Rural Dev Dept,road,,False
+TA03071,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1000000.0,1000000.0,444555.35,ongoing,365.0,2023-09-08,2024-09-07,,PWD,community hall,68.3,False
+BI03072,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,1500000.0,1500000.0,1068836.69,sanctioned,545.0,2024-06-22,2025-12-19,,Jal Nigam,drinking water,,False
+RA03073,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1500000.0,1500000.0,1186307.84,ongoing,90.0,2023-01-21,2023-04-21,,Jal Nigam,community hall,88.7,False
+KE03074,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,300000.0,150000.0,59598.35,ongoing,365.0,2023-01-10,2024-01-10,,Jal Nigam,electricity,77.5,False
+WE03075,Howrah Constituency,Howrah,Meena Singh,West Bengal,1000000.0,500000.0,400394.35,stalled,545.0,2023-04-19,2024-10-15,,PWD,drinking water,25.1,False
+MA03076,Pune Constituency,Pune,Sunita Reddy,Maharashtra,300000.0,150000.0,127598.82,ongoing,270.0,2023-09-29,2024-06-25,,Jal Nigam,road,92.9,False
+KA03077,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2500000.0,2500000.0,1231974.32,completed,365.0,2023-06-02,2024-06-01,2024-06-21,Jal Nigam,irrigation,100.0,False
+WE03078,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1500000.0,750000.0,2854962.22,completed,365.0,2024-05-14,2025-05-14,2025-10-03,Rural Dev Dept,electricity,100.0,False
+TA03079,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2500000.0,1250000.0,1200905.96,completed,90.0,2023-10-09,2024-01-07,2024-03-27,Rural Dev Dept,irrigation,100.0,False
+RA03080,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,2500000.0,2500000.0,1286987.71,completed,180.0,2024-11-17,2025-05-16,2025-09-14,Jal Nigam,irrigation,100.0,False
+PU03081,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2500000.0,2500000.0,1579278.85,stalled,545.0,2023-05-02,2024-10-28,,Rural Dev Dept,community hall,13.1,False
+OD03082,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,750000.0,750000.0,597969.52,completed,270.0,2023-10-02,2024-06-28,2024-08-19,Jal Nigam,electricity,100.0,False
+AN03083,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,1500000.0,1500000.0,835327.13,ongoing,730.0,2023-06-07,2025-06-06,,Jal Nigam,sanitation,59.4,False
+UT03084,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2500000.0,2500000.0,2370785.67,ongoing,730.0,2024-06-27,2026-06-27,,PWD,road,19.9,False
+KA03085,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2500000.0,1250000.0,569688.55,sanctioned,90.0,2023-01-08,2023-04-08,,Zilla Parishad,irrigation,,False
+KA03086,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,3639948.67,ongoing,270.0,2024-03-24,2024-12-19,,PWD,sanitation,21.6,False
+BI03087,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,300000.0,300000.0,99747.46,stalled,365.0,2023-05-19,2024-05-18,,Zilla Parishad,road,12.2,False
+KE03088,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,500000.0,500000.0,443159.87,ongoing,545.0,2024-07-14,2026-01-10,,Jal Nigam,irrigation,76.5,False
+KA03089,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,500000.0,0.0,0.0,recommended,180.0,2024-09-20,2025-03-19,,Zilla Parishad,sanitation,,False
+TA03090,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1500000.0,1500000.0,1432779.53,ongoing,545.0,2023-06-20,2024-12-16,,Rural Dev Dept,irrigation,33.8,False
+MA03091,Pune Constituency,Pune,Sunita Reddy,Maharashtra,1000000.0,500000.0,168531.69,ongoing,545.0,2024-05-10,2025-11-06,,Jal Nigam,road,63.5,False
+AN03092,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1500000.0,1500000.0,684783.43,stalled,365.0,2023-12-09,2024-12-08,,Rural Dev Dept,drinking water,14.8,False
+AN03093,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1500000.0,1500000.0,683485.64,sanctioned,545.0,2024-08-12,2026-02-08,,PWD,school,,False
+MA03094,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1500000.0,750000.0,1889435.06,ongoing,730.0,2024-09-23,2026-09-23,,PWD,community hall,41.0,False
+UT03095,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1500000.0,750000.0,531217.09,ongoing,90.0,2023-05-28,2023-08-26,,Zilla Parishad,sanitation,20.9,False
+TA03096,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,200000.0,200000.0,194564.37,completed,90.0,2024-05-07,2024-08-05,2024-07-10,Jal Nigam,electricity,100.0,False
+MA03097,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2000000.0,2000000.0,737833.06,ongoing,730.0,2024-04-02,2026-04-02,,Jal Nigam,irrigation,58.6,False
+OD03098,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1500000.0,750000.0,2218487.68,stalled,545.0,2023-11-29,2025-05-27,,PWD,irrigation,33.3,False
+OD03099,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,200000.0,0.0,0.0,recommended,90.0,2023-05-19,2023-08-17,,Jal Nigam,irrigation,,False
+AN03100,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,750000.0,0.0,0.0,recommended,730.0,2023-05-01,2025-04-30,,Zilla Parishad,sanitation,,False
+RA03101,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,127919.48,sanctioned,730.0,2023-12-18,2025-12-17,,Zilla Parishad,electricity,,False
+AN03102,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,200000.0,100000.0,321954.07,ongoing,365.0,2024-10-25,2025-10-25,,Zilla Parishad,school,77.6,False
+UT03103,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,1500000.0,559152.64,stalled,90.0,2024-09-30,2024-12-29,,PWD,school,19.1,False
+KA03104,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,750000.0,375000.0,1107990.06,sanctioned,545.0,2024-04-07,2025-10-04,,PWD,irrigation,,False
+KE03105,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1000000.0,1000000.0,952365.96,sanctioned,730.0,2023-03-30,2025-03-29,,Jal Nigam,school,,False
+RA03106,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,2000000.0,2000000.0,1276367.24,completed,270.0,2023-12-19,2024-09-14,2025-01-22,Jal Nigam,electricity,100.0,False
+AN03107,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2000000.0,1000000.0,676683.61,completed,180.0,2023-01-03,2023-07-02,2023-08-21,Zilla Parishad,school,100.0,False
+KA03108,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2000000.0,1000000.0,711257.33,ongoing,270.0,2023-12-01,2024-08-27,,Jal Nigam,irrigation,39.9,False
+KA03109,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1500000.0,1500000.0,1497798.04,ongoing,730.0,2023-11-14,2025-11-13,,Zilla Parishad,road,90.2,False
+UT03110,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,2000000.0,1249714.23,ongoing,545.0,2024-09-19,2026-03-18,,PWD,electricity,85.3,False
+AN03111,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,0.0,0.0,recommended,270.0,2023-12-24,2024-09-19,,PWD,drinking water,,False
+BI03112,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,300000.0,300000.0,251330.41,completed,545.0,2023-07-13,2025-01-08,2025-04-01,PWD,school,100.0,False
+UT03113,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,750000.0,375000.0,300355.6,sanctioned,180.0,2024-06-15,2024-12-12,,Jal Nigam,irrigation,,False
+KE03114,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,300000.0,150000.0,136553.55,completed,270.0,2024-07-26,2025-04-22,2025-06-17,Zilla Parishad,electricity,100.0,False
+TA03115,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1500000.0,1500000.0,1218187.57,completed,545.0,2023-10-12,2025-04-09,2025-07-19,Jal Nigam,community hall,100.0,False
+MA03116,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,135990.66,stalled,180.0,2023-01-10,2023-07-09,,Rural Dev Dept,sanitation,33.4,False
+OD03117,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2000000.0,2000000.0,1777761.76,ongoing,270.0,2023-10-03,2024-06-29,,Zilla Parishad,community hall,80.6,False
+UT03118,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,750000.0,750000.0,689050.95,completed,365.0,2023-02-08,2024-02-08,2024-05-13,Rural Dev Dept,community hall,100.0,False
+TA03119,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,300000.0,150000.0,488202.62,ongoing,90.0,2024-03-19,2024-06-17,,Jal Nigam,irrigation,32.4,False
+AN03120,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,300000.0,150000.0,65727.54,completed,90.0,2023-07-14,2023-10-12,2024-01-10,Jal Nigam,irrigation,100.0,False
+WE03121,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,300000.0,300000.0,239421.19,ongoing,365.0,2024-05-31,2025-05-31,,Jal Nigam,community hall,38.5,False
+AN03122,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2500000.0,2500000.0,1069773.85,ongoing,730.0,2023-06-21,2025-06-20,,PWD,road,19.2,False
+RA03123,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,2500000.0,1250000.0,892856.49,completed,545.0,2024-09-09,2026-03-08,2026-02-07,Rural Dev Dept,irrigation,100.0,False
+AN03124,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,750000.0,750000.0,495646.79,stalled,270.0,2023-01-16,2023-10-13,,Rural Dev Dept,road,36.9,False
+TA03125,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1500000.0,1500000.0,1470858.04,ongoing,180.0,2023-06-12,2023-12-09,,Jal Nigam,community hall,71.6,False
+RA03126,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1000000.0,1000000.0,908002.87,ongoing,730.0,2023-12-26,2025-12-25,,Rural Dev Dept,road,20.0,False
+TA03127,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1000000.0,1000000.0,532060.37,sanctioned,365.0,2024-11-23,2025-11-23,,Jal Nigam,sanitation,,False
+KE03128,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2500000.0,2500000.0,2278352.71,stalled,90.0,2023-04-05,2023-07-04,,PWD,electricity,6.7,False
+AN03129,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,500000.0,500000.0,290976.79,completed,545.0,2024-03-05,2025-09-01,2025-08-29,Rural Dev Dept,sanitation,100.0,False
+BI03130,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,375000.0,363954.55,ongoing,365.0,2023-10-02,2024-10-01,,Zilla Parishad,drinking water,58.6,False
+KE03131,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2000000.0,0.0,0.0,recommended,545.0,2023-02-09,2024-08-07,,Rural Dev Dept,drinking water,,False
+KA03132,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,150000.0,50871.08,ongoing,270.0,2023-10-24,2024-07-20,,Zilla Parishad,irrigation,78.0,False
+AN03133,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,2000000.0,2000000.0,865034.07,completed,365.0,2023-10-03,2024-10-02,2024-09-09,Zilla Parishad,road,100.0,False
+PU03134,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1000000.0,500000.0,307982.1,ongoing,270.0,2023-09-09,2024-06-05,,Jal Nigam,irrigation,82.6,False
+OD03135,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1500000.0,1500000.0,1407710.06,stalled,545.0,2023-07-05,2024-12-31,,PWD,sanitation,31.1,False
+UT03136,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,300000.0,133234.93,ongoing,180.0,2023-09-19,2024-03-17,,Jal Nigam,school,17.7,False
+UT03137,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,300000.0,141469.71,ongoing,365.0,2023-09-03,2024-09-02,,PWD,irrigation,68.6,False
+KE03138,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2500000.0,1250000.0,573614.16,ongoing,365.0,2024-06-27,2025-06-27,,Rural Dev Dept,drinking water,77.5,False
+MA03139,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1500000.0,1500000.0,725681.24,sanctioned,180.0,2024-01-05,2024-07-03,,Rural Dev Dept,electricity,,False
+KE03140,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,200000.0,100000.0,70928.06,ongoing,90.0,2024-10-10,2025-01-08,,PWD,electricity,25.7,False
+MA03141,Pune Constituency,Pune,Sunita Reddy,Maharashtra,1000000.0,500000.0,192054.13,sanctioned,365.0,2023-07-05,2024-07-04,,Jal Nigam,drinking water,,False
+AN03142,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1000000.0,1000000.0,717834.81,stalled,90.0,2024-06-01,2024-08-30,,Jal Nigam,road,29.2,False
+UT03143,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,2000000.0,1306071.94,stalled,180.0,2024-04-20,2024-10-17,,Rural Dev Dept,sanitation,39.8,False
+KE03144,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1500000.0,1500000.0,1370398.11,ongoing,270.0,2023-06-30,2024-03-26,,PWD,sanitation,57.9,False
+KA03145,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1000000.0,500000.0,488548.94,ongoing,270.0,2024-11-26,2025-08-23,,Zilla Parishad,road,43.3,False
+BI03146,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,750000.0,750000.0,994761.15,stalled,730.0,2023-02-25,2025-02-24,,Jal Nigam,drinking water,22.2,False
+KA03147,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,1250000.0,759139.3,ongoing,365.0,2024-02-26,2025-02-25,,Rural Dev Dept,electricity,48.8,False
+PU03148,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2000000.0,1000000.0,422964.09,ongoing,180.0,2023-07-01,2023-12-28,,PWD,road,16.2,False
+OD03149,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1000000.0,1000000.0,805813.9,ongoing,365.0,2023-05-18,2024-05-17,,Rural Dev Dept,drinking water,54.7,False
+TA03150,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1500000.0,750000.0,404520.53,completed,365.0,2023-01-16,2024-01-16,2024-03-29,Jal Nigam,school,100.0,False
+BI03151,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,2500000.0,2500000.0,3364025.97,sanctioned,365.0,2023-10-24,2024-10-23,,Jal Nigam,irrigation,,False
+WE03152,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,750000.0,750000.0,582875.71,completed,90.0,2024-08-10,2024-11-08,2025-01-11,Zilla Parishad,irrigation,100.0,False
+UT03153,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1000000.0,0.0,1176020.64,recommended,545.0,2024-01-13,2025-07-11,,PWD,community hall,,False
+UT03154,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1500000.0,750000.0,676625.75,completed,270.0,2024-03-18,2024-12-13,2025-02-06,Zilla Parishad,sanitation,100.0,False
+PU03155,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,750000.0,375000.0,1470072.2,ongoing,730.0,2023-09-22,2025-09-21,,Jal Nigam,sanitation,22.2,False
+BI03156,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,500000.0,500000.0,228445.06,stalled,90.0,2024-02-13,2024-05-13,,PWD,drinking water,14.6,False
+AN03157,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2000000.0,1000000.0,495991.39,stalled,365.0,2024-08-09,2025-08-09,,Jal Nigam,electricity,20.0,False
+UT03158,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,200000.0,200000.0,120267.83,ongoing,730.0,2023-10-17,2025-10-16,,Zilla Parishad,electricity,57.6,False
+AN03159,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,750000.0,0.0,1341433.26,recommended,180.0,2024-07-12,2025-01-08,,Jal Nigam,sanitation,,False
+BI03160,Patna Constituency,Patna,Arjun Verma,Bihar,500000.0,500000.0,888391.89,ongoing,180.0,2023-04-11,2023-10-08,,Jal Nigam,sanitation,29.6,False
+TA03161,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1500000.0,750000.0,323812.66,completed,730.0,2024-11-22,2026-11-22,2027-02-05,Jal Nigam,community hall,100.0,False
+MA03162,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2000000.0,2000000.0,3956659.24,stalled,365.0,2024-11-16,2025-11-16,,Zilla Parishad,community hall,11.1,False
+MA03163,Pune Constituency,Pune,Sunita Reddy,Maharashtra,500000.0,250000.0,152512.66,ongoing,90.0,2023-01-04,2023-04-04,,Rural Dev Dept,community hall,51.7,False
+BI03164,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,300000.0,150000.0,140643.42,sanctioned,365.0,2024-10-02,2025-10-02,,Jal Nigam,irrigation,,False
+RA03165,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,2000000.0,2000000.0,3902995.02,completed,365.0,2023-09-15,2024-09-14,2024-08-29,Jal Nigam,school,100.0,False
+WE03166,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,2000000.0,3044267.9,completed,270.0,2023-11-02,2024-07-29,2024-10-03,Jal Nigam,electricity,100.0,False
+TA03167,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1500000.0,1500000.0,1023311.44,completed,730.0,2024-05-20,2026-05-20,2026-08-07,Rural Dev Dept,community hall,100.0,False
+BI03168,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,200000.0,100000.0,262503.32,ongoing,270.0,2024-08-10,2025-05-07,,Rural Dev Dept,community hall,34.7,False
+KA03169,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1000000.0,0.0,0.0,recommended,90.0,2024-11-13,2025-02-11,,Rural Dev Dept,electricity,,False
+BI03170,Patna Constituency,Patna,Arjun Verma,Bihar,2000000.0,1000000.0,354580.62,completed,90.0,2023-12-15,2024-03-14,2024-02-20,Rural Dev Dept,drinking water,100.0,False
+RA03171,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,215247.5,ongoing,180.0,2023-08-21,2024-02-17,,Zilla Parishad,road,18.7,False
+KA03172,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,300000.0,150000.0,135078.3,completed,180.0,2023-08-07,2024-02-03,2024-08-15,Zilla Parishad,sanitation,100.0,False
+KA03173,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,200000.0,100000.0,61697.29,ongoing,90.0,2024-10-30,2025-01-28,,Rural Dev Dept,electricity,28.6,False
+WE03174,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,500000.0,250000.0,228360.25,stalled,90.0,2024-03-12,2024-06-10,,Rural Dev Dept,electricity,34.1,False
+UT03175,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,200000.0,200000.0,185227.9,sanctioned,180.0,2023-04-05,2023-10-02,,Zilla Parishad,electricity,,False
+MA03176,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,200000.0,94742.16,completed,365.0,2024-01-31,2025-01-30,2025-05-25,Zilla Parishad,road,100.0,False
+UT03177,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,150000.0,123155.07,sanctioned,730.0,2024-11-27,2026-11-27,,Rural Dev Dept,sanitation,,False
+PU03178,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,200000.0,100000.0,358490.48,completed,365.0,2024-02-20,2025-02-19,2025-05-08,PWD,community hall,100.0,False
+AN03179,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2000000.0,2000000.0,673527.69,completed,270.0,2024-02-29,2024-11-25,2025-04-08,PWD,sanitation,100.0,False
+UT03180,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,1500000.0,0.0,0.0,recommended,270.0,2023-05-28,2024-02-22,,Zilla Parishad,irrigation,,False
+BI03181,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,2000000.0,2000000.0,1771230.1,sanctioned,90.0,2024-11-29,2025-02-27,,Jal Nigam,drinking water,,False
+KE03182,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,750000.0,750000.0,456179.59,stalled,270.0,2024-11-23,2025-08-20,,PWD,drinking water,5.7,False
+OD03183,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2500000.0,2500000.0,2333594.41,ongoing,270.0,2023-10-06,2024-07-02,,Rural Dev Dept,drinking water,57.2,False
+TA03184,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2500000.0,2500000.0,2010594.16,ongoing,545.0,2023-08-26,2025-02-21,,Zilla Parishad,community hall,81.1,False
+UT03185,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,200000.0,200000.0,175972.91,stalled,545.0,2023-11-10,2025-05-08,,Rural Dev Dept,irrigation,18.7,False
+KA03186,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,1205210.51,completed,365.0,2023-12-07,2024-12-06,2025-01-02,PWD,sanitation,100.0,False
+TA03187,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,200000.0,100000.0,46328.66,stalled,180.0,2024-01-09,2024-07-07,,Zilla Parishad,irrigation,7.2,False
+AN03188,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,750000.0,750000.0,678430.61,stalled,730.0,2024-01-29,2026-01-28,,Jal Nigam,electricity,32.9,False
+WE03189,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1000000.0,1000000.0,856570.0,stalled,365.0,2023-03-08,2024-03-07,,Jal Nigam,road,13.2,False
+WE03190,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,3365044.18,ongoing,730.0,2023-08-05,2025-08-04,,Jal Nigam,irrigation,50.4,False
+KE03191,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,2000000.0,2476711.09,ongoing,270.0,2024-08-09,2025-05-06,,PWD,electricity,74.0,False
+KE03192,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1500000.0,1500000.0,949354.6,ongoing,545.0,2023-06-21,2024-12-17,,Jal Nigam,community hall,36.1,False
+TA03193,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1000000.0,1000000.0,1244423.84,ongoing,730.0,2023-03-24,2025-03-23,,PWD,irrigation,20.3,False
+TA03194,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,2500000.0,2500000.0,1146326.58,completed,730.0,2024-02-15,2026-02-14,2026-05-01,Rural Dev Dept,road,100.0,False
+KA03195,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,200000.0,200000.0,120199.95,completed,365.0,2024-05-29,2025-05-29,2025-08-13,Rural Dev Dept,drinking water,100.0,False
+MA03196,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,200000.0,200000.0,299518.92,sanctioned,730.0,2024-02-21,2026-02-20,,Rural Dev Dept,irrigation,,False
+UT03197,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2000000.0,2000000.0,1264741.15,completed,365.0,2023-06-01,2024-05-31,2024-11-11,Jal Nigam,electricity,100.0,False
+MA03198,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2000000.0,2000000.0,1920620.99,sanctioned,180.0,2024-09-20,2025-03-19,,Zilla Parishad,drinking water,,False
+BI03199,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,200000.0,100000.0,88979.5,completed,730.0,2023-11-17,2025-11-16,2025-12-19,Rural Dev Dept,road,100.0,False
+BI03200,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,1500000.0,750000.0,2793678.43,ongoing,545.0,2023-09-11,2025-03-09,,Zilla Parishad,drinking water,67.5,False
+TA03201,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,150000.0,53993.03,ongoing,90.0,2023-12-19,2024-03-18,,Rural Dev Dept,school,11.2,False
+KE03202,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1000000.0,1000000.0,432022.57,completed,545.0,2024-04-14,2025-10-11,2026-01-17,Zilla Parishad,community hall,100.0,False
+WE03203,Howrah Constituency,Howrah,Meena Singh,West Bengal,300000.0,300000.0,256537.35,sanctioned,365.0,2023-12-23,2024-12-22,,Jal Nigam,irrigation,,False
+WE03204,Howrah Constituency,Howrah,Meena Singh,West Bengal,500000.0,250000.0,613520.91,sanctioned,180.0,2023-04-25,2023-10-22,,Rural Dev Dept,community hall,,False
+AN03205,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,0.0,0.0,recommended,90.0,2024-09-09,2024-12-08,,PWD,school,,False
+WE03206,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,1000000.0,3526099.32,stalled,270.0,2024-02-23,2024-11-19,,PWD,community hall,30.2,False
+WE03207,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,886834.26,completed,90.0,2024-05-10,2024-08-08,2024-10-23,Rural Dev Dept,road,100.0,False
+TA03208,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,300000.0,150000.0,103594.67,ongoing,365.0,2023-07-04,2024-07-03,,Zilla Parishad,drinking water,17.8,False
+MA03209,Pune Constituency,Pune,Sunita Reddy,Maharashtra,300000.0,300000.0,597291.45,ongoing,180.0,2023-05-07,2023-11-03,,PWD,electricity,75.3,False
+OD03210,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,300000.0,300000.0,403443.54,stalled,180.0,2023-10-13,2024-04-10,,PWD,road,18.1,False
+BI03211,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,2000000.0,0.0,2707052.68,recommended,730.0,2023-06-09,2025-06-08,,PWD,electricity,,False
+PU03212,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,500000.0,500000.0,461655.11,completed,545.0,2023-10-30,2025-04-27,2025-09-28,Zilla Parishad,school,100.0,False
+RA03213,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1500000.0,1500000.0,972743.21,sanctioned,270.0,2023-09-23,2024-06-19,,Rural Dev Dept,road,,False
+UT03214,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,2000000.0,1045443.55,ongoing,270.0,2024-06-13,2025-03-10,,Zilla Parishad,drinking water,80.2,False
+TA03215,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,200000.0,0.0,0.0,recommended,730.0,2023-05-10,2025-05-09,,Zilla Parishad,drinking water,,False
+TA03216,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,500000.0,0.0,0.0,recommended,270.0,2024-11-05,2025-08-02,,PWD,sanitation,,False
+RA03217,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1000000.0,0.0,0.0,recommended,730.0,2023-04-19,2025-04-18,,PWD,irrigation,,False
+PU03218,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,300000.0,150000.0,88175.43,completed,545.0,2023-02-11,2024-08-09,2024-12-17,PWD,community hall,100.0,False
+OD03219,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,300000.0,300000.0,151565.74,ongoing,730.0,2024-02-02,2026-02-01,,Jal Nigam,school,66.8,False
+RA03220,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,2500000.0,2500000.0,1659293.95,ongoing,270.0,2023-07-04,2024-03-30,,PWD,drinking water,83.3,False
+TA03221,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2500000.0,2500000.0,796012.43,completed,180.0,2023-04-24,2023-10-21,2023-09-21,Rural Dev Dept,drinking water,100.0,False
+WE03222,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,750000.0,750000.0,242198.46,stalled,365.0,2023-04-12,2024-04-11,,Jal Nigam,irrigation,13.1,False
+UT03223,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,500000.0,500000.0,166443.3,completed,90.0,2023-10-16,2024-01-14,2024-01-16,Rural Dev Dept,irrigation,100.0,False
+OD03224,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2000000.0,2000000.0,776719.15,completed,180.0,2023-09-15,2024-03-13,2024-05-17,Rural Dev Dept,sanitation,100.0,False
+UT03225,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,200000.0,200000.0,160006.34,stalled,180.0,2023-09-10,2024-03-08,,PWD,road,21.6,False
+UT03226,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2500000.0,1250000.0,449714.34,stalled,180.0,2023-10-25,2024-04-22,,Jal Nigam,irrigation,35.5,False
+BI03227,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,300000.0,150000.0,582781.62,completed,270.0,2023-12-20,2024-09-15,2025-03-25,PWD,community hall,100.0,False
+WE03228,Howrah Constituency,Howrah,Meena Singh,West Bengal,200000.0,200000.0,77114.39,stalled,270.0,2023-05-17,2024-02-11,,Rural Dev Dept,drinking water,27.1,False
+UT03229,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,1500000.0,2805841.57,completed,365.0,2024-04-13,2025-04-13,2025-09-16,Rural Dev Dept,electricity,100.0,False
+KA03230,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,500000.0,500000.0,432091.2,ongoing,545.0,2024-08-13,2026-02-09,,Jal Nigam,community hall,39.4,False
+TA03231,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,1000000.0,1000000.0,492216.98,sanctioned,180.0,2023-01-09,2023-07-08,,PWD,sanitation,,False
+WE03232,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,2000000.0,2000000.0,1619431.52,ongoing,90.0,2023-11-11,2024-02-09,,Jal Nigam,community hall,29.0,False
+PU03233,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2000000.0,0.0,3295810.77,recommended,730.0,2024-01-24,2026-01-23,,PWD,road,,False
+UT03234,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1000000.0,500000.0,478713.93,completed,545.0,2023-05-10,2024-11-05,2025-05-09,Zilla Parishad,community hall,100.0,False
+UT03235,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,300000.0,130919.47,ongoing,270.0,2023-04-02,2023-12-28,,Zilla Parishad,road,34.3,False
+KA03236,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,1946655.8,ongoing,545.0,2024-10-28,2026-04-26,,Zilla Parishad,school,40.6,False
+KA03237,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1500000.0,750000.0,394816.66,completed,545.0,2023-01-16,2024-07-14,2024-11-17,Rural Dev Dept,electricity,100.0,False
+BI03238,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,200000.0,200000.0,101394.37,completed,270.0,2023-05-16,2024-02-10,2024-06-14,Rural Dev Dept,sanitation,100.0,False
+KA03239,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,300000.0,184432.63,completed,180.0,2023-11-03,2024-05-01,2024-07-11,Zilla Parishad,community hall,100.0,False
+OD03240,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2000000.0,1000000.0,725381.33,completed,545.0,2023-03-26,2024-09-21,2025-04-04,PWD,sanitation,100.0,False
+RA03241,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,750000.0,0.0,0.0,recommended,270.0,2024-05-31,2025-02-25,,Rural Dev Dept,irrigation,,False
+TA03242,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,300000.0,150000.0,77007.27,completed,545.0,2024-10-19,2026-04-17,2026-04-30,Rural Dev Dept,electricity,100.0,False
+TA03243,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2000000.0,1000000.0,796238.27,sanctioned,730.0,2024-08-06,2026-08-06,,Rural Dev Dept,irrigation,,False
+WE03244,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,771150.75,ongoing,730.0,2023-07-01,2025-06-30,,Jal Nigam,electricity,36.0,False
+UT03245,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,1000000.0,435834.7,ongoing,365.0,2024-05-13,2025-05-13,,Zilla Parishad,irrigation,47.7,False
+BI03246,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,2000000.0,1000000.0,3564413.04,sanctioned,90.0,2023-11-17,2024-02-15,,Rural Dev Dept,road,,False
+MA03247,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,200000.0,100000.0,95533.3,sanctioned,730.0,2024-04-04,2026-04-04,,Rural Dev Dept,irrigation,,False
+BI03248,Patna Constituency,Patna,Arjun Verma,Bihar,500000.0,500000.0,707272.79,ongoing,90.0,2023-06-24,2023-09-22,,PWD,community hall,50.3,False
+TA03249,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,750000.0,375000.0,193194.0,completed,730.0,2024-08-06,2026-08-06,2026-07-10,Jal Nigam,road,100.0,False
+KA03250,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2500000.0,1250000.0,3714949.33,ongoing,270.0,2023-11-25,2024-08-21,,PWD,drinking water,42.1,False
+TA03251,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2000000.0,1000000.0,358749.27,ongoing,180.0,2023-12-30,2024-06-27,,Jal Nigam,road,28.7,False
+KE03252,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,500000.0,500000.0,885973.53,completed,730.0,2024-03-25,2026-03-25,2026-03-13,Rural Dev Dept,sanitation,100.0,False
+KA03253,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1000000.0,1000000.0,1570920.38,completed,545.0,2023-10-09,2025-04-06,2025-06-28,Rural Dev Dept,community hall,100.0,False
+RA03254,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,750000.0,750000.0,526324.04,ongoing,365.0,2024-09-10,2025-09-10,,Rural Dev Dept,sanitation,39.4,False
+UT03255,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,500000.0,250000.0,218844.6,sanctioned,545.0,2024-09-24,2026-03-23,,Jal Nigam,electricity,,False
+TA03256,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2000000.0,2000000.0,1172666.84,sanctioned,545.0,2023-11-29,2025-05-27,,Jal Nigam,electricity,,False
+MA03257,Pune Constituency,Pune,Sunita Reddy,Maharashtra,500000.0,500000.0,215868.06,ongoing,365.0,2024-01-25,2025-01-24,,Rural Dev Dept,sanitation,40.7,False
+MA03258,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1500000.0,750000.0,606149.39,completed,365.0,2024-07-11,2025-07-11,2025-07-06,Rural Dev Dept,road,100.0,False
+RA03259,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1000000.0,1000000.0,647891.45,sanctioned,90.0,2023-11-27,2024-02-25,,PWD,irrigation,,False
+BI03260,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,2000000.0,1000000.0,978664.91,completed,90.0,2024-07-26,2024-10-24,2025-02-19,Zilla Parishad,electricity,100.0,False
+AN03261,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2000000.0,2000000.0,879689.49,stalled,90.0,2023-09-08,2023-12-07,,Zilla Parishad,irrigation,28.7,False
+KA03262,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2500000.0,2500000.0,2401774.57,ongoing,545.0,2024-06-05,2025-12-02,,Zilla Parishad,sanitation,22.7,False
+KA03263,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,300000.0,300000.0,157635.29,stalled,270.0,2024-07-01,2025-03-28,,Rural Dev Dept,sanitation,11.3,False
+KE03264,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,1000000.0,593729.77,ongoing,180.0,2023-10-03,2024-03-31,,PWD,road,58.6,False
+WE03265,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,0.0,0.0,recommended,90.0,2023-12-15,2024-03-14,,Zilla Parishad,electricity,,False
+RA03266,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1000000.0,1000000.0,350886.02,ongoing,180.0,2024-03-24,2024-09-20,,Jal Nigam,irrigation,31.0,False
+OD03267,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,500000.0,250000.0,113956.93,sanctioned,545.0,2023-11-20,2025-05-18,,Rural Dev Dept,electricity,,False
+KE03268,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1000000.0,1000000.0,1462608.93,completed,90.0,2024-07-06,2024-10-04,2025-04-04,Zilla Parishad,road,100.0,False
+MA03269,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2500000.0,2500000.0,2240829.5,ongoing,180.0,2023-12-23,2024-06-20,,Zilla Parishad,electricity,37.2,False
+KA03270,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,750000.0,375000.0,287783.47,ongoing,545.0,2023-08-19,2025-02-14,,Zilla Parishad,drinking water,33.3,False
+TA03271,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1000000.0,1000000.0,779113.7,ongoing,270.0,2024-03-18,2024-12-13,,Rural Dev Dept,irrigation,82.2,False
+KE03272,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1500000.0,750000.0,325769.16,ongoing,270.0,2024-08-22,2025-05-19,,Rural Dev Dept,road,92.2,False
+UT03273,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,500000.0,500000.0,606985.25,ongoing,270.0,2023-10-13,2024-07-09,,PWD,electricity,72.0,False
+PU03274,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2000000.0,2000000.0,649158.22,ongoing,180.0,2024-07-22,2025-01-18,,PWD,irrigation,55.0,False
+KA03275,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1500000.0,1500000.0,988049.94,stalled,90.0,2024-01-08,2024-04-07,,Jal Nigam,road,31.0,False
+RA03276,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,150000.0,75413.67,sanctioned,270.0,2023-12-12,2024-09-07,,Zilla Parishad,community hall,,False
+KA03277,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,1000519.86,sanctioned,270.0,2023-03-26,2023-12-21,,Jal Nigam,school,,False
+KE03278,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1000000.0,500000.0,169405.99,completed,730.0,2023-08-05,2025-08-04,2025-08-05,Zilla Parishad,sanitation,100.0,False
+UT03279,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,750000.0,750000.0,661621.55,completed,180.0,2023-06-11,2023-12-08,2024-04-11,Rural Dev Dept,electricity,100.0,False
+UT03280,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,500000.0,500000.0,444944.42,ongoing,730.0,2024-08-03,2026-08-03,,Zilla Parishad,electricity,52.0,False
+AN03281,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,200000.0,200000.0,162771.61,ongoing,365.0,2024-10-04,2025-10-04,,Jal Nigam,road,26.3,False
+MA03282,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2000000.0,1000000.0,869605.56,ongoing,545.0,2024-05-16,2025-11-12,,PWD,sanitation,85.5,False
+AN03283,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,200000.0,100000.0,378040.08,ongoing,730.0,2024-10-14,2026-10-14,,Rural Dev Dept,sanitation,71.5,False
+OD03284,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,200000.0,200000.0,230590.29,ongoing,365.0,2023-12-23,2024-12-22,,Rural Dev Dept,road,73.3,False
+UT03285,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2000000.0,2000000.0,1553170.42,stalled,90.0,2024-06-04,2024-09-02,,PWD,sanitation,34.7,False
+BI03286,Patna Constituency,Patna,Arjun Verma,Bihar,200000.0,200000.0,158092.25,completed,180.0,2023-02-05,2023-08-04,2024-01-05,Jal Nigam,drinking water,100.0,False
+KA03287,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,200000.0,200000.0,353253.49,sanctioned,730.0,2023-12-31,2025-12-30,,Zilla Parishad,road,,False
+UT03288,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,1500000.0,1785481.6,sanctioned,270.0,2024-08-06,2025-05-03,,PWD,road,,False
+OD03289,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1000000.0,0.0,0.0,recommended,545.0,2024-04-22,2025-10-19,,Zilla Parishad,road,,False
+AN03290,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,300000.0,180953.23,stalled,365.0,2024-05-31,2025-05-31,,Jal Nigam,road,16.4,False
+OD03291,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,200000.0,200000.0,337006.23,ongoing,730.0,2023-06-15,2025-06-14,,Jal Nigam,sanitation,60.4,False
+MA03292,Pune Constituency,Pune,Sunita Reddy,Maharashtra,500000.0,0.0,0.0,recommended,90.0,2023-09-23,2023-12-22,,Zilla Parishad,sanitation,,False
+AN03293,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,500000.0,500000.0,170252.22,completed,730.0,2024-11-25,2026-11-25,2027-05-16,Zilla Parishad,road,100.0,False
+KE03294,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2500000.0,0.0,3439695.95,recommended,365.0,2023-02-12,2024-02-12,,Rural Dev Dept,drinking water,,False
+TA03295,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,300000.0,150000.0,68409.17,sanctioned,730.0,2024-03-31,2026-03-31,,Jal Nigam,road,,False
+TA03296,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1000000.0,1000000.0,792430.56,ongoing,365.0,2023-10-30,2024-10-29,,Rural Dev Dept,road,39.8,False
+MA03297,Pune Constituency,Pune,Sunita Reddy,Maharashtra,500000.0,500000.0,230766.26,ongoing,270.0,2024-11-26,2025-08-23,,Jal Nigam,electricity,59.3,False
+UT03298,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2500000.0,2500000.0,4502935.92,sanctioned,545.0,2023-12-07,2025-06-04,,PWD,school,,False
+KE03299,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1500000.0,1500000.0,981464.14,stalled,365.0,2023-05-17,2024-05-16,,Rural Dev Dept,sanitation,32.0,False
+AN03300,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,500000.0,500000.0,437055.57,completed,365.0,2023-12-30,2024-12-29,2025-07-09,PWD,road,100.0,False
+AN03301,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,2500000.0,2500000.0,4060725.46,completed,270.0,2024-07-23,2025-04-19,2025-10-27,Jal Nigam,sanitation,100.0,False
+AN03302,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,750000.0,0.0,0.0,recommended,90.0,2024-06-05,2024-09-03,,PWD,drinking water,,False
+UT03303,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,500000.0,250000.0,211353.38,sanctioned,180.0,2024-02-14,2024-08-12,,PWD,community hall,,False
+KE03304,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,500000.0,250000.0,77704.89,sanctioned,180.0,2023-07-27,2024-01-23,,PWD,irrigation,,False
+BI03305,Patna Constituency,Patna,Arjun Verma,Bihar,1000000.0,1000000.0,1971512.87,ongoing,730.0,2023-10-24,2025-10-23,,Rural Dev Dept,electricity,45.1,False
+OD03306,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2000000.0,2000000.0,1997335.44,ongoing,270.0,2023-08-03,2024-04-29,,PWD,sanitation,57.0,False
+RA03307,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,750000.0,375000.0,260081.63,stalled,180.0,2024-04-14,2024-10-11,,Jal Nigam,road,16.8,False
+OD03308,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,500000.0,0.0,0.0,recommended,730.0,2023-08-14,2025-08-13,,Zilla Parishad,school,,False
+KE03309,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2000000.0,2000000.0,2522245.61,sanctioned,365.0,2023-10-13,2024-10-12,,Rural Dev Dept,road,,False
+BI03310,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,500000.0,500000.0,274936.49,sanctioned,180.0,2023-01-21,2023-07-20,,Jal Nigam,community hall,,False
+TA03311,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,500000.0,250000.0,223729.45,ongoing,365.0,2023-03-27,2024-03-26,,Zilla Parishad,road,87.9,False
+KA03312,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1000000.0,1000000.0,791924.81,stalled,270.0,2023-09-12,2024-06-08,,PWD,electricity,31.4,False
+AN03313,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,150000.0,121403.19,completed,270.0,2024-09-24,2025-06-21,2025-10-31,Zilla Parishad,irrigation,100.0,False
+AN03314,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,300000.0,150000.0,148724.2,stalled,365.0,2023-08-17,2024-08-16,,Jal Nigam,electricity,20.6,False
+KE03315,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,750000.0,375000.0,1131466.07,stalled,270.0,2024-02-02,2024-10-29,,Rural Dev Dept,community hall,23.6,False
+BI03316,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,1500000.0,1500000.0,2673014.2,ongoing,730.0,2024-04-24,2026-04-24,,Rural Dev Dept,electricity,65.8,False
+RA03317,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,750000.0,375000.0,255253.36,ongoing,365.0,2024-01-28,2025-01-27,,Rural Dev Dept,school,20.2,False
+BI03318,Patna Constituency,Patna,Arjun Verma,Bihar,2000000.0,2000000.0,629552.98,sanctioned,365.0,2023-12-06,2024-12-05,,Jal Nigam,electricity,,False
+UT03319,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1000000.0,1000000.0,1742643.73,sanctioned,270.0,2024-07-23,2025-04-19,,Rural Dev Dept,irrigation,,False
+TA03320,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2500000.0,1250000.0,1191710.77,ongoing,545.0,2023-04-05,2024-10-01,,Rural Dev Dept,sanitation,38.3,False
+AN03321,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1500000.0,1500000.0,844894.67,stalled,730.0,2023-05-26,2025-05-25,,PWD,sanitation,24.1,False
+BI03322,Patna Constituency,Patna,Arjun Verma,Bihar,2500000.0,2500000.0,3321446.03,completed,180.0,2024-10-20,2025-04-18,2025-07-26,Zilla Parishad,community hall,100.0,False
+AN03323,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,2000000.0,2000000.0,812053.13,ongoing,365.0,2024-08-06,2025-08-06,,PWD,school,53.4,False
+AN03324,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1500000.0,1500000.0,907666.03,completed,545.0,2023-08-20,2025-02-15,2025-06-02,Jal Nigam,school,100.0,False
+TA03325,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,750000.0,750000.0,662611.97,completed,180.0,2023-02-12,2023-08-11,2023-07-22,Rural Dev Dept,irrigation,100.0,False
+KE03326,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,750000.0,375000.0,339888.03,ongoing,270.0,2023-10-06,2024-07-02,,PWD,community hall,88.8,False
+AN03327,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,500000.0,500000.0,580612.44,completed,545.0,2024-09-02,2026-03-01,2026-04-24,Rural Dev Dept,road,100.0,False
+WE03328,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,500000.0,250000.0,117809.04,ongoing,730.0,2024-01-06,2026-01-05,,Rural Dev Dept,sanitation,60.7,False
+BI03329,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,1500000.0,1500000.0,2746534.15,ongoing,365.0,2024-01-10,2025-01-09,,PWD,community hall,62.5,False
+RA03330,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,200000.0,100000.0,87915.14,sanctioned,180.0,2023-02-12,2023-08-11,,Rural Dev Dept,drinking water,,False
+TA03331,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1000000.0,1000000.0,620163.37,stalled,730.0,2024-01-17,2026-01-16,,Jal Nigam,electricity,12.1,False
+KA03332,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2500000.0,2500000.0,1926905.33,sanctioned,545.0,2023-12-03,2025-05-31,,Jal Nigam,road,,False
+BI03333,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,750000.0,386844.08,ongoing,180.0,2024-05-10,2024-11-06,,PWD,drinking water,52.6,False
+BI03334,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,500000.0,500000.0,374228.3,ongoing,180.0,2024-05-13,2024-11-09,,Rural Dev Dept,drinking water,45.6,False
+KA03335,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,200000.0,100000.0,61682.66,completed,180.0,2023-01-03,2023-07-02,2023-10-02,Zilla Parishad,electricity,100.0,False
+WE03336,Howrah Constituency,Howrah,Meena Singh,West Bengal,1000000.0,500000.0,1413833.65,completed,545.0,2024-04-04,2025-10-01,2026-01-29,PWD,road,100.0,False
+AN03337,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2500000.0,2500000.0,1295889.55,sanctioned,180.0,2024-08-20,2025-02-16,,Jal Nigam,electricity,,False
+RA03338,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1000000.0,1000000.0,733301.11,ongoing,90.0,2023-10-23,2024-01-21,,Rural Dev Dept,irrigation,89.4,False
+MA03339,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2000000.0,2000000.0,1788988.22,sanctioned,90.0,2023-11-23,2024-02-21,,Zilla Parishad,drinking water,,False
+MA03340,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,200000.0,199984.59,ongoing,180.0,2024-11-24,2025-05-23,,Zilla Parishad,sanitation,46.4,False
+AN03341,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,300000.0,300000.0,564588.93,completed,365.0,2024-11-06,2025-11-06,2026-04-17,Zilla Parishad,school,100.0,False
+BI03342,Patna Constituency,Patna,Arjun Verma,Bihar,2000000.0,2000000.0,1041184.88,ongoing,90.0,2023-10-24,2024-01-22,,Rural Dev Dept,school,39.1,False
+BI03343,Patna Constituency,Patna,Arjun Verma,Bihar,750000.0,750000.0,390384.05,stalled,270.0,2023-09-03,2024-05-30,,Jal Nigam,irrigation,16.9,False
+PU03344,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,500000.0,500000.0,921722.56,ongoing,180.0,2023-12-28,2024-06-25,,Zilla Parishad,school,56.8,False
+UT03345,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,2000000.0,3056147.97,ongoing,365.0,2023-03-03,2024-03-02,,Zilla Parishad,community hall,32.3,False
+RA03346,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,2500000.0,2500000.0,1366956.48,ongoing,730.0,2024-05-17,2026-05-17,,PWD,sanitation,92.4,False
+KE03347,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,500000.0,250000.0,133185.09,ongoing,545.0,2024-08-16,2026-02-12,,Jal Nigam,community hall,79.1,False
+AN03348,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,200000.0,200000.0,306762.36,ongoing,270.0,2024-08-27,2025-05-24,,Jal Nigam,community hall,27.2,False
+KA03349,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1500000.0,1500000.0,986506.14,stalled,730.0,2023-11-14,2025-11-13,,Rural Dev Dept,school,16.2,False
+KA03350,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1500000.0,0.0,0.0,recommended,180.0,2024-07-23,2025-01-19,,Rural Dev Dept,sanitation,,False
+KA03351,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1000000.0,500000.0,200699.1,ongoing,730.0,2024-07-07,2026-07-07,,Jal Nigam,school,64.5,False
+KA03352,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,500000.0,500000.0,345473.85,ongoing,270.0,2023-04-01,2023-12-27,,PWD,sanitation,74.3,False
+MA03353,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2000000.0,2000000.0,1396359.95,completed,730.0,2024-05-27,2026-05-27,2026-07-18,Rural Dev Dept,school,100.0,False
+KA03354,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,750000.0,750000.0,559750.93,completed,545.0,2024-02-08,2025-08-06,2025-07-13,Zilla Parishad,irrigation,100.0,False
+AN03355,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1000000.0,1000000.0,863349.16,completed,90.0,2023-01-15,2023-04-15,2023-04-21,PWD,road,100.0,False
+UT03356,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2000000.0,2000000.0,1417325.94,sanctioned,545.0,2024-07-16,2026-01-12,,Rural Dev Dept,electricity,,False
+AN03357,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1000000.0,500000.0,162735.91,sanctioned,545.0,2023-04-30,2024-10-26,,PWD,sanitation,,False
+MA03358,Pune Constituency,Pune,Sunita Reddy,Maharashtra,500000.0,500000.0,428788.97,stalled,365.0,2024-04-29,2025-04-29,,PWD,irrigation,30.2,False
+AN03359,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,500000.0,250000.0,247651.92,completed,545.0,2023-03-25,2024-09-20,2024-08-25,PWD,irrigation,100.0,False
+BI03360,Patna Constituency,Patna,Arjun Verma,Bihar,750000.0,750000.0,703795.21,sanctioned,545.0,2024-01-10,2025-07-08,,Zilla Parishad,road,,False
+KA03361,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,1464798.21,ongoing,365.0,2024-09-23,2025-09-23,,Rural Dev Dept,drinking water,94.3,False
+MA03362,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,200000.0,364345.91,stalled,90.0,2024-06-17,2024-09-15,,Jal Nigam,irrigation,28.8,False
+TA03363,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1500000.0,0.0,0.0,recommended,270.0,2023-10-24,2024-07-20,,Jal Nigam,school,,False
+RA03364,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1000000.0,1000000.0,420375.77,ongoing,365.0,2024-08-17,2025-08-17,,Zilla Parishad,school,86.9,False
+TA03365,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,300000.0,300000.0,152755.64,stalled,180.0,2023-09-27,2024-03-25,,Rural Dev Dept,irrigation,13.1,False
+AN03366,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,2500000.0,2500000.0,868533.63,sanctioned,90.0,2023-04-07,2023-07-06,,Jal Nigam,sanitation,,False
+AN03367,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,500000.0,0.0,0.0,recommended,90.0,2023-11-26,2024-02-24,,Zilla Parishad,school,,False
+AN03368,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,750000.0,750000.0,877324.19,ongoing,730.0,2023-07-20,2025-07-19,,PWD,electricity,83.1,False
+WE03369,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,200000.0,200000.0,67651.88,stalled,270.0,2023-08-04,2024-04-30,,Zilla Parishad,sanitation,39.2,False
+WE03370,Howrah Constituency,Howrah,Meena Singh,West Bengal,300000.0,0.0,553118.64,recommended,90.0,2023-02-05,2023-05-06,,PWD,irrigation,,False
+MA03371,Pune Constituency,Pune,Sunita Reddy,Maharashtra,300000.0,150000.0,87132.21,completed,90.0,2023-05-25,2023-08-23,2024-03-08,Jal Nigam,irrigation,100.0,False
+UT03372,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,2000000.0,3115399.54,stalled,270.0,2023-05-04,2024-01-29,,Zilla Parishad,drinking water,27.1,False
+KA03373,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,500000.0,250000.0,198001.68,ongoing,545.0,2024-07-31,2026-01-27,,Zilla Parishad,electricity,44.3,False
+KE03374,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2500000.0,1250000.0,844259.18,ongoing,545.0,2024-09-21,2026-03-20,,Rural Dev Dept,road,79.7,False
+UT03375,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,750000.0,750000.0,1246500.32,ongoing,90.0,2023-07-08,2023-10-06,,Rural Dev Dept,electricity,77.3,False
+MA03376,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,100000.0,55158.49,ongoing,545.0,2023-03-03,2024-08-29,,Zilla Parishad,road,80.3,False
+WE03377,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1500000.0,1500000.0,466646.07,ongoing,365.0,2023-05-10,2024-05-09,,Zilla Parishad,electricity,36.1,False
+KE03378,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1500000.0,1500000.0,2653692.92,completed,270.0,2023-03-23,2023-12-18,2024-03-26,Zilla Parishad,community hall,100.0,False
+MA03379,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,185482.29,completed,365.0,2024-02-06,2025-02-05,2025-05-09,PWD,sanitation,100.0,False
+KA03380,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,0.0,0.0,recommended,365.0,2023-08-28,2024-08-27,,PWD,community hall,,False
+PU03381,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1500000.0,750000.0,618258.71,ongoing,730.0,2023-08-17,2025-08-16,,PWD,community hall,26.6,False
+WE03382,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,1358566.82,completed,90.0,2023-11-09,2024-02-07,2024-07-17,PWD,school,100.0,False
+TA03383,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,300000.0,194119.3,ongoing,90.0,2024-08-22,2024-11-20,,Jal Nigam,electricity,54.7,False
+PU03384,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1500000.0,750000.0,440605.97,sanctioned,180.0,2023-12-07,2024-06-04,,PWD,school,,False
+TA03385,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1000000.0,500000.0,1248189.2,ongoing,270.0,2024-06-11,2025-03-08,,PWD,electricity,27.5,False
+AN03386,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1500000.0,1500000.0,2972724.38,ongoing,365.0,2024-11-27,2025-11-27,,PWD,road,88.2,False
+PU03387,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1000000.0,1000000.0,925196.89,stalled,730.0,2023-07-17,2025-07-16,,PWD,drinking water,23.3,False
+BI03388,Patna Constituency,Patna,Arjun Verma,Bihar,500000.0,500000.0,249426.92,stalled,90.0,2024-10-10,2025-01-08,,Zilla Parishad,sanitation,17.8,False
+TA03389,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,500000.0,0.0,908724.04,recommended,90.0,2023-09-22,2023-12-21,,Rural Dev Dept,electricity,,False
+UT03390,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,300000.0,291496.07,stalled,180.0,2024-11-01,2025-04-30,,Jal Nigam,community hall,32.2,False
+WE03391,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,2500000.0,2500000.0,2138760.18,stalled,545.0,2023-05-18,2024-11-13,,Zilla Parishad,sanitation,10.2,False
+MA03392,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,174794.37,sanctioned,730.0,2023-03-24,2025-03-23,,Jal Nigam,school,,False
+BI03393,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,1500000.0,1500000.0,1303859.01,stalled,270.0,2024-05-10,2025-02-04,,PWD,sanitation,21.3,False
+WE03394,Howrah Constituency,Howrah,Meena Singh,West Bengal,1500000.0,1500000.0,1003099.75,completed,730.0,2024-07-24,2026-07-24,2027-01-24,Zilla Parishad,drinking water,100.0,False
+TA03395,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,500000.0,250000.0,100122.85,completed,90.0,2024-11-12,2025-02-10,2025-06-09,Rural Dev Dept,electricity,100.0,False
+UT03396,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,300000.0,300000.0,137211.34,stalled,180.0,2023-05-23,2023-11-19,,Zilla Parishad,road,21.0,False
+BI03397,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,300000.0,300000.0,282241.96,ongoing,730.0,2023-10-30,2025-10-29,,PWD,school,74.5,False
+KE03398,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,300000.0,150000.0,135910.84,sanctioned,730.0,2023-07-08,2025-07-07,,Rural Dev Dept,drinking water,,False
+UT03399,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1000000.0,500000.0,437438.36,completed,270.0,2024-11-27,2025-08-24,2025-08-20,Zilla Parishad,irrigation,100.0,False
+WE03400,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,2000000.0,2000000.0,760136.59,completed,90.0,2023-10-11,2024-01-09,2023-12-28,Zilla Parishad,electricity,100.0,False
+BI03401,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,750000.0,526512.57,sanctioned,270.0,2024-08-23,2025-05-20,,Zilla Parishad,electricity,,False
+KA03402,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2500000.0,2500000.0,1490523.76,ongoing,180.0,2023-09-21,2024-03-19,,Jal Nigam,road,83.5,False
+BI03403,Patna Constituency,Patna,Arjun Verma,Bihar,1000000.0,500000.0,284426.2,ongoing,180.0,2024-07-11,2025-01-07,,Zilla Parishad,school,90.7,False
+TA03404,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,500000.0,250000.0,245449.76,sanctioned,730.0,2024-08-06,2026-08-06,,Jal Nigam,road,,False
+RA03405,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1000000.0,1000000.0,403682.52,ongoing,90.0,2024-08-02,2024-10-31,,Rural Dev Dept,school,23.9,False
+KE03406,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,750000.0,0.0,0.0,recommended,545.0,2023-10-28,2025-04-25,,PWD,irrigation,,False
+WE03407,Howrah Constituency,Howrah,Meena Singh,West Bengal,750000.0,750000.0,498344.37,sanctioned,730.0,2023-09-05,2025-09-04,,PWD,road,,False
+RA03408,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,129485.0,sanctioned,90.0,2023-04-18,2023-07-17,,PWD,drinking water,,False
+KA03409,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2000000.0,2000000.0,1605482.27,ongoing,545.0,2024-03-31,2025-09-27,,PWD,community hall,47.2,False
+KA03410,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2000000.0,1000000.0,2853180.37,sanctioned,365.0,2023-02-20,2024-02-20,,PWD,electricity,,False
+PU03411,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1500000.0,1500000.0,2593271.59,stalled,90.0,2024-07-29,2024-10-27,,PWD,sanitation,23.6,False
+PU03412,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,750000.0,375000.0,236773.04,completed,90.0,2023-08-29,2023-11-27,2023-12-13,Zilla Parishad,electricity,100.0,False
+KA03413,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1000000.0,1000000.0,475368.65,stalled,270.0,2024-11-21,2025-08-18,,Jal Nigam,sanitation,29.8,False
+AN03414,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,750000.0,750000.0,369049.87,completed,270.0,2023-09-18,2024-06-14,2024-10-23,PWD,irrigation,100.0,False
+BI03415,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,2500000.0,2500000.0,2028757.53,stalled,365.0,2023-09-20,2024-09-19,,Zilla Parishad,irrigation,11.9,False
+UT03416,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,200000.0,200000.0,111597.11,ongoing,730.0,2024-07-17,2026-07-17,,PWD,sanitation,80.8,False
+MA03417,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,200000.0,101627.19,ongoing,545.0,2024-07-04,2025-12-31,,Rural Dev Dept,school,16.2,False
+UT03418,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,1000000.0,636596.88,stalled,365.0,2024-08-16,2025-08-16,,Zilla Parishad,road,34.9,False
+RA03419,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,2000000.0,1000000.0,562223.72,ongoing,730.0,2023-02-11,2025-02-10,,PWD,irrigation,12.9,False
+MA03420,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,750000.0,750000.0,744030.77,sanctioned,545.0,2024-03-20,2025-09-16,,PWD,drinking water,,False
+TA03421,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2000000.0,1000000.0,989283.09,ongoing,730.0,2024-07-14,2026-07-14,,Jal Nigam,community hall,39.1,False
+TA03422,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,200000.0,100000.0,42903.22,completed,180.0,2024-01-28,2024-07-26,2024-10-15,PWD,community hall,100.0,False
+WE03423,Howrah Constituency,Howrah,Meena Singh,West Bengal,300000.0,300000.0,203253.75,stalled,365.0,2023-02-18,2024-02-18,,PWD,school,17.0,False
+KE03424,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2500000.0,1250000.0,971956.49,ongoing,270.0,2023-11-15,2024-08-11,,Rural Dev Dept,road,73.8,False
+UT03425,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,2000000.0,2000000.0,720539.83,sanctioned,365.0,2024-04-18,2025-04-18,,Jal Nigam,road,,False
+AN03426,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,750000.0,0.0,0.0,recommended,365.0,2023-01-27,2024-01-27,,Jal Nigam,drinking water,,False
+UT03427,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,200000.0,100000.0,56145.99,ongoing,270.0,2024-08-08,2025-05-05,,Zilla Parishad,irrigation,88.1,False
+TA03428,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1000000.0,500000.0,386287.73,ongoing,365.0,2023-03-18,2024-03-17,,Jal Nigam,drinking water,24.4,False
+KA03429,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2000000.0,0.0,0.0,recommended,365.0,2024-02-13,2025-02-12,,Rural Dev Dept,sanitation,,False
+KA03430,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,300000.0,197601.64,ongoing,365.0,2024-08-16,2025-08-16,,Zilla Parishad,electricity,28.0,False
+TA03431,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,150000.0,149188.76,stalled,365.0,2024-02-15,2025-02-14,,Jal Nigam,irrigation,39.1,False
+UT03432,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,500000.0,500000.0,436941.56,ongoing,365.0,2024-05-14,2025-05-14,,Rural Dev Dept,sanitation,74.7,False
+PU03433,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,200000.0,100000.0,313571.92,ongoing,270.0,2024-07-05,2025-04-01,,PWD,community hall,14.0,False
+TA03434,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1500000.0,1500000.0,1227019.62,completed,545.0,2024-04-26,2025-10-23,2025-09-30,Zilla Parishad,drinking water,100.0,False
+UT03435,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,300000.0,0.0,0.0,recommended,270.0,2023-12-27,2024-09-22,,Rural Dev Dept,sanitation,,False
+KE03436,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2500000.0,1250000.0,632895.11,ongoing,365.0,2024-01-15,2025-01-14,,PWD,school,76.3,False
+TA03437,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1000000.0,1000000.0,659788.68,sanctioned,545.0,2024-06-07,2025-12-04,,PWD,school,,False
+MA03438,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,93988.69,stalled,270.0,2023-01-13,2023-10-10,,Jal Nigam,sanitation,22.9,False
+MA03439,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2000000.0,2000000.0,723406.08,sanctioned,545.0,2023-10-28,2025-04-25,,Rural Dev Dept,road,,False
+MA03440,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,200000.0,100000.0,346450.17,ongoing,180.0,2023-04-29,2023-10-26,,Jal Nigam,electricity,90.7,False
+WE03441,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,2000000.0,2000000.0,1126193.53,completed,270.0,2023-04-21,2024-01-16,2024-04-15,Rural Dev Dept,school,100.0,False
+RA03442,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,300000.0,300000.0,243451.06,stalled,365.0,2023-08-24,2024-08-23,,Jal Nigam,road,21.6,False
+UT03443,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1000000.0,1000000.0,881608.76,completed,545.0,2024-04-13,2025-10-10,2026-04-19,Zilla Parishad,electricity,100.0,False
+AN03444,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,1500000.0,0.0,0.0,recommended,545.0,2023-09-15,2025-03-13,,Zilla Parishad,sanitation,,False
+KA03445,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1500000.0,750000.0,687064.07,completed,270.0,2023-06-22,2024-03-18,2024-09-06,PWD,community hall,100.0,False
+KA03446,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,200000.0,100000.0,243916.87,ongoing,730.0,2024-01-20,2026-01-19,,Jal Nigam,road,72.5,False
+WE03447,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1000000.0,500000.0,459562.23,sanctioned,270.0,2023-04-28,2024-01-23,,PWD,irrigation,,False
+OD03448,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,750000.0,750000.0,744918.81,ongoing,545.0,2024-08-19,2026-02-15,,Zilla Parishad,irrigation,56.1,False
+AN03449,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,2000000.0,2000000.0,897209.35,stalled,180.0,2024-06-30,2024-12-27,,Rural Dev Dept,road,14.5,False
+KA03450,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2000000.0,1000000.0,551808.1,stalled,365.0,2023-10-21,2024-10-20,,Rural Dev Dept,drinking water,12.2,False
+KA03451,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2500000.0,1250000.0,703945.04,ongoing,90.0,2024-11-29,2025-02-27,,Jal Nigam,school,79.6,False
+PU03452,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2500000.0,2500000.0,1324158.35,ongoing,545.0,2023-10-27,2025-04-24,,Zilla Parishad,school,77.0,False
+PU03453,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,500000.0,250000.0,179245.48,sanctioned,545.0,2024-09-25,2026-03-24,,Jal Nigam,electricity,,False
+OD03454,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,300000.0,150000.0,130891.93,completed,365.0,2024-06-14,2025-06-14,2025-05-17,PWD,school,100.0,False
+UT03455,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,750000.0,375000.0,156446.87,completed,545.0,2023-01-03,2024-07-01,2024-09-10,Rural Dev Dept,road,100.0,False
+OD03456,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,300000.0,150000.0,131372.18,ongoing,545.0,2024-05-11,2025-11-07,,PWD,electricity,27.4,False
+KA03457,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,300000.0,193616.85,stalled,90.0,2024-09-26,2024-12-25,,PWD,sanitation,36.8,False
+UT03458,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,200000.0,200000.0,106313.77,ongoing,545.0,2023-11-30,2025-05-28,,Jal Nigam,school,45.6,False
+MA03459,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,750000.0,750000.0,270511.82,ongoing,730.0,2023-12-07,2025-12-06,,Rural Dev Dept,electricity,10.4,False
+BI03460,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,1000000.0,1000000.0,1789915.04,stalled,365.0,2023-02-25,2024-02-25,,Rural Dev Dept,road,18.9,False
+KA03461,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,200000.0,200000.0,116725.86,ongoing,270.0,2023-08-14,2024-05-10,,Jal Nigam,community hall,62.9,False
+BI03462,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,2000000.0,2000000.0,2602503.73,ongoing,730.0,2024-02-02,2026-02-01,,Rural Dev Dept,drinking water,89.5,False
+WE03463,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,750000.0,375000.0,1250724.35,ongoing,730.0,2024-08-14,2026-08-14,,Jal Nigam,electricity,34.7,False
+RA03464,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,2000000.0,1000000.0,366508.63,sanctioned,270.0,2023-08-27,2024-05-23,,Zilla Parishad,community hall,,False
+TA03465,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2500000.0,2500000.0,1262762.3,ongoing,90.0,2023-11-09,2024-02-07,,Jal Nigam,community hall,26.9,False
+TA03466,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,500000.0,250000.0,153573.1,completed,90.0,2024-11-03,2025-02-01,2025-03-01,PWD,drinking water,100.0,False
+KE03467,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,500000.0,500000.0,406793.85,ongoing,90.0,2023-11-09,2024-02-07,,PWD,school,62.8,False
+MA03468,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1000000.0,1000000.0,680759.78,ongoing,730.0,2024-03-18,2026-03-18,,Zilla Parishad,irrigation,93.1,False
+TA03469,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,1000000.0,1000000.0,549828.09,completed,180.0,2023-01-29,2023-07-28,2023-12-13,Jal Nigam,drinking water,100.0,False
+KA03470,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,750000.0,750000.0,637231.13,sanctioned,90.0,2024-07-02,2024-09-30,,PWD,irrigation,,False
+KA03471,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2000000.0,2000000.0,3499783.26,sanctioned,365.0,2023-09-06,2024-09-05,,Zilla Parishad,community hall,,False
+TA03472,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2000000.0,2000000.0,1175308.9,completed,180.0,2023-02-20,2023-08-19,2023-12-02,Jal Nigam,road,100.0,False
+BI03473,Patna Constituency,Patna,Arjun Verma,Bihar,200000.0,200000.0,155697.76,stalled,545.0,2024-02-23,2025-08-21,,Zilla Parishad,electricity,27.8,False
+OD03474,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1500000.0,1500000.0,682429.8,ongoing,730.0,2024-01-04,2026-01-03,,Rural Dev Dept,electricity,85.3,False
+OD03475,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,750000.0,750000.0,902366.24,ongoing,730.0,2024-04-09,2026-04-09,,PWD,school,42.3,False
+KE03476,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1000000.0,500000.0,230125.03,ongoing,545.0,2024-08-22,2026-02-18,,Zilla Parishad,road,46.0,False
+AN03477,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,300000.0,202383.87,completed,270.0,2024-04-01,2024-12-27,2025-05-21,Rural Dev Dept,sanitation,100.0,False
+BI03478,Patna Constituency,Patna,Arjun Verma,Bihar,2500000.0,2500000.0,1856145.25,stalled,90.0,2024-09-08,2024-12-07,,Zilla Parishad,school,10.1,False
+TA03479,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2000000.0,1000000.0,661481.1,stalled,270.0,2023-06-16,2024-03-12,,Rural Dev Dept,electricity,24.1,False
+UT03480,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,750000.0,750000.0,960752.29,stalled,270.0,2023-12-03,2024-08-29,,PWD,electricity,9.7,False
+BI03481,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,300000.0,300000.0,103493.85,sanctioned,270.0,2024-09-24,2025-06-21,,Zilla Parishad,irrigation,,False
+TA03482,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2500000.0,2500000.0,1658351.79,sanctioned,90.0,2023-10-07,2024-01-05,,Zilla Parishad,community hall,,False
+TA03483,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,200000.0,100000.0,33146.53,sanctioned,90.0,2024-04-17,2024-07-16,,Rural Dev Dept,school,,False
+MA03484,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2500000.0,0.0,0.0,recommended,365.0,2023-03-27,2024-03-26,,Rural Dev Dept,road,,False
+RA03485,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,1500000.0,750000.0,2427201.82,ongoing,545.0,2023-02-04,2024-08-02,,Zilla Parishad,drinking water,86.8,False
+RA03486,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,500000.0,250000.0,231162.67,ongoing,730.0,2023-02-08,2025-02-07,,Rural Dev Dept,community hall,43.9,False
+AN03487,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1000000.0,1000000.0,566037.36,ongoing,180.0,2023-05-01,2023-10-28,,PWD,road,43.1,False
+AN03488,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1000000.0,500000.0,376781.31,completed,730.0,2023-03-28,2025-03-27,2025-03-16,Rural Dev Dept,electricity,100.0,False
+MA03489,Pune Constituency,Pune,Sunita Reddy,Maharashtra,1000000.0,0.0,0.0,recommended,365.0,2023-07-11,2024-07-10,,Jal Nigam,drinking water,,False
+KE03490,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2500000.0,2500000.0,2063033.37,ongoing,365.0,2023-05-06,2024-05-05,,PWD,road,12.2,False
+BI03491,Patna Constituency,Patna,Arjun Verma,Bihar,2500000.0,2500000.0,1997336.63,ongoing,270.0,2023-08-10,2024-05-06,,PWD,school,86.0,False
+BI03492,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,750000.0,663817.42,ongoing,730.0,2023-07-11,2025-07-10,,Zilla Parishad,road,56.0,False
+KE03493,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,750000.0,375000.0,313052.74,completed,180.0,2023-04-14,2023-10-11,2023-11-19,PWD,irrigation,100.0,False
+TA03494,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,300000.0,165296.8,ongoing,545.0,2023-07-19,2025-01-14,,Jal Nigam,community hall,46.9,False
+RA03495,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,150000.0,129376.36,completed,90.0,2024-01-21,2024-04-20,2024-09-12,PWD,drinking water,100.0,False
+WE03496,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1500000.0,1500000.0,881020.07,stalled,270.0,2023-12-25,2024-09-20,,Rural Dev Dept,irrigation,27.1,False
+KE03497,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1500000.0,1500000.0,975373.47,ongoing,730.0,2023-12-10,2025-12-09,,Zilla Parishad,drinking water,68.7,False
+MA03498,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2500000.0,2500000.0,767892.37,ongoing,545.0,2024-02-18,2025-08-16,,Jal Nigam,drinking water,23.4,False
+AN03499,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,500000.0,0.0,0.0,recommended,270.0,2023-07-31,2024-04-26,,Jal Nigam,road,,False
+RA03500,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,150000.0,469376.54,stalled,545.0,2024-05-26,2025-11-22,,Rural Dev Dept,community hall,20.5,False
+BI03501,Patna Constituency,Patna,Arjun Verma,Bihar,300000.0,300000.0,95244.72,stalled,365.0,2023-10-30,2024-10-29,,Rural Dev Dept,electricity,17.9,False
+BI03502,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,300000.0,300000.0,259974.91,ongoing,270.0,2023-02-21,2023-11-18,,Zilla Parishad,electricity,68.3,False
+KA03503,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,750000.0,375000.0,359793.04,completed,730.0,2023-01-27,2025-01-26,2025-02-03,Rural Dev Dept,school,100.0,False
+AN03504,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,1500000.0,750000.0,464799.97,ongoing,545.0,2024-01-30,2025-07-28,,Zilla Parishad,road,39.1,False
+UT03505,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,500000.0,500000.0,493133.89,stalled,270.0,2023-01-30,2023-10-27,,PWD,irrigation,13.2,False
+BI03506,Patna Constituency,Patna,Arjun Verma,Bihar,300000.0,150000.0,134338.72,stalled,545.0,2024-11-11,2026-05-10,,PWD,school,19.1,False
+UT03507,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,500000.0,500000.0,344416.11,sanctioned,730.0,2023-01-22,2025-01-21,,Jal Nigam,irrigation,,False
+WE03508,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,2000000.0,1803718.18,completed,545.0,2023-09-24,2025-03-22,2025-03-09,Zilla Parishad,road,100.0,False
+KA03509,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,300000.0,150000.0,106246.45,stalled,180.0,2024-10-30,2025-04-28,,Jal Nigam,electricity,24.3,False
+UT03510,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,2500000.0,2500000.0,1092756.46,sanctioned,545.0,2024-05-02,2025-10-29,,PWD,sanitation,,False
+UT03511,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,500000.0,500000.0,487887.11,completed,90.0,2024-11-05,2025-02-03,2025-08-18,Zilla Parishad,road,100.0,False
+KE03512,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2000000.0,0.0,0.0,recommended,730.0,2023-10-30,2025-10-29,,PWD,drinking water,,False
+KA03513,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1000000.0,1000000.0,390446.33,ongoing,180.0,2023-12-16,2024-06-13,,PWD,irrigation,91.0,False
+RA03514,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,200000.0,200000.0,107133.67,sanctioned,180.0,2024-09-07,2025-03-06,,Jal Nigam,electricity,,False
+TA03515,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,1500000.0,1500000.0,836533.84,completed,90.0,2023-06-07,2023-09-05,2024-01-27,PWD,drinking water,100.0,False
+MA03516,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,99119.13,ongoing,730.0,2023-10-25,2025-10-24,,Jal Nigam,community hall,57.8,False
+WE03517,Howrah Constituency,Howrah,Meena Singh,West Bengal,1000000.0,1000000.0,399003.39,ongoing,90.0,2024-09-21,2024-12-20,,Rural Dev Dept,school,30.9,False
+KA03518,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,500000.0,250000.0,138453.75,ongoing,270.0,2024-08-24,2025-05-21,,Zilla Parishad,irrigation,63.4,False
+AN03519,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1500000.0,750000.0,555916.81,sanctioned,730.0,2024-01-10,2026-01-09,,Jal Nigam,community hall,,False
+KE03520,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,1000000.0,1000000.0,444059.42,sanctioned,270.0,2024-06-09,2025-03-06,,Zilla Parishad,drinking water,,False
+PU03521,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1500000.0,1500000.0,597522.27,ongoing,180.0,2024-08-22,2025-02-18,,Jal Nigam,road,87.8,False
+KA03522,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,1500000.0,1500000.0,1458381.39,completed,180.0,2024-04-11,2024-10-08,2025-01-14,PWD,road,100.0,False
+TA03523,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2000000.0,2000000.0,896829.32,completed,90.0,2023-12-22,2024-03-21,2024-03-12,Zilla Parishad,community hall,100.0,False
+KA03524,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1500000.0,1500000.0,1208533.7,completed,180.0,2023-11-20,2024-05-18,2024-06-19,Zilla Parishad,sanitation,100.0,False
+TA03525,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,1500000.0,1500000.0,1077426.36,completed,90.0,2023-03-11,2023-06-09,2023-10-02,Zilla Parishad,school,100.0,False
+KA03526,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,200000.0,100000.0,48641.29,sanctioned,365.0,2024-03-22,2025-03-22,,Jal Nigam,school,,False
+UT03527,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,750000.0,750000.0,476395.38,ongoing,180.0,2023-10-05,2024-04-02,,Rural Dev Dept,community hall,46.5,False
+WE03528,Howrah Constituency,Howrah,Meena Singh,West Bengal,200000.0,200000.0,289194.33,ongoing,270.0,2024-02-18,2024-11-14,,PWD,electricity,63.6,False
+MA03529,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,200000.0,90081.03,sanctioned,365.0,2024-01-08,2025-01-07,,PWD,sanitation,,False
+KE03530,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,2000000.0,1241563.74,sanctioned,545.0,2023-11-02,2025-04-30,,Zilla Parishad,school,,False
+BI03531,Patna Constituency,Patna,Arjun Verma,Bihar,2000000.0,2000000.0,2593530.52,ongoing,365.0,2023-08-25,2024-08-24,,Jal Nigam,school,42.3,False
+PU03532,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,200000.0,200000.0,146833.51,stalled,545.0,2023-01-05,2024-07-03,,Jal Nigam,school,20.6,False
+AN03533,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,300000.0,300000.0,543194.9,ongoing,180.0,2024-04-04,2024-10-01,,PWD,electricity,16.3,False
+MA03534,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1500000.0,1500000.0,694019.89,ongoing,730.0,2023-09-10,2025-09-09,,Rural Dev Dept,community hall,11.5,False
+BI03535,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,200000.0,200000.0,275604.51,ongoing,545.0,2023-01-31,2024-07-29,,PWD,road,39.4,False
+WE03536,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,500000.0,0.0,0.0,recommended,90.0,2024-10-16,2025-01-14,,Rural Dev Dept,school,,False
+OD03537,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2000000.0,2000000.0,1111663.46,stalled,180.0,2023-12-16,2024-06-13,,Zilla Parishad,drinking water,31.1,False
+UT03538,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,500000.0,0.0,0.0,recommended,545.0,2024-05-07,2025-11-03,,Rural Dev Dept,drinking water,,False
+WE03539,Howrah Constituency,Howrah,Meena Singh,West Bengal,200000.0,100000.0,46620.06,stalled,545.0,2024-04-24,2025-10-21,,Rural Dev Dept,electricity,8.1,False
+TA03540,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,750000.0,375000.0,1359575.38,stalled,545.0,2024-08-02,2026-01-29,,Rural Dev Dept,road,17.4,False
+WE03541,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1500000.0,750000.0,581535.0,ongoing,90.0,2024-10-04,2025-01-02,,Rural Dev Dept,road,18.6,False
+RA03542,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,2500000.0,0.0,0.0,recommended,180.0,2024-09-13,2025-03-12,,PWD,electricity,,False
+KE03543,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,500000.0,500000.0,402716.26,ongoing,180.0,2023-01-14,2023-07-13,,Rural Dev Dept,electricity,58.9,False
+MA03544,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2500000.0,2500000.0,1644869.48,ongoing,545.0,2024-07-10,2026-01-06,,Rural Dev Dept,drinking water,20.9,False
+RA03545,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1000000.0,1000000.0,815356.46,stalled,730.0,2023-10-21,2025-10-20,,Rural Dev Dept,electricity,28.5,False
+PU03546,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,500000.0,500000.0,306957.0,completed,270.0,2024-11-03,2025-07-31,2025-12-28,PWD,electricity,100.0,False
+WE03547,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,2390184.86,ongoing,180.0,2024-07-14,2025-01-10,,PWD,community hall,50.8,False
+KE03548,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,200000.0,100000.0,36685.82,completed,545.0,2023-02-11,2024-08-09,2024-08-09,Zilla Parishad,school,100.0,False
+KE03549,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2000000.0,2000000.0,1639640.15,ongoing,365.0,2023-01-03,2024-01-03,,Jal Nigam,electricity,94.4,False
+UT03550,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2500000.0,2500000.0,1896712.58,ongoing,90.0,2023-07-25,2023-10-23,,Zilla Parishad,community hall,86.8,False
+UT03551,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2500000.0,1250000.0,1199077.5,completed,365.0,2023-03-27,2024-03-26,2024-07-12,Jal Nigam,irrigation,100.0,False
+UT03552,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,2000000.0,1000000.0,435992.26,completed,545.0,2024-07-12,2026-01-08,2026-03-25,Rural Dev Dept,school,100.0,False
+RA03553,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,300000.0,300000.0,118367.24,ongoing,730.0,2024-01-09,2026-01-08,,Zilla Parishad,sanitation,53.0,False
+KA03554,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,750000.0,750000.0,463886.85,stalled,270.0,2023-04-18,2024-01-13,,Jal Nigam,sanitation,25.9,False
+RA03555,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,200000.0,200000.0,366694.94,ongoing,180.0,2023-09-12,2024-03-10,,Zilla Parishad,drinking water,10.2,False
+BI03556,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,2500000.0,2500000.0,1664811.71,stalled,90.0,2023-04-23,2023-07-22,,Jal Nigam,irrigation,13.3,False
+OD03557,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2000000.0,2000000.0,679872.18,sanctioned,545.0,2023-08-07,2025-02-02,,Zilla Parishad,irrigation,,False
+BI03558,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,500000.0,500000.0,456533.88,sanctioned,730.0,2023-04-23,2025-04-22,,Zilla Parishad,school,,False
+KE03559,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,2000000.0,2000000.0,1903875.53,stalled,545.0,2023-04-26,2024-10-22,,Rural Dev Dept,road,37.9,False
+AN03560,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,2000000.0,1000000.0,366070.99,ongoing,545.0,2023-08-18,2025-02-13,,Jal Nigam,school,40.1,False
+UT03561,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2000000.0,1000000.0,856620.1,stalled,270.0,2023-04-01,2023-12-27,,Zilla Parishad,sanitation,18.5,False
+MA03562,Pune Constituency,Pune,Sunita Reddy,Maharashtra,750000.0,375000.0,196717.71,stalled,90.0,2024-04-15,2024-07-14,,Zilla Parishad,community hall,38.7,False
+AN03563,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,750000.0,750000.0,483385.5,completed,730.0,2023-05-28,2025-05-27,2025-05-18,PWD,community hall,100.0,False
+KA03564,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,300000.0,239723.08,sanctioned,730.0,2023-12-29,2025-12-28,,PWD,school,,False
+KE03565,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,0.0,0.0,recommended,90.0,2023-10-15,2024-01-13,,PWD,irrigation,,False
+PU03566,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2500000.0,1250000.0,1069490.61,ongoing,90.0,2023-11-15,2024-02-13,,Rural Dev Dept,drinking water,33.8,False
+TA03567,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,500000.0,250000.0,123694.1,ongoing,730.0,2023-09-28,2025-09-27,,Zilla Parishad,drinking water,47.3,False
+PU03568,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,200000.0,200000.0,154939.3,sanctioned,545.0,2023-01-01,2024-06-29,,Rural Dev Dept,electricity,,False
+MA03569,Pune Constituency,Pune,Sunita Reddy,Maharashtra,750000.0,750000.0,228018.5,stalled,270.0,2023-08-10,2024-05-06,,PWD,drinking water,28.4,False
+TA03570,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1500000.0,1500000.0,937927.32,completed,90.0,2024-02-29,2024-05-29,2024-08-03,Rural Dev Dept,irrigation,100.0,False
+MA03571,Pune Constituency,Pune,Sunita Reddy,Maharashtra,200000.0,0.0,0.0,recommended,270.0,2024-09-19,2025-06-16,,Zilla Parishad,school,,False
+UT03572,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,750000.0,348220.06,completed,90.0,2023-05-31,2023-08-29,2024-02-17,Rural Dev Dept,drinking water,100.0,False
+UT03573,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,750000.0,0.0,1368266.11,recommended,180.0,2024-11-27,2025-05-26,,Rural Dev Dept,community hall,,False
+BI03574,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,300000.0,150000.0,78810.28,completed,545.0,2024-02-11,2025-08-09,2025-09-05,Rural Dev Dept,school,100.0,False
+TA03575,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,1000000.0,0.0,0.0,recommended,730.0,2023-09-17,2025-09-16,,PWD,irrigation,,False
+AN03576,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,200000.0,100000.0,79784.98,completed,365.0,2023-10-04,2024-10-03,2024-10-30,Rural Dev Dept,drinking water,100.0,False
+RA03577,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,200000.0,200000.0,270988.68,sanctioned,180.0,2024-04-18,2024-10-15,,Zilla Parishad,drinking water,,False
+WE03578,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,1000000.0,2528096.82,ongoing,90.0,2023-09-24,2023-12-23,,Rural Dev Dept,community hall,94.9,False
+AN03579,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,200000.0,200000.0,111911.81,ongoing,90.0,2023-03-10,2023-06-08,,Zilla Parishad,community hall,18.5,False
+RA03580,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,750000.0,750000.0,699119.44,ongoing,365.0,2023-10-26,2024-10-25,,Zilla Parishad,drinking water,34.9,False
+PU03581,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,750000.0,0.0,0.0,recommended,180.0,2023-04-12,2023-10-09,,Rural Dev Dept,school,,False
+KE03582,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,200000.0,0.0,0.0,recommended,270.0,2023-02-24,2023-11-21,,Zilla Parishad,school,,False
+WE03583,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,750000.0,750000.0,373880.38,stalled,730.0,2024-02-09,2026-02-08,,Rural Dev Dept,school,19.3,False
+AN03584,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,1500000.0,750000.0,337109.61,stalled,365.0,2023-03-22,2024-03-21,,Rural Dev Dept,school,5.4,False
+UT03585,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2000000.0,1000000.0,3242165.84,ongoing,545.0,2024-05-29,2025-11-25,,Jal Nigam,irrigation,27.9,False
+BI03586,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,1000000.0,0.0,0.0,recommended,730.0,2023-12-30,2025-12-29,,PWD,sanitation,,False
+WE03587,Howrah Constituency,Howrah,Meena Singh,West Bengal,1000000.0,1000000.0,1562249.98,ongoing,180.0,2024-09-23,2025-03-22,,PWD,community hall,35.1,False
+MA03588,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2000000.0,0.0,0.0,recommended,270.0,2023-05-25,2024-02-19,,Jal Nigam,electricity,,False
+AN03589,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,200000.0,200000.0,107700.52,ongoing,90.0,2023-07-15,2023-10-13,,PWD,community hall,18.4,False
+UT03590,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,2000000.0,1000000.0,455244.83,completed,270.0,2023-02-02,2023-10-30,2024-05-12,Zilla Parishad,community hall,100.0,False
+MA03591,Pune Constituency,Pune,Sunita Reddy,Maharashtra,1500000.0,1500000.0,935403.78,ongoing,365.0,2024-08-05,2025-08-05,,Rural Dev Dept,electricity,70.6,False
+RA03592,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1000000.0,1000000.0,549354.43,ongoing,90.0,2023-05-30,2023-08-28,,Rural Dev Dept,electricity,15.0,False
+UT03593,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,500000.0,500000.0,697521.8,ongoing,365.0,2024-11-21,2025-11-21,,PWD,road,67.3,False
+AN03594,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,750000.0,375000.0,173618.44,stalled,270.0,2024-01-04,2024-09-30,,Rural Dev Dept,community hall,30.6,False
+PU03595,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,500000.0,500000.0,476884.67,sanctioned,730.0,2023-01-18,2025-01-17,,Rural Dev Dept,community hall,,False
+TA03596,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,2000000.0,2000000.0,1831855.37,completed,270.0,2023-08-30,2024-05-26,2024-05-11,Rural Dev Dept,community hall,100.0,False
+UT03597,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,750000.0,375000.0,1463888.94,stalled,365.0,2024-03-11,2025-03-11,,Rural Dev Dept,school,18.3,False
+OD03598,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2500000.0,2500000.0,1782589.44,ongoing,365.0,2024-03-14,2025-03-14,,Rural Dev Dept,drinking water,91.9,False
+PU03599,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2000000.0,2000000.0,1875932.57,completed,730.0,2024-10-10,2026-10-10,2027-02-18,Rural Dev Dept,school,100.0,False
+OD03600,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,500000.0,0.0,0.0,recommended,365.0,2024-04-18,2025-04-18,,Jal Nigam,drinking water,,False
+TA03601,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,1000000.0,500000.0,419934.04,completed,730.0,2024-03-06,2026-03-06,2026-02-23,Rural Dev Dept,sanitation,100.0,False
+MA03602,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,150000.0,59347.57,sanctioned,270.0,2023-10-22,2024-07-18,,PWD,road,,False
+TA03603,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,300000.0,300000.0,133085.71,completed,270.0,2024-04-03,2024-12-29,2025-02-18,Jal Nigam,school,100.0,False
+KE03604,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2500000.0,2500000.0,1620303.8,ongoing,180.0,2024-03-12,2024-09-08,,PWD,drinking water,84.6,False
+BI03605,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,1000000.0,1000000.0,578054.23,sanctioned,270.0,2024-11-26,2025-08-23,,Jal Nigam,community hall,,False
+AN03606,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,200000.0,100000.0,64838.05,ongoing,180.0,2023-03-21,2023-09-17,,Jal Nigam,electricity,61.1,False
+BI03607,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,200000.0,200000.0,304781.58,stalled,180.0,2023-11-29,2024-05-27,,PWD,drinking water,24.6,False
+WE03608,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,200000.0,100000.0,353575.96,completed,180.0,2023-02-13,2023-08-12,2023-09-16,Rural Dev Dept,school,100.0,False
+MA03609,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1500000.0,1500000.0,1462894.1,sanctioned,90.0,2023-09-17,2023-12-16,,Zilla Parishad,community hall,,False
+MA03610,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2000000.0,2000000.0,1472540.32,completed,730.0,2024-06-03,2026-06-03,2026-08-06,Jal Nigam,sanitation,100.0,False
+AN03611,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,1500000.0,750000.0,227317.49,ongoing,180.0,2023-04-03,2023-09-30,,PWD,electricity,91.1,False
+KE03612,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1500000.0,1500000.0,1160789.86,ongoing,545.0,2024-05-04,2025-10-31,,Jal Nigam,sanitation,41.2,False
+BI03613,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,375000.0,1170549.62,completed,270.0,2024-06-22,2025-03-19,2025-05-30,Jal Nigam,irrigation,100.0,False
+MA03614,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,750000.0,750000.0,1214739.13,ongoing,365.0,2024-10-12,2025-10-12,,PWD,irrigation,34.4,False
+KA03615,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2000000.0,2000000.0,1579078.63,ongoing,90.0,2024-08-05,2024-11-03,,Zilla Parishad,community hall,69.9,False
+KA03616,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,500000.0,0.0,0.0,recommended,730.0,2024-02-11,2026-02-10,,PWD,drinking water,,False
+KA03617,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,884309.3,completed,365.0,2023-10-20,2024-10-19,2024-11-12,Rural Dev Dept,road,100.0,False
+BI03618,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,200000.0,200000.0,153632.3,sanctioned,545.0,2024-12-01,2026-05-30,,Jal Nigam,road,,False
+MA03619,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,1000000.0,500000.0,1579354.52,stalled,365.0,2024-10-22,2025-10-22,,Zilla Parishad,school,31.2,False
+KA03620,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,300000.0,110556.74,ongoing,270.0,2023-12-06,2024-09-01,,Zilla Parishad,sanitation,20.4,False
+AN03621,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,1000000.0,500000.0,1246996.61,ongoing,270.0,2023-02-13,2023-11-10,,Rural Dev Dept,community hall,31.3,False
+BI03622,Patna Constituency,Patna,Arjun Verma,Bihar,2000000.0,2000000.0,847349.37,stalled,545.0,2024-07-18,2026-01-14,,Jal Nigam,irrigation,13.2,False
+BI03623,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,200000.0,100000.0,53556.84,ongoing,270.0,2023-03-24,2023-12-19,,Zilla Parishad,road,93.4,False
+KE03624,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1500000.0,0.0,1969971.13,recommended,90.0,2023-12-24,2024-03-23,,Jal Nigam,irrigation,,False
+MA03625,Pune Constituency,Pune,Sunita Reddy,Maharashtra,1500000.0,750000.0,2053445.12,completed,270.0,2023-12-18,2024-09-13,2025-03-05,Zilla Parishad,electricity,100.0,False
+OD03626,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2500000.0,1250000.0,464942.16,completed,180.0,2024-04-29,2024-10-26,2025-01-25,Jal Nigam,irrigation,100.0,False
+RA03627,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,490437.86,completed,270.0,2023-09-03,2024-05-30,2024-06-14,Zilla Parishad,road,100.0,False
+BI03628,Patna Constituency,Patna,Arjun Verma,Bihar,2500000.0,2500000.0,2042232.62,ongoing,365.0,2023-12-05,2024-12-04,,Rural Dev Dept,school,22.4,False
+WE03629,Howrah Constituency,Howrah,Meena Singh,West Bengal,750000.0,750000.0,883866.08,ongoing,545.0,2024-03-10,2025-09-06,,Rural Dev Dept,drinking water,69.8,False
+WE03630,Howrah Constituency,Howrah,Meena Singh,West Bengal,300000.0,150000.0,486899.55,ongoing,180.0,2024-03-12,2024-09-08,,Rural Dev Dept,sanitation,15.5,False
+KA03631,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,300000.0,150000.0,131484.4,ongoing,90.0,2024-03-01,2024-05-30,,PWD,road,82.6,False
+OD03632,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,1500000.0,1500000.0,2883570.16,ongoing,180.0,2023-02-13,2023-08-12,,Jal Nigam,community hall,93.5,False
+WE03633,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,2000000.0,0.0,0.0,recommended,180.0,2024-06-22,2024-12-19,,Zilla Parishad,road,,False
+KA03634,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1500000.0,0.0,0.0,recommended,545.0,2023-01-11,2024-07-09,,PWD,community hall,,False
+TA03635,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,300000.0,300000.0,389485.31,sanctioned,180.0,2024-04-13,2024-10-10,,PWD,school,,False
+MA03636,Pune Constituency,Pune,Sunita Reddy,Maharashtra,750000.0,375000.0,200548.77,stalled,365.0,2023-04-26,2024-04-25,,Rural Dev Dept,road,36.2,False
+UT03637,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,200000.0,200000.0,174680.83,stalled,365.0,2024-11-17,2025-11-17,,Jal Nigam,drinking water,37.1,False
+KA03638,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2500000.0,2500000.0,1125549.54,completed,730.0,2024-03-07,2026-03-07,2026-02-11,Rural Dev Dept,road,100.0,False
+UT03639,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,2000000.0,2000000.0,896352.57,completed,545.0,2023-11-05,2025-05-03,2025-06-15,Jal Nigam,drinking water,100.0,False
+KA03640,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1500000.0,1500000.0,2284264.45,ongoing,90.0,2024-06-23,2024-09-21,,Jal Nigam,electricity,55.9,False
+OD03641,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,200000.0,100000.0,59413.81,ongoing,90.0,2023-10-29,2024-01-27,,Zilla Parishad,community hall,70.9,False
+AN03642,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,200000.0,200000.0,174510.77,stalled,90.0,2024-11-21,2025-02-19,,Zilla Parishad,irrigation,17.2,False
+TA03643,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,300000.0,100705.63,ongoing,180.0,2023-05-29,2023-11-25,,PWD,electricity,47.4,False
+RA03644,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,300000.0,150000.0,62132.33,ongoing,180.0,2024-08-05,2025-02-01,,Rural Dev Dept,electricity,39.5,False
+KE03645,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,2000000.0,1740073.59,ongoing,545.0,2024-04-19,2025-10-16,,PWD,community hall,28.5,False
+TA03646,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,2000000.0,2000000.0,1651525.81,completed,545.0,2024-04-19,2025-10-16,2026-02-08,Rural Dev Dept,community hall,100.0,False
+PU03647,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,750000.0,375000.0,214866.06,ongoing,545.0,2024-01-02,2025-06-30,,PWD,school,89.5,False
+TA03648,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1000000.0,500000.0,183633.8,completed,270.0,2023-03-12,2023-12-07,2024-06-23,Rural Dev Dept,school,100.0,False
+KA03649,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,300000.0,300000.0,255723.59,sanctioned,180.0,2023-03-14,2023-09-10,,Zilla Parishad,electricity,,False
+MA03650,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2500000.0,2500000.0,1930182.69,ongoing,180.0,2024-06-01,2024-11-28,,Rural Dev Dept,electricity,82.7,False
+RA03651,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,260837.13,stalled,270.0,2024-10-11,2025-07-08,,Zilla Parishad,sanitation,18.1,False
+AN03652,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,300000.0,150000.0,75181.71,completed,730.0,2023-01-13,2025-01-12,2025-03-22,Rural Dev Dept,road,100.0,False
+TA03653,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,1500000.0,1500000.0,1363417.8,stalled,730.0,2024-10-13,2026-10-13,,Rural Dev Dept,road,7.6,False
+BI03654,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,750000.0,250026.03,ongoing,365.0,2023-12-24,2024-12-23,,Jal Nigam,road,92.0,False
+WE03655,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,2000000.0,1216006.08,completed,545.0,2024-07-23,2026-01-19,2026-04-21,Jal Nigam,irrigation,100.0,False
+UT03656,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,2000000.0,0.0,0.0,recommended,90.0,2023-06-08,2023-09-06,,Rural Dev Dept,sanitation,,False
+KE03657,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,200000.0,200000.0,76278.06,ongoing,365.0,2024-03-28,2025-03-28,,Zilla Parishad,school,25.3,False
+KA03658,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2500000.0,1250000.0,709545.31,completed,365.0,2024-09-20,2025-09-20,2025-12-17,PWD,sanitation,100.0,False
+MA03659,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,750000.0,375000.0,204814.44,completed,730.0,2023-07-16,2025-07-15,2025-06-28,Zilla Parishad,sanitation,100.0,False
+TA03660,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,1000000.0,500000.0,376370.46,stalled,270.0,2024-09-23,2025-06-20,,PWD,electricity,22.0,False
+MA03661,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,750000.0,375000.0,363048.5,stalled,365.0,2023-05-14,2024-05-13,,Jal Nigam,community hall,25.7,False
+KE03662,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,2000000.0,3376833.5,stalled,545.0,2024-05-02,2025-10-29,,Jal Nigam,drinking water,31.7,False
+BI03663,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,2500000.0,0.0,0.0,recommended,365.0,2023-01-01,2024-01-01,,Zilla Parishad,irrigation,,False
+AN03664,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,200000.0,100000.0,51769.78,completed,730.0,2023-04-29,2025-04-28,2025-08-07,Rural Dev Dept,drinking water,100.0,False
+BI03665,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,2000000.0,2000000.0,1310905.91,stalled,730.0,2024-10-17,2026-10-17,,Jal Nigam,community hall,34.3,False
+TA03666,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,200000.0,200000.0,60547.15,completed,365.0,2024-03-26,2025-03-26,2025-08-11,PWD,community hall,100.0,False
+TA03667,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,200000.0,200000.0,84312.79,sanctioned,180.0,2023-08-07,2024-02-03,,Jal Nigam,community hall,,False
+KA03668,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1500000.0,1500000.0,847956.18,stalled,270.0,2023-06-13,2024-03-09,,Jal Nigam,road,39.7,False
+WE03669,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,1500000.0,1500000.0,666006.88,completed,90.0,2023-04-30,2023-07-29,2024-01-02,Zilla Parishad,drinking water,100.0,False
+AN03670,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,2500000.0,2500000.0,1587816.86,sanctioned,365.0,2024-01-03,2025-01-02,,PWD,road,,False
+WE03671,Howrah Constituency,Howrah,Meena Singh,West Bengal,2000000.0,0.0,0.0,recommended,180.0,2024-07-03,2024-12-30,,Zilla Parishad,irrigation,,False
+WE03672,Howrah Constituency,Howrah,Meena Singh,West Bengal,1000000.0,1000000.0,961866.71,completed,730.0,2023-08-06,2025-08-05,2026-02-20,Zilla Parishad,drinking water,100.0,False
+KA03673,Belagavi Constituency,Belagavi,Sanjay Gowda,Karnataka,2000000.0,1000000.0,770751.03,stalled,730.0,2024-04-12,2026-04-12,,Rural Dev Dept,drinking water,37.2,False
+RA03674,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,241627.21,sanctioned,545.0,2023-07-12,2025-01-07,,Zilla Parishad,drinking water,,False
+TA03675,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,2500000.0,0.0,0.0,recommended,180.0,2023-06-05,2023-12-02,,Rural Dev Dept,road,,False
+AN03676,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2000000.0,2000000.0,1232013.0,completed,545.0,2023-05-30,2024-11-25,2024-11-05,Jal Nigam,sanitation,100.0,False
+OD03677,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,750000.0,750000.0,1407240.76,stalled,90.0,2023-05-25,2023-08-23,,Rural Dev Dept,electricity,14.1,False
+PU03678,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,200000.0,200000.0,230611.06,stalled,180.0,2023-01-24,2023-07-23,,PWD,community hall,25.6,False
+MA03679,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,300000.0,300000.0,538215.42,completed,90.0,2023-02-27,2023-05-28,2023-09-07,Jal Nigam,drinking water,100.0,False
+WE03680,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,1857683.25,sanctioned,90.0,2024-03-11,2024-06-09,,Rural Dev Dept,community hall,,False
+WE03681,Howrah Constituency,Howrah,Meena Singh,West Bengal,200000.0,200000.0,167847.04,ongoing,270.0,2024-08-28,2025-05-25,,Zilla Parishad,sanitation,70.4,False
+TA03682,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,300000.0,455120.31,completed,180.0,2024-04-11,2024-10-08,2025-01-16,Jal Nigam,school,100.0,False
+KE03683,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,500000.0,0.0,0.0,recommended,730.0,2024-08-13,2026-08-13,,Zilla Parishad,school,,False
+TA03684,Madurai Constituency,Madurai,Anita Verma,Tamil Nadu,750000.0,750000.0,600393.08,ongoing,90.0,2023-09-21,2023-12-20,,Rural Dev Dept,electricity,48.2,False
+UT03685,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,1500000.0,1500000.0,631016.13,stalled,545.0,2024-04-24,2025-10-21,,Jal Nigam,road,16.0,False
+AN03686,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,500000.0,250000.0,77660.91,completed,90.0,2023-10-31,2024-01-29,2024-02-10,PWD,school,100.0,False
+BI03687,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,2500000.0,0.0,0.0,recommended,545.0,2024-11-02,2026-05-01,,Jal Nigam,sanitation,,False
+KA03688,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1000000.0,0.0,0.0,recommended,270.0,2024-03-23,2024-12-18,,PWD,road,,False
+KA03689,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1000000.0,500000.0,376303.87,ongoing,545.0,2023-09-05,2025-03-03,,Jal Nigam,irrigation,13.0,False
+WE03690,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,750000.0,375000.0,1158096.11,ongoing,90.0,2024-04-10,2024-07-09,,PWD,irrigation,78.7,False
+RA03691,Jodhpur Constituency,Jodhpur,Meena Verma,Rajasthan,1500000.0,1500000.0,1409461.99,ongoing,90.0,2023-07-19,2023-10-17,,PWD,road,42.9,False
+RA03692,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,120722.63,completed,90.0,2024-02-18,2024-05-18,2024-11-15,Jal Nigam,electricity,100.0,False
+KA03693,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2000000.0,2000000.0,1861004.08,ongoing,270.0,2024-01-06,2024-10-02,,Jal Nigam,road,68.7,False
+UT03694,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,500000.0,500000.0,334013.09,completed,545.0,2024-09-09,2026-03-08,2026-07-30,Zilla Parishad,road,100.0,False
+PU03695,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,2500000.0,2500000.0,1445069.52,sanctioned,545.0,2024-03-23,2025-09-19,,Rural Dev Dept,electricity,,False
+TA03696,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2500000.0,0.0,2896535.06,recommended,270.0,2024-06-28,2025-03-25,,PWD,drinking water,,False
+TA03697,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,2000000.0,2000000.0,1626418.01,stalled,545.0,2023-07-24,2025-01-19,,PWD,road,22.4,False
+TA03698,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,300000.0,212718.15,ongoing,545.0,2023-02-12,2024-08-10,,PWD,electricity,10.7,False
+MA03699,Pune Constituency,Pune,Sunita Reddy,Maharashtra,750000.0,750000.0,468884.6,completed,270.0,2024-11-28,2025-08-25,2025-07-31,Rural Dev Dept,irrigation,100.0,False
+PU03700,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,300000.0,300000.0,169586.72,ongoing,545.0,2024-05-09,2025-11-05,,Rural Dev Dept,irrigation,31.4,False
+RA03701,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,2000000.0,2000000.0,856861.39,ongoing,180.0,2024-11-19,2025-05-18,,Rural Dev Dept,irrigation,44.0,False
+KA03702,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1000000.0,500000.0,434290.2,stalled,270.0,2024-02-04,2024-10-31,,Zilla Parishad,school,31.8,False
+WE03703,Howrah Constituency,Howrah,Meena Singh,West Bengal,300000.0,300000.0,121884.69,completed,180.0,2023-07-05,2024-01-01,2024-06-26,Zilla Parishad,irrigation,100.0,False
+BI03704,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,750000.0,509695.06,completed,365.0,2024-01-27,2025-01-26,2025-02-15,Jal Nigam,school,100.0,False
+BI03705,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,2000000.0,1000000.0,580011.56,completed,545.0,2023-02-12,2024-08-10,2024-08-15,Rural Dev Dept,drinking water,100.0,False
+KE03706,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,1000000.0,1000000.0,414590.15,completed,730.0,2023-12-04,2025-12-03,2026-02-27,Jal Nigam,electricity,100.0,False
+PU03707,Ludhiana Constituency,Ludhiana,Ramesh Iyer,Punjab,1500000.0,0.0,0.0,recommended,270.0,2024-01-13,2024-10-09,,Zilla Parishad,drinking water,,False
+BI03708,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,750000.0,375000.0,176336.5,completed,545.0,2023-11-16,2025-05-14,2025-09-02,Rural Dev Dept,electricity,100.0,False
+UT03709,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,300000.0,300000.0,195364.61,stalled,270.0,2023-10-08,2024-07-04,,Jal Nigam,electricity,37.0,False
+UT03710,Varanasi Constituency,Varanasi,Arjun Naidu,Uttar Pradesh,1500000.0,0.0,0.0,recommended,180.0,2023-09-10,2024-03-08,,Zilla Parishad,road,,False
+OD03711,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,500000.0,500000.0,213460.15,stalled,365.0,2024-02-07,2025-02-06,,Rural Dev Dept,drinking water,14.2,False
+UT03712,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,500000.0,250000.0,179528.96,completed,545.0,2024-07-27,2026-01-23,2026-06-14,PWD,drinking water,100.0,False
+UT03713,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1500000.0,1500000.0,1277316.94,ongoing,730.0,2024-02-08,2026-02-07,,Jal Nigam,road,61.4,False
+AN03714,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,2000000.0,1000000.0,914991.79,ongoing,270.0,2023-04-20,2024-01-15,,PWD,drinking water,41.6,False
+KE03715,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,300000.0,150000.0,86266.69,sanctioned,545.0,2023-08-01,2025-01-27,,Jal Nigam,drinking water,,False
+BI03716,Patna Constituency,Patna,Arjun Verma,Bihar,500000.0,250000.0,207801.29,stalled,90.0,2024-08-24,2024-11-22,,Rural Dev Dept,school,17.5,False
+TA03717,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,300000.0,150000.0,136202.45,stalled,365.0,2023-01-01,2024-01-01,,Jal Nigam,electricity,35.2,False
+BI03718,Gaya Constituency,Gaya,Lakshmi Kumar,Bihar,500000.0,0.0,652826.14,recommended,730.0,2024-10-18,2026-10-18,,Zilla Parishad,drinking water,,False
+BI03719,Patna Constituency,Patna,Arjun Verma,Bihar,300000.0,0.0,0.0,recommended,270.0,2024-09-24,2025-06-21,,PWD,road,,False
+OD03720,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,200000.0,200000.0,102543.84,completed,270.0,2024-01-19,2024-10-15,2024-10-07,Rural Dev Dept,community hall,100.0,False
+RA03721,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,300000.0,300000.0,116798.75,ongoing,730.0,2023-05-13,2025-05-12,,Rural Dev Dept,community hall,67.7,False
+AN03722,Guntur Constituency,Guntur,Arjun Gowda,Andhra Pradesh,750000.0,375000.0,152376.61,ongoing,270.0,2023-06-02,2024-02-27,,Jal Nigam,school,45.9,False
+KA03723,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,2000000.0,2000000.0,1433782.21,completed,180.0,2023-06-13,2023-12-10,2024-05-21,Zilla Parishad,electricity,100.0,False
+WE03724,Kolkata Constituency,Kolkata,Lakshmi Naidu,West Bengal,300000.0,300000.0,406801.93,ongoing,545.0,2024-07-18,2026-01-14,,PWD,electricity,68.0,False
+KA03725,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,2000000.0,1000000.0,760886.31,completed,270.0,2024-08-25,2025-05-22,2025-08-16,Rural Dev Dept,community hall,100.0,False
+RA03726,Jaipur Constituency,Jaipur,Ramesh Kumar,Rajasthan,2000000.0,2000000.0,691893.92,stalled,730.0,2023-08-27,2025-08-26,,Zilla Parishad,irrigation,10.1,False
+BI03727,Patna Constituency,Patna,Arjun Verma,Bihar,1500000.0,750000.0,2134614.08,ongoing,365.0,2024-11-02,2025-11-02,,PWD,school,67.5,False
+OD03728,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,300000.0,300000.0,234471.24,stalled,180.0,2023-12-18,2024-06-15,,Rural Dev Dept,drinking water,21.2,False
+MA03729,Pune Constituency,Pune,Sunita Reddy,Maharashtra,2000000.0,1000000.0,871290.5,completed,270.0,2024-08-16,2025-05-13,2025-09-07,Zilla Parishad,community hall,100.0,False
+BI03730,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,200000.0,100000.0,77273.93,stalled,180.0,2024-10-01,2025-03-30,,Zilla Parishad,drinking water,9.1,False
+TA03731,Chennai Constituency,Chennai,Manoj Rao,Tamil Nadu,750000.0,750000.0,420868.79,ongoing,365.0,2023-04-09,2024-04-08,,Zilla Parishad,irrigation,48.4,False
+KE03732,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,2000000.0,1281657.72,sanctioned,730.0,2023-01-08,2025-01-07,,Jal Nigam,road,,False
+MA03733,Pune Constituency,Pune,Sunita Reddy,Maharashtra,500000.0,250000.0,906274.7,ongoing,730.0,2024-05-30,2026-05-30,,Rural Dev Dept,electricity,40.3,False
+AN03734,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,750000.0,750000.0,656763.03,sanctioned,365.0,2024-04-23,2025-04-23,,PWD,electricity,,False
+UT03735,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,1500000.0,0.0,0.0,recommended,545.0,2023-01-31,2024-07-29,,Rural Dev Dept,road,,False
+UT03736,Kanpur Nagar Constituency,Kanpur Nagar,Kavita Nair,Uttar Pradesh,750000.0,750000.0,1163857.09,completed,270.0,2024-04-11,2025-01-06,2025-07-24,Rural Dev Dept,drinking water,100.0,False
+KA03737,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,300000.0,300000.0,96736.73,ongoing,180.0,2023-07-24,2024-01-20,,Rural Dev Dept,community hall,41.7,False
+KE03738,Ernakulam Constituency,Ernakulam,Priya Singh,Kerala,2000000.0,1000000.0,798702.24,completed,365.0,2023-12-21,2024-12-20,2025-01-15,Zilla Parishad,school,100.0,False
+AN03739,Krishna Constituency,Krishna,Priya Kumar,Andhra Pradesh,300000.0,300000.0,413714.61,stalled,90.0,2023-03-07,2023-06-05,,Jal Nigam,irrigation,23.3,False
+WE03740,Howrah Constituency,Howrah,Meena Singh,West Bengal,2500000.0,2500000.0,1696136.1,sanctioned,545.0,2023-04-16,2024-10-12,,PWD,community hall,,False
+AN03741,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1500000.0,1500000.0,634115.91,stalled,270.0,2023-05-03,2024-01-28,,Jal Nigam,electricity,13.6,False
+KA03742,Bengaluru Urban Constituency,Bengaluru Urban,Kavita Rao,Karnataka,1500000.0,1500000.0,1980703.99,ongoing,90.0,2023-01-11,2023-04-11,,PWD,drinking water,84.3,False
+OD03743,Cuttack Constituency,Cuttack,Rajesh Sharma,Odisha,2500000.0,2500000.0,4580363.39,ongoing,180.0,2023-08-23,2024-02-19,,Jal Nigam,drinking water,54.5,False
+MA03744,Nagpur Constituency,Nagpur,Ramesh Reddy,Maharashtra,2500000.0,1250000.0,803558.79,completed,90.0,2024-05-08,2024-08-06,2024-07-13,PWD,electricity,100.0,False
+KE03745,Kozhikode Constituency,Kozhikode,Manoj Gowda,Kerala,200000.0,200000.0,319785.11,ongoing,365.0,2023-08-13,2024-08-12,,Zilla Parishad,irrigation,22.3,False
+AN03746,Visakhapatnam Constituency,Visakhapatnam,Sanjay Reddy,Andhra Pradesh,1500000.0,750000.0,1766963.57,ongoing,90.0,2023-07-30,2023-10-28,,PWD,school,20.5,False
+TA03747,Coimbatore Constituency,Coimbatore,Ramesh Naidu,Tamil Nadu,200000.0,200000.0,134859.85,stalled,270.0,2023-08-05,2024-05-01,,Jal Nigam,drinking water,36.3,False
+UT03748,Lucknow Constituency,Lucknow,Sanjay Verma,Uttar Pradesh,2000000.0,2000000.0,1040776.59,ongoing,730.0,2023-12-16,2025-12-15,,Jal Nigam,community hall,38.6,False
+KA03749,Mysuru Constituency,Mysuru,Manoj Singh,Karnataka,1500000.0,0.0,0.0,recommended,545.0,2024-04-10,2025-10-07,,Zilla Parishad,electricity,,False
+BI03750,Muzaffarpur Constituency,Muzaffarpur,Priya Nair,Bihar,200000.0,200000.0,189617.7,completed,730.0,2023-06-11,2025-06-10,2025-06-09,Jal Nigam,irrigation,100.0,False
