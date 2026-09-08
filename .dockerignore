@@ -1,0 +1,8 @@
+cat > .dockerignore << 'EOF'
+**/node_modules
+**/__pycache__
+**/.venv
+**/dist
+**/build
+.env
+EOF

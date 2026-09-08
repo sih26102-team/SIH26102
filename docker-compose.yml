@@ -1,6 +1,17 @@
-version: "3.9"
-
 services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sih26102-postgres
+    environment:
+      POSTGRES_USER: sih26102
+      POSTGRES_PASSWORD: sih26102pass
+      POSTGRES_DB: sih26102_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
   ml-engine:
     build:
       context: .
@@ -9,9 +20,34 @@ services:
       - "8080:8000"
     container_name: sih26102-ml-engine
     env_file:
-      - .env
+      - .env  
   
-  # Mokshagna
+  
+  backend-case-management:
+    build:
+      context: .
+      dockerfile: cloud-devops/docker/backend-case.Dockerfile
+    ports:
+      - "8002:8000"
+    container_name: sih26102-backend-case-management
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+
+
+  frontend-dashboard:
+    build:
+      context: .
+      dockerfile: cloud-devops/docker/frontend.Dockerfile
+      args:
+        - VITE_USE_MOCK=true
+        - VITE_API_BASE_URL=http://localhost:8002 # Poornesh's case management port
+    ports:
+      - "3000:80"
+    container_name: sih26102-frontend-dashboard
+
+    # Mokshagna
   # backend-data-api:
   #   build:
   #     context: .
@@ -21,21 +57,5 @@ services:
   #   container_name: sih26102-backend-data-api
   #   # Uncomment once Mokshagna's Dockerfile + app code are real
 
-  # Poornesh
-  # backend-case-management:
-  #   build:
-  #     context: .
-  #     dockerfile: cloud-devops/docker/backend-case.Dockerfile
-  #   ports:
-  #     - "8002:8000"
-  #   container_name: sih26102-backend-case-management
-
-  # Chandana
-  # frontend-dashboard:
-  #   build:
-  #     context: .
-  #     dockerfile: cloud-devops/docker/frontend.Dockerfile
-  #   ports:
-  #     - "3000:3000"
-  #   container_name: sih26102-frontend-dashboard
-  
+volumes:
+  postgres_data:
