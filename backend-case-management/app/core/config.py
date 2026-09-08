@@ -1,12 +1,12 @@
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    database_url: str
-    secret_key: str
-    algorithm: str
-    access_token_expire_time: int
+    DATABASE_URL: str = "sqlite:///./test.db"
+    SECRET_KEY: str = "temporary-secret-key-for-dev-12345"
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_TIME: int = 30
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    class Config:
+        env_file = ".env"
 
 settings = Settings()
-    

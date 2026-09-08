@@ -3,7 +3,7 @@ import AppLayout from '../components/AppLayout';
 import CaseStatusBadge from '../components/CaseStatusBadge';
 import AuditTrailList from '../components/AuditTrailList';
 import EmptyState from '../components/EmptyState';
-import { fetchCases, updateCaseStatus } from '../services/casesService';
+import { fetchCases, updateCaseStatus } from '../services/casesService.js';
 
 const STATUS_OPTIONS = ['Open', 'Under Review', 'Escalated', 'Closed - No Action', 'Closed - Action Taken'];
 
