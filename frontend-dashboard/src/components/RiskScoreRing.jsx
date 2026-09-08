@@ -1,12 +1,5 @@
 import { riskColorClasses } from '../utils/riskUtils';
 
-/**
- * The one visual motif this product is meant to be recognized by: every
- * score, everywhere in the app, is a ring - never a bare number, never a
- * plain colored pill. The ring's fill fraction *is* the score, so scanning
- * a page of rings reads like scanning a page of gauges, which is the
- * point: investigators are triaging, not reading digits one at a time.
- */
 export default function RiskScoreRing({ score, level, size = 56, strokeWidth = 5, showLabel = true }) {
   const { ring, text } = riskColorClasses(level);
   const radius = (size - strokeWidth) / 2;

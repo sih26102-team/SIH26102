@@ -17,13 +17,6 @@ const COLUMNS = [
   { key: 'status', label: 'Status' },
 ];
 
-/**
- * This table is the investigator's main triage view - it exists to answer
- * "what should I look at first", so it sorts by risk score by default and
- * every row leads to the full explanation on ProjectDetailPage. It never
- * claims a row is confirmed fraud; it shows a score and a status, same
- * vocabulary the context briefing insists on throughout (Section 2).
- */
 export default function FlaggedWorksTable({ projects, loading, error }) {
   const navigate = useNavigate();
   const [sortKey, setSortKey] = useState('riskScore');

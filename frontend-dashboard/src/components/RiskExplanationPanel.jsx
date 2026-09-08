@@ -1,13 +1,6 @@
 import RiskScoreRing from './RiskScoreRing';
 import { recommendedAction, riskColorClasses } from '../utils/riskUtils';
 
-/**
- * Renders the ml-engine's output in the format the context briefing
- * specifies (Section 5): a score, a level, the specific reasons behind it,
- * and a recommended action - never a bare "FRAUD DETECTED" verdict. This
- * is the component that carries the "explainable, not just a number"
- * requirement, so every reason must be shown, not summarized away.
- */
 export default function RiskExplanationPanel({ project }) {
   if (!project) return null;
   const { bg, text } = riskColorClasses(project.riskLevel);
