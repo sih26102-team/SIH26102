@@ -1,11 +1,5 @@
 import axios from 'axios';
 
-/**
- * Single axios instance for talking to backend-data-api (Mokshagna) and
- * backend-case-management (Poornesh). Both are expected to sit behind the
- * same gateway/base URL per docker-compose - update VITE_API_BASE_URL in
- * .env if that changes.
- */
 export const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000',
   timeout: 10000,
