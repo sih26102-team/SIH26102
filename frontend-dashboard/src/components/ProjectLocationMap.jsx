@@ -3,11 +3,6 @@ import { riskColorClasses } from '../utils/riskUtils';
 import { formatINR } from '../utils/formatters';
 import EmptyState from './EmptyState';
 
-/**
- * Single-project map for the case detail view (ProjectDetailPage).
- * Zooms straight to this one project instead of the whole-country view
- * that FlaggedMap shows on the Insights page.
- */
 export default function ProjectLocationMap({ project }) {
   if (!project?.lat || !project?.lng) {
     return (
