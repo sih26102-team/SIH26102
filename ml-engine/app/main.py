@@ -2,7 +2,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
-import predict, explain  # Import your two new router files
+from app import predict, explain
 
 app = FastAPI(
     title = "SIH ML Engine API",
@@ -19,7 +19,6 @@ app.add_middleware(
     allow_headers=["*"],  
 )
 
-# Register the AI Routers
 app.include_router(predict.router)
 app.include_router(explain.router)
 
