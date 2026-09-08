@@ -1,16 +1,6 @@
 import { api, USE_MOCK, mockDelay } from './api';
 import { MOCK_PROJECTS, buildMockTrend } from '../utils/mockData';
 
-/**
- * Expected real contract (from backend-data-api/app/routes/works.py):
- *   GET /works                 -> paginated flagged/scored project list
- *   GET /works/:projectId      -> single project + risk breakdown
- *   GET /analytics/trend       -> monthly flagged/high-risk counts
- *
- * Query params mirror the filters the FilterBar component exposes:
- * state, district, riskLevel, status, category, search.
- */
-
 function applyFilters(projects, filters = {}) {
   return projects.filter((p) => {
     if (filters.state && p.state !== filters.state) return false;
