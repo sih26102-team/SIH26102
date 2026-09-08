@@ -3,24 +3,6 @@ import { fetchFlaggedWorks, distinctValues } from '../services/worksService';
 
 const EMPTY_FILTERS = { state: '', riskLevel: '', status: '', category: '', search: '' };
 
-/**
- * Owns the flagged-works list + filter state so DashboardPage and
- * FlaggedWorksTable stay simple. Re-fetches whenever filters change.
- *
- * Filter dropdown options for real-world data fields (state, category,
- * status) must never be hardcoded lists - these describe facts about
- * actual MPLADS projects (which state, what kind of work, what stage),
- * not vocabulary our own system invents. A fixed list would silently
- * hide any project whose real value isn't on it. Risk level (HIGH/
- * MEDIUM/LOW) is the one exception, safely hardcoded in FilterBar,
- * because that label is assigned by our own risk-scoring engine, not
- * sourced from the raw project data.
- *
- * `filterOptions` is derived from an unfiltered fetch of the actual
- * data (real backend or mock), taken once on mount, not from the
- * currently-filtered `projects` (which would shrink the dropdowns as
- * the user filters).
- */
 export function useFlaggedWorks() {
   const [filters, setFilters] = useState(EMPTY_FILTERS);
   const [projects, setProjects] = useState([]);
