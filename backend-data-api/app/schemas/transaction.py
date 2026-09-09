@@ -19,3 +19,4 @@ class TransactionOut(BaseModel):
 class TransactionWithAnomalyOut(TransactionOut):
     anomaly_score: float | None = None
     anomaly_type: str | None = None
+    
