@@ -17,10 +17,6 @@ def list_anomalies(
     limit: int = 100,
     db: Session = Depends(get_db),
 ):
-    """
-    List flagged anomalies, optionally filtered by review status
-    (unreviewed/confirmed/dismissed) or anomaly_type.
-    """
     query = db.query(FlaggedAnomaly)
     if reviewed is not None:
         query = query.filter(FlaggedAnomaly.reviewed == reviewed)
@@ -39,11 +35,6 @@ def get_anomaly(anomaly_id: int, db: Session = Depends(get_db)):
 
 @router.patch("/{anomaly_id}/review", response_model=FlaggedAnomalyOut)
 def review_anomaly(anomaly_id: int, payload: AnomalyReviewIn, db: Session = Depends(get_db)):
-    """
-    Mark a flagged anomaly as confirmed/dismissed. Who is allowed to call
-    this is Poornesh's concern once auth is wired in front of this API —
-    this layer only persists the review decision.
-    """
     anomaly = db.query(FlaggedAnomaly).filter(FlaggedAnomaly.anomaly_id == anomaly_id).first()
     if anomaly is None:
         raise NotFoundError(detail=f"Anomaly {anomaly_id} not found")
