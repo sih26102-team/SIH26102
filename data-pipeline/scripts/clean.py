@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-RAW_PATH= Path(__file__).parent.parent / "raw_data" / "sample_projects_synthetic.csv"
+RAW_PATH= Path(__file__).parent.parent / "raw_data" / "ingested_combined.csv"
 OUT_PATH=Path(__file__).parent.parent / "processed_data" / "projects_clean.csv"
 FLAGGED_PATH=Path(__file__).parent.parent / "processed_data" / "projects_flagged_for_review.csv"
 

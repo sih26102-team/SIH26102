@@ -1,10 +1,7 @@
 from fastapi import FastAPI
-from app.database.database import engine,Base
 from fastapi.middleware.cors import CORSMiddleware
 from app.models import models
 from app.routes import users, auth, cases
-from fastapi.middleware.cors import CORSMiddleware
-
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -13,14 +10,9 @@ app = FastAPI(
     description="Backend Case Management for Anomaly Investigation"
 )
 
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://civicshield-ops.vercel.app",
-        "http://localhost:5173",
-        "http://localhost:3000",
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

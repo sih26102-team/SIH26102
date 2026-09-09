@@ -48,44 +48,44 @@ def get_cases(db: Session = Depends(get_db), current_user: User = Depends(get_cu
     return query.offset(skip).limit(limit).all()
 
 #suggestion of admin to a user to take up a case
-@router.post("/{id}/assign", response_model=schemas.CaseResponse)
-def assign_case(id: int, payload: schemas.AssignCase, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
-    case = db.query(Case).filter(Case.id == id).first()
-    if not case:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Case not found")
-    investigator = db.query(User).filter(User.id == payload.investigator_id).first()
-    if not investigator:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Investigator not found")
+# @router.post("/{id}/assign", response_model=schemas.CaseResponse)
+# def assign_case(id: int, payload: schemas.AssignCase, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+#     case = db.query(Case).filter(Case.id == id).first()
+#     if not case:
+#         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Case not found")
+#     investigator = db.query(User).filter(User.id == payload.investigator_id).first()
+#     if not investigator:
+#         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Investigator not found")
 
-    case.assigned_to_id = investigator.id
-    case.assignment_status = "PENDING"
-    db.commit()
-    log_audit(db, case.id, "ASSIGNMENT_SUGGESTED", None, str(investigator.id), admin.id)
-    db.refresh(case)
-    return case
+#     case.assigned_to_id = investigator.id
+#     case.assignment_status = "PENDING"
+#     db.commit()
+#     log_audit(db, case.id, "ASSIGNMENT_SUGGESTED", None, str(investigator.id), admin.id)
+#     db.refresh(case)
+#     return case
 
 #response by investigator to accept or reject a case
-@router.post("/{id}/respond", response_model=schemas.CaseResponse)
-def respond_to_assignment(id: int, accept: bool, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
-    case = db.query(Case).filter(Case.id == id).first()
-    if not case:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Case not found")
-    if case.assigned_to_id != current_user.id:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="This case is not assigned to you")
-    if case.assignment_status != "PENDING":
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="No pending assignment to respond to")
+# @router.post("/{id}/respond", response_model=schemas.CaseResponse)
+# def respond_to_assignment(id: int, accept: bool, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+#     case = db.query(Case).filter(Case.id == id).first()
+#     if not case:
+#         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Case not found")
+#     if case.assigned_to_id != current_user.id:
+#         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="This case is not assigned to you")
+#     if case.assignment_status != "PENDING":
+#         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="No pending assignment to respond to")
 
-    if accept:
-        case.assignment_status = "ACCEPTED"
-        log_audit(db, case.id, "ASSIGNMENT_ACCEPTED", "PENDING", "ACCEPTED", current_user.id)
-    else:
-        case.assignment_status = "REJECTED"
-        case.assigned_to_id = None
-        log_audit(db, case.id, "ASSIGNMENT_REJECTED", "PENDING", "REJECTED", current_user.id)
+#     if accept:
+#         case.assignment_status = "ACCEPTED"
+#         log_audit(db, case.id, "ASSIGNMENT_ACCEPTED", "PENDING", "ACCEPTED", current_user.id)
+#     else:
+#         case.assignment_status = "REJECTED"
+#         case.assigned_to_id = None
+#         log_audit(db, case.id, "ASSIGNMENT_REJECTED", "PENDING", "REJECTED", current_user.id)
 
-    db.commit()
-    db.refresh(case)
-    return case
+#     db.commit()
+#     db.refresh(case)
+#     return case
 
 
 @router.post("/",status_code = status.HTTP_201_CREATED,response_model = schemas.CaseResponse)
