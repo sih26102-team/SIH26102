@@ -73,7 +73,7 @@ class UpdateCase(BaseModel):
     description:Optional[str] = None
     assigned_to_id : Optional[int] = None
     investigator_notes:Optional[str] = None
-    resoultion:Optional[str] = None
+    resolution:Optional[str] = None
 
 class CaseResponse(CaseBase):
     id:int
@@ -97,6 +97,9 @@ class CaseAuditLogResponse(BaseModel):
 
     # For Pydantic v2:
     model_config = ConfigDict(from_attributes=True)
+
+class AssignCase(BaseModel):
+    investigator_id: int
 
 class MessageResponse(BaseModel):
     """Standard response for delete_user, archive_case, or general status actions."""

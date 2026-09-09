@@ -35,11 +35,21 @@ def register(user: schemas.UserCreate,db:Session = Depends(get_db)):
     user_data = user.model_dump()
     user_data.pop("role",None)
     user_data["password"] = get_hash_password(user.password)
-    new_user = User(**user_data)
+    new_user = User(**user_data,is_active = False)
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
     return  new_user
+
+@router.patch("/{id}/approve", response_model=schemas.UserResponse)
+def approve_user(id: int, db: Session = Depends(get_db), admin: User = Depends(get_current_user_admin)):
+    user = db.query(User).filter(User.id == id).first()
+    if not user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+    user.is_active = True
+    db.commit()
+    db.refresh(user)
+    return user
 
 
 @router.get("/{id}",response_model=schemas.UserResponse)

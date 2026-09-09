@@ -1,10 +1,10 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "sqlite:///./test.db"
-    SECRET_KEY: str = "temporary-secret-key-for-dev-12345"
-    ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_TIME: int = 30
+    database_url: str = "sqlite:///./test.db"
+    secret_key: str = "temporary-secret-key-for-dev-12345"
+    algorithm: str = "HS256"
+    access_token_expire_time: int = 60
 
     class Config:
         env_file = ".env"

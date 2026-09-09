@@ -16,6 +16,8 @@ def login(user: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get
     db_user = db.query(User).filter(User.email == user.username).first()
     if not db_user:
         raise HTTPException(status_code = status.HTTP_403_FORBIDDEN, detail = f"Invalid Credentials")
+    if not db_user.is_active:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Account pending admin approval")
     if not verify_password(user.password,db_user.password):
         raise HTTPException(status_code = status.HTTP_403_FORBIDDEN, detail = f"Invalid Credentials")
 

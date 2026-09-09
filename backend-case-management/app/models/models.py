@@ -41,6 +41,8 @@ class Case(Base):
 
     assigned_officer = relationship("User", back_populates = "cases")
 
+    #assignment_status = Column(String(20), default="UNASSIGNED", nullable=False)  
+
 
 class CaseAuditLog(Base):
     __tablename__ = "case_audit_logs"
