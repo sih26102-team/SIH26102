@@ -5,7 +5,7 @@ from app.core.config import settings
 from app.core.exceptions import register_exception_handlers
 from app.core.logging_config import configure_logging
 from app.database.database import Base, engine
-from app.routes import analytics, health, works
+from app.routes import analytics, anomalies, health, transactions, works
 
 configure_logging()
 
@@ -29,6 +29,8 @@ register_exception_handlers(app)
 app.include_router(health.router)
 app.include_router(works.router, prefix=settings.API_V1_PREFIX)
 app.include_router(analytics.router, prefix=settings.API_V1_PREFIX)
+app.include_router(anomalies.router, prefix=settings.API_V1_PREFIX)
+app.include_router(transactions.router, prefix=settings.API_V1_PREFIX)
 
 
 @app.on_event("startup")
