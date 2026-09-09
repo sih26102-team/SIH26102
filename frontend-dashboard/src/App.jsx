@@ -4,7 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import InsightsPage from './pages/InsightsPage';
-import ProjectDetailPage from './pages/ProjectDetailPage';
+import ProjectDetailPage from './pages/projectDetailPage.jsx';
 import CasesPage from './pages/CasesPage';
 import NotFoundPage from './pages/NotFoundPage';
 
