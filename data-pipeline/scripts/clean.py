@@ -44,7 +44,7 @@ def coerce_numeric(df: pd.DataFrame) -> pd.DataFrame:
 def drop_unidentifiable_rows(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     mask_bad = (df[REQUIRED_ID_FIELDS].isna().any(axis=1) | (df[REQUIRED_ID_FIELDS]=="").any(axis=1))
     dropped = df[mask_bad].copy()
-    dropped["drop_reason"] = "missing requried identifying feilds"
+    dropped["drop_reason"] = "missing requried identifying fields"
     return df[~mask_bad].copy(), dropped 
 
 #filling relesed amount nan values with 0
