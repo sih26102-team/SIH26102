@@ -1,7 +1,10 @@
 import axios from 'axios';
 
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const baseURL = rawBaseUrl === '/' || !rawBaseUrl ? '' : rawBaseUrl;
+
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000',
+  baseURL,
   timeout: 10000,
 });
 
@@ -24,10 +27,9 @@ api.interceptors.response.use(
   }
 );
 
-export const USE_MOCK = import.meta.env.VITE_USE_MOCK !== 'false';
+export const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
 
-
-// instead of resolving instantly, which hides loading-state bugs.
+// Mock delay helper
 export function mockDelay(ms = 350) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }

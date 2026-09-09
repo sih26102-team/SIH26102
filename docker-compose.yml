@@ -10,19 +10,22 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-
+      - ./data-pipeline/db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    networks:
+      - sih_network
 
   ml-engine:
     build:
       context: .
       dockerfile: cloud-devops/docker/ml.Dockerfile
     ports:
-      - "8080:8000"
+      - "8003:8000"
     container_name: sih26102-ml-engine
     env_file:
-      - .env  
-  
-  
+      - .env
+    networks:
+      - sih_network
+
   backend-case-management:
     build:
       context: .
@@ -34,32 +37,9 @@ services:
       - .env
     depends_on:
       - postgres
-
-
-  frontend-dashboard:
-    build:
-      context: .
-      dockerfile: cloud-devops/docker/frontend.Dockerfile
-      args:
-        - VITE_USE_MOCK=true
-        - VITE_API_BASE_URL=http://localhost:8002 # Poornesh's case management port
-    ports:
-      - "3000:80"
-    container_name: sih26102-frontend-dashboard
-
-  nginx:
-    image: nginx:latest
-    ports:
-      - "8080:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-    depends_on:
-      - frontend
-      - backend-case
     networks:
       - sih_network
 
-   
   backend-data-api:
     build:
       context: .
@@ -67,6 +47,44 @@ services:
     ports:
       - "8001:8000"
     container_name: sih26102-backend-data-api
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    networks:
+      - sih_network
 
-  volumes:
+  frontend-dashboard:
+    build:
+      context: .
+      dockerfile: cloud-devops/docker/frontend.Dockerfile
+      args:
+        - VITE_USE_MOCK=false
+        - VITE_API_BASE_URL=/
+    ports:
+      - "3000:80"
+    container_name: sih26102-frontend-dashboard
+    networks:
+      - sih_network
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    container_name: sih26102-nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend-dashboard
+      - backend-case-management
+      - backend-data-api
+      - ml-engine
+    networks:
+      - sih_network
+
+networks:
+  sih_network:
+    driver: bridge
+
+volumes:
   postgres_data:
