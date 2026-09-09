@@ -11,7 +11,7 @@ export default function LoginPage() {
             <path d="M16 6 A10 10 0 0 1 24.7 21" fill="none" stroke="#C0392B" strokeWidth="3" strokeLinecap="round" />
           </svg>
           <div>
-            <h1 className="font-display text-lg font-semibold text-ink">MPLADS Investigation Console</h1>
+            <h1 className="font-display text-lg font-semibold text-ink">CivicShield</h1>
             <p className="text-xs text-muted">SIH26102 · AI-assisted anomaly review</p>
           </div>
         </div>
