@@ -1,7 +1,8 @@
 from fastapi import FastAPI
-from app.database.database import engine, Base
+from app.database.database import engine,Base
 from app.models import models
 from app.routes import users, auth, cases
+from fastapi.middleware.cors import CORSMiddleware
 
 
 models.Base.metadata.create_all(bind=engine)
@@ -11,7 +12,19 @@ app = FastAPI(
     description="Backend Case Management for Anomaly Investigation"
 )
 
-# Register Routers
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(users.router)
 app.include_router(auth.router)
 app.include_router(cases.router)
+
+@app.get("/")
+def health_check():
+    return {"status": "healthy", "service": "case-management-api"}

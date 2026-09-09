@@ -4,13 +4,36 @@ from typing import Optional,List
 
 from app.schemas import schemas
 from app.database.database import get_db
-from app.models.models import Case, User
+from app.models.models import Case, User,CaseAuditLog
 from app.core.Oauth2 import get_current_user 
 
 router =  APIRouter(
     prefix = "/cases",
     tags = ["Cases"]
 )
+
+
+def log_audit(db: Session, case_id: int, action: str, old_value: Optional[str], new_value: Optional[str], user_id: int):
+    entry = CaseAuditLog(
+        case_id=case_id,
+        action=action,
+        old_value=old_value,
+        new_value=new_value,
+        performed_by_id=user_id
+    )
+    db.add(entry)
+    db.commit()
+
+@router.get("/{id}/audit", response_model=List[schemas.CaseAuditLogResponse])
+def get_case_audit(id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
+    case = db.query(Case).filter(Case.id == id).first()
+    if not case:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Case with id {id} not found")
+
+    if current_user.role != "admin" and case.assigned_to_id != current_user.id:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="You do not have permission to view audit logs for this case")
+
+    return db.query(CaseAuditLog).filter(CaseAuditLog.case_id == id).order_by(CaseAuditLog.timestamp.desc()).all()
 
 
 @router.get("/",response_model = List[schemas.CaseResponse])
@@ -31,6 +54,15 @@ def create_case(case: schemas.CreateCase, db: Session = Depends(get_db), current
     db.add(new_case)
     db.commit()
     db.refresh(new_case)
+    log_audit(
+        db=db,
+        case_id=new_case.id,
+        action="CREATE",
+        old_value=None,
+        new_value=str(case.model_dump()),
+        user_id=current_user.id
+    )
+
     return new_case
 
 
@@ -60,6 +92,19 @@ def update_case(id:int, case_update: schemas.UpdateCase, db: Session = Depends(g
         )
 
     update_dict = case_update.model_dump(exclude_unset=True)
+    for key, new_val in update_dict.items():
+        old_val = getattr(target_case, key, None)
+        if old_val != new_val:
+            setattr(target_case, key, new_val)
+            log_audit(
+                db=db,
+                case_id=id,
+                action=f"UPDATE_{key.upper()}",
+                old_value=str(old_val) if old_val is not None else None,
+                new_value=str(new_val) if new_val is not None else None,
+                user_id=current_user.id
+            )
+
     case_query.update(update_dict,synchronize_session = False)
     db.commit()
     return case_query.first()

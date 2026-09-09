@@ -71,4 +71,5 @@ def update_user(id: int, user: schemas.UserUpdate,db: Session = Depends(get_db),
     if updated_user.first() == None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"User with {id} not found")
     updated_user.update(user.model_dump(exclude_unset=True), synchronize_session=False)
-    return updated_user
+    db.commit()
+    return updated_user.first()

@@ -1,12 +1,22 @@
 from datetime import datetime
-from typing import Optional, List
+from typing import Optional, Literal
 from pydantic import BaseModel, EmailStr, Field, ConfigDict, field_validator
+from app.core.security import is_valid_gov_email
+
+CaseStatusType = Literal["OPEN", "UNDER_INVESTIGATION", "RESOLVED", "CLOSED", "ARCHIVED"]
 
 class UserBase(BaseModel):
     username: str = Field(..., min_length=3, max_length=50, example="poornesh_s")
     email: EmailStr = Field(..., example="user@example.com")
     full_name: Optional[str] = Field(None, max_length=100, example="Srimanthula Poornesh")
     role: Optional[str] = Field("Investigator", json_schema_extra={"example": "Investigator"})
+
+    @field_validator("email")
+    @classmethod
+    def validate_gov_email(cls, v: str) -> str:
+        if not is_valid_gov_email(v):
+            raise ValueError("Registration is restricted to official government email addresses (*.gov.in, *.nic.in).")
+        return v.lower()
 
 
 class UserCreate(UserBase):
@@ -51,23 +61,42 @@ class CaseBase(BaseModel):
     description :Optional[str] = None
     flagged_work_id:str = Field(...,description = "ID of the flagged work from data-ai-engine")
     risk_score: float = Field(default = 0.0,ge = 0.0, le = 1.0)
+    risk_level: Optional[str] = Field("MEDIUM", description="LOW, MEDIUM, or HIGH")
+    flagged_reasons: Optional[str] = Field(None, description="ML generated explanations")
+    recommended_action:Optional[str] = Field(None,description = "Recommended review action")
 
 class CreateCase(CaseBase):
     pass
 
 class UpdateCase(BaseModel):
-    status:Optional[str] = Field(None, description = "OPEN, UNDER_INVESTIGATION, RESOLVED,CLOSED")
+    status: Optional[CaseStatusType] = None
     description:Optional[str] = None
     assigned_to_id : Optional[int] = None
+    investigator_notes:Optional[str] = None
+    resoultion:Optional[str] = None
 
 class CaseResponse(CaseBase):
     id:int
-    status:str
+    status:CaseStatusType
     assigned_to_id: Optional[int] = None
+    investigator_notes:Optional[str] = None
+    resolution:Optional[str] = None
     created_at: datetime
     assigned_officer:Optional[UserResponse] = None
 
     model_config = ConfigDict(from_attributes = True)
+
+class CaseAuditLogResponse(BaseModel):
+    id: int
+    case_id: int
+    action: str
+    old_value: Optional[str] = None
+    new_value: Optional[str] = None
+    performed_by_id: int
+    timestamp: datetime
+
+    # For Pydantic v2:
+    model_config = ConfigDict(from_attributes=True)
 
 class MessageResponse(BaseModel):
     """Standard response for delete_user, archive_case, or general status actions."""
