@@ -19,7 +19,13 @@ export default function LoginForm() {
   }
 
   function applyDemoCredentials(role) {
-    if (role === 'admin') {
+    if (role === 'mohith_admin') {
+      setUsername('mohith.annam@nic.in');
+      setPassword('Mohith@Admin2026!');
+    } else if (role === 'arun_investigator') {
+      setUsername('arun.kumar@nic.in');
+      setPassword('Investigator@2026!');
+    } else if (role === 'admin') {
       setUsername('admin.demo');
       setPassword('CivicShieldAdmin@2026!');
     } else {
@@ -41,7 +47,7 @@ export default function LoginForm() {
             autoComplete="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="e.g. admin.demo or investigator.demo"
+            placeholder="e.g. mohith.annam@nic.in or arun.kumar@nic.in"
             className="w-full rounded border border-border bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition focus:border-navy-600 focus:ring-2 focus:ring-navy-100"
             required
           />
@@ -82,25 +88,25 @@ export default function LoginForm() {
         </p>
       </form>
 
-      {/* Quick Demo Credentials Panel for Hackathon Testing */}
+      {/* Quick Demo Credentials Panel for Presentation */}
       <div className="rounded-lg border border-dashed border-navy-200 bg-navy-50/80 p-4 text-xs text-navy-900">
-        <p className="font-semibold text-navy-800 mb-2">⚡ Hackathon Demo Credentials:</p>
+        <p className="font-semibold text-navy-800 mb-2">⚡ 1-Click Presentation Credentials:</p>
         <div className="grid grid-cols-2 gap-2">
           <button
             type="button"
-            onClick={() => applyDemoCredentials('admin')}
-            className="rounded border border-navy-300 bg-white px-3 py-1.5 text-left font-medium text-navy-700 shadow-sm hover:bg-navy-100 transition"
+            onClick={() => applyDemoCredentials('mohith_admin')}
+            className="rounded border border-navy-300 bg-white p-2 text-left font-medium text-navy-700 shadow-sm hover:bg-navy-100 transition"
           >
-            🛡️ <strong>Admin Role</strong><br />
-            <span className="text-[10px] text-muted font-mono">admin.demo</span>
+            🛡️ <strong>Admin (NIC)</strong><br />
+            <span className="text-[10px] text-muted font-mono truncate block">mohith.annam@nic.in</span>
           </button>
           <button
             type="button"
-            onClick={() => applyDemoCredentials('investigator')}
-            className="rounded border border-navy-300 bg-white px-3 py-1.5 text-left font-medium text-navy-700 shadow-sm hover:bg-navy-100 transition"
+            onClick={() => applyDemoCredentials('arun_investigator')}
+            className="rounded border border-navy-300 bg-white p-2 text-left font-medium text-navy-700 shadow-sm hover:bg-navy-100 transition"
           >
-            🔍 <strong>Investigator Role</strong><br />
-            <span className="text-[10px] text-muted font-mono">investigator.demo</span>
+            🔍 <strong>Investigator (NIC)</strong><br />
+            <span className="text-[10px] text-muted font-mono truncate block">arun.kumar@nic.in</span>
           </button>
         </div>
       </div>

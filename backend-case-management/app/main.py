@@ -1,3 +1,5 @@
+import os
+import json
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.database.database import engine, SessionLocal
@@ -9,58 +11,68 @@ from app.core.security import get_hash_password, verify_password
 models.Base.metadata.create_all(bind=engine)
 
 def seed_demo_accounts():
-    """Seed or update development/demo accounts for Admin and Investigator testing."""
+    """Seed or update development/demo accounts for 5 Admins and 100 Field Investigators."""
     db = SessionLocal()
     try:
-        # 1. Admin Demo Account
-        admin_user = db.query(models.User).filter(
-            (models.User.username == "admin.demo") | (models.User.email == "admin.demo@civicshield.gov.in")
-        ).first()
+        existing_users = {u.username: u for u in db.query(models.User).all()}
+        existing_emails = {u.email: u for u in existing_users.values()}
 
-        admin_pwd = "CivicShieldAdmin@2026!"
-        if not admin_user:
-            admin_user = models.User(
+        # 1. Base legacy demo accounts for fallback compatibility
+        if "admin.demo" not in existing_users:
+            db.add(models.User(
                 username="admin.demo",
                 email="admin.demo@civicshield.gov.in",
                 full_name="CivicShield System Administrator",
                 role="admin",
-                password=get_hash_password(admin_pwd),
+                password=get_hash_password("CivicShieldAdmin@2026!"),
                 is_active=True
-            )
-            db.add(admin_user)
-            print("[INFO] Seeded Demo Admin: admin.demo / CivicShieldAdmin@2026!")
-        else:
-            if not verify_password(admin_pwd, admin_user.password):
-                admin_user.password = get_hash_password(admin_pwd)
-                admin_user.role = "admin"
-                admin_user.is_active = True
-                print("[INFO] Re-hashed Demo Admin password")
-
-        # 2. Investigator Demo Account
-        inv_user = db.query(models.User).filter(
-            (models.User.username == "investigator.demo") | (models.User.email == "investigator.demo@civicshield.gov.in")
-        ).first()
-
-        inv_pwd = "CivicShield@Demo2026!"
-        if not inv_user:
-            inv_user = models.User(
+            ))
+        if "investigator.demo" not in existing_users:
+            db.add(models.User(
                 username="investigator.demo",
                 email="investigator.demo@civicshield.gov.in",
                 full_name="Senior Field Investigator",
                 role="investigator",
-                password=get_hash_password(inv_pwd),
+                password=get_hash_password("CivicShield@Demo2026!"),
                 is_active=True
-            )
-            db.add(inv_user)
-            print("[INFO] Seeded Demo Investigator: investigator.demo / CivicShield@Demo2026!")
-        else:
-            if not verify_password(inv_pwd, inv_user.password):
-                inv_user.password = get_hash_password(inv_pwd)
-                inv_user.role = "investigator"
-                inv_user.is_active = True
-                print("[INFO] Re-hashed Demo Investigator password")
+            ))
+
+        # 2. Load 5 Admins and 100 Investigators from seed_accounts.json
+        json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend-dashboard", "src", "data", "seed_accounts.json"))
+        if os.path.exists(json_path):
+            with open(json_path, "r", encoding="utf-8") as f:
+                seed_data = json.load(f)
+
+            # Seed Admins
+            for adm in seed_data.get("admins", []):
+                if adm["username"] not in existing_users and adm["email"] not in existing_emails:
+                    db.add(models.User(
+                        username=adm["username"],
+                        email=adm["email"],
+                        full_name=adm["full_name"],
+                        role="admin",
+                        password=get_hash_password(adm["password"]),
+                        is_active=True
+                    ))
+                    existing_users[adm["username"]] = True
+                    existing_emails[adm["email"]] = True
+
+            # Seed 100 Investigators
+            for inv in seed_data.get("investigators", []):
+                if inv["username"] not in existing_users and inv["email"] not in existing_emails:
+                    db.add(models.User(
+                        username=inv["username"],
+                        email=inv["email"],
+                        full_name=inv["full_name"],
+                        role="investigator",
+                        password=get_hash_password(inv["password"]),
+                        is_active=True
+                    ))
+                    existing_users[inv["username"]] = True
+                    existing_emails[inv["email"]] = True
 
         db.commit()
+        print(f"[INFO] Initialized and verified database accounts (5 Admins, 100 Investigators).")
     except Exception as e:
         print(f"[WARNING] Demo seeding skipped or error: {e}")
         db.rollback()

@@ -1,4 +1,17 @@
 import { api, USE_MOCK, mockDelay } from './api';
+import SEED_DATA from '../data/seed_accounts.json';
+
+const initialAdmins = SEED_DATA.admins.map((a) => ({
+  ...a,
+  is_active: true,
+  created_at: '2026-08-01T10:00:00Z'
+}));
+
+const initialInvestigators = SEED_DATA.investigators.map((inv, idx) => ({
+  ...inv,
+  is_active: idx % 12 !== 0, // majority active, few pending verification for realism
+  created_at: new Date(Date.now() - (idx * 86400000 * 2)).toISOString()
+}));
 
 let mockUsers = [
   {
@@ -6,6 +19,7 @@ let mockUsers = [
     username: 'admin.demo',
     email: 'admin.demo@civicshield.gov.in',
     full_name: 'CivicShield System Administrator',
+    designation: 'Chief Audit Officer',
     role: 'admin',
     is_active: true,
     created_at: '2026-08-01T10:00:00Z'
@@ -15,10 +29,13 @@ let mockUsers = [
     username: 'investigator.demo',
     email: 'investigator.demo@civicshield.gov.in',
     full_name: 'Senior Field Investigator',
+    designation: 'Special Vigilance Officer',
     role: 'investigator',
     is_active: true,
     created_at: '2026-08-15T12:30:00Z'
-  }
+  },
+  ...initialAdmins,
+  ...initialInvestigators
 ];
 
 export async function fetchUsers(role = null) {

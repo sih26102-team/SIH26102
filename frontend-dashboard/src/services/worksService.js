@@ -47,7 +47,24 @@ export async function fetchFlaggedWorks(filters = {}) {
   try {
     const { data } = await api.get('/works', { params: filters });
     if (Array.isArray(data) && data.length > 0) {
-      return data;
+      return data.map((item) => {
+        const id = item.projectId || item.project_id || (item.work_id ? `WRK-${item.work_id}` : 'PRJ-UNKNOWN');
+        return {
+          ...item,
+          id,
+          projectId: id,
+          sanctionedAmount: item.sanctionedAmount ?? item.sanctioned_amount ?? item.recommended_amount ?? 1000000,
+          expenditure: item.expenditure ?? 0,
+          riskScore: item.riskScore ?? item.risk_score ?? 60,
+          riskLevel: item.riskLevel ?? item.risk_level ?? 'MEDIUM',
+          progressPct: item.progressPct ?? item.progress_percent ?? 25,
+          utilizationPct: item.utilizationPct ?? 35,
+          category: item.category || 'Civil Work',
+          status: item.status || 'ongoing',
+          constituency: item.constituency || 'General Constituency',
+          state: item.state || 'National',
+        };
+      });
     }
     return applyFilters(PIPELINE_PROJECTS, filters).slice().sort((a, b) => b.riskScore - a.riskScore);
   } catch (err) {

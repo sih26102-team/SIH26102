@@ -14,27 +14,27 @@ export default defineConfig({
     host: true,
     proxy: {
       '/auth': {
-        target: 'http://localhost:8000',
+        target: process.env.VITE_CASE_API_URL || 'http://localhost:8002',
         changeOrigin: true,
       },
       '/cases': {
-        target: 'http://localhost:8000',
+        target: process.env.VITE_CASE_API_URL || 'http://localhost:8002',
         changeOrigin: true,
       },
       '/users': {
-        target: 'http://localhost:8000',
+        target: process.env.VITE_CASE_API_URL || 'http://localhost:8002',
         changeOrigin: true,
       },
       '/works': {
-        target: 'http://localhost:8001',
+        target: process.env.VITE_DATA_API_URL || 'http://localhost:8001',
         changeOrigin: true,
       },
       '/anomalies': {
-        target: 'http://localhost:8001',
+        target: process.env.VITE_DATA_API_URL || 'http://localhost:8001',
         changeOrigin: true,
       },
       '/analytics': {
-        target: 'http://localhost:8001',
+        target: process.env.VITE_DATA_API_URL || 'http://localhost:8001',
         changeOrigin: true,
       },
     },

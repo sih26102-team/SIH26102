@@ -1,0 +1,951 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "username": "mohith.annam",
+      "email": "mohith.annam@nic.in",
+      "full_name": "Mohith Annam",
+      "designation": "Joint Secretary & CVO, MPLADS",
+      "role": "admin",
+      "password": "Mohith@Admin2026!"
+    },
+    {
+      "id": 2,
+      "username": "rajesh.verma",
+      "email": "rajesh.verma@gov.in",
+      "full_name": "Rajesh Verma",
+      "designation": "Director of Public Audit & Vigilance",
+      "role": "admin",
+      "password": "Rajesh@Admin2026!"
+    },
+    {
+      "id": 3,
+      "username": "sunita.sharma",
+      "email": "sunita.sharma@nic.in",
+      "full_name": "Sunita Sharma",
+      "designation": "Principal Secretary, MoSPI",
+      "role": "admin",
+      "password": "Sunita@Admin2026!"
+    },
+    {
+      "id": 4,
+      "username": "amitabh.kant",
+      "email": "amitabh.kant@gov.in",
+      "full_name": "Amitabh Kant",
+      "designation": "Chief Oversight Commissioner",
+      "role": "admin",
+      "password": "Amitabh@Admin2026!"
+    },
+    {
+      "id": 5,
+      "username": "priya.deshmukh",
+      "email": "priya.deshmukh@nic.in",
+      "full_name": "Priya Deshmukh",
+      "designation": "National Project Director & SysAdmin",
+      "role": "admin",
+      "password": "Priya@Admin2026!"
+    }
+  ],
+  "investigators": [
+    {
+      "id": 10,
+      "username": "arun.kumar",
+      "email": "arun.kumar@nic.in",
+      "full_name": "Arun Kumar",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 11,
+      "username": "kavita.patel",
+      "email": "kavita.patel@gov.in",
+      "full_name": "Kavita Patel",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 12,
+      "username": "suresh.reddy",
+      "email": "suresh.reddy@mplads.gov.in",
+      "full_name": "Suresh Reddy",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 13,
+      "username": "deepak.mehta",
+      "email": "deepak.mehta@nic.in",
+      "full_name": "Deepak Mehta",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 14,
+      "username": "ananya.sen",
+      "email": "ananya.sen@gov.in",
+      "full_name": "Ananya Sen",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 15,
+      "username": "vikram.singh",
+      "email": "vikram.singh@mplads.gov.in",
+      "full_name": "Vikram Singh",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 16,
+      "username": "neha.gupta",
+      "email": "neha.gupta@nic.in",
+      "full_name": "Neha Gupta",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 17,
+      "username": "manish.joshi",
+      "email": "manish.joshi@gov.in",
+      "full_name": "Manish Joshi",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 18,
+      "username": "pooja.iyer",
+      "email": "pooja.iyer@mplads.gov.in",
+      "full_name": "Pooja Iyer",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 19,
+      "username": "rahul.bose",
+      "email": "rahul.bose@nic.in",
+      "full_name": "Rahul Bose",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 20,
+      "username": "rohan.nair",
+      "email": "rohan.nair@gov.in",
+      "full_name": "Rohan Nair",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 21,
+      "username": "sneha.rao",
+      "email": "sneha.rao@mplads.gov.in",
+      "full_name": "Sneha Rao",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 22,
+      "username": "amit.chatterjee",
+      "email": "amit.chatterjee@nic.in",
+      "full_name": "Amit Chatterjee",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 23,
+      "username": "swati.mukherjee",
+      "email": "swati.mukherjee@gov.in",
+      "full_name": "Swati Mukherjee",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 24,
+      "username": "alok.kulkarni",
+      "email": "alok.kulkarni@mplads.gov.in",
+      "full_name": "Alok Kulkarni",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 25,
+      "username": "divya.patil",
+      "email": "divya.patil@nic.in",
+      "full_name": "Divya Patil",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 26,
+      "username": "manoj.hegde",
+      "email": "manoj.hegde@gov.in",
+      "full_name": "Manoj Hegde",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 27,
+      "username": "ritu.bhattacharya",
+      "email": "ritu.bhattacharya@mplads.gov.in",
+      "full_name": "Ritu Bhattacharya",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 28,
+      "username": "sanjay.pillai",
+      "email": "sanjay.pillai@nic.in",
+      "full_name": "Sanjay Pillai",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 29,
+      "username": "meera.menon",
+      "email": "meera.menon@gov.in",
+      "full_name": "Meera Menon",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 30,
+      "username": "gaurav.pandey",
+      "email": "gaurav.pandey@mplads.gov.in",
+      "full_name": "Gaurav Pandey",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 31,
+      "username": "tanvi.tiwari",
+      "email": "tanvi.tiwari@nic.in",
+      "full_name": "Tanvi Tiwari",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 32,
+      "username": "harish.mishra",
+      "email": "harish.mishra@gov.in",
+      "full_name": "Harish Mishra",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 33,
+      "username": "shalini.shukla",
+      "email": "shalini.shukla@mplads.gov.in",
+      "full_name": "Shalini Shukla",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 34,
+      "username": "nitin.dubey",
+      "email": "nitin.dubey@nic.in",
+      "full_name": "Nitin Dubey",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 35,
+      "username": "preeti.tripathi",
+      "email": "preeti.tripathi@gov.in",
+      "full_name": "Preeti Tripathi",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 36,
+      "username": "sandeep.saxena",
+      "email": "sandeep.saxena@mplads.gov.in",
+      "full_name": "Sandeep Saxena",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 37,
+      "username": "nisha.srivastava",
+      "email": "nisha.srivastava@nic.in",
+      "full_name": "Nisha Srivastava",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 38,
+      "username": "ajay.agarwal",
+      "email": "ajay.agarwal@gov.in",
+      "full_name": "Ajay Agarwal",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 39,
+      "username": "shruti.bansal",
+      "email": "shruti.bansal@mplads.gov.in",
+      "full_name": "Shruti Bansal",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 40,
+      "username": "vinay.chopra",
+      "email": "vinay.chopra@nic.in",
+      "full_name": "Vinay Chopra",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 41,
+      "username": "pallavi.kapoor",
+      "email": "pallavi.kapoor@gov.in",
+      "full_name": "Pallavi Kapoor",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 42,
+      "username": "ashish.malhotra",
+      "email": "ashish.malhotra@mplads.gov.in",
+      "full_name": "Ashish Malhotra",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 43,
+      "username": "jyoti.khanna",
+      "email": "jyoti.khanna@nic.in",
+      "full_name": "Jyoti Khanna",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 44,
+      "username": "pradeep.sethi",
+      "email": "pradeep.sethi@gov.in",
+      "full_name": "Pradeep Sethi",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 45,
+      "username": "shweta.bhatia",
+      "email": "shweta.bhatia@mplads.gov.in",
+      "full_name": "Shweta Bhatia",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 46,
+      "username": "ravi.arora",
+      "email": "ravi.arora@nic.in",
+      "full_name": "Ravi Arora",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 47,
+      "username": "payal.anand",
+      "email": "payal.anand@gov.in",
+      "full_name": "Payal Anand",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 48,
+      "username": "tarun.chawla",
+      "email": "tarun.chawla@mplads.gov.in",
+      "full_name": "Tarun Chawla",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 49,
+      "username": "komal.grover",
+      "email": "komal.grover@nic.in",
+      "full_name": "Komal Grover",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 50,
+      "username": "vivek.dhawan",
+      "email": "vivek.dhawan@gov.in",
+      "full_name": "Vivek Dhawan",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 51,
+      "username": "garima.mahajan",
+      "email": "garima.mahajan@mplads.gov.in",
+      "full_name": "Garima Mahajan",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 52,
+      "username": "chetan.gill",
+      "email": "chetan.gill@nic.in",
+      "full_name": "Chetan Gill",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 53,
+      "username": "richa.sandhu",
+      "email": "richa.sandhu@gov.in",
+      "full_name": "Richa Sandhu",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 54,
+      "username": "varun.bajwa",
+      "email": "varun.bajwa@mplads.gov.in",
+      "full_name": "Varun Bajwa",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 55,
+      "username": "monica.dhillon",
+      "email": "monica.dhillon@nic.in",
+      "full_name": "Monica Dhillon",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 56,
+      "username": "sumit.chahal",
+      "email": "sumit.chahal@gov.in",
+      "full_name": "Sumit Chahal",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 57,
+      "username": "vandana.brar",
+      "email": "vandana.brar@mplads.gov.in",
+      "full_name": "Vandana Brar",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 58,
+      "username": "pankaj.sidhu",
+      "email": "pankaj.sidhu@nic.in",
+      "full_name": "Pankaj Sidhu",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 59,
+      "username": "madhuri.mann",
+      "email": "madhuri.mann@gov.in",
+      "full_name": "Madhuri Mann",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 60,
+      "username": "abhishek.yadav",
+      "email": "abhishek.yadav@mplads.gov.in",
+      "full_name": "Abhishek Yadav",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 61,
+      "username": "archana.chauhan",
+      "email": "archana.chauhan@nic.in",
+      "full_name": "Archana Chauhan",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 62,
+      "username": "mayank.rathore",
+      "email": "mayank.rathore@gov.in",
+      "full_name": "Mayank Rathore",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 63,
+      "username": "bhavna.solanki",
+      "email": "bhavna.solanki@mplads.gov.in",
+      "full_name": "Bhavna Solanki",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 64,
+      "username": "kapil.parmar",
+      "email": "kapil.parmar@nic.in",
+      "full_name": "Kapil Parmar",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 65,
+      "username": "sunaina.rajput",
+      "email": "sunaina.rajput@gov.in",
+      "full_name": "Sunaina Rajput",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 66,
+      "username": "arvind.tomar",
+      "email": "arvind.tomar@mplads.gov.in",
+      "full_name": "Arvind Tomar",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 67,
+      "username": "rekha.rawat",
+      "email": "rekha.rawat@nic.in",
+      "full_name": "Rekha Rawat",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 68,
+      "username": "hemant.bisht",
+      "email": "hemant.bisht@gov.in",
+      "full_name": "Hemant Bisht",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 69,
+      "username": "seema.negi",
+      "email": "seema.negi@mplads.gov.in",
+      "full_name": "Seema Negi",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 70,
+      "username": "yogesh.bhatt",
+      "email": "yogesh.bhatt@nic.in",
+      "full_name": "Yogesh Bhatt",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 71,
+      "username": "rashmi.pant",
+      "email": "rashmi.pant@gov.in",
+      "full_name": "Rashmi Pant",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 72,
+      "username": "satish.gairola",
+      "email": "satish.gairola@mplads.gov.in",
+      "full_name": "Satish Gairola",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 73,
+      "username": "pratibha.bahuguna",
+      "email": "pratibha.bahuguna@nic.in",
+      "full_name": "Pratibha Bahuguna",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 74,
+      "username": "naresh.uniyal",
+      "email": "naresh.uniyal@gov.in",
+      "full_name": "Naresh Uniyal",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 75,
+      "username": "sangeeta.khanduri",
+      "email": "sangeeta.khanduri@mplads.gov.in",
+      "full_name": "Sangeeta Khanduri",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 76,
+      "username": "dinesh.semwal",
+      "email": "dinesh.semwal@nic.in",
+      "full_name": "Dinesh Semwal",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 77,
+      "username": "usha.nautiyal",
+      "email": "usha.nautiyal@gov.in",
+      "full_name": "Usha Nautiyal",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 78,
+      "username": "mukesh.das",
+      "email": "mukesh.das@mplads.gov.in",
+      "full_name": "Mukesh Das",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 79,
+      "username": "geeta.ghosh",
+      "email": "geeta.ghosh@nic.in",
+      "full_name": "Geeta Ghosh",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 80,
+      "username": "ramesh.banerjee",
+      "email": "ramesh.banerjee@gov.in",
+      "full_name": "Ramesh Banerjee",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 81,
+      "username": "sarita.dutta",
+      "email": "sarita.dutta@mplads.gov.in",
+      "full_name": "Sarita Dutta",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 82,
+      "username": "anil.roy",
+      "email": "anil.roy@nic.in",
+      "full_name": "Anil Roy",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 83,
+      "username": "sushma.paul",
+      "email": "sushma.paul@gov.in",
+      "full_name": "Sushma Paul",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 84,
+      "username": "sunil.biswas",
+      "email": "sunil.biswas@mplads.gov.in",
+      "full_name": "Sunil Biswas",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 85,
+      "username": "anita.mondal",
+      "email": "anita.mondal@nic.in",
+      "full_name": "Anita Mondal",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 86,
+      "username": "bharat.sarkar",
+      "email": "bharat.sarkar@gov.in",
+      "full_name": "Bharat Sarkar",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 87,
+      "username": "manju.chakraborty",
+      "email": "manju.chakraborty@mplads.gov.in",
+      "full_name": "Manju Chakraborty",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 88,
+      "username": "bhupendra.saha",
+      "email": "bhupendra.saha@nic.in",
+      "full_name": "Bhupendra Saha",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 89,
+      "username": "mamta.majumdar",
+      "email": "mamta.majumdar@gov.in",
+      "full_name": "Mamta Majumdar",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 90,
+      "username": "devendra.barman",
+      "email": "devendra.barman@mplads.gov.in",
+      "full_name": "Devendra Barman",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 91,
+      "username": "kiran.bhowmick",
+      "email": "kiran.bhowmick@nic.in",
+      "full_name": "Kiran Bhowmick",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 92,
+      "username": "girish.dey",
+      "email": "girish.dey@gov.in",
+      "full_name": "Girish Dey",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 93,
+      "username": "radha.adhikari",
+      "email": "radha.adhikari@mplads.gov.in",
+      "full_name": "Radha Adhikari",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 94,
+      "username": "jagdish.samanta",
+      "email": "jagdish.samanta@nic.in",
+      "full_name": "Jagdish Samanta",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 95,
+      "username": "meenakshi.pal",
+      "email": "meenakshi.pal@gov.in",
+      "full_name": "Meenakshi Pal",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 96,
+      "username": "kailash.de",
+      "email": "kailash.de@mplads.gov.in",
+      "full_name": "Kailash De",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 97,
+      "username": "anuradha.karmakar",
+      "email": "anuradha.karmakar@nic.in",
+      "full_name": "Anuradha Karmakar",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 98,
+      "username": "lokesh.venkatesh",
+      "email": "lokesh.venkatesh@gov.in",
+      "full_name": "Lokesh Venkatesh",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 99,
+      "username": "shashi.sundaram",
+      "email": "shashi.sundaram@mplads.gov.in",
+      "full_name": "Shashi Sundaram",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 100,
+      "username": "mahesh.subramanian",
+      "email": "mahesh.subramanian@nic.in",
+      "full_name": "Mahesh Subramanian",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 101,
+      "username": "sudha.krishnan",
+      "email": "sudha.krishnan@gov.in",
+      "full_name": "Sudha Krishnan",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 102,
+      "username": "narendra.natarajan",
+      "email": "narendra.natarajan@mplads.gov.in",
+      "full_name": "Narendra Natarajan",
+      "designation": "Technical Examiner",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 103,
+      "username": "kalpana.ranganathan",
+      "email": "kalpana.ranganathan@nic.in",
+      "full_name": "Kalpana Ranganathan",
+      "designation": "Deputy Director of Inspection",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 104,
+      "username": "omkar.srinivasan",
+      "email": "omkar.srinivasan@gov.in",
+      "full_name": "Omkar Srinivasan",
+      "designation": "Quality Assurance Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 105,
+      "username": "pushpa.balasubramanian",
+      "email": "pushpa.balasubramanian@mplads.gov.in",
+      "full_name": "Pushpa Balasubramanian",
+      "designation": "Public Works Investigation Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 106,
+      "username": "parveen.ganesan",
+      "email": "parveen.ganesan@nic.in",
+      "full_name": "Parveen Ganesan",
+      "designation": "Senior Vigilance Inspector",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 107,
+      "username": "vidya.murugan",
+      "email": "vidya.murugan@gov.in",
+      "full_name": "Vidya Murugan",
+      "designation": "Assistant Audit Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 108,
+      "username": "rakesh.alva",
+      "email": "rakesh.alva@mplads.gov.in",
+      "full_name": "Rakesh Alva",
+      "designation": "District Field Auditor",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    },
+    {
+      "id": 109,
+      "username": "deepa.shetty",
+      "email": "deepa.shetty@nic.in",
+      "full_name": "Deepa Shetty",
+      "designation": "eSAKSHI Field Verification Officer",
+      "role": "investigator",
+      "password": "Investigator@2026!"
+    }
+  ]
+}

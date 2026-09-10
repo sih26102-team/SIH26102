@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 const rawBaseUrl = import.meta.env.VITE_API_BASE_URL;
-// If rawBaseUrl is not set or '/', default to http://localhost:8000 for local dev
-const baseURL = rawBaseUrl && rawBaseUrl !== '/' ? rawBaseUrl : 'http://localhost:8000';
+// In proxy/reverse-proxy setups (Vite dev proxy or Docker Nginx), use relative paths ('')
+// If an explicit remote base URL is configured, use that instead.
+const baseURL = (rawBaseUrl && rawBaseUrl !== '/') ? rawBaseUrl : '';
 
 export const api = axios.create({
   baseURL,
