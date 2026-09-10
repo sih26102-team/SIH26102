@@ -28,10 +28,11 @@ export default function CasesPage() {
   const [investigators, setInvestigators] = useState([]);
   const [selectedAssignee, setSelectedAssignee] = useState('');
 
-  // Modals state
+  // Modals & Banner state
   const [isEvidenceModalOpen, setIsEvidenceModalOpen] = useState(false);
   const [isResolveModalOpen, setIsResolveModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [statusMsg, setStatusMsg] = useState(null);
 
   // Field Inspection Form State
   const [siteCondition, setSiteCondition] = useState('Foundations laid; pillar reinforcement underway but roof slab pending.');
@@ -118,13 +119,15 @@ export default function CasesPage() {
   }
 
   async function handleApprove(caseId) {
-    if (!window.confirm('Approve this investigation request and dispatch assignment?')) return;
     setSubmitting(true);
     try {
+      const assignedOfficer = investigators.find((inv) => inv.id === Number(selectedAssignee));
       await approveCase(caseId, {
         investigator_id: selectedAssignee ? Number(selectedAssignee) : undefined,
+        investigator_name: assignedOfficer?.full_name || assignedOfficer?.username,
         admin_notes: 'Approved for on-site physical inspection by Administrator'
       });
+      setStatusMsg(`Case #${caseId} approved and successfully assigned to ${assignedOfficer?.full_name || 'Investigator'}.`);
       loadCases();
     } catch (err) {
       alert(err.response?.data?.detail || 'Failed to approve case');
@@ -139,6 +142,7 @@ export default function CasesPage() {
     setSubmitting(true);
     try {
       await rejectCase(caseId, { rejection_reason: reason });
+      setStatusMsg(`Case #${caseId} request rejected.`);
       loadCases();
     } catch (err) {
       alert(err.response?.data?.detail || 'Failed to reject case');
@@ -163,8 +167,8 @@ export default function CasesPage() {
         investigator_notes: investigatorNotes
       });
       setIsEvidenceModalOpen(false);
+      setStatusMsg(`Field evidence and findings for Case #${selectedCase.caseId || selectedCase.id} recorded.`);
       loadCases();
-      alert('Inspection evidence and findings successfully recorded!');
     } catch (err) {
       alert(err.response?.data?.detail || 'Failed to submit evidence');
     } finally {
@@ -182,8 +186,8 @@ export default function CasesPage() {
         resolution_notes: resolutionNotes
       });
       setIsResolveModalOpen(false);
+      setStatusMsg(`Investigation #${selectedCase.caseId || selectedCase.id} successfully updated to: ${resolutionType}.`);
       loadCases();
-      alert(`Case marked as ${resolutionType}`);
     } catch (err) {
       alert(err.response?.data?.detail || 'Failed to resolve case');
     } finally {
@@ -195,7 +199,13 @@ export default function CasesPage() {
     <AppLayout
       title="Investigation Case Management"
       subtitle="Lifecycle tracking, field inspection reports, immutable audit trails, and resolution"
-    >
+      {statusMsg && (
+        <div className="mb-4 rounded-lg bg-emerald-50 border border-emerald-200 p-3 text-xs text-emerald-800 flex justify-between items-center shadow-sm">
+          <span>✅ {statusMsg}</span>
+          <button onClick={() => setStatusMsg(null)} className="font-bold text-emerald-900 hover:text-black ml-2">✕</button>
+        </div>
+      )}
+
       {loading && <EmptyState title="Loading cases…" />}
 
       {!loading && cases.length === 0 && (
@@ -328,13 +338,28 @@ export default function CasesPage() {
                     </button>
                   )}
 
-                  {/* Resolution Modal for Submitted / Under Review Cases */}
-                  {(selectedCase.status === 'EVIDENCE_SUBMITTED' || selectedCase.status === 'UNDER_REVIEW' || isAdmin) && (
+                  {/* Resolution & Escalation Disposition Actions */}
+                  {isAdmin && (
+                    <div className="pt-2 border-t border-dashed border-border space-y-2">
+                      <div className="flex items-center justify-between text-[11px] text-muted">
+                        <span className="font-semibold text-navy-800">Admin Case Disposition:</span>
+                        <span className="font-mono text-[10px] bg-navy-100 px-1.5 py-0.5 rounded text-navy-700 font-bold">SUPERVISORY</span>
+                      </div>
+                      <button
+                        onClick={() => setIsResolveModalOpen(true)}
+                        className="w-full rounded-lg bg-navy-900 py-2.5 text-xs font-bold text-white shadow hover:bg-navy-800 transition flex items-center justify-center gap-1.5"
+                      >
+                        ⚖️ Record Resolution / Escalate Case
+                      </button>
+                    </div>
+                  )}
+
+                  {!isAdmin && (selectedCase.status === 'EVIDENCE_SUBMITTED' || selectedCase.status === 'UNDER_REVIEW') && (
                     <button
                       onClick={() => setIsResolveModalOpen(true)}
-                      className="w-full rounded-lg border border-border bg-white py-2 text-xs font-bold text-navy-800 shadow-sm hover:bg-navy-50 transition"
+                      className="w-full rounded-lg border border-border bg-white py-2 text-xs font-bold text-navy-800 shadow-sm hover:bg-navy-50 transition flex items-center justify-center gap-1.5"
                     >
-                      ⚖️ Resolve / Escalate Case
+                      ⚖️ Conclude Case Findings
                     </button>
                   )}
                 </div>

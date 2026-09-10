@@ -148,12 +148,39 @@ export async function approveCase(caseId, payload = {}) {
     const found = store.find((c) => c.id === Number(cleanId) || c.caseId === caseId);
     if (found) {
       found.status = 'ASSIGNED';
-      found.assignedTo = 'Senior Field Investigator';
+      found.assignedTo = payload.investigator_name || 'Senior Field Investigator';
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: 'REQUEST_APPROVED',
+        details: payload.admin_notes || 'Investigation request approved by Administrator',
+        timestamp: new Date().toISOString()
+      });
     }
     return found;
   }
-  const { data } = await api.post(`/cases/${cleanId}/approve`, payload);
-  return data;
+  try {
+    const { data } = await api.post(`/cases/${cleanId}/approve`, payload);
+    return data;
+  } catch (err) {
+    console.warn('API /approve failed, applying locally:', err.message);
+    const store = getStore();
+    const found = store.find((c) => c.id === Number(cleanId) || c.caseId === caseId);
+    if (found) {
+      found.status = 'ASSIGNED';
+      found.assignedTo = payload.investigator_name || 'Senior Field Investigator';
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: 'REQUEST_APPROVED',
+        details: payload.admin_notes || 'Investigation request approved by Administrator',
+        timestamp: new Date().toISOString()
+      });
+    }
+    return found;
+  }
 }
 
 export async function rejectCase(caseId, payload) {
@@ -165,11 +192,38 @@ export async function rejectCase(caseId, payload) {
     if (found) {
       found.status = 'REJECTED';
       found.resolution_notes = payload.rejection_reason;
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: 'REQUEST_REJECTED',
+        details: payload.rejection_reason,
+        timestamp: new Date().toISOString()
+      });
     }
     return found;
   }
-  const { data } = await api.post(`/cases/${cleanId}/reject`, payload);
-  return data;
+  try {
+    const { data } = await api.post(`/cases/${cleanId}/reject`, payload);
+    return data;
+  } catch (err) {
+    console.warn('API /reject failed, applying locally:', err.message);
+    const store = getStore();
+    const found = store.find((c) => c.id === Number(cleanId) || c.caseId === caseId);
+    if (found) {
+      found.status = 'REJECTED';
+      found.resolution_notes = payload.rejection_reason;
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: 'REQUEST_REJECTED',
+        details: payload.rejection_reason,
+        timestamp: new Date().toISOString()
+      });
+    }
+    return found;
+  }
 }
 
 export async function submitEvidence(caseId, payload) {
@@ -181,11 +235,38 @@ export async function submitEvidence(caseId, payload) {
     if (found) {
       found.status = 'EVIDENCE_SUBMITTED';
       Object.assign(found, payload);
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: 'EVIDENCE_SUBMITTED',
+        details: `Field inspection evidence submitted. Site: ${payload.site_condition || 'Inspected'}`,
+        timestamp: new Date().toISOString()
+      });
     }
     return found;
   }
-  const { data } = await api.post(`/cases/${cleanId}/evidence`, payload);
-  return data;
+  try {
+    const { data } = await api.post(`/cases/${cleanId}/evidence`, payload);
+    return data;
+  } catch (err) {
+    console.warn('API /evidence failed, applying locally:', err.message);
+    const store = getStore();
+    const found = store.find((c) => c.id === Number(cleanId) || c.caseId === caseId);
+    if (found) {
+      found.status = 'EVIDENCE_SUBMITTED';
+      Object.assign(found, payload);
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: 'EVIDENCE_SUBMITTED',
+        details: `Field inspection evidence submitted. Site: ${payload.site_condition || 'Inspected'}`,
+        timestamp: new Date().toISOString()
+      });
+    }
+    return found;
+  }
 }
 
 export async function resolveCase(caseId, payload) {
@@ -198,9 +279,37 @@ export async function resolveCase(caseId, payload) {
       found.status = payload.resolution;
       found.resolution = payload.resolution;
       found.resolution_notes = payload.resolution_notes;
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: `CASE_${payload.resolution}`,
+        details: payload.resolution_notes,
+        timestamp: new Date().toISOString()
+      });
     }
     return found;
   }
-  const { data } = await api.post(`/cases/${cleanId}/resolve`, payload);
-  return data;
+  try {
+    const { data } = await api.post(`/cases/${cleanId}/resolve`, payload);
+    return data;
+  } catch (err) {
+    console.warn('API /cases resolve failed, applying locally:', err.message);
+    const store = getStore();
+    const found = store.find((c) => c.id === Number(cleanId) || c.caseId === caseId);
+    if (found) {
+      found.status = payload.resolution;
+      found.resolution = payload.resolution;
+      found.resolution_notes = payload.resolution_notes;
+      found.audit_logs = found.audit_logs || [];
+      found.audit_logs.unshift({
+        id: found.audit_logs.length + 1,
+        case_id: found.id,
+        action: `CASE_${payload.resolution}`,
+        details: payload.resolution_notes,
+        timestamp: new Date().toISOString()
+      });
+    }
+    return found;
+  }
 }

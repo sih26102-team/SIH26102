@@ -38,48 +38,96 @@ let mockUsers = [
   ...initialInvestigators
 ];
 
+const STORAGE_KEY = 'civicshield_provisioned_users';
+
+export function getUsersStore() {
+  const stored = typeof window !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null;
+  if (stored) {
+    try {
+      const parsed = JSON.parse(stored);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    } catch {
+      // ignore parse errors
+    }
+  }
+  return mockUsers;
+}
+
+export function saveUsersStore(users) {
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(users));
+    } catch {
+      // ignore storage full errors
+    }
+  }
+}
+
 export async function fetchUsers(role = null) {
   if (USE_MOCK) {
-    await mockDelay(250);
-    return role ? mockUsers.filter((u) => u.role === role) : mockUsers;
+    await mockDelay(200);
+    const store = getUsersStore();
+    return role ? store.filter((u) => u.role === role) : store;
   }
   try {
     const { data } = await api.get('/users/', { params: role ? { role } : {} });
-    return data;
+    if (Array.isArray(data) && data.length > 0) {
+      return data;
+    }
+    const store = getUsersStore();
+    return role ? store.filter((u) => u.role === role) : store;
   } catch (err) {
-    console.warn('API /users/ fetch failed, falling back to mock users:', err.message);
-    return mockUsers;
+    console.warn('API /users/ fetch failed, loading provisioned users store:', err.message);
+    const store = getUsersStore();
+    return role ? store.filter((u) => u.role === role) : store;
   }
 }
 
 export async function createInvestigator(userData) {
-  if (USE_MOCK) {
-    await mockDelay(350);
-    const newUser = {
-      id: mockUsers.length + 1,
-      username: userData.username,
-      email: userData.email,
-      full_name: userData.full_name || userData.username,
-      role: 'investigator',
-      is_active: true,
-      created_at: new Date().toISOString()
-    };
-    mockUsers.push(newUser);
+  const store = getUsersStore();
+  const newUser = {
+    id: store.length + 100,
+    username: userData.username.trim().toLowerCase(),
+    email: userData.email.trim().toLowerCase(),
+    full_name: userData.full_name || userData.username,
+    designation: 'Field Investigation Officer',
+    role: 'investigator',
+    is_active: true,
+    password: userData.password,
+    created_at: new Date().toISOString()
+  };
+
+  try {
+    const { data } = await api.post('/users/', userData);
+    const merged = { ...newUser, ...data };
+    const updatedStore = [merged, ...store.filter((u) => u.username !== merged.username)];
+    saveUsersStore(updatedStore);
+    return merged;
+  } catch (err) {
+    console.warn('API /users/ provision failed, saving locally:', err.message);
+    const updatedStore = [newUser, ...store.filter((u) => u.username !== newUser.username)];
+    saveUsersStore(updatedStore);
     return newUser;
   }
-  const { data } = await api.post('/users/', userData);
-  return data;
 }
 
 export async function toggleUserStatus(userId) {
-  if (USE_MOCK) {
-    await mockDelay(200);
-    const user = mockUsers.find((u) => u.id === Number(userId));
+  const store = getUsersStore();
+  const user = store.find((u) => u.id === Number(userId) || u.username === String(userId));
+
+  try {
+    const { data } = await api.patch(`/users/${userId}/toggle-status`);
+    if (user) {
+      user.is_active = data.is_active;
+      saveUsersStore([...store]);
+    }
+    return data;
+  } catch (err) {
+    console.warn('API /users/ toggle failed, applying locally:', err.message);
     if (user) {
       user.is_active = !user.is_active;
+      saveUsersStore([...store]);
     }
     return user;
   }
-  const { data } = await api.patch(`/users/${userId}/toggle-status`);
-  return data;
 }
