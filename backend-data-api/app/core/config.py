@@ -14,13 +14,13 @@ class Settings:
 
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "postgresql://postgres:postgres@localhost:5432/mplads_dev",
+        "sqlite:///./test_data.db",
     )
 
-    ML_SERVICE_URL: str = os.getenv("ML_SERVICE_URL") or os.getenv("ML_ENGINE_URL") or "http://ml-engine:8000"
+    ML_SERVICE_URL: str = os.getenv("ML_SERVICE_URL") or os.getenv("ML_ENGINE_URL") or "http://localhost:8003"
     ML_SERVICE_TIMEOUT_SECONDS: float = float(os.getenv("ML_SERVICE_TIMEOUT_SECONDS", "10"))
 
-    JWT_SECRET_KEY: str = os.getenv("JWT_SECRET_KEY", "change-me-in-prod")
+    JWT_SECRET_KEY: str = os.getenv("JWT_SECRET_KEY", "temporary-secret-key-for-dev-12345")
     JWT_ALGORITHM: str = os.getenv("JWT_ALGORITHM", "HS256")
 
     ENV: str = os.getenv("ENV", "development")

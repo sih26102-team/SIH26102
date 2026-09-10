@@ -47,10 +47,23 @@ def drop_unidentifiable_rows(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFra
     dropped["drop_reason"] = "missing requried identifying fields"
     return df[~mask_bad].copy(), dropped 
 
-#filling relesed amount nan values with 0
+# Handle missing amounts and ensure PFMS strict cap: expenditure <= released_amount <= sanctioned_amount
 def handle_missing_amounts(df: pd.DataFrame) -> pd.DataFrame:
     df["released_amount_imputed"] = df["released_amount"].isna()
-    df["released_amount"] = df["released_amount"].fillna(0)
+    # If released_amount is NaN, for active projects set released_amount based on sanctioned_amount
+    mask_active = df["project_status"].isin(["ongoing", "sanctioned", "stalled", "completed"])
+    df.loc[df["released_amount"].isna() & mask_active, "released_amount"] = (
+        df.loc[df["released_amount"].isna() & mask_active, "sanctioned_amount"] * 0.7
+    )
+    df["released_amount"] = df["released_amount"].fillna(0.0)
+    
+    # Strictly enforce government PFMS rule: expenditure <= released <= sanctioned
+    df["released_amount"] = df[["released_amount", "sanctioned_amount"]].min(axis=1)
+    df["expenditure"] = df[["expenditure", "released_amount"]].min(axis=1).fillna(0.0)
+    
+    # Recommended projects have 0 release and 0 expenditure
+    df.loc[df["project_status"] == "recommended", "released_amount"] = 0.0
+    df.loc[df["project_status"] == "recommended", "expenditure"] = 0.0
     return df
 
 # remove duplicate records and seperate conflicts 

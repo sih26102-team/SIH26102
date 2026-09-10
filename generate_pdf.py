@@ -1,0 +1,390 @@
+import os
+import subprocess
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MPLADS AI System Overhaul & Architectural Specification</title>
+<style>
+  @page {
+    size: A4;
+    margin: 18mm 16mm 18mm 16mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.5;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+  .header-container {
+    border-bottom: 3px solid #1e40af;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+  }
+  .header-title {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+  }
+  .header-subtitle {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #2563eb;
+    margin: 0 0 8px 0;
+  }
+  .meta-grid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+    color: #64748b;
+    background: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+  }
+  h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #0f172a;
+    border-left: 4px solid #2563eb;
+    padding-left: 8px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #1e40af;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+  }
+  p {
+    margin: 0 0 10px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px 0;
+    font-size: 9pt;
+    page-break-inside: avoid;
+  }
+  th {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #1e3a8a;
+  }
+  td {
+    padding: 7px 10px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  .badge-critical {
+    background-color: #fee2e2;
+    color: #991b1b;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 8pt;
+  }
+  .badge-major {
+    background-color: #fef3c7;
+    color: #92400e;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 8pt;
+  }
+  .badge-enhancement {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 8pt;
+  }
+  .code-block {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 8.5pt;
+    margin: 10px 0;
+    white-space: pre-wrap;
+    page-break-inside: avoid;
+  }
+  .callout {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.5pt;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-container">
+  <div class="header-title">MPLADS Cybersecurity & Audit Engine: Complete Architectural Overhaul Specification</div>
+  <div class="header-subtitle">Smart India Hackathon (SIH 2026) — Problem Statement 26102</div>
+  <div class="meta-grid">
+    <div><strong>Prepared For:</strong> Project Development Team (All Domains)</div>
+    <div><strong>Domain Scope:</strong> ML Engine, Backend, Data Pipeline, Frontend, DevOps</div>
+    <div><strong>Reference Policy:</strong> MPLADS Guidelines 2023 & eSAKSHI Model 1A TSA Framework</div>
+  </div>
+</div>
+
+<h2>1. Executive Summary & Context of Realignment</h2>
+<p>
+A critical review of the actual operational mechanics of the <strong>Members of Parliament Local Area Development Scheme (MPLADS)</strong> revealed a fundamental divergence between standard financial fraud assumptions and actual statutory governance under the <strong>MPLADS Guidelines 2023</strong> and the <strong>2025 Model 1A TSA Hybrid payment architecture</strong>.
+</p>
+<p>
+Initial versions assumed a decentralized, physical cash-transfer model where direct budget overdrafts (<span style="font-family: monospace;">expenditure &gt; sanctioned</span>) were the primary risk vector. In reality, modern MPLADS operations are anchored on the <strong>eSAKSHI portal</strong> integrated with the <strong>Public Financial Management System (PFMS)</strong> directly through <strong>RBI Assignment Accounts</strong>. Physical fund parking at district levels is eradicated; funds release just-in-time upon invoice approval. Consequently, actual systemic vulnerabilities stem from <strong>SLA sanction bottlenecks, Third-Party Inspection (TPI) evasion, election-cycle spending surges, demographic quota violations, and discrepancies between central eSAKSHI records and district RTI edge records</strong>.
+</p>
+
+<h2>2. Cross-Domain Comparative Matrix: Baseline vs. Overhaul</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 18%;">Domain</th>
+      <th style="width: 38%;">Previous Baseline / Legacy Assumption</th>
+      <th style="width: 34%;">Required Overhaul (MPLADS Research Compliant)</th>
+      <th style="width: 10%;">Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ML Engine (AI/Risk)</strong></td>
+      <td>4-feature Isolation Forest (<span style="font-family: monospace;">sanctioned</span>, <span style="font-family: monospace;">expenditure</span>, <span style="font-family: monospace;">progress</span>, <span style="font-family: monospace;">burn_rate</span>). Assumes simple budget burn rate anomalies.</td>
+      <td><strong>8-Dimensional Statutory Risk Vector</strong> integrating 45-day Sanction SLAs, 1-year execution limits, 18-month MP demitting cutoffs, 18% GST deductions, TPI compliance, and election cycle surges.</td>
+      <td><span class="badge-critical">CRITICAL</span></td>
+    </tr>
+    <tr>
+      <td><strong>Data Pipeline (ETL)</strong></td>
+      <td>Generic single CSV cleaning script. Drops missing IDs, fills nulls with zero.</td>
+      <td><strong>Bifurcated Ingestion Engine</strong>: (1) eSAKSHI Central Digital Node (Post-2023 JSON/CSV) &amp; (2) Physical District Edge Node (RTI OCR digitization). Distinguishes MPLADS from MLALADS.</td>
+      <td><span class="badge-critical">CRITICAL</span></td>
+    </tr>
+    <tr>
+      <td><strong>Backend Data API</strong></td>
+      <td>Basic CRUD operations for works and anomalies. Generic financial models.</td>
+      <td><strong>Statutory Schema Expansion</strong>: Adds lifecycle milestones, TPI status, geo-tagging flags, SC/ST demographic flags, and Model 1A TSA payment transaction states.</td>
+      <td><span class="badge-major">MAJOR</span></td>
+    </tr>
+    <tr>
+      <td><strong>Backend Case Mgmt</strong></td>
+      <td>Static case review table without role mapping.</td>
+      <td><strong>Role-Based Administrative Routing</strong>: Directs SLA delays to IDAs, QA deficits to IAs/TPI officers, and demographic non-compliance to SNAs. Includes automated RTI petition generator.</td>
+      <td><span class="badge-major">MAJOR</span></td>
+    </tr>
+    <tr>
+      <td><strong>Frontend Dashboard</strong></td>
+      <td>Mock KPI cards and simple tables showing generic risk scores.</td>
+      <td><strong>Civic Audit Intelligence UI</strong>: Statutory SLA countdowns, 15% SC / 7.5% ST demographic gauges, TPI quality assurance badges, pre-election surge timelines, and interactive RTI builder.</td>
+      <td><span class="badge-major">MAJOR</span></td>
+    </tr>
+    <tr>
+      <td><strong>Cloud &amp; DevOps</strong></td>
+      <td>Independent container definitions with placeholder networking.</td>
+      <td><strong>Unified Microservice Gateway</strong>: Docker Compose orchestration with automated healthchecks, CORS hardening, shared volumes, and Nginx reverse proxy.</td>
+      <td><span class="badge-enhancement">NORMAL</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>3. Comprehensive Domain-by-Domain Action Plan</h2>
+
+<h3>Domain 1: ML Engine (`ml-engine/`)</h3>
+<p>The ML Engine must transition from a simplistic numerical outlier detector into a <strong>Hybrid Statutory Risk &amp; Anomaly Engine</strong>.</p>
+<ul>
+  <li><strong>18% GST Normalization</strong>: Civil construction contracts under MPLADS incur 18% GST (absorbing ~₹90 lakh per ₹5 crore allocation). The feature engine must normalize net asset creation expenditure against gross sanctions (<span style="font-family: monospace;">expenditure_net = expenditure * 0.82</span>) to prevent false-positive burn rate alarms.</li>
+  <li><strong>8-Dimensional Feature Space</strong>:
+    <div class="code-block">features = [
+    'sanction_delay_days',        # Days from recommendation to IDA sanction (SLA: <= 45 days)
+    'execution_delay_ratio',     # Days elapsed / Sanctioned timeline (SLA: <= 365 days)
+    'post_demit_overdue_flag',   # 1 if project active > 18 months post-MP demit, else 0
+    'gst_adjusted_burn_rate',    # (expenditure * 0.82) / (progress_percent + 1.0)
+    'tpi_compliance_flag',       # 0 if Third-Party Inspection missing, 1 if verified
+    'geotag_photo_flag',         # 0 if geo-tagged completion photo missing, 1 if verified
+    'election_proximity_index',  # Proximity in months to general election (detects rush spending)
+    'sc_st_quota_deviation'      # Deviation from 15% SC / 7.5% ST statutory targets
+]</div>
+  </li>
+  <li><strong>Statutory Explainability Engine (`app/explain.py`)</strong>: Replace generic strings with Paragraph-specific legal and policy audit citations:
+    <ul>
+      <li><em>Paragraph 3.2.4 SLA Alert</em>: "Implementing District Authority exceeded the statutory 45-day sanction limit."</li>
+      <li><em>Paragraph 4.7 QA Alert</em>: "Disbursement executed without mandatory Third-Party Inspection (TPI) certification."</li>
+      <li><em>Paragraph 10.6.1 Tenure Alert</em>: "Work uncompleted &gt; 18 months after recommending MP demitted office."</li>
+      <li><em>Paragraph 3.2.12 Delay Alert</em>: "Civil execution exceeded standard 1-year timeline without recorded terrain justification."</li>
+    </ul>
+  </li>
+  <li><strong>Model Retraining &amp; Evaluation (`training/`)</strong>: Re-train Isolation Forest + rule blend on synthesized and historical audit records, generating benchmark metrics matching CAG/NABCONS audit patterns.</li>
+</ul>
+
+<h3>Domain 2: Data Pipeline &amp; Ingestion (`data-pipeline/`)</h3>
+<ul>
+  <li><strong>Bifurcated Sourcing Architecture</strong>:
+    <ol>
+      <li><strong>Central Node</strong>: Ingest standardized records from the eSAKSHI portal (<span style="font-family: monospace;">mplads.mospi.gov.in</span>) using modern work codes (<span style="font-family: monospace;">MPL-XX-NN/YYYY-YY</span>).</li>
+      <li><strong>Edge Node (RTI Extraction)</strong>: Support localized data ingestion (OCR / structured CSV) for physical records obtained from District Magistrate MPLADS cells under Section 7(1) of the RTI Act.</li>
+    </ol>
+  </li>
+  <li><strong>Strict MPLADS vs. MLALADS Separation</strong>: Prevent spatial conflation in multi-tier constituencies where state MLAs and federal MPs allocate funds in overlapping geographical coordinates.</li>
+  <li><strong>Data Harmonization (`clean.py`)</strong>: Parse multi-format dates (<span style="font-family: monospace;">YYYY-MM-DD</span>, <span style="font-family: monospace;">DD-MM-YYYY</span>), validate constituency and state mapping, and flag multi-hop transaction discrepancies.</li>
+</ul>
+
+<h3>Domain 3: Backend Data API (`backend-data-api/`)</h3>
+<ul>
+  <li><strong>Database Schema Migration (`app/models/`)</strong>:
+    <ul>
+      <li><span style="font-family: monospace;">Work</span> model: Add <span style="font-family: monospace;">recommendation_date</span>, <span style="font-family: monospace;">sanction_date</span>, <span style="font-family: monospace;">target_completion_date</span>, <span style="font-family: monospace;">actual_completion_date</span>, <span style="font-family: monospace;">tpi_status</span>, <span style="font-family: monospace;">geotag_photo_url</span>, and <span style="font-family: monospace;">demographic_category</span>.</li>
+      <li><span style="font-family: monospace;">Transaction</span> model: Represent Model 1A TSA stages (<span style="font-family: monospace;">demand_generated</span>, <span style="font-family: monospace;">pfms_validated</span>, <span style="font-family: monospace;">rbi_transferred</span>, <span style="font-family: monospace;">disbursed_to_vendor</span>).</li>
+      <li><span style="font-family: monospace;">FlaggedAnomaly</span> model: Store categorized audit violation codes and AI confidence scores.</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Filtering Routes (`app/routes/`)</strong>: Expose query parameters for filtering works by SLA sanction status, inspection completion, SC/ST demographic allocations, and high-risk vendor concentration.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h3>Domain 4: Backend Case Management (`backend-case-management/`)</h3>
+<ul>
+  <li><strong>Administrative Workflow &amp; Escalation</strong>:
+    <ul>
+      <li>Automatically create case files when project risk exceeds threshold (<span style="font-family: monospace;">risk_score &gt;= 70</span>).</li>
+      <li>Assign cases to appropriate administrative tiers: <strong>Implementing District Authority (IDA)</strong> for SLA bottlenecks, <strong>Implementing Agency (IA)</strong> for missing site photos/TPI, and <strong>State Nodal Authority (SNA)</strong> for quota deficits.</li>
+    </ul>
+  </li>
+  <li><strong>Automated RTI Letter Generator</strong>:
+    <ul>
+      <li>Generate pre-filled, legally formatted RTI application letters addressed to the Public Information Officer (PIO) of the District Magistrate's office for edge-level verification of contractor bills and TPI inspection reports.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Domain 5: Frontend Dashboard (`frontend-dashboard/`)</h3>
+<ul>
+  <li><strong>Statutory SLA Tracking Dashboard</strong>: Visual KPI widgets showing:
+    <ul>
+      <li>Sanction compliance rate (% works sanctioned within 45 days).</li>
+      <li>1-year execution adherence (% works completed within 365 days).</li>
+      <li>Post-demit resolution (% legacy works completed within 18 months).</li>
+    </ul>
+  </li>
+  <li><strong>Demographic Equity &amp; Quota Gauges</strong>: Real-time progress bars showing compliance with mandatory 15% SC (₹75L) and 7.5% ST (₹37.5L) allocations per MP per financial year.</li>
+  <li><strong>Quality Assurance &amp; TPI Verification Badges</strong>: Explicit visual tags on project cards indicating Third-Party Inspection status, geo-tagged photograph uploads, and Utilization Certificate (UC) issuance.</li>
+  <li><strong>Political Business Cycle Analytics</strong>: Historical spending distribution charts highlighting disproportionate expenditure surges in Year 4/5 of an MP's 5-year tenure.</li>
+  <li><strong>Auditor Explainability Drawer</strong>: Clean UI drawer displaying detailed CAG/eSAKSHI statutory violation citations alongside AI risk heatmaps.</li>
+</ul>
+
+<h3>Domain 6: Cloud DevOps &amp; System Integration (`cloud-devops/`, `docker-compose.yml`)</h3>
+<ul>
+  <li><strong>Service Interoperability</strong>: Ensure unified Docker Compose network bridging <span style="font-family: monospace;">data-pipeline</span>, <span style="font-family: monospace;">backend-data-api</span>, <span style="font-family: monospace;">backend-case-management</span>, <span style="font-family: monospace;">ml-engine</span>, and <span style="font-family: monospace;">frontend-dashboard</span>.</li>
+  <li><strong>Resilient Microservice Contracts</strong>: Maintain backwards-compatible Pydantic models with optional field defaults so frontend and backend services communicate reliably during incremental rollout.</li>
+</ul>
+
+<h2>4. Implementation Timeline &amp; Milestone Roadmap</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 15%;">Phase</th>
+      <th style="width: 25%;">Target Domain</th>
+      <th style="width: 45%;">Key Deliverables</th>
+      <th style="width: 15%;">Estimated Effort</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Phase 1</strong></td>
+      <td>ML Engine &amp; DB Schema</td>
+      <td>Implement 8D feature engineering, update <span style="font-family: monospace;">predict.py</span>, enhance <span style="font-family: monospace;">explain.py</span> with 2023 Guidelines citations, and expand SQLAlchemy models.</td>
+      <td>2 Days</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 2</strong></td>
+      <td>Data Pipeline &amp; ETL</td>
+      <td>Refactor <span style="font-family: monospace;">clean.py</span> to parse statutory dates, TPI flags, SC/ST classifications, and build edge RTI ingestion parser.</td>
+      <td>2 Days</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 3</strong></td>
+      <td>Backend APIs &amp; Case Mgmt</td>
+      <td>Update REST endpoints, implement role-based case escalation workflows, and build automated RTI draft petition generator.</td>
+      <td>2 Days</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 4</strong></td>
+      <td>Frontend UI Realignment</td>
+      <td>Build SLA compliance widgets, SC/ST equity gauges, TPI status badges, pre-election trend visualizations, and explainability modal.</td>
+      <td>3 Days</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 5</strong></td>
+      <td>DevOps &amp; End-to-End Testing</td>
+      <td>Perform full-stack Docker Compose smoke tests, CI/CD validation, and end-to-end hackathon demo verification.</td>
+      <td>1 Day</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <strong>Summary for Hackathon Jury &amp; Technical Auditors:</strong>
+  By shifting the architecture from generic financial heuristics to the official <strong>MPLADS 2023 Guidelines &amp; eSAKSHI Model 1A TSA framework</strong>, this project provides a government-grade, legally compliant, and actionable civic auditing platform that directly addresses <strong>SIH 2026 Problem Statement 26102</strong>.
+</div>
+
+</body>
+</html>
+"""
+
+html_path = r"c:\Users\LASYA PRIYA\Downloads\SIH26102\MPLADS_System_Overhaul_Specification.html"
+pdf_path = r"c:\Users\LASYA PRIYA\Downloads\SIH26102\MPLADS_System_Overhaul_Specification.pdf"
+
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+print(f"HTML written to {html_path}")
+
+chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+if not os.path.exists(chrome_path):
+    chrome_path = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+
+cmd = [
+    chrome_path,
+    "--headless",
+    "--disable-gpu",
+    "--no-pdf-header-footer",
+    f"--print-to-pdf={pdf_path}",
+    html_path
+]
+
+print("Running headless browser to generate PDF...")
+res = subprocess.run(cmd, capture_output=True, text=True)
+print("Return code:", res.returncode)
+if os.path.exists(pdf_path):
+    print(f"SUCCESS: PDF generated at {pdf_path} (Size: {os.path.getsize(pdf_path)} bytes)")
+else:
+    print("PDF generation failed:", res.stderr)

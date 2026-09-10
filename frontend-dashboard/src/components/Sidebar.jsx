@@ -1,12 +1,20 @@
 import { NavLink } from 'react-router-dom';
-
-const LINKS = [
-  { to: '/dashboard', label: 'Flagged Works' },
-  { to: '/insights', label: 'Insights' },
-  { to: '/cases', label: 'Case Management' },
-];
+import { useAuth } from '../hooks/useAuth';
 
 export default function Sidebar({ isOpen, onClose }) {
+  const { user } = useAuth();
+  const isAdmin = user?.role === 'admin';
+
+  const links = [
+    { to: '/dashboard', label: 'Flagged Works' },
+    { to: '/insights', label: 'Insights' },
+    { to: '/cases', label: 'Case Management' },
+  ];
+
+  if (isAdmin) {
+    links.push({ to: '/investigators', label: '🛡️ Investigators' });
+  }
+
   return (
     <>
       {/* Dark overlay behind drawer on mobile, tap to close */}
@@ -31,8 +39,8 @@ export default function Sidebar({ isOpen, onClose }) {
               <path d="M16 6 A10 10 0 0 1 24.7 21" fill="none" stroke="#C0392B" strokeWidth="2.5" strokeLinecap="round" />
             </svg>
             <div>
-              <p className="font-display text-sm font-semibold text-white leading-tight">MPLADS</p>
-              <p className="text-[11px] leading-tight text-navy-100/70">Investigation Console</p>
+              <p className="font-display text-sm font-semibold text-white leading-tight">CivicShield AI</p>
+              <p className="text-[11px] leading-tight text-navy-100/70">MPLADS Audit Console</p>
             </div>
           </div>
           {/* Close button, mobile only */}
@@ -42,14 +50,14 @@ export default function Sidebar({ isOpen, onClose }) {
         </div>
 
         <nav className="flex-1 space-y-1 px-3">
-          {LINKS.map((link) => (
+          {links.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               onClick={onClose}
               className={({ isActive }) =>
-                `block rounded px-3 py-2 text-sm font-medium transition ${
-                  isActive ? 'bg-navy-700 text-white' : 'text-navy-100/80 hover:bg-navy-700/60 hover:text-white'
+                `block rounded-lg px-3 py-2 text-sm font-medium transition ${
+                  isActive ? 'bg-navy-700 text-white shadow-sm' : 'text-navy-100/80 hover:bg-navy-700/60 hover:text-white'
                 }`
               }
             >
@@ -59,9 +67,16 @@ export default function Sidebar({ isOpen, onClose }) {
         </nav>
 
         <div className="border-t border-navy-700 px-5 py-4 text-[11px] leading-relaxed text-navy-100/60">
-          SIH26102 · Decision support only.
-          <br />
-          Flags are signals for review, not findings.
+          <p className="font-semibold text-navy-100/80">Logged in as:</p>
+          <p className="truncate text-white font-mono text-xs">{user?.name || user?.username || 'Authorized Official'}</p>
+          <span className="inline-block mt-1 rounded bg-navy-800 px-2 py-0.5 text-[10px] font-bold text-navy-200 uppercase tracking-wider">
+            {user?.role || 'INVESTIGATOR'}
+          </span>
+          <div className="mt-3 text-[10px] text-navy-300/50">
+            SIH26102 · Decision support only.
+            <br />
+            Anomaly ≠ Accusation of Fraud.
+          </div>
         </div>
       </aside>
     </>

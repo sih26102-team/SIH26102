@@ -4,8 +4,9 @@ import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import InsightsPage from './pages/InsightsPage';
-import ProjectDetailPage from './pages/projectDetailPage.jsx';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 import CasesPage from './pages/CasesPage';
+import InvestigatorManagementPage from './pages/InvestigatorManagementPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -48,6 +49,14 @@ export default function App() {
               </ProtectedRoute>
             }
           />
+          <Route
+            path="/investigators"
+            element={
+              <ProtectedRoute>
+                <InvestigatorManagementPage />
+              </ProtectedRoute>
+            }
+          />
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
@@ -55,4 +64,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-// App.jsx — owner: Chandana

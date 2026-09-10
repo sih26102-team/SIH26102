@@ -43,12 +43,12 @@ def _run_inference(sanctioned: float, spent: float, progress: float) -> dict:
     
     anomaly_type = "NORMAL"
     if is_anomaly:
-        if spent > sanctioned and sanctioned > 0:
-            anomaly_type = "OVERSPEND"
-        elif spent > 0 and progress < 5.0:
-            anomaly_type = "GHOST_PROJECT"
+        if spent > 0 and progress < 5.0:
+            anomaly_type = "GHOST_PROJECT_RISK"
+        elif progress > 0 and (spent / max(sanctioned, 1.0)) > (progress / 100.0) + 0.25:
+            anomaly_type = "PROGRESS_SPEND_DIVERGENCE"
         else:
-            anomaly_type = "HIGH_BURN_RATE"
+            anomaly_type = "UNUSUAL_BURN_RATE"
 
     return {
         "is_anomaly": is_anomaly,

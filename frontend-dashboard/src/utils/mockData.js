@@ -62,42 +62,69 @@ function pick(rand, arr) {
   return arr[Math.floor(rand() * arr.length)];
 }
 
-function buildReasons(rand, spendProgressGap, delayDays, utilization) {
+function buildReasons(rand, spendProgressGap, delayDays, utilization, progressPct, expenditure) {
   const reasons = [];
-  if (spendProgressGap > 35) {
+
+  if (expenditure > 0 && progressPct < 5) {
+    reasons.push({
+      code: 'GHOST_PROJECT_RISK',
+      text: 'High financial disbursement recorded alongside near-zero (<5%) physical progress on-site',
+    });
+  }
+
+  if (spendProgressGap > 30) {
     reasons.push({
       code: 'SPEND_PROGRESS_MISMATCH',
-      text: `Expenditure is ${spendProgressGap}% ahead of reported physical progress`,
+      text: `Disbursed funds are ${spendProgressGap}% ahead of verified physical progress`,
     });
   }
-  if (delayDays > 180) {
+
+  if (delayDays > 120) {
     reasons.push({
-      code: 'PROJECT_DELAY',
-      text: `Project is ${delayDays} days past its expected completion date`,
+      code: 'SLA_TIMELINE_BREACH',
+      text: `Project is ${delayDays} days overdue beyond statutory completion timeline (Para 3.2.12)`,
     });
   }
+
   if (utilization < 25) {
     reasons.push({
       code: 'FUND_PARKING',
-      text: `Only ${utilization}% of released funds have been utilized`,
+      text: `Only ${utilization}% of released funds utilized; capital parked idle at Implementing Agency`,
     });
   }
-  if (rand() > 0.7) {
+
+  if (rand() > 0.65) {
     reasons.push({
-      code: 'AGENCY_CONCENTRATION',
-      text: 'Implementing agency handles an unusually high share of this MP\'s sanctioned works',
+      code: 'MISSING_GEOTAG_PROOF',
+      text: 'Mandatory geo-tagged and timestamped milestone site photographs missing from eSAKSHI portal',
     });
   }
+
+  if (rand() > 0.75) {
+    reasons.push({
+      code: 'MISSING_TPI_REPORT',
+      text: 'Statutory Third-Party Inspection (TPI) report not submitted prior to financial clearance (Para 4.7)',
+    });
+  }
+
   if (rand() > 0.85) {
     reasons.push({
-      code: 'COST_OVERRUN',
-      text: 'Final expenditure trend exceeds sanctioned amount at current burn rate',
+      code: 'MISSING_UC_BILLS',
+      text: 'Itemized contractor measurement book (MB) bills and Utilisation Certificates (UC) pending submission',
     });
   }
+
+  if (rand() > 0.90) {
+    reasons.push({
+      code: 'AGENCY_CONCENTRATION',
+      text: 'Implementing agency handles an unusually high share (>40%) of constituency allocations',
+    });
+  }
+
   if (reasons.length === 0) {
     reasons.push({
       code: 'WITHIN_NORMAL_RANGE',
-      text: 'No individual signal crossed its threshold; flagged only for routine sampling',
+      text: 'No individual signal crossed statutory threshold; flagged only for routine supervisory audit',
     });
   }
   return reasons;
@@ -118,8 +145,9 @@ function generateProject(index) {
   const status = pick(rand, STATUSES);
 
   const sanctioned = Math.round((5 + rand() * 45) * 100000); // 5L - 50L
-  const released = Math.round(sanctioned * (0.3 + rand() * 0.7));
-  const expenditure = Math.round(released * (0.1 + rand() * 1.05));
+  const released = Math.round(sanctioned * (0.35 + rand() * 0.65)); // released <= sanctioned
+  // In real PFMS accounting, expenditure never exceeds released or sanctioned
+  const expenditure = Math.min(released, Math.round(released * (0.15 + rand() * 0.80)));
   const utilization = Math.round((expenditure / released) * 100);
 
   const progressPct = Math.round(rand() * 100);
@@ -143,16 +171,26 @@ function generateProject(index) {
       ? new Date(expectedCompletion.getTime() + (rand() > 0.6 ? delayDays : -20) * 86400000)
       : null;
 
+  const reasons = buildReasons(rand, spendProgressGap, delayDays, utilization, progressPct, expenditure);
+  const hasCriticalFlag = reasons.some(r => r.code === 'GHOST_PROJECT_RISK' || r.code === 'MISSING_TPI_REPORT' || r.code === 'MISSING_GEOTAG_PROOF');
+
   let riskScore = Math.round(
-    spendProgressGap * 0.5 +
-      Math.min(delayDays / 4, 30) +
-      (utilization < 25 ? 20 : 0) +
-      rand() * 15
+    spendProgressGap * 0.45 +
+      Math.min(delayDays / 3.5, 35) +
+      (utilization < 25 ? 18 : 0) +
+      (hasCriticalFlag ? 20 : 0) +
+      rand() * 12
   );
-  riskScore = Math.max(2, Math.min(98, riskScore));
+  riskScore = Math.max(5, Math.min(98, riskScore));
 
   const coords = DISTRICT_COORDS[district] || [22.9734, 78.6569];
   const jitter = () => (rand() - 0.5) * 0.6;
+
+  const missingFlags = [];
+  if (reasons.some(r => r.code === 'MISSING_GEOTAG_PROOF')) missingFlags.push('Missing geo-tagged site photographs on eSAKSHI');
+  if (reasons.some(r => r.code === 'MISSING_TPI_REPORT')) missingFlags.push('Third-Party Inspection (TPI) report not uploaded');
+  if (reasons.some(r => r.code === 'MISSING_UC_BILLS')) missingFlags.push('Itemized contractor bills & UC unverified');
+  if (missingFlags.length === 0 && rand() > 0.7) missingFlags.push('Missing actual-completion audit signoff');
 
   return {
     id: `MPL-${state.slice(0, 2).toUpperCase()}-${(1000 + index).toString()}`,
@@ -175,16 +213,13 @@ function generateProject(index) {
     delayDays,
     riskScore,
     riskLevel: scoreToLevel(riskScore),
-    reasons: buildReasons(rand, spendProgressGap, delayDays, utilization),
+    reasons,
     dataQuality: {
-      completeness: Math.round(80 + rand() * 20),
+      completeness: Math.round(75 + rand() * 25),
       lastUpdated: new Date(today.getTime() - Math.floor(rand() * 20) * 86400000)
         .toISOString()
         .slice(0, 10),
-      flags:
-        rand() > 0.85
-          ? ['Missing actual-completion field on source record']
-          : [],
+      flags: missingFlags,
     },
     lat: coords[0] + jitter(),
     lng: coords[1] + jitter(),
