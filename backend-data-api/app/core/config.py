@@ -17,7 +17,7 @@ class Settings:
         "postgresql://postgres:postgres@localhost:5432/mplads_dev",
     )
 
-    ML_SERVICE_URL: str = os.getenv("ML_SERVICE_URL", "http://localhost:8001")
+    ML_SERVICE_URL: str = os.getenv("ML_SERVICE_URL") or os.getenv("ML_ENGINE_URL") or "http://ml-engine:8000"
     ML_SERVICE_TIMEOUT_SECONDS: float = float(os.getenv("ML_SERVICE_TIMEOUT_SECONDS", "10"))
 
     JWT_SECRET_KEY: str = os.getenv("JWT_SECRET_KEY", "change-me-in-prod")

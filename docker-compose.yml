@@ -49,8 +49,11 @@ services:
     container_name: sih26102-backend-data-api
     env_file:
       - .env
+    environment:
+      - ML_ENGINE_URL=http://ml-engine:8000
     depends_on:
       - postgres
+      - ml-engine
     networks:
       - sih_network
 

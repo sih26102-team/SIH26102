@@ -117,6 +117,7 @@ def get_case(id:int,db:Session = Depends(get_db),current_user: User = Depends(ge
 
 
 @router.put("/{id}",response_model = schemas.CaseResponse)
+@router.patch("/{id}",response_model = schemas.CaseResponse)
 def update_case(id:int, case_update: schemas.UpdateCase, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     case_query = db.query(Case).filter(Case.id == id)
     target_case = case_query.first()

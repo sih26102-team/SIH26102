@@ -5,3 +5,4 @@ pyod
 scikit-learn
 pandas
 shap
+pytest

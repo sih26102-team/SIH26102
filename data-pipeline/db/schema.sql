@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS projects (
         project_status IN ('recommended','sanctioned','ongoing','completed','stalled')
     ),
     project_start_date             DATE,
-    expected_completion_datw       DATE,
+    expected_completion_date       DATE,
     actual_completion_date         DATE,
     implementing_agency_id         INTEGER REFERENCES agencies(agency_id),
     project_category               TEXT,
