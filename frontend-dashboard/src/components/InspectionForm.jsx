@@ -1,6 +1,6 @@
 import { useToast } from '../contexts/ToastContext';
 import { useState } from 'react';
-import apiClient from '../services/apiClient';
+import { api } from '../services/api';
 
 export default function InspectionForm({ caseId, project, risk }) {
   const { showToast } = useToast();
@@ -54,7 +54,7 @@ export default function InspectionForm({ caseId, project, risk }) {
     if (photo) formData.append('photo', photo);
 
     try {
-      await apiClient.post(`/inspections/${caseId}/submit`, formData, {
+      await api.post(`/inspections/${caseId}/submit`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       showToast("Evidence successfully submitted!");

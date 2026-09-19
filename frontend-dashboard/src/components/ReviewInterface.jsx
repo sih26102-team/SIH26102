@@ -1,6 +1,6 @@
 import { useToast } from '../contexts/ToastContext';
 import { useState, useEffect } from 'react';
-import apiClient from '../services/apiClient';
+import { api } from '../services/api';
 
 export default function ReviewInterface({ caseId }) {
   const { showToast } = useToast();
@@ -8,12 +8,12 @@ export default function ReviewInterface({ caseId }) {
   const [resolutionNote, setResolutionNote] = useState('');
   
   useEffect(() => {
-    apiClient.get(`/cases/${caseId}`).then(res => setData(res.data)).catch(console.error);
+    api.get(`/cases/${caseId}`).then(res => setData(res.data)).catch(console.error);
   }, [caseId]);
 
   const handleReview = async (status) => {
     try {
-      await apiClient.post(`/cases/${caseId}/review`, { status, resolution: resolutionNote });
+      await api.post(`/cases/${caseId}/review`, { status, resolution: resolutionNote });
       showToast(`Case successfully marked as ${status}`);
       window.location.reload();
     } catch (err) {

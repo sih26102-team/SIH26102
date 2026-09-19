@@ -7,16 +7,16 @@ import InsightsPage from './pages/InsightsPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
 import CasesPage from './pages/CasesPage';
 import InvestigatorManagementPage from './pages/InvestigatorManagementPage';
-import NotFoundPage from './pages/NotFoundPage';
-import { ToastProvider, useToast } from './contexts/ToastContext';
-import apiClient from './services/apiClient';
-import { useEffect } from 'react';
+import NotFoundPage from "./pages/NotFoundPage";
+import { ToastProvider, useToast } from "./contexts/ToastContext";
+import { api } from "./services/api";
+import { useEffect } from "react";
 
 function AxiosInterceptor() {
   const { showToast } = useToast();
   
   useEffect(() => {
-    const interceptor = apiClient.interceptors.response.use(
+    const interceptor = api.interceptors.response.use(
       response => response,
       error => {
         if (error.response) {
@@ -32,7 +32,7 @@ function AxiosInterceptor() {
         return Promise.reject(error);
       }
     );
-    return () => apiClient.interceptors.response.eject(interceptor);
+    return () => api.interceptors.response.eject(interceptor);
   }, [showToast]);
 
   return null;

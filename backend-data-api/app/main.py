@@ -12,7 +12,7 @@ from app.core.exceptions import register_exception_handlers
 from app.core.logging_config import configure_logging
 from app.database.database import Base, engine, SessionLocal, get_db
 from app.routes import health
-from app.models import State, District, Constituency, MP, Agency, Project, Expenditure, RiskResult, Case, User, AuditLog, Inspection, Evidence
+from app.models import State, District, Constituency, MP, Agency, Project, Expenditure, RiskResult, User
 
 from app.routers.auth_router import router as auth_router, get_current_user, require_role, get_password_hash
 from app.routers.analytics_router import router as analytics_router

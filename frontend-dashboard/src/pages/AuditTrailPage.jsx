@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import apiClient from '../services/apiClient';
+import { api } from '../services/api';
 
 export default function AuditTrailPage() {
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    apiClient.get('/audit-logs')
+    api.get('/audit-logs')
       .then(res => {
         setLogs(res.data);
         setLoading(false);

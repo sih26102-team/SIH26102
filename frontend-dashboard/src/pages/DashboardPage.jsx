@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../hooks/useAuth';
-import apiClient from '../services/apiClient';
+import { api } from '../services/api';
 
 function AnalyticsCards({ summary }) {
   if (!summary) return <div>Loading summary...</div>;
@@ -30,7 +30,7 @@ function RoleSpecificView({ role, summary, trends }) {
   useEffect(() => {
     if (role === 'INSPECTION_OFFICER') {
       setLoading(true);
-      apiClient.get('/cases')
+      api.get('/cases')
         .then(res => setCases(res.data))
         .catch(console.error)
         .finally(() => setLoading(false));
@@ -114,8 +114,8 @@ export default function DashboardPage() {
     if (user && user.role !== 'INSPECTION_OFFICER') {
       setLoading(true);
       Promise.all([
-        apiClient.get('/analytics/summary').then(res => setSummary(res.data)),
-        apiClient.get('/analytics/trends').then(res => setTrends(res.data))
+        api.get('/analytics/summary').then(res => setSummary(res.data)),
+        api.get('/analytics/trends').then(res => setTrends(res.data))
       ]).finally(() => setLoading(false));
     } else {
       setLoading(false);

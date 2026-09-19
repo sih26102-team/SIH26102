@@ -201,6 +201,7 @@ export default function CasesPage() {
     <AppLayout
       title="Investigation Case Management"
       subtitle="Lifecycle tracking, field inspection reports, immutable audit trails, and resolution"
+    >
       {statusMsg && (
         <div className="mb-4 rounded-lg bg-emerald-50 border border-emerald-200 p-3 text-xs text-emerald-800 flex justify-between items-center shadow-sm">
           <span>✅ {statusMsg}</span>
