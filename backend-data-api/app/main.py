@@ -17,9 +17,6 @@ from app.models import State, District, Constituency, MP, Agency, Project, Expen
 from app.routers.auth_router import router as auth_router, get_current_user, require_role, get_password_hash
 from app.routers.analytics_router import router as analytics_router
 from app.routers.risk_router import router as risk_router
-from app.routers.cases_router import router as cases_router
-from app.routers.inspections_router import router as inspections_router
-from app.routers.audit_router import router as audit_router
 
 configure_logging()
 
@@ -43,9 +40,6 @@ app.include_router(health.router)
 app.include_router(auth_router)
 app.include_router(analytics_router)
 app.include_router(risk_router)
-app.include_router(cases_router)
-app.include_router(inspections_router)
-app.include_router(audit_router)
 
 # Basic user endpoint for fetching users
 @app.get("/users")

@@ -1,80 +1,86 @@
+networks:
+  sih_network:
+    driver: bridge
 services:
-  postgres:
-    image: postgres:16-alpine
-    container_name: sih26102-postgres
-    environment:
-      POSTGRES_USER: sih26102
-      POSTGRES_PASSWORD: sih26102pass
-      POSTGRES_DB: sih26102_db
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-      - ./data-pipeline/db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
-    networks:
-      - sih_network
-
-  ml-engine:
+  backend-case-management:
     build:
       context: .
-      dockerfile: cloud-devops/docker/ml.Dockerfile
+      dockerfile: cloud-devops/docker/backend-case.Dockerfile
+    environment:
+    - DATABASE_URL=sqlite:///./data/sih26102.db
+    - JWT_SECRET=super_secret_key_123
     ports:
-      - "8003:8000"
-    container_name: sih26102-ml-engine
-    env_file:
-      - .env
-    networks:
-      - sih_network
-
-
-
+    - 8004:8000
+    restart: always
+    volumes:
+    - ./backend-case-management:/app
+    - ./backend-data-api/data:/app/data
+    - ./backend-data-api/uploads:/app/uploads
   backend-data-api:
     build:
       context: .
       dockerfile: cloud-devops/docker/backend-data.Dockerfile
-    ports:
-      - "8001:8000"
     container_name: sih26102-backend-data-api
-    env_file:
-      - .env
-    environment:
-      - ML_ENGINE_URL=http://ml-engine:8000
     depends_on:
-      - postgres
-      - ml-engine
+    - postgres
+    - ml-engine
+    env_file:
+    - .env
+    environment:
+    - ML_ENGINE_URL=http://ml-engine:8000
     networks:
-      - sih_network
-
+    - sih_network
+    ports:
+    - 8001:8000
   frontend-dashboard:
     build:
+      args:
+      - VITE_USE_MOCK=false
+      - VITE_API_BASE_URL=/
       context: .
       dockerfile: cloud-devops/docker/frontend.Dockerfile
-      args:
-        - VITE_USE_MOCK=false
-        - VITE_API_BASE_URL=/
-    ports:
-      - "3000:80"
     container_name: sih26102-frontend-dashboard
     networks:
-      - sih_network
-
-  nginx:
-    image: nginx:latest
+    - sih_network
     ports:
-      - "8080:80"
-    container_name: sih26102-nginx
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-    depends_on:
-      - frontend-dashboard
-      - backend-data-api
-      - ml-engine
+    - 3000:80
+  ml-engine:
+    build:
+      context: .
+      dockerfile: cloud-devops/docker/ml.Dockerfile
+    container_name: sih26102-ml-engine
+    env_file:
+    - .env
     networks:
-      - sih_network
-
-networks:
-  sih_network:
-    driver: bridge
-
+    - sih_network
+    ports:
+    - 8003:8000
+  nginx:
+    container_name: sih26102-nginx
+    depends_on:
+    - frontend-dashboard
+    - backend-data-api
+    - ml-engine
+    image: nginx:latest
+    networks:
+    - sih_network
+    ports:
+    - 8080:80
+    volumes:
+    - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+  postgres:
+    container_name: sih26102-postgres
+    environment:
+      POSTGRES_DB: sih26102_db
+      POSTGRES_PASSWORD: sih26102pass
+      POSTGRES_USER: sih26102
+    image: postgres:16-alpine
+    networks:
+    - sih_network
+    ports:
+    - 5432:5432
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    - ./data-pipeline/db/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
 volumes:
-  postgres_data:
+  postgres_data: null

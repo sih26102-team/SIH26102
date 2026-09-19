@@ -4,6 +4,7 @@ import os
 import time
 
 BASE_URL = "http://localhost:8001"
+CASE_URL = "http://localhost:8004"
 
 def login(username, password="CivicShield@Demo2026!"):
     res = requests.post(f"{BASE_URL}/auth/login", json={"username": username, "password": password})
@@ -18,7 +19,7 @@ assert res.status_code in [400, 401, 403], f"Expected 401, 403 or 400, got {res.
 
 # Negative Test 2: Expired/Invalid JWT
 print("[TEST] Invalid JWT")
-res = requests.get(f"{BASE_URL}/cases", headers={"Authorization": "Bearer FAKE_JWT"})
+res = requests.get(f"{CASE_URL}/cases", headers={"Authorization": "Bearer FAKE_JWT"})
 assert res.status_code == 401, "Expected 401 for bad JWT"
 
 # STEP 1: District Authority Logs in
@@ -54,12 +55,12 @@ assert len(risk_data["risk"]["recommended_verification"]) > 0
 
 # STEP 7: Create case (if not exists) and assign to Officer A
 print("[STEP 7] DA creates and assigns case to Officer A")
-case_res = requests.post(f"{BASE_URL}/cases", json={"project_id": "PRJ-2026-1042"}, headers=da_headers)
+case_res = requests.post(f"{CASE_URL}/cases", json={"project_id": "PRJ-2026-1042"}, headers=da_headers)
 case_id = case_res.json()["case_id"]
 
 officer_id = 4
 
-assign_res = requests.post(f"{BASE_URL}/cases/{case_id}/assign", json={"officer_id": officer_id}, headers=da_headers)
+assign_res = requests.post(f"{CASE_URL}/cases/{case_id}/assign", json={"officer_id": officer_id}, headers=da_headers)
 assert assign_res.status_code == 200
 
 # STEP 8: Log out (Just drop token)
@@ -74,19 +75,19 @@ off_headers = {"Authorization": f"Bearer {off_token}"}
 # Negative Test: Officer attempting to access another officer's case
 # Let's create a dummy case assigned to someone else
 print("\n[TEST] Officer accessing unauthorized case")
-fake_case = requests.post(f"{BASE_URL}/cases", json={"project_id": "PRJ-2026-0001"}, headers=da_headers).json()
-bad_access = requests.get(f"{BASE_URL}/cases/{fake_case['case_id']}", headers=off_headers)
+fake_case = requests.post(f"{CASE_URL}/cases", json={"project_id": "PRJ-2026-0001"}, headers=da_headers).json()
+bad_access = requests.get(f"{CASE_URL}/cases/{fake_case['case_id']}", headers=off_headers)
 assert bad_access.status_code == 403, f"Expected 403, got {bad_access.status_code}"
 
 # STEP 10 & 11: Officer sees New Assignment
 print("\n[STEP 10-11] Officer views assignments")
-my_projs = requests.get(f"{BASE_URL}/inspections/my-projects", headers=off_headers)
+my_projs = requests.get(f"{CASE_URL}/inspections/my-projects", headers=off_headers)
 assert my_projs.status_code == 200
 assert any(p["project_id"] == "PRJ-2026-1042" for p in my_projs.json())
 
 # STEP 12: Officer accepts
 print("[STEP 12] Officer accepts assignment")
-acc_res = requests.patch(f"{BASE_URL}/cases/{case_id}/status", json={"status": "UNDER_INVESTIGATION"}, headers=off_headers)
+acc_res = requests.patch(f"{CASE_URL}/cases/{case_id}/status", json={"status": "UNDER_INVESTIGATION"}, headers=off_headers)
 assert acc_res.status_code == 200
 
 # STEP 13: Officer submits evidence
@@ -102,33 +103,33 @@ data = {
     "checklist": "{}"
 }
 files = {"photo": ("temp.jpg", open("temp.jpg", "rb"), "image/jpeg")}
-sub_res = requests.post(f"{BASE_URL}/inspections/{case_id}/submit", data=data, files=files, headers=off_headers)
+sub_res = requests.post(f"{CASE_URL}/inspections/{case_id}/submit", data=data, files=files, headers=off_headers)
 assert sub_res.status_code == 200
 # Clean up temp file manually if needed
 
 # Negative Test: Officer attempting to resolve case
 print("\n[TEST] Officer attempting to resolve case directly")
-res_bad = requests.patch(f"{BASE_URL}/cases/{case_id}/status", json={"status": "RESOLVED", "resolution": "Done"}, headers=off_headers)
+res_bad = requests.patch(f"{CASE_URL}/cases/{case_id}/status", json={"status": "RESOLVED", "resolution": "Done"}, headers=off_headers)
 assert res_bad.status_code == 403, "Expected 403"
 
 # STEP 14 & 15: DA logs in, sees Evidence Submitted
 print("\n[STEP 14-15] DA checks case status")
-case_check = requests.get(f"{BASE_URL}/cases/{case_id}", headers=da_headers).json()
+case_check = requests.get(f"{CASE_URL}/cases/{case_id}", headers=da_headers).json()
 assert case_check["case"]["status"] == "EVIDENCE_SUBMITTED"
 
 # STEP 16 & 17: DA Reviews and chooses ACTION REQUIRED
 print("[STEP 16-17] DA marks ACTION REQUIRED")
-rev_res = requests.post(f"{BASE_URL}/cases/{case_id}/review", json={"status": "ACTION_REQUIRED", "resolution": "Needs attention"}, headers=da_headers)
+rev_res = requests.post(f"{CASE_URL}/cases/{case_id}/review", json={"status": "ACTION_REQUIRED", "resolution": "Needs attention"}, headers=da_headers)
 assert rev_res.status_code == 200
 
 # STEP 18: Inspection History append-only
 print("[STEP 18] Verifying Append-Only Inspection History")
-final_case = requests.get(f"{BASE_URL}/cases/{case_id}", headers=da_headers).json()
+final_case = requests.get(f"{CASE_URL}/cases/{case_id}", headers=da_headers).json()
 assert len(final_case["inspections"]) >= 1
 
 # STEP 19: Open Audit Trail
 print("[STEP 19] Verifying Audit Trail")
-audits = requests.get(f"{BASE_URL}/audit-logs", headers=da_headers).json()
+audits = requests.get(f"{CASE_URL}/audit-logs", headers=da_headers).json()
 assert len(audits) > 0
 
 # STEP 20: Every major action recorded
@@ -152,7 +153,7 @@ assert st_bad.status_code == 403, f"Expected 403, got {st_bad.status_code}"
 
 # Negative Test: Malformed API input
 print("\n[TEST] Malformed API input")
-bad_api = requests.post(f"{BASE_URL}/cases/{case_id}/review", json={"invalid": "payload"}, headers=da_headers)
+bad_api = requests.post(f"{CASE_URL}/cases/{case_id}/review", json={"invalid": "payload"}, headers=da_headers)
 assert bad_api.status_code == 422, "Expected 422 for Unprocessable Entity"
 
 print("\n=== FULL INTEGRATION TEST PASSED SUCCESSFULLY ===")

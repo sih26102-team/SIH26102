@@ -6,8 +6,8 @@ import os
 import shutil
 
 from app.database.database import get_db
-from app.models import Case, Inspection, Evidence, AuditLog, Project, RiskResult, User
-from app.routers.auth_router import get_current_user
+from app.models import Case, Project, User, AuditLog, Inspection, Evidence
+from app.routes.auth_utils import get_current_user
 
 router = APIRouter(prefix="/inspections", tags=["inspections"])
 

@@ -5,8 +5,8 @@ from pydantic import BaseModel
 from typing import Optional
 
 from app.database.database import get_db
-from app.models import Case, InspectionRequest, Investigation, Project, User, AuditLog, Inspection, Evidence, RiskResult
-from app.routers.auth_router import get_current_user
+from app.models import Case, Project, User, AuditLog, Inspection, Evidence
+from app.routes.auth_utils import get_current_user
 
 router = APIRouter(prefix="/cases", tags=["cases"])
 
