@@ -28,8 +28,9 @@ def create_audit(db, actor_id, action, entity_type, entity_id, metadata_json):
         entity_id=str(entity_id),
         metadata_json=metadata_json
     )
+    db.add(audit)
     db.commit()
-    return {"case_id": new_case.case_id, "project_id": new_case.project_id}
+
 @router.post("")
 def create_case(req: CaseCreate, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     new_case = Case(project_id=req.project_id, created_by=current_user.id, status="REQUESTED")
@@ -37,8 +38,7 @@ def create_case(req: CaseCreate, db: Session = Depends(get_db), current_user: Us
     db.commit()
     db.refresh(new_case)
     create_audit(db, current_user.id, "CASE_CREATED", "Case", new_case.case_id, "Case initially requested")
-    db.commit()
-    return new_case
+    return {"case_id": new_case.case_id, "project_id": new_case.project_id}
 
 @router.get("")
 def get_cases(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):

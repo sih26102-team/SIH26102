@@ -1,40 +1,19 @@
-# CivicShield AI - Codebase Organization & Refactoring Report
+# CivicShield AI Cleanup Report
 
-## 1. Project Organization Complete
-The CivicShield AI root directory has been professionally structured to meet industry standards. All disparate scripts, temp artifacts, and routing endpoints were organized into their respective domains without breaking the core workflows.
+## Deleted
+- `backend-case-management/`: Entire directory was deleted. This was an obsolete microservice whose functionality had already been securely migrated and unified into `backend-data-api` (routers `cases`, `users`, `auth`).
+- Empty Folders: Recursively deleted totally empty organizational folders across `backend-data-api/tests`, `cloud-devops/deployment`, `tests/*`, etc.
+- `.gitkeep` files: Recursively deleted all `.gitkeep` files from the entire repository where directories were either already populated or entirely useless.
+- `start_frontend.bat` & `node_portable/`: Removed. These were temporary local testing hacks injected to bypass your laptop's NPM limitations. They violate production deployment standards (Docker is used instead).
+- `cloud-devops/docker/backend-case.Dockerfile`: Deleted obsolete Docker configuration.
 
-### Directory Structure
-```
-SIH26102/
-├── backend-data-api/
-│   ├── app/
-│   │   ├── core/      # Config, logging, exception handlers
-│   │   ├── database/  # DB connections
-│   │   ├── models/    # Unified SQLAlchemy schemas (all_models.py)
-│   │   ├── routers/   # Isolated functional domains (auth, analytics, risk, cases, etc.)
-│   │   ├── schemas/   # Pydantic validation structures
-│   │   └── services/  # ML inference proxy logic
-│   ├── data/          # SQLite datastores (sih26102.db)
-│   ├── scripts/       # Seeding scripts (seed_db.py, seed_users.py)
-│   └── uploads/       # Uploaded investigation evidence
-├── docs/              # Specifications, API Collections, HTML/PPTX docs
-├── frontend-dashboard/# React/Vite UI codebase (intact)
-├── node_portable/     # Portable runtime for restricted environments
-├── scripts/           # Global helpers (scaffold, standalone builders)
-├── tests/             # End-to-end integration and pytest suites
-├── docker-compose.yml
-├── README.md
-└── start_frontend.bat # Local fallback launcher
-```
+## Moved/Modified
+- `docker-compose.yml`: Removed the obsolete `backend-case-management` container and dependencies.
+- `nginx/nginx.conf`: Rewrote proxy routes for `/auth`, `/cases`, and `/users``to seamlessly proxy to `backend-data-api:8000` instead of the deleted microservice.
 
-## 2. Cleanup Actions
-- **Safely Deleted**: `dummy_photo.jpg`, `temp.jpg`, redundant `test_data.db`, and raw error dumps (`error.log`, `seed_error.txt`).
-- **Moved to Docs**: System specification PDFs, PowerPoints, and Postman JSON collections.
-- **Backend Refactoring**: Moved `*_router.py` logic cleanly into `app/routers/` and comprehensively updated module import traces across the stack. Database path relocated to `/data/` and mapped natively via `.env`.
+## Retained
+- `docker-compose.yml`, `frontend.Dockerfile`, `backend-data.Dockerfile`, `ml.Dockerfile`: All retained and validated as the core professional deployment orchestrators.
+- SQLite Database (`backend-data-api/data/sih26102.db`): Retained as the current persistent storage (which can be mounted via Docker Volume for Postgres when deployed or migrated).
 
-## 3. Structural Validation
-- **Database Connection**: Application securely loads `DATABASE_URL` resolving correctly into `data/sih26102.db`.
-- **FastAPI Import Trees**: Successfully regenerated and resolved all imports between `routers` and `main.py`.
-- **System Stability**: The FastAPI backend spins up flawlessly and the codebase remains ready for the final layer of Professional Error Handling / Global Catch UX routines in the frontend.
-
-**Next Immediate Step:** We are ready to tackle the Frontend UX error handling (stripping `alert()` popups, inserting async loading states) and finalizing the presentation layer.
+## Manual Review
+/ .env.example: Created, you will need to clone it to `.env` and provide secure passwords before running `docker compose up -d --build` on a live cloud VM.

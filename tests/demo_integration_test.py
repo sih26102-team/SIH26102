@@ -5,16 +5,16 @@ import time
 
 BASE_URL = "http://localhost:8001"
 
-def login(username, otp="123456"):
-    res = requests.post(f"{BASE_URL}/auth/verify-otp", json={"username": username, "otp": otp})
+def login(username, password="CivicShield@Demo2026!"):
+    res = requests.post(f"{BASE_URL}/auth/login", json={"username": username, "password": password})
     return res
 
 print("=== STARTING FULL CIVICSHIELD AI DEMONSTRATION TEST ===")
 
-# Negative Test 1: Invalid login / OTP
-print("\n[TEST] Invalid Login/OTP")
+# Negative Test 1: Invalid login / Password
+print("\n[TEST] Invalid Login/Password")
 res = login("district.demo", "000000")
-assert res.status_code in [400, 401], f"Expected 401 or 400, got {res.status_code}"
+assert res.status_code in [400, 401, 403], f"Expected 401, 403 or 400, got {res.status_code}"
 
 # Negative Test 2: Expired/Invalid JWT
 print("[TEST] Invalid JWT")

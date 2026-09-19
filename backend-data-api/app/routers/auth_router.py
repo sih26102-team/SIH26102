@@ -49,7 +49,7 @@ class ChangePasswordReq(BaseModel):
 @router.post("/login")
 def login(req: LoginReq, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.username == req.username).first()
-    if not user:
+    if not user or not verify_password(req.password, user.password):
         raise HTTPException(status_code=403, detail="Invalid Credentials")
     # If valid: create token
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
