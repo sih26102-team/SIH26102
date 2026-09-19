@@ -1,3 +1,0 @@
-@echo off
-echo Starting all CivicShield AI Backend Services...
-python run_all_windows.py
