@@ -141,3 +141,4 @@ npm run dev
 18. **Step 18**: Investigator submits report; Case transitions to `EVIDENCE_SUBMITTED`.
 19. **Step 19**: Admin reviews the photographic evidence, GPS proof, and structured notes.
 20. **Step 20**: Admin marks the case as **RESOLVED** (or **ESCALATED**); immutable audit log permanently records the complete history.
+# civicshield-dashboard
