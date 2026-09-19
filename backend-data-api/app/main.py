@@ -1,22 +1,31 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy.orm import Session
+from sqlalchemy import func
+from pydantic import BaseModel
+from typing import List, Optional
+from datetime import datetime
+import os
 
 from app.core.config import settings
 from app.core.exceptions import register_exception_handlers
 from app.core.logging_config import configure_logging
-from app.database.database import Base, engine, SessionLocal
-from app.routes import analytics, anomalies, health, transactions, works
-from app.models.work import Work
-from app.models.constituency import Constituency
-from app.models.mp import MP
-from datetime import date
+from app.database.database import Base, engine, SessionLocal, get_db
+from app.routes import health
+from app.models import State, District, Constituency, MP, Agency, Project, Expenditure, RiskResult, Case, User, AuditLog, Inspection, Evidence
+
+from app.routers.auth_router import router as auth_router, get_current_user, require_role, get_password_hash
+from app.routers.analytics_router import router as analytics_router
+from app.routers.risk_router import router as risk_router
+from app.routers.cases_router import router as cases_router
+from app.routers.inspections_router import router as inspections_router
+from app.routers.audit_router import router as audit_router
 
 configure_logging()
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
-    description="Backend Data & ML-Integration API for SIH26102 — "
-    "MPLAD Scheme Anomaly Detector. Owned by Mokshagna.",
+    description="Unified Backend Data & Case Management API for SIH26102",
     version="0.1.0",
 )
 
@@ -29,113 +38,47 @@ app.add_middleware(
 )
 
 register_exception_handlers(app)
-
 app.include_router(health.router)
-app.include_router(works.router, prefix=settings.API_V1_PREFIX)
-app.include_router(works.router)
-app.include_router(analytics.router, prefix=settings.API_V1_PREFIX)
-app.include_router(analytics.router)
-app.include_router(anomalies.router, prefix=settings.API_V1_PREFIX)
-app.include_router(anomalies.router)
-app.include_router(transactions.router, prefix=settings.API_V1_PREFIX)
-app.include_router(transactions.router)
 
+app.include_router(auth_router)
+app.include_router(analytics_router)
+app.include_router(risk_router)
+app.include_router(cases_router)
+app.include_router(inspections_router)
+app.include_router(audit_router)
 
-@app.on_event("startup")
-def on_startup():
-    import os
-    import pandas as pd
-    from app.models.transaction import Transaction
-    from app.models.anomaly import FlaggedAnomaly
+# Basic user endpoint for fetching users
+@app.get("/users")
+def get_users(db: Session = Depends(get_db)):
+    return db.query(User).all()
+
+@app.post("/users")
+def create_user(user_data: dict, db: Session = Depends(get_db)):
+    if "password" in user_data:
+        user_data["password"] = get_password_hash(user_data["password"])
+    new_user = User(**user_data)
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
     
-    Base.metadata.create_all(bind=engine)
-    db = SessionLocal()
-    try:
-        if db.query(Work).count() == 0:
-            csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data-pipeline", "processed_data", "projects_clean.csv"))
-            if os.path.exists(csv_path):
-                df = pd.read_csv(csv_path)
-                constituency_map = {}
-                
-                # Seed unique constituencies
-                for _, row in df.drop_duplicates(subset=["constituency"]).iterrows():
-                    c_name = str(row["constituency"]) if pd.notna(row["constituency"]) else "Visakhapatnam Constituency"
-                    c_state = str(row["state"]) if pd.notna(row["state"]) else "Andhra Pradesh"
-                    c_obj = Constituency(name=c_name, state=c_state)
-                    db.add(c_obj)
-                    db.flush()
-                    constituency_map[c_name] = c_obj.constituency_id
-                
-                # Seed works and sample transactions from pipeline
-                for idx, row in df.iterrows():
-                    c_name = str(row["constituency"]) if pd.notna(row["constituency"]) else "Visakhapatnam Constituency"
-                    c_id = constituency_map.get(c_name, 1)
-                    sanc = float(row["sanctioned_amount"]) if pd.notna(row["sanctioned_amount"]) else 1000000.0
-                    rel = float(row["released_amount"]) if pd.notna(row["released_amount"]) else sanc * 0.7
-                    exp = float(row["expenditure"]) if pd.notna(row["expenditure"]) else 0.0
-                    status = str(row["project_status"]).lower().strip()
-                    cat = str(row["project_category"]).title() if pd.notna(row["project_category"]) else "Civil Work"
-                    p_id = str(row["project_id"])
-                    
-                    w = Work(
-                        title=f"{cat} Construction ({p_id})",
-                        category=cat,
-                        recommended_amount=sanc,
-                        financial_year="2024-2025",
-                        status=status,
-                        constituency_id=c_id,
-                        recommended_date=date(2024, 1, 15)
-                    )
-                    db.add(w)
-                    db.flush()
-                    
-                    if exp > 0:
-                        t = Transaction(
-                            work_id=w.work_id,
-                            amount=exp,
-                            transaction_date=date(2024, 6, 20),
-                            vendor_name=str(row.get("implementing_agency", "Public Works Division")),
-                            payment_mode="PFMS_DIRECT_DBT",
-                            status="completed"
-                        )
-                        db.add(t)
-                        db.flush()
-                        
-                        # Anomaly flagging based on realistic MPLADS criteria
-                        prog = float(row["progress_percent"]) if pd.notna(row["progress_percent"]) else 35.0
-                        if exp > 0 and prog < 5.0 and status != "recommended":
-                            a = FlaggedAnomaly(
-                                transaction_id=t.transaction_id,
-                                anomaly_type="GHOST_PROJECT_RISK",
-                                score=0.88,
-                                reviewed="unreviewed"
-                            )
-                            db.add(a)
-                        elif (exp / max(sanc, 1.0)) > (prog / 100.0) + 0.30:
-                            a = FlaggedAnomaly(
-                                transaction_id=t.transaction_id,
-                                anomaly_type="PROGRESS_SPEND_DIVERGENCE",
-                                score=0.74,
-                                reviewed="unreviewed"
-                            )
-                            db.add(a)
-                        elif idx % 8 == 0:
-                            a = FlaggedAnomaly(
-                                transaction_id=t.transaction_id,
-                                anomaly_type="MISSING_GEOTAG_PROOFS",
-                                score=0.68,
-                                reviewed="unreviewed"
-                            )
-                            db.add(a)
-                db.commit()
-                print(f"[INFO] Ingested {len(df)} works and anomalies from data-pipeline successfully.")
-    except Exception as e:
-        db.rollback()
-        print(f"[WARNING] Seed data from data-pipeline failed: {e}")
-    finally:
-        db.close()
+    audit = AuditLog(actor_user_id=new_user.id, action="USER_CREATED", entity_type="User", entity_id=str(new_user.id), metadata_json=f"User {new_user.username} created")
+    db.add(audit)
+    db.commit()
+    return {"id": new_user.id, "username": new_user.username}
 
-
-@app.get("/")
-def root():
-    return {"service": settings.PROJECT_NAME, "status": "running"}
+@app.patch("/users/{user_id}/status")
+def update_user_status(
+    user_id: int, 
+    active: bool,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(require_role(['MINISTRY', 'STATE_AUTHORITY', 'DISTRICT_AUTHORITY']))
+):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    user.is_active = active
+    
+    audit = AuditLog(actor_user_id=current_user.id, action="USER_STATUS_UPDATED", entity_type="User", entity_id=str(user.id), metadata_json=f"User {user.username} active status set to {active}")
+    db.add(audit)
+    db.commit()
+    return {"message": f"User {'activated' if active else 'deactivated'}"}

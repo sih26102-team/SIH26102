@@ -1,3 +1,4 @@
+import { useToast } from '../contexts/ToastContext';
 import { useState, useEffect } from 'react';
 import AppLayout from '../components/AppLayout';
 import EmptyState from '../components/EmptyState';
@@ -5,6 +6,7 @@ import { useAuth } from '../hooks/useAuth';
 import { fetchUsers, createInvestigator, toggleUserStatus } from '../services/usersService';
 
 export default function InvestigatorManagementPage() {
+  const { showToast } = useToast();
   const { user } = useAuth();
   const [investigators, setInvestigators] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -68,7 +70,7 @@ export default function InvestigatorManagementPage() {
         setSuccessMsg(`Account "${inv.username}" disabled. Login access has been immediately revoked.`);
       }
     } catch (err) {
-      alert(err.response?.data?.detail || 'Failed to toggle status');
+      showToast(err.response?.data?.detail || 'Failed to toggle status');
     }
   }
 

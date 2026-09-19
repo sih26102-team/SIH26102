@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicShield AI MVP</title>
+    
+    <!-- CDNs for React, ReactDOM, Babel, Tailwind, Axios -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Make React hooks globally available so components don't need imports
+        const { useState, useEffect } = React;
+        
+        
+// --- components/InspectionForm.jsx ---
+
+function InspectionForm({ caseId, project, risk }) {
+  const [checklist, setChecklist] = useState({
+    locationVerified: false,
+    physicalWorkExists: false,
+    progressVerified: false,
+    consistentProgress: false,
+    recordsAvailable: false,
+    implementationStatusVerified: false,
+    photographCaptured: false,
+    locationCaptured: false,
+    observationsRecorded: false
+  });
+
+  const [observations, setObservations] = useState({
+    physicalProgressObserved: '',
+    siteCondition: '',
+    financialObservation: '',
+    generalObservation: '',
+    recommendation: ''
+  });
+
+  const [photo, setPhoto] = useState(null);
+  const [location, setLocation] = useState({ lat: 0, lng: 0, timestamp: null });
+
+  const captureLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition((pos) => {
+        setLocation({
+          lat: pos.coords.latitude,
+          lng: pos.coords.longitude,
+          timestamp: new Date().toISOString()
+        });
+        setChecklist(prev => ({ ...prev, locationCaptured: true }));
+      });
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('latitude', location.lat);
+    formData.append('longitude', location.lng);
+    formData.append('physical_progress_observed', observations.physicalProgressObserved || 0);
+    formData.append('site_condition', observations.siteCondition);
+    formData.append('financial_observation', observations.financialObservation);
+    formData.append('general_observation', observations.generalObservation);
+    formData.append('recommendation', observations.recommendation);
+    formData.append('checklist', JSON.stringify(checklist));
+    if (photo) formData.append('photo', photo);
+
+    try {
+      await apiClient.post(`/inspections/${caseId}/submit`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+      alert("Evidence successfully submitted!");
+      window.location.reload();
+    } catch (err) {
+      console.error(err);
+      alert("Failed to submit inspection.");
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="p-6 bg-white rounded shadow-md mt-8">
+      <h2 className="text-2xl font-bold mb-4">Field Inspection Report</h2>
+      
+      {/* 1. AI Risk & Verifications */}
+      <div className="mb-6 p-4 bg-red-50 border-l-4 border-red-500 rounded">
+        <h3 className="font-bold text-red-700">AI Risk Reasons</h3>
+        <ul className="list-disc ml-5 text-sm text-red-600 mb-4">
+          {risk?.reasons?.map((r, i) => <li key={i}>{r}</li>)}
+        </ul>
+        <h3 className="font-bold text-red-700">Recommended Verification</h3>
+        <ul className="list-disc ml-5 text-sm text-red-600">
+          {risk?.recommended_verification?.map((r, i) => <li key={i}>{r}</li>)}
+        </ul>
+      </div>
+
+      {/* 2. Checklist */}
+      <div className="mb-6">
+        <h3 className="font-bold mb-2">Inspection Checklist</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          {Object.keys(checklist).map(key => (
+            <label key={key} className="flex items-center space-x-2">
+              <input type="checkbox" checked={checklist[key]} onChange={(e) => setChecklist(prev => ({...prev, [key]: e.target.checked}))} />
+              <span className="text-sm">{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      {/* 3. Location & Photo */}
+      <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h3 className="font-bold mb-2">Location Capture</h3>
+          <button type="button" onClick={captureLocation} className="px-4 py-2 bg-blue-100 text-blue-700 rounded hover:bg-blue-200">
+            Capture GPS Coordinates
+          </button>
+          {location.timestamp && (
+            <p className="text-xs text-gray-500 mt-2">Lat: {location.lat}, Lng: {location.lng}</p>
+          )}
+        </div>
+        <div>
+          <h3 className="font-bold mb-2">Photo Upload</h3>
+          <input type="file" accept="image/*" onChange={e => {
+            setPhoto(e.target.files[0]);
+            setChecklist(prev => ({ ...prev, photographCaptured: true }));
+          }} className="text-sm" />
+        </div>
+      </div>
+
+      {/* 4. Structured Observations */}
+      <div className="mb-6 space-y-4">
+        <h3 className="font-bold">Structured Observations</h3>
+        <div>
+          <label className="block text-sm font-semibold text-gray-700">Physical Progress Observed (%)</label>
+          <input type="number" min="0" max="100" value={observations.physicalProgressObserved} onChange={e => setObservations({...observations, physicalProgressObserved: e.target.value})} className="w-full border rounded p-2" required />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold text-gray-700">Site Condition</label>
+          <textarea value={observations.siteCondition} onChange={e => setObservations({...observations, siteCondition: e.target.value})} className="w-full border rounded p-2" required></textarea>
+        </div>
+        <div>
+          <label className="block text-sm font-semibold text-gray-700">Financial Observation</label>
+          <textarea value={observations.financialObservation} onChange={e => setObservations({...observations, financialObservation: e.target.value})} className="w-full border rounded p-2" required></textarea>
+        </div>
+        <div>
+          <label className="block text-sm font-semibold text-gray-700">General Observation</label>
+          <textarea value={observations.generalObservation} onChange={e => setObservations({...observations, generalObservation: e.target.value})} className="w-full border rounded p-2" required></textarea>
+        </div>
+        <div>
+          <label className="block text-sm font-semibold text-gray-700">Recommendation</label>
+          <textarea value={observations.recommendation} onChange={e => setObservations({...observations, recommendation: e.target.value})} className="w-full border rounded p-2" required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" className="w-full py-3 bg-green-600 text-white font-bold rounded shadow hover:bg-green-700">
+        Submit Evidence
+      </button>
+    </form>
+  );
+}
+
+
+// --- components/ReviewInterface.jsx ---
+
+function ReviewInterface({ caseId }) {
+  const [data, setData] = useState(null);
+  const [resolutionNote, setResolutionNote] = useState('');
+  
+  useEffect(() => {
+    apiClient.get(`/cases/${caseId}`).then(res => setData(res.data)).catch(console.error);
+  }, [caseId]);
+
+  const handleReview = async (status) => {
+    try {
+      await apiClient.post(`/cases/${caseId}/review`, { status, resolution: resolutionNote });
+      alert(`Case successfully marked as ${status}`);
+      window.location.reload();
+    } catch (err) {
+      alert("Failed to record review decision.");
+    }
+  };
+
+  if (!data) return <div>Loading review data...</div>;
+
+  const latestInspection = data.inspections?.[0];
+
+  return (
+    <div className="mt-8 p-6 bg-white rounded shadow-md border-t-4 border-indigo-600">
+      <h2 className="text-2xl font-bold mb-4 text-indigo-900">District Authority Case Review</h2>
+      
+      {/* 1. Original AI Assessment */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div className="p-4 bg-gray-50 rounded border">
+          <h3 className="font-bold border-b pb-2 mb-2">Original AI Assessment</h3>
+          <p><strong>Score:</strong> {data.risk_result?.risk_score} / 100</p>
+          <p><strong>Level:</strong> {data.risk_result?.risk_level}</p>
+          <div className="mt-2 text-sm text-gray-700">
+            <strong>Reasons:</strong>
+            <ul className="list-disc ml-4">
+              {data.risk_result?.reasons?.map((r, i) => <li key={i}>{r}</li>)}
+            </ul>
+          </div>
+          <div className="mt-2 text-sm text-gray-700">
+            <strong>Recommended Verification:</strong>
+            <ul className="list-disc ml-4">
+              {data.risk_result?.recommended_verification?.map((r, i) => <li key={i}>{r}</li>)}
+            </ul>
+          </div>
+        </div>
+
+        {/* 2. Field Evidence & Observations */}
+        <div className="p-4 bg-blue-50 rounded border">
+          <h3 className="font-bold border-b pb-2 mb-2">Field Evidence & Observations</h3>
+          {latestInspection ? (
+            <div className="text-sm space-y-2">
+              <p><strong>Date:</strong> {new Date(latestInspection.inspection_date).toLocaleString()}</p>
+              <p><strong>Physical Progress:</strong> {latestInspection.physical_progress_observed}%</p>
+              <p><strong>Site Condition:</strong> {latestInspection.site_condition}</p>
+              <p><strong>Financial Observation:</strong> {latestInspection.financial_observation}</p>
+              <p><strong>General Observation:</strong> {latestInspection.general_observation}</p>
+              <p><strong>Recommendation:</strong> {latestInspection.recommendation}</p>
+              <p><strong>Location:</strong> {latestInspection.latitude}, {latestInspection.longitude}</p>
+              <div className="mt-4">
+                <strong>Checklist Verified:</strong>
+                <pre className="text-xs bg-white p-2 mt-1 rounded overflow-x-auto">
+                  {JSON.stringify(JSON.parse(latestInspection.checklist_responses), null, 2)}
+                </pre>
+              </div>
+            </div>
+          ) : <p className="text-gray-500 text-sm">No field inspection submitted yet.</p>}
+        </div>
+      </div>
+
+      {/* 3. Append-only History */}
+      <div className="mb-6 p-4 border rounded bg-gray-50">
+        <h3 className="font-bold mb-2">Append-Only Inspection History</h3>
+        <div className="max-h-40 overflow-y-auto text-sm space-y-2">
+          {data.inspections?.map((insp, idx) => (
+            <div key={idx} className="p-2 bg-white border rounded">
+              <span className="font-semibold">{new Date(insp.inspection_date).toLocaleString()}</span> - Officer ID {insp.officer_id} - {insp.recommendation}
+            </div>
+          ))}
+          {(!data.inspections || data.inspections.length === 0) && <span className="text-gray-500">No history available.</span>}
+        </div>
+      </div>
+
+      {/* 4. Decision Action */}
+      {data.case.status === 'EVIDENCE_SUBMITTED' ? (
+        <div className="p-4 bg-indigo-50 border border-indigo-200 rounded">
+          <h3 className="font-bold text-indigo-900 mb-2">Authority Decision</h3>
+          <textarea 
+            className="w-full p-2 border rounded mb-4" 
+            placeholder="Enter resolution notes or escalation reasoning..."
+            value={resolutionNote}
+            onChange={(e) => setResolutionNote(e.target.value)}
+          ></textarea>
+          <div className="flex space-x-4">
+            <button onClick={() => handleReview('VERIFIED')} className="px-6 py-2 bg-green-600 text-white rounded font-bold hover:bg-green-700">VERIFIED / RESOLVED</button>
+            <button onClick={() => handleReview('ACTION_REQUIRED')} className="px-6 py-2 bg-red-600 text-white rounded font-bold hover:bg-red-700">ACTION REQUIRED / ESCALATED</button>
+          </div>
+        </div>
+      ) : (
+        <div className="p-4 bg-gray-200 rounded text-center text-gray-700 font-bold">
+          Case Status: {data.case.status} - {data.case.resolution}
+        </div>
+      )}
+    </div>
+  );
+}
+
+
+// --- pages/DashboardPage.jsx ---
+
+function AnalyticsCards({ summary }) {
+  if (!summary) return <div>Loading summary...</div>;
+  
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <div className="p-4 bg-white rounded shadow-md border-l-4 border-blue-500">
+        <h3 className="text-gray-500 text-sm">Total Projects</h3>
+        <p className="text-2xl font-bold">{summary.total_projects}</p>
+      </div>
+      <div className="p-4 bg-white rounded shadow-md border-l-4 border-green-500">
+        <h3 className="text-gray-500 text-sm">Total Sanctioned Amount</h3>
+        <p className="text-2xl font-bold">₹{(summary.total_budget / 10000000).toFixed(2)} Cr</p>
+      </div>
+      <div className="p-4 bg-white rounded shadow-md border-l-4 border-orange-500">
+        <h3 className="text-gray-500 text-sm">Stalled Projects</h3>
+        <p className="text-2xl font-bold">{summary.status_breakdown?.stalled || 0}</p>
+      </div>
+    </div>
+  );
+}
+
+function RoleSpecificView({ role, summary, trends }) {
+  const [cases, setCases] = useState([]);
+
+  useEffect(() => {
+    if (role === 'INSPECTION_OFFICER') {
+      apiClient.get('/cases').then(res => setCases(res.data)).catch(console.error);
+    }
+  }, [role]);
+
+  if (role === 'INSPECTION_OFFICER') {
+    return (
+      <div className="mt-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-800">New Assignments</h2>
+        
+        {cases.length === 0 ? (
+          <div className="p-8 bg-gray-100 rounded text-center text-gray-500 shadow-inner">
+            You currently have no new assignments.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {cases.map((c) => (
+              <div key={c.case_id} className="p-6 bg-white rounded shadow-md border-l-4 border-blue-500 hover:shadow-lg transition">
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="font-bold text-lg text-gray-800">{c.project_id}</h3>
+                  <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">{c.status}</span>
+                </div>
+                <p className="text-sm text-gray-600 mb-4">You have been assigned to inspect this flagged project.</p>
+                <div className="flex space-x-2">
+                  <button className="px-4 py-2 bg-blue-600 text-white rounded text-sm font-semibold hover:bg-blue-700">Accept Assignment</button>
+                  <button className="px-4 py-2 border border-gray-300 rounded text-sm font-semibold hover:bg-gray-50">View Details</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  const roleTitle = 
+    role === 'MINISTRY' ? 'National Overview' :
+    role === 'STATE_AUTHORITY' ? 'State-Specific Overview' :
+    role === 'DISTRICT_AUTHORITY' ? 'District-Specific Overview' : 'Overview';
+
+  return (
+    <div>
+      <h2 className="text-xl font-bold mb-4">{roleTitle}</h2>
+      <AnalyticsCards summary={summary} />
+      
+      {/* Trend Chart Placeholder */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="bg-white p-4 rounded shadow-md">
+          <h3 className="font-semibold text-gray-700 mb-4">Project Categories Trend</h3>
+          <ul className="space-y-2">
+            {trends && trends.map(t => (
+              <li key={t.category} className="flex justify-between border-b pb-1">
+                <span>{t.category}</span>
+                <span className="font-bold">{t.count}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        
+        {/* Leaflet Map Placeholder */}
+        <div className="bg-white p-4 rounded shadow-md flex items-center justify-center min-h-[300px] text-gray-400">
+          [ Leaflet Map Component Placeholder ]
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DashboardPage() {
+  const { user } = useAuth();
+  const [summary, setSummary] = useState(null);
+  const [trends, setTrends] = useState(null);
+
+  useEffect(() => {
+    // Only fetch analytics if not an officer
+    if (user && user.role !== 'INSPECTION_OFFICER') {
+      apiClient.get('/analytics/summary').then(res => setSummary(res.data)).catch(console.error);
+      apiClient.get('/analytics/trends').then(res => setTrends(res.data)).catch(console.error);
+    }
+  }, [user]);
+
+  if (!user) return null;
+
+  return (
+    <div className="p-8 max-w-7xl mx-auto">
+      <div className="mb-8">
+        <h1 className="text-3xl font-display font-bold text-gray-800">Welcome, {user.username}</h1>
+        <p className="text-gray-500">Role: <span className="font-semibold text-blue-600">{user.role}</span></p>
+      </div>
+
+      <RoleSpecificView role={user.role} summary={summary} trends={trends} />
+    </div>
+  );
+}
+
+
+// --- pages/AuditTrailPage.jsx ---
+
+function AuditTrailPage() {
+  const [logs, setLogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    apiClient.get('/audit-logs')
+      .then(res => {
+        setLogs(res.data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div className="p-8 text-center text-gray-500">Loading immutable audit trail...</div>;
+
+  return (
+    <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6 text-gray-800">System Audit Trail</h1>
+      <p className="mb-6 text-gray-600">This log is mathematically immutable and strictly append-only. Only authorized authorities can view this page.</p>
+
+      <div className="bg-white shadow rounded-lg overflow-hidden">
+        <table className="min-w-full leading-normal">
+          <thead>
+            <tr>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Timestamp</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Actor ID</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Action</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Target Entity</th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Metadata / Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            {logs.map(log => (
+              <tr key={log.audit_id}>
+                <td className="px-5 py-3 border-b border-gray-200 text-sm">{new Date(log.timestamp).toLocaleString()}</td>
+                <td className="px-5 py-3 border-b border-gray-200 text-sm font-semibold">{log.actor_user_id || 'SYSTEM'}</td>
+                <td className="px-5 py-3 border-b border-gray-200 text-sm">
+                  <span className="px-2 py-1 bg-gray-200 text-gray-800 rounded font-bold text-xs">{log.action}</span>
+                </td>
+                <td className="px-5 py-3 border-b border-gray-200 text-sm">{log.entity_type} {log.entity_id}</td>
+                <td className="px-5 py-3 border-b border-gray-200 text-sm text-gray-600 truncate max-w-xs">{log.metadata_json}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {logs.length === 0 && <div className="p-8 text-center text-gray-500">No audit events found.</div>}
+      </div>
+    </div>
+  );
+}
+
+
+// --- App.jsx ---
+
+function App() {
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
+          <Route path="/login" element={<LoginPage />} />
+
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/insights"
+            element={
+              <ProtectedRoute>
+                <InsightsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/projects/:projectId"
+            element={
+              <ProtectedRoute>
+                <ProjectDetailPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/cases"
+            element={
+              <ProtectedRoute>
+                <CasesPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/investigators"
+            element={
+              <ProtectedRoute>
+                <InvestigatorManagementPage />
+              </ProtectedRoute>
+            }
+          />
+
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  );
+}
+
+
+        
+        // Render the App
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

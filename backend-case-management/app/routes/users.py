@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from app.schemas import schemas
-from app.models.models import User
+from app.models import User
 from app.database.database import get_db
 from app.core.security import get_hash_password
 from app.core.Oauth2 import get_current_user, get_current_user_admin

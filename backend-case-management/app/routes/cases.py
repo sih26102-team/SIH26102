@@ -5,7 +5,7 @@ from datetime import datetime
 
 from app.schemas import schemas
 from app.database.database import get_db
-from app.models.models import Case, User, CaseAuditLog
+from app.models import Case, User, AuditLog
 from app.core.Oauth2 import get_current_user, get_current_user_admin
 
 router = APIRouter(
@@ -23,7 +23,7 @@ def log_case_audit(
     user_id: int,
     details: Optional[str] = None
 ):
-    entry = CaseAuditLog(
+    entry = AuditLog(
         case_id=case_id,
         action=action,
         old_value=old_value,
@@ -87,7 +87,7 @@ def get_case(
     return case
 
 
-@router.get("/{id}/audit", response_model=List[schemas.CaseAuditLogResponse])
+@router.get("/{id}/audit", response_model=List[schemas.AuditLogResponse])
 def get_case_audit(
     id: int,
     db: Session = Depends(get_db),
@@ -101,7 +101,7 @@ def get_case_audit(
     if current_user.role != "admin" and case.assigned_to_id != current_user.id and case.requested_by_id != current_user.id:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Access denied to audit history")
 
-    return db.query(CaseAuditLog).filter(CaseAuditLog.case_id == id).order_by(CaseAuditLog.timestamp.desc()).all()
+    return db.query(AuditLog).filter(AuditLog.case_id == id).order_by(AuditLog.timestamp.desc()).all()
 
 
 @router.post("/request", status_code=status.HTTP_201_CREATED, response_model=schemas.CaseResponse)

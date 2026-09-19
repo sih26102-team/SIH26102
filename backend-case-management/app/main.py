@@ -8,18 +8,18 @@ from app.routes import users, auth, cases
 from app.core.security import get_hash_password, verify_password
 
 # Initialize all database tables
-models.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 def seed_demo_accounts():
     """Seed or update development/demo accounts for 5 Admins and 100 Field Investigators."""
     db = SessionLocal()
     try:
-        existing_users = {u.username: u for u in db.query(models.User).all()}
+        existing_users = {u.username: u for u in db.query(User).all()}
         existing_emails = {u.email: u for u in existing_users.values()}
 
         # 1. Base legacy demo accounts for fallback compatibility
         if "admin.demo" not in existing_users:
-            db.add(models.User(
+            db.add(User(
                 username="admin.demo",
                 email="admin.demo@civicshield.gov.in",
                 full_name="CivicShield System Administrator",
@@ -28,7 +28,7 @@ def seed_demo_accounts():
                 is_active=True
             ))
         if "investigator.demo" not in existing_users:
-            db.add(models.User(
+            db.add(User(
                 username="investigator.demo",
                 email="investigator.demo@civicshield.gov.in",
                 full_name="Senior Field Investigator",
@@ -46,7 +46,7 @@ def seed_demo_accounts():
             # Seed Admins
             for adm in seed_data.get("admins", []):
                 if adm["username"] not in existing_users and adm["email"] not in existing_emails:
-                    db.add(models.User(
+                    db.add(User(
                         username=adm["username"],
                         email=adm["email"],
                         full_name=adm["full_name"],
@@ -60,7 +60,7 @@ def seed_demo_accounts():
             # Seed 100 Investigators
             for inv in seed_data.get("investigators", []):
                 if inv["username"] not in existing_users and inv["email"] not in existing_emails:
-                    db.add(models.User(
+                    db.add(User(
                         username=inv["username"],
                         email=inv["email"],
                         full_name=inv["full_name"],

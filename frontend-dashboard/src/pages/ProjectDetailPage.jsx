@@ -1,3 +1,4 @@
+import { useToast } from '../contexts/ToastContext';
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import AppLayout from '../components/AppLayout';
@@ -21,6 +22,7 @@ function Field({ label, value }) {
 }
 
 export default function ProjectDetailPage() {
+  const { showToast } = useToast();
   const { projectId } = useParams();
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -75,7 +77,7 @@ export default function ProjectDetailPage() {
       setIsRequestModalOpen(false);
       setActionSuccess('Investigation requested successfully! Status: PENDING ADMIN APPROVAL.');
     } catch (err) {
-      alert(err.response?.data?.detail || err.message || 'Failed to request investigation');
+      showToast(err.response?.data?.detail || err.message || 'Failed to request investigation');
     } finally {
       setActionLoading(false);
     }
@@ -97,7 +99,7 @@ export default function ProjectDetailPage() {
       setIsAssignModalOpen(false);
       setActionSuccess('Project successfully assigned to investigator! Status: ASSIGNED.');
     } catch (err) {
-      alert(err.response?.data?.detail || err.message || 'Failed to assign investigator');
+      showToast(err.response?.data?.detail || err.message || 'Failed to assign investigator');
     } finally {
       setActionLoading(false);
     }

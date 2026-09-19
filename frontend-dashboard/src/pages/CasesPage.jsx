@@ -1,3 +1,4 @@
+import { useToast } from '../contexts/ToastContext';
 import { useEffect, useState } from 'react';
 import AppLayout from '../components/AppLayout';
 import CaseStatusBadge from '../components/CaseStatusBadge';
@@ -15,6 +16,7 @@ import {
 import { formatDate } from '../utils/formatters';
 
 export default function CasesPage() {
+  const { showToast } = useToast();
   const { user } = useAuth();
   const isAdmin = user?.role === 'admin';
 
@@ -84,7 +86,7 @@ export default function CasesPage() {
   function captureGenuineLocation() {
     if (!navigator.geolocation) {
       setGpsStatus('ERROR');
-      alert('Geolocation is not supported by your browser.');
+      showToast('Geolocation is not supported by your browser.');
       return;
     }
 
@@ -101,7 +103,7 @@ export default function CasesPage() {
       (err) => {
         console.warn('GPS Error:', err);
         setGpsStatus('ERROR');
-        alert(`Could not capture genuine location: ${err.message}. Status set to LOCATION NOT CAPTURED.`);
+        showToast(`Could not capture genuine location: ${err.message}. Status set to LOCATION NOT CAPTURED.`);
       },
       { enableHighAccuracy: true, timeout: 10000 }
     );
@@ -130,7 +132,7 @@ export default function CasesPage() {
       setStatusMsg(`Case #${caseId} approved and successfully assigned to ${assignedOfficer?.full_name || 'Investigator'}.`);
       loadCases();
     } catch (err) {
-      alert(err.response?.data?.detail || 'Failed to approve case');
+      showToast(err.response?.data?.detail || 'Failed to approve case');
     } finally {
       setSubmitting(false);
     }
@@ -145,7 +147,7 @@ export default function CasesPage() {
       setStatusMsg(`Case #${caseId} request rejected.`);
       loadCases();
     } catch (err) {
-      alert(err.response?.data?.detail || 'Failed to reject case');
+      showToast(err.response?.data?.detail || 'Failed to reject case');
     } finally {
       setSubmitting(false);
     }
@@ -170,7 +172,7 @@ export default function CasesPage() {
       setStatusMsg(`Field evidence and findings for Case #${selectedCase.caseId || selectedCase.id} recorded.`);
       loadCases();
     } catch (err) {
-      alert(err.response?.data?.detail || 'Failed to submit evidence');
+      showToast(err.response?.data?.detail || 'Failed to submit evidence');
     } finally {
       setSubmitting(false);
     }
@@ -189,7 +191,7 @@ export default function CasesPage() {
       setStatusMsg(`Investigation #${selectedCase.caseId || selectedCase.id} successfully updated to: ${resolutionType}.`);
       loadCases();
     } catch (err) {
-      alert(err.response?.data?.detail || 'Failed to resolve case');
+      showToast(err.response?.data?.detail || 'Failed to resolve case');
     } finally {
       setSubmitting(false);
     }

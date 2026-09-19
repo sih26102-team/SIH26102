@@ -8,11 +8,42 @@ import ProjectDetailPage from './pages/ProjectDetailPage';
 import CasesPage from './pages/CasesPage';
 import InvestigatorManagementPage from './pages/InvestigatorManagementPage';
 import NotFoundPage from './pages/NotFoundPage';
+import { ToastProvider, useToast } from './contexts/ToastContext';
+import apiClient from './services/apiClient';
+import { useEffect } from 'react';
+
+function AxiosInterceptor() {
+  const { showToast } = useToast();
+  
+  useEffect(() => {
+    const interceptor = apiClient.interceptors.response.use(
+      response => response,
+      error => {
+        if (error.response) {
+            const status = error.response.status;
+            let msg = error.response.data?.detail || "An unexpected error occurred.";
+            if (status === 401) msg = "Your session is invalid or has expired.";
+            if (status === 403) msg = "You do not have permission to perform this action.";
+            if (status >= 500) msg = "The server encountered an error. Please try again later.";
+            showToast(msg, 'error');
+        } else {
+            showToast("Network error. Please check your connection.", 'error');
+        }
+        return Promise.reject(error);
+      }
+    );
+    return () => apiClient.interceptors.response.eject(interceptor);
+  }, [showToast]);
+
+  return null;
+}
 
 export default function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
+    <ToastProvider>
+      <AxiosInterceptor />
+      <AuthProvider>
+        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/login" element={<LoginPage />} />
@@ -62,5 +93,6 @@ export default function App() {
         </Routes>
       </BrowserRouter>
     </AuthProvider>
+    </ToastProvider>
   );
 }

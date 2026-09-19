@@ -45,30 +45,28 @@ export async function fetchFlaggedWorks(filters = {}) {
   }
 
   try {
-    const { data } = await api.get('/works', { params: filters });
+    const { data } = await api.get('/projects', { params: filters });
     if (Array.isArray(data) && data.length > 0) {
       return data.map((item) => {
-        const id = item.projectId || item.project_id || (item.work_id ? `WRK-${item.work_id}` : 'PRJ-UNKNOWN');
+        const id = item.projectId || item.project_id || 'PRJ-UNKNOWN';
         return {
           ...item,
           id,
           projectId: id,
-          sanctionedAmount: item.sanctionedAmount ?? item.sanctioned_amount ?? item.recommended_amount ?? 1000000,
+          projectTitle: item.project_title || item.projectTitle || `Project ${id}`,
+          sanctionedAmount: item.sanctionedAmount ?? item.sanctioned_amount ?? 1000000,
           expenditure: item.expenditure ?? 0,
           riskScore: item.riskScore ?? item.risk_score ?? 60,
           riskLevel: item.riskLevel ?? item.risk_level ?? 'MEDIUM',
-          progressPct: item.progressPct ?? item.progress_percent ?? 25,
-          utilizationPct: item.utilizationPct ?? 35,
-          category: item.category || 'Civil Work',
+          progressPct: item.progressPct ?? item.progress_percentage ?? 25,
+          category: item.category || 'Infrastructure',
           status: item.status || 'ongoing',
-          constituency: item.constituency || 'General Constituency',
-          state: item.state || 'National',
         };
       });
     }
     return applyFilters(PIPELINE_PROJECTS, filters).slice().sort((a, b) => b.riskScore - a.riskScore);
   } catch (err) {
-    console.warn('Backend /works API unavailable; loading data-pipeline dataset:', err.message);
+    console.warn('Backend /projects API unavailable; loading data-pipeline dataset:', err.message);
     await mockDelay(100);
     return applyFilters(PIPELINE_PROJECTS, filters).slice().sort((a, b) => b.riskScore - a.riskScore);
   }
@@ -86,10 +84,24 @@ export async function fetchProjectById(projectId) {
   }
 
   try {
-    const { data } = await api.get(`/works/${projectId}`);
-    return data;
+    const { data } = await api.get(`/projects/${projectId}`);
+    const item = data.project || data;
+    const r = data.risk || {};
+    const id = item.project_id || projectId;
+    return {
+      ...item,
+      id,
+      projectId: id,
+      projectTitle: item.project_title,
+      sanctionedAmount: item.sanctioned_amount,
+      expenditure: item.expenditure,
+      progressPct: item.progress_percentage,
+      riskScore: r.risk_score || 0,
+      riskLevel: r.risk_level || 'UNSCORED',
+      status: item.status
+    };
   } catch (err) {
-    console.warn(`Backend /works/${projectId} API unavailable; loading from data-pipeline:`, err.message);
+    console.warn(`Backend /projects/${projectId} API unavailable; loading from data-pipeline:`, err.message);
     await mockDelay(100);
     const project = PIPELINE_PROJECTS.find((p) => p.projectId === projectId || p.id === projectId);
     if (!project) {
