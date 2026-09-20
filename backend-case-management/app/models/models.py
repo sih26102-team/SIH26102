@@ -14,14 +14,14 @@ class User(Base):
 class Project(Base):
     __tablename__ = 'projects'
     __table_args__ = {'extend_existing': True}
-    id = Column(String, primary_key=True, index=True)
+    project_id = Column(String, primary_key=True, index=True)
     district_id = Column(Integer)
 
 class Case(Base):
     __tablename__ = 'cases'
     __table_args__ = {'extend_existing': True}
     case_id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    project_id = Column(String, ForeignKey('projects.id'))
+    project_id = Column(String, ForeignKey('projects.project_id'))
     created_by = Column(Integer, ForeignKey('users.id'))
     assigned_officer = Column(Integer, ForeignKey('users.id'), nullable=True)
     status = Column(String, default='REQUESTED')

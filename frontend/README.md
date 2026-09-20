@@ -99,7 +99,7 @@ All tokens live in `tailwind.config.js` under `theme.extend.colors` /
 ## Folder structure
 
 ```
-frontend-dashboard/
+frontend/
 ├── src/
 │   ├── components/     # presentational + reusable pieces
 │   ├── pages/           # one file per route

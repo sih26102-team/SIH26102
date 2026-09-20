@@ -37,7 +37,7 @@ Backend API      Backend Case
 - **Key Understanding:** Understands how a high-risk ML output triggers the human-in-the-loop workflow. Knows how the Case service maps read-only references to the Core Database to execute relationships without tangling Python dependencies.
 
 ## 3. Chandana: Frontend & Product UX
-**Directory:** `frontend-dashboard/`
+**Directory:** `frontend/`
 - **Responsibilities:** Dashboard UI, interactive charts (Recharts), mapping (React Leaflet), project views, and unifying the HTTP calls to both backend microservices.
 - **Key Understanding:** Understands React state management, how Vite builds the application, and how Axios interceptors attach JWT tokens to every request.
 

@@ -31,7 +31,7 @@ CivicShield AI integrates six specialized engineering modules into **ONE unified
 * **Poornesh (Backend Lead - Case Management & Security)**: Implements role-based access control (RBAC), multi-state investigation workflows, and immutable audit logs (`backend-case-management/`).
 * **Kousic (Cybersecurity & ML Lead)**: Builds the 8-dimensional Hybrid Risk Engine, 18% GST burn rate adjustments, and statutory explainability layer (`ml-engine/`).
 * **Mohith (Cloud DevOps & MLOps Lead)**: Manages containerization, Docker Compose orchestration, service networking, and Nginx reverse proxy gateway (`cloud-devops/` & `nginx/`).
-* **Chandana (Frontend Lead)**: Develops the React 18 / Vite / TailwindCSS auditing console, SLA widgets, case investigation drawers, and geolocation capture UI (`frontend-dashboard/`).
+* **Chandana (Frontend Lead)**: Develops the React 18 / Vite / TailwindCSS auditing console, SLA widgets, case investigation drawers, and geolocation capture UI (`frontend/`).
 
 ---
 
@@ -112,7 +112,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8003 --reload
 
 #### Terminal 4: React Frontend Console
 ```bash
-cd frontend-dashboard
+cd frontend
 npm install
 npm run dev
 ```

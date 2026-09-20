@@ -32,14 +32,14 @@ services:
     - sih_network
     ports:
     - 8001:8000
-  frontend-dashboard:
+  frontend:
     build:
       args:
       - VITE_USE_MOCK=false
       - VITE_API_BASE_URL=/
       context: .
       dockerfile: cloud-devops/docker/frontend.Dockerfile
-    container_name: sih26102-frontend-dashboard
+    container_name: sih26102-frontend
     networks:
     - sih_network
     ports:
@@ -58,7 +58,7 @@ services:
   nginx:
     container_name: sih26102-nginx
     depends_on:
-    - frontend-dashboard
+    - frontend
     - backend-data-api
     - ml-engine
     image: nginx:latest

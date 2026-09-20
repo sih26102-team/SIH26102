@@ -84,12 +84,6 @@ class RiskResult(Base):
     reasons = Column(Text) # JSON string array
     recommended_verification = Column(Text) # JSON string array
     generated_at = Column(DateTime(timezone=True), server_default=func.now())
-    risk_id = Column(Integer, primary_key=True, index=True)
-    project_id = Column(Text, ForeignKey("projects.project_id", ondelete="CASCADE"), nullable=False, unique=True)
-    risk_score = Column(Float, nullable=False)
-    risk_level = Column(Text, nullable=False)
-    model_version = Column(Text)
-    generated_at = Column(DateTime(timezone=True), server_default=func.now())
 
 class RiskSignal(Base):
     __tablename__ = "risk_signals"

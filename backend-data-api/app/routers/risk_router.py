@@ -130,12 +130,13 @@ def run_risk_engine(db: Session = Depends(get_db), current_user: User = Depends(
     features = df[['exp_ratio', 'prog_ratio', 'cost']].fillna(0)
     df['anomaly'] = clf.fit_predict(features)
     
+    # Pre-fetch existing risk results to avoid N+1 query problem
+    existing_risks = {r.project_id: r for r in db.query(RiskResult).all()}
+    
     # 3. Apply Domain Rules + Store Results
     for p in projects:
         risk_data = generate_risk_for_project(p, df)
-        
-        # Check if result exists
-        existing = db.query(RiskResult).filter(RiskResult.project_id == p.project_id).first()
+        existing = existing_risks.get(p.project_id)
         
         reasons_json = json.dumps(risk_data["reasons"])
         verifs_json = json.dumps(risk_data["recommended_verification"])

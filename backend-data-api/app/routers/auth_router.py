@@ -58,12 +58,6 @@ def login(req: LoginReq, db: Session = Depends(get_db)):
         expires_delta=access_token_expires
     )
     
-    # Audit log login
-    from app.models import AuditLog
-    audit = AuditLog(actor_user_id=user.id, action="USER_LOGIN", entity_type="User", entity_id=str(user.id), metadata_json="User logged in via OTP")
-    db.add(audit)
-    db.commit()
-
     return {"access_token": access_token, "token_type": "bearer", "role": user.role, "is_first_login": user.is_first_login}
 
 # 2. Login step 2: Verify OTP and get JWT
