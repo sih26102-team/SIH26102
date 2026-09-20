@@ -5,10 +5,10 @@ from app.routers.auth_router import get_password_hash
 def create_users():
     db = SessionLocal()
     users = [
-        {"username": "ministry_admin", "email": "admin@mplads.gov.in", "role": "Ministry", "password": "password123", "full_name": "Ministry Admin"},
-        {"username": "state_nodal", "email": "state@mplads.gov.in", "role": "State Nodal Authority", "password": "password123", "full_name": "State Nodal Officer", "state_id": 1},
-        {"username": "district_auth", "email": "district@mplads.gov.in", "role": "District Authority", "password": "password123", "full_name": "District Magistrate", "district_id": 1},
-        {"username": "inspector", "email": "inspector@mplads.gov.in", "role": "Inspection Officer", "password": "password123", "full_name": "Field Inspector", "district_id": 1}
+        {"username": "ministry_admin", "email": "admin@mplads.gov.in", "role": "MINISTRY", "password": "password123", "full_name": "Ministry Admin"},
+        {"username": "state_nodal", "email": "state@mplads.gov.in", "role": "STATE_AUTHORITY", "password": "password123", "full_name": "State Nodal Officer", "state_id": 1},
+        {"username": "district_auth", "email": "district@mplads.gov.in", "role": "DISTRICT_AUTHORITY", "password": "password123", "full_name": "District Magistrate", "district_id": 1},
+        {"username": "inspector", "email": "inspector@mplads.gov.in", "role": "INSPECTION_OFFICER", "password": "password123", "full_name": "Field Inspector", "district_id": 1}
     ]
     for u in users:
         existing = db.query(User).filter(User.username == u["username"]).first()
@@ -16,6 +16,8 @@ def create_users():
             hashed = get_password_hash(u.pop("password"))
             user = User(**u, password=hashed)
             db.add(user)
+        else:
+            existing.role = u["role"]
     db.commit()
     print("Users created successfully!")
 
