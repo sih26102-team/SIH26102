@@ -9,10 +9,10 @@ app = FastAPI(title='CivicShield AI - Case Management API')
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=["https://civicshieldlive.vercel.app", "http://localhost:3000", "http://localhost:5173"],
     allow_credentials=True,
-    allow_methods=['*'],
-    allow_headers=['*'],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(cases_router)

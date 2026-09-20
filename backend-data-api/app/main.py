@@ -28,7 +28,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://civicshieldlive.vercel.app", "http://localhost:3000", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -54,10 +54,6 @@ def create_user(user_data: dict, db: Session = Depends(get_db)):
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
-    
-    audit = AuditLog(actor_user_id=new_user.id, action="USER_CREATED", entity_type="User", entity_id=str(new_user.id), metadata_json=f"User {new_user.username} created")
-    db.add(audit)
-    db.commit()
     return {"id": new_user.id, "username": new_user.username}
 
 @app.patch("/users/{user_id}/status")
@@ -71,8 +67,5 @@ def update_user_status(
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     user.is_active = active
-    
-    audit = AuditLog(actor_user_id=current_user.id, action="USER_STATUS_UPDATED", entity_type="User", entity_id=str(user.id), metadata_json=f"User {user.username} active status set to {active}")
-    db.add(audit)
     db.commit()
     return {"message": f"User {'activated' if active else 'deactivated'}"}

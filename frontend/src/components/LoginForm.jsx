@@ -2,9 +2,17 @@ import { useState } from 'react';
 import { useAuth } from '../hooks/useAuth.jsx';
 import { useNavigate } from 'react-router-dom';
 
+const ROLES = [
+  { id: 'ministry', name: 'Ministry / Central Monitoring', desc: 'National-level monitoring and analytics.' },
+  { id: 'state', name: 'State Nodal Authority', desc: 'State-level monitoring and oversight.' },
+  { id: 'district', name: 'District Authority', desc: 'District-level project monitoring, investigation and case management.' },
+  { id: 'inspector', name: 'Authorized Inspection Officer', desc: 'Assigned project inspection and evidence submission.' },
+];
+
 export default function LoginForm() {
   const { signIn, loading, error } = useAuth();
   const navigate = useNavigate();
+  const [selectedRole, setSelectedRole] = useState(null);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,28 +26,45 @@ export default function LoginForm() {
     }
   }
 
-  function applyDemoCredentials(role) {
-    if (role === 'mohith_admin') {
-      setUsername('mohith.annam@nic.in');
-      setPassword('Mohith@Admin2026!');
-    } else if (role === 'arun_investigator') {
-      setUsername('arun.kumar@nic.in');
-      setPassword('Investigator@2026!');
-    } else if (role === 'admin') {
-      setUsername('admin.demo');
-      setPassword('CivicShieldAdmin@2026!');
-    } else {
-      setUsername('investigator.demo');
-      setPassword('CivicShield@Demo2026!');
-    }
+  if (!selectedRole) {
+    return (
+      <div className="w-full max-w-md space-y-4">
+        <h2 className="text-xl font-bold text-navy-900 mb-4">Select your role</h2>
+        <div className="space-y-3">
+          {ROLES.map(role => (
+            <button
+              key={role.id}
+              onClick={() => setSelectedRole(role)}
+              className="w-full text-left p-4 rounded-xl border border-navy-200 bg-white hover:border-navy-600 hover:shadow-md transition group"
+            >
+              <div className="font-semibold text-navy-900 group-hover:text-navy-700">{role.name}</div>
+              <div className="text-xs text-muted mt-1">{role.desc}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="w-full max-w-md space-y-6">
+      <div className="flex items-center justify-between mb-4">
+        <div>
+          <div className="text-xs font-semibold text-muted uppercase tracking-wider">Selected Role:</div>
+          <div className="text-navy-900 font-bold">{selectedRole.name}</div>
+        </div>
+        <button 
+          onClick={() => setSelectedRole(null)} 
+          className="text-sm text-navy-600 hover:text-navy-800 font-medium"
+        >
+          &larr; Change Role
+        </button>
+      </div>
+
       <form onSubmit={handleSubmit} className="space-y-4 rounded-xl border border-border bg-white p-6 shadow-sm">
         <div>
           <label htmlFor="username" className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink">
-            Official Identifier / Username
+            Official ID
           </label>
           <input
             id="username"
@@ -47,7 +72,7 @@ export default function LoginForm() {
             autoComplete="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="e.g. mohith.annam@nic.in or arun.kumar@nic.in"
+            placeholder="Official ID"
             className="w-full rounded border border-border bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition focus:border-navy-600 focus:ring-2 focus:ring-navy-100"
             required
           />
@@ -55,7 +80,7 @@ export default function LoginForm() {
 
         <div>
           <label htmlFor="password" className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-ink">
-            Secure Password
+            Password
           </label>
           <input
             id="password"
@@ -63,7 +88,7 @@ export default function LoginForm() {
             autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="••••••••••••"
+            placeholder="••••••••"
             className="w-full rounded border border-border bg-white px-3.5 py-2.5 text-sm text-ink outline-none transition focus:border-navy-600 focus:ring-2 focus:ring-navy-100"
             required
           />
@@ -80,36 +105,9 @@ export default function LoginForm() {
           disabled={loading}
           className="w-full rounded-lg bg-navy-600 px-4 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-navy-700 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {loading ? 'Authenticating Official…' : 'Authenticate & Sign In'}
+          {loading ? 'Authenticating...' : 'Authenticate & Sign In'}
         </button>
-
-        <p className="text-center text-[11px] text-muted leading-relaxed">
-          <strong>Access Restricted:</strong> Public registration is strictly prohibited. Accounts are provisioned exclusively by authorized System Administrators.
-        </p>
       </form>
-
-      {/* Quick Demo Credentials Panel for Presentation */}
-      <div className="rounded-lg border border-dashed border-navy-200 bg-navy-50/80 p-4 text-xs text-navy-900">
-        <p className="font-semibold text-navy-800 mb-2">⚡ 1-Click Presentation Credentials:</p>
-        <div className="grid grid-cols-2 gap-2">
-          <button
-            type="button"
-            onClick={() => applyDemoCredentials('mohith_admin')}
-            className="rounded border border-navy-300 bg-white p-2 text-left font-medium text-navy-700 shadow-sm hover:bg-navy-100 transition"
-          >
-            🛡️ <strong>Admin (NIC)</strong><br />
-            <span className="text-[10px] text-muted font-mono truncate block">mohith.annam@nic.in</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => applyDemoCredentials('arun_investigator')}
-            className="rounded border border-navy-300 bg-white p-2 text-left font-medium text-navy-700 shadow-sm hover:bg-navy-100 transition"
-          >
-            🔍 <strong>Investigator (NIC)</strong><br />
-            <span className="text-[10px] text-muted font-mono truncate block">arun.kumar@nic.in</span>
-          </button>
-        </div>
-      </div>
     </div>
   );
 }

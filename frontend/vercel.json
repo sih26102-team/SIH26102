@@ -1,0 +1,27 @@
+{
+  "rewrites": [
+    { "source": "/cases/(.*)", "destination": "https://civicshieldai.onrender.com/cases/$1" },
+    { "source": "/cases", "destination": "https://civicshieldai.onrender.com/cases" },
+    { "source": "/api/cases/(.*)", "destination": "https://civicshieldai.onrender.com/$1" },
+    { "source": "/api/cases", "destination": "https://civicshieldai.onrender.com/" },
+    { "source": "/api/inspections/(.*)", "destination": "https://civicshieldai.onrender.com/inspections/$1" },
+    { "source": "/api/inspections", "destination": "https://civicshieldai.onrender.com/inspections" },
+    { "source": "/api/audit/(.*)", "destination": "https://civicshieldai.onrender.com/audit/$1" },
+    { "source": "/api/audit", "destination": "https://civicshieldai.onrender.com/audit" },
+
+    { "source": "/auth/(.*)", "destination": "https://sih26102-7rl7.onrender.com/auth/$1" },
+    { "source": "/auth", "destination": "https://sih26102-7rl7.onrender.com/auth" },
+    { "source": "/users/(.*)", "destination": "https://sih26102-7rl7.onrender.com/users/$1" },
+    { "source": "/users", "destination": "https://sih26102-7rl7.onrender.com/users" },
+    { "source": "/works/(.*)", "destination": "https://sih26102-7rl7.onrender.com/works/$1" },
+    { "source": "/works", "destination": "https://sih26102-7rl7.onrender.com/works" },
+    { "source": "/analytics/(.*)", "destination": "https://sih26102-7rl7.onrender.com/analytics/$1" },
+    { "source": "/analytics", "destination": "https://sih26102-7rl7.onrender.com/analytics" },
+    { "source": "/anomalies/(.*)", "destination": "https://sih26102-7rl7.onrender.com/anomalies/$1" },
+    { "source": "/anomalies", "destination": "https://sih26102-7rl7.onrender.com/anomalies" },
+    { "source": "/api/data/(.*)", "destination": "https://sih26102-7rl7.onrender.com/$1" },
+    { "source": "/api/v1/(.*)", "destination": "https://sih26102-7rl7.onrender.com/api/v1/$1" },
+
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
